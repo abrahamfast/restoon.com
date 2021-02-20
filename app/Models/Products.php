@@ -5,17 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ProductCategories extends Model
+class Products extends Model
 {
     use HasFactory;
 
-    protected $table = 'product_category';
+    protected $table = 'product';
 
     protected $guarded = [];
 
     protected $casts = [
-    	'id' => 'string',
-    	'cover_id' => 'string',
-    	'parent_id' => ''
+    	'id' => 'string'
     ];
 }
