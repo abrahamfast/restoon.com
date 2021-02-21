@@ -8,40 +8,7 @@
                 <a href="#"><img src="images/logo.svg" alt=""></a>
                 <a href="#"><img class="logo-inverse" src="images/dark-logo.svg" alt=""></a>
             </div>
-            <div class="select_location">
-                <div class="ui inline dropdown loc-title">
-                    <div class="text">
-                        <i class="uil uil-location-point"></i> Gurugram
-                    </div>
-                    <i class="uil uil-angle-down icon__14"></i>
-                    <div class="menu dropdown_loc">
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> Gurugram
-                        </div>
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> New Delhi
-                        </div>
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> Bangaluru
-                        </div>
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> Mumbai
-                        </div>
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> Hyderabad
-                        </div>
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> Kolkata
-                        </div>
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> Ludhiana
-                        </div>
-                        <div class="item channel_item">
-                            <i class="uil uil-location-point"></i> Chandigrah
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <x-select-location/>
             <div class="search120">
                 <div class="ui search">
                     <div class="ui left icon input swdh10">
@@ -56,13 +23,13 @@
                         <a href="#" class="offer-link"><i class="uil uil-phone-alt"></i>1800-000-000</a>
                     </li>
                     <li>
-                        <a href="#" class="offer-link"><i class="uil uil-gift"></i>Offers</a>
+                        <a href="#" class="offer-link"><i class="uil uil-gift"></i>تخفیفات</a>
                     </li>
                     <li>
-                        <a href="#" class="offer-link"><i class="uil uil-question-circle"></i>Help</a>
+                        <a href="#" class="offer-link"><i class="uil uil-question-circle"></i>راهنما</a>
                     </li>
                     <li>
-                        <a href="#" class="option_links" title="Wishlist"><i class='uil uil-heart icon_wishlist'></i><span class="noti_count1">3</span></a>
+                        <x-wishlist-button-counter />
                     </li>
                     <x-user-profile-navigation/>
                 </ul>
