@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, shrink-to-fit=9">
     <meta name="description" content="Gambolthemes">
     <meta name="author" content="Gambolthemes">
-    <title>
-        <!--  set title -->
-    </title>
+    <title>{{ $title?? ''}}</title>
 
     <link rel="icon" type="image/png" href="images/fav.png">
 
@@ -30,6 +28,16 @@
 <!--  model  -->
 <!-- navbar -->
 <!-- wrapper -->
+@yield('wrapper')
 <!-- footer -->
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/OwlCarousel/owl.carousel.js"></script>
+    <script src="/vendor/semantic/semantic.min.js"></script>
+    <script src="/js/jquery.countdown.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/offset_overlay.js"></script>
+    <script src="/js/night-mode.js"></script>
 </body>
 </html>
