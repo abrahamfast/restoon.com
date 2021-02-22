@@ -18,6 +18,11 @@ class Product extends Model
     	'id' => 'string'
     ];
 
+    public function category()
+    {
+        return $this->hasOne(ProductCategories::class);
+    }
+
     public function attachment()
     {
     	return $this->hasMany(Attachment::class, 'parent_id');
