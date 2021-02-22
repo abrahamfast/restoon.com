@@ -3,6 +3,7 @@
 @section('wrapper')
 
 <div class="all-product-grid">
+	<x-breadcrumb/>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

@@ -16,4 +16,9 @@ class Product extends Model
     protected $casts = [
     	'id' => 'string'
     ];
+
+    public function attachment()
+    {
+    	return $this->hasMany(App\Model\Attachment::class);
+    }
 }
