@@ -14,7 +14,7 @@
                         <div class="owl-carousel featured-slider owl-theme">
                             @if($products)
 					    		@foreach($products as $product)
-					    			<x-product-list  :product="$product" />
+					    			<x-single-product-featured-slider  :product="$product" />
 					    		@endforeach
 					    	@endif
                         </div>
