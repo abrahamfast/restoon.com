@@ -20,6 +20,6 @@ class Product extends Model
 
     public function attachment()
     {
-    	return $this->hasMany(Attachment::class);
+    	return $this->hasMany(Attachment::class, 'parrent_id');
     }
 }
