@@ -3,9 +3,11 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\ProductCategories;
 
 class CategoriesModal extends Component
 {
+    public $categories;
     /**
      * Create a new component instance.
      *
@@ -13,7 +15,7 @@ class CategoriesModal extends Component
      */
     public function __construct()
     {
-        // get category
+        $this->categories = ProductCategories::where('deleted', 0)->get();
     }
 
     /**

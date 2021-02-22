@@ -8,9 +8,21 @@
             </div>
             <div class="category-model-content modal-content">
                 <div class="cate-header">
-                    <h4>Select Category</h4>
+                    <h4>{{ __('global.Select Category') }}</h4>
                 </div>
                 <ul class="category-by-cat">
+                    @if($categories)
+                        @foreach($categories as $category)
+                            <li>
+                                <a href="#" class="single-cat-item">
+                                    <div class="icon">
+                                        <img src="/dataloader/{{ $category->cover_id }}" alt="">
+                                    </div>
+                                    <div class="text"> {{ $category->translate }} </div>
+                                </a>
+                            </li>
+                        @endforeach
+                    @else
                     <li>
                         <a href="#" class="single-cat-item">
                             <div class="icon">
@@ -83,6 +95,7 @@
                             <div class="text"> Pet Care </div>
                         </a>
                     </li>
+                    @endif
                 </ul>
                 <a href="#" class="morecate-btn"><i class="uil uil-apps"></i>More Categories</a>
             </div>
