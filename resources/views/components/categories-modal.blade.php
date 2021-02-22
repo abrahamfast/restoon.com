@@ -97,7 +97,6 @@
                     </li>
                     @endif
                 </ul>
-                <a href="#" class="morecate-btn"><i class="uil uil-apps"></i>More Categories</a>
             </div>
         </div>
     </div>
