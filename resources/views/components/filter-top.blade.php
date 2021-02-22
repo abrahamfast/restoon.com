@@ -1,6 +1,6 @@
 <div class="product-top-dt">
     <div class="product-left-title">
-        <h2>{{ $slug }}</h2>
+        <h2>{{ $lable }}</h2>
     </div>
     <a href="#" class="filter-btn pull-bs-canvas-right">Filters</a>
     <div class="product-sort">
