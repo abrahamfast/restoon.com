@@ -4,13 +4,25 @@
                     <div class="col-md-12">
                         <div class="main-title-tt">
                             <div class="main-title-left">
-                                <span>Shop By</span>
-                                <h2>Categories</h2>
+                                <span>{{ __('global.Shop By') }}</span>
+                                <h2>{{ __('global.Categories') }}</h2>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="owl-carousel cate-slider owl-theme">
+                        	@if($Categories)
+	                        	@foreach($Categories as $category)
+		                            <div class="item">
+		                                <a href="#" class="category-item">
+		                                    <div class="cate-img">
+		                                        <img src="/dataloader/{{$category->cover_id}}" alt="">
+		                                    </div>
+		                                    <h4>{{ $category->translate }}</h4>
+		                                </a>
+		                            </div>
+	                            @endforeach
+                        	@else
                             <div class="item">
                                 <a href="#" class="category-item">
                                     <div class="cate-img">
@@ -99,6 +111,7 @@
                                     <h4> Electronics </h4>
                                 </a>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>

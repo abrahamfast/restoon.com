@@ -6,6 +6,7 @@ use Illuminate\View\Component;
 
 class CategoriesSlider extends Component
 {
+    public $categories;
     /**
      * Create a new component instance.
      *
@@ -13,7 +14,7 @@ class CategoriesSlider extends Component
      */
     public function __construct()
     {
-        //
+        $this->categories = ProductCategories::where('deleted', 0)->get();
     }
 
     /**
