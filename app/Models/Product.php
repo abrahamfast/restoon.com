@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Model\Attachment;
 
 class Product extends Model
 {
@@ -19,6 +20,6 @@ class Product extends Model
 
     public function attachment()
     {
-    	return $this->hasMany(App\Model\Attachment::class);
+    	return $this->hasMany(Attachment::class);
     }
 }
