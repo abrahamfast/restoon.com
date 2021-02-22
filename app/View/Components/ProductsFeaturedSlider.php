@@ -7,15 +7,13 @@ use App\Models\Product;
 
 class ProductsFeaturedSlider extends Component
 {
-
-    public $where;
     public $products;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($where)
+    public function __construct()
     {
         $this->products = Product::all();
     }
