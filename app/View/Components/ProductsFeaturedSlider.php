@@ -3,17 +3,21 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\Product;
 
 class ProductsFeaturedSlider extends Component
 {
+
+    public $where;
+    public $products;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($where)
     {
-        //
+        $this->products = Product::all();
     }
 
     /**

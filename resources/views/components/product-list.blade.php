@@ -1,6 +1,6 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="product-item mb-30">
-                                <a href="single_product_view.html" class="product-img">
+                                <a href="/product/{{ $product->id }}" class="product-img">
                                     <img src="/dataloader/{{ $product->getCover() }}" alt="">
                                     <div class="product-absolute-options">
                                         @if($product->discount)
