@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('components')
-	<x-fillter-option/>
+	<x-fillter-options/>
 @stop
 
 @section('wrapper')
