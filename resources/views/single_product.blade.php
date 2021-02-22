@@ -20,9 +20,10 @@
                     </div>
                 </div>
                 <div class="row">
-                	<x-product-single-like-this/>
+                	<x-product-single-more-like-this/>
                 	<x-product-single-detail-bottom :product="$product"/>
                 </div>
+                <x-products-featured-slider/>
             </div>
         </div>
 @stop
