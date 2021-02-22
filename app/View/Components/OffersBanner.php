@@ -3,9 +3,11 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\Offer;
 
 class OffersBanner extends Component
 {
+    public $banners;
     /**
      * Create a new component instance.
      *
@@ -13,7 +15,7 @@ class OffersBanner extends Component
      */
     public function __construct()
     {
-        //
+        $this->banners = Offer::where('activate', 1)->get();
     }
 
     /**

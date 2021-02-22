@@ -3,22 +3,26 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="owl-carousel offers-banner owl-theme">
-                            <div class="item">
-                                <div class="offer-item">
-                                    <div class="offer-item-img">
-                                        <div class="gambo-overlay"></div>
-                                        <img src="images/banners/offer-1.jpg" alt="">
-                                    </div>
-                                    <div class="offer-text-dt">
-                                        <div class="offer-top-text-banner">
-                                            <p>6% Off</p>
-                                            <div class="top-text-1">Buy More & Save More</div>
-                                            <span>Fresh Vegetables</span>
-                                        </div>
-                                        <a href="#" class="Offer-shop-btn hover-btn">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                        	@if($banners)
+	                        	@foreach($banners as $banner)
+		                            <div class="item">
+		                                <div class="offer-item">
+		                                    <div class="offer-item-img">
+		                                        <div class="gambo-overlay"></div>
+		                                        <img src="/dataloader/{{ $banner->cover_id }}" alt="">
+		                                    </div>
+		                                    <div class="offer-text-dt">
+		                                        <div class="offer-top-text-banner">
+		                                            <p>6% Off</p>
+		                                            <div class="top-text-1">Buy More & Save More</div>
+		                                            <span>{{ $banner->name }}</span>
+		                                        </div>
+		                                        <a href="#" class="Offer-shop-btn hover-btn">{{ __('global.Shop Now') }}</a>
+		                                    </div>
+		                                </div>
+		                            </div>
+	                            @endforeach
+                            @else
                             <div class="item">
                                 <div class="offer-item">
                                     <div class="offer-item-img">
@@ -83,6 +87,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
