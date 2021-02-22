@@ -3,9 +3,11 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\Offer;
 
 class BestOffers extends Component
 {
+    public $offers;
     /**
      * Create a new component instance.
      *
@@ -13,7 +15,7 @@ class BestOffers extends Component
      */
     public function __construct()
     {
-        //
+        $this->offers = Offer::where('activate', 1)->where('layout', 'thumbnail')->get();
     }
 
     /**
