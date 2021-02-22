@@ -29,9 +29,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="second-row-item">
                             <h4>{{ __('global.category') }}</h4>
-                            @if($categoires)
+                            @if($categories)
                             	<ul>
-                            		@foreach($categoires as $category)
+                            		@foreach($categories as $category)
                             			<li><a href="/category/{{ $category->slug }}">{{ $category->name}}</a></li>
                             		@endforeach
                             	</ul>
