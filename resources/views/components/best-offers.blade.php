@@ -25,7 +25,7 @@
 	                    		<div class="col-lg-4 col-md-6">
 	                    @endswitch
 		                        <a href="#" class="best-offer-item">
-		                            <img src="images/best-offers/offer-1.jpg" alt="">
+		                            <img src="/dataloader/{{ $offer->cover_id }}" alt="">
 		                        </a>
 		                    </div>
 	                    @endforeach
