@@ -3,7 +3,7 @@
 @section('wrapper')
 
 <div class="all-product-grid">
-	<x-breadcrumb/>
+	<x-breadcrumb :slug="$slug"/>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
