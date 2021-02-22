@@ -22,4 +22,12 @@ class Product extends Model
     {
     	return $this->hasMany(Attachment::class, 'parent_id');
     }
+
+    public function getCover()
+    {
+    	$covers = $this->attachment()->get();
+    	if($covers) return $covers[0]->id;
+
+    	return 'default.png';
+    }
 }

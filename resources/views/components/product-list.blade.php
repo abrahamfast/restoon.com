@@ -1,7 +1,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="product-item mb-30">
                                 <a href="single_product_view.html" class="product-img">
-                                    <img src="/dataloader/{{ $product->cover_id }}" alt="">
+                                    <img src="/dataloader/{{ $product->getCover() }}" alt="">
                                     <div class="product-absolute-options">
                                         <span class="offer-badge-1">6% off</span>
                                         <span class="like-icon" title="wishlist"></span>
