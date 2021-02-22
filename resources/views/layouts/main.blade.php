@@ -29,6 +29,7 @@
 <x-categories-modal/>
 <x-search-modal/>
 <x-cart/>
+@yield('components')
 <x-main-header/>
 <!-- wrapper -->
 <div class="wrapper">

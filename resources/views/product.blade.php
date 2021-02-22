@@ -1,9 +1,12 @@
 @extends('layouts.main')
 
-@section('wrapper')
+@section('components')
+	<x-fillter-option/>
+@stop
 
-<div class="all-product-grid">
-	<x-breadcrumb :slug="$slug"/>
+@section('wrapper')
+<x-breadcrumb :slug="$slug"/>
+<div class="all-product-grid">	
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
