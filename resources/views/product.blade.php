@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-				<x-filter-top />
+				<x-filter-top :slug="$slug"/>
 			</div>
 		</div>
 	    <div class="wrapper">
