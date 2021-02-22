@@ -12,4 +12,10 @@ return [
 	"Shop By" => 'محصولات بر اساس',
 	"Shop Now" => 'دسته بندی',
 	"Select Category" => 'انتخاب دسته بندی',
+	"Useful Links" => 'پیوند‌ها',
+	"category" => 'دسته بندی',
+	'About US' => 'درباره ما',
+	'Contact Us' => 'تماس با ما',
+	'Faq' => 'سوالات متداول',
+	'Careers' => 'مشاغل'
 ];
