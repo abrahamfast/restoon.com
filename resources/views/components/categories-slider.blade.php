@@ -11,8 +11,8 @@
                     </div>
                     <div class="col-md-12">
                         <div class="owl-carousel cate-slider owl-theme">
-                        	@if($Categories)
-	                        	@foreach($Categories as $category)
+                        	@if($categories)
+	                        	@foreach($categories as $category)
 		                            <div class="item">
 		                                <a href="#" class="category-item">
 		                                    <div class="cate-img">
