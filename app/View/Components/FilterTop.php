@@ -6,15 +6,15 @@ use Illuminate\View\Component;
 
 class FilterTop extends Component
 {
-    public $slug;
+    public $lable;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($slug)
+    public function __construct($lable)
     {
-        $this->slug = $slug;
+        $this->lable = $lable;
     }
 
     /**
