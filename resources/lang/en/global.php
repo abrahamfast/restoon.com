@@ -6,6 +6,7 @@ return [
 	"Featured Products" => "پیشنهاد ویژه",
 	"New Products" => "محصولات جدید",
 
+	"Top Cities" => "مناطق تحت پوشش",
 	"tehran" => "تهران",
 
 	"Shop Now" => 'همنی الان خرید کنید',

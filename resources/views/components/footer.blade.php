@@ -53,14 +53,7 @@
                         <div class="second-row-item">
                             <h4>Top Cities</h4>
                             <ul>
-                                <li><a href="#">Gurugram</a></li>
-                                <li><a href="#">New Delhi</a></li>
-                                <li><a href="#">Bangaluru</a></li>
-                                <li><a href="#">Mumbai</a></li>
-                                <li><a href="#">Hyderabad</a></li>
-                                <li><a href="#">Kolkata</a></li>
-                                <li><a href="#">Ludhiana</a></li>
-                                <li><a href="#">Chandigrah</a></li>
+                                <li><a href="/">{{ __('global.tehran') }}</a></li>
                             </ul>
                         </div>
                     </div>
