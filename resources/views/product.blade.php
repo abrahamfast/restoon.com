@@ -15,7 +15,7 @@
 			    <div class="row">
 			    	@if($products)
 			    		@foreach($products as $product)
-			    			<x-product-list  :products="$product" />
+			    			<x-product-list  :product="$product" />
 			    		@endforeach
 			    	@endif
 			    </div>
