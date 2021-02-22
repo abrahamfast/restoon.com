@@ -13,7 +13,7 @@
 		                                    </div>
 		                                    <div class="offer-text-dt">
 		                                        <div class="offer-top-text-banner">
-		                                            <p>6% Off</p>
+		                                            <p>{{ $banner->off_banner }}٪ تخفیف</p>
 		                                            <div class="top-text-1">Buy More & Save More</div>
 		                                            <span>{{ $banner->name }}</span>
 		                                        </div>

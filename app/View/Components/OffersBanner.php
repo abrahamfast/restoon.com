@@ -15,7 +15,7 @@ class OffersBanner extends Component
      */
     public function __construct()
     {
-        $this->banners = Offer::where('activate', 1)->get();
+        $this->banners = Offer::where('activate', 1)->where('layout', 'slider')->get();
     }
 
     /**
