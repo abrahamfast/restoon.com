@@ -14,7 +14,7 @@
                     @if($categories)
                         @foreach($categories as $category)
                             <li>
-                                <a href="#" class="single-cat-item">
+                                <a href="/category/{{$category->slug}}" class="single-cat-item">
                                     <div class="icon">
                                         <img src="/dataloader/{{ $category->cover_id }}" alt="">
                                     </div>

@@ -14,7 +14,7 @@
                         	@if($categories)
 	                        	@foreach($categories as $category)
 		                            <div class="item">
-		                                <a href="#" class="category-item">
+		                                <a href="/category/{{$category->slug}}" class="category-item">
 		                                    <div class="cate-img">
 		                                        <img src="/dataloader/{{$category->cover_id}}" alt="">
 		                                    </div>

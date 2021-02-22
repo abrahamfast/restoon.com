@@ -3,17 +3,23 @@
                                 <a href="single_product_view.html" class="product-img">
                                     <img src="/dataloader/{{ $product->getCover() }}" alt="">
                                     <div class="product-absolute-options">
-                                        <span class="offer-badge-1">{{ $product->discount }}% تخفیف</span>
+                                        @if($product->discount)
+                                            <span class="offer-badge-1">{{ $product->discount }}% تخفیف</span>
+                                        @endif
                                         <span class="like-icon" title="wishlist"></span>
                                     </div>
                                 </a>
                                 <div class="product-text-dt">
-                                    <p>Available<span>(In Stock)</span></p>
+                                    @if($product->status == 'Available')
+                                        <p>موجود<span>(در انبار)</span></p>
+                                    @else
+                                        <p>ناموجود</p>
+                                    @endif
                                     <h4>{{ $product->name }}</h4>
                                     @if($product->discount)
-                                        <div class="product-price">{{ $product->cost_price }}</div>
-                                    @else
                                         <div class="product-price">{{ $product->discount_price }} <span>{{ $product->cost_price }}</span></div>
+                                    @else
+                                        <div class="product-price">{{ $product->cost_price }}</div>
                                     @endif
                                     <div class="qty-cart">
                                         <div class="quantity buttons_added">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\ProductCategories;
 
 class ProductController extends Controller
 {
@@ -15,11 +16,12 @@ class ProductController extends Controller
     public function index($slug)
     {
         // get categories by slug
-        $products = Product::all();
+        $category = ProductCategories::where('slug', $slug)->first();
+        $products = Product::where('category_id', $category->id)->get();
 
         return view('product', [
             'products' => $products,
-            'slug' => $slug
+            'slug' => $category->translate
         ]);
     }
 
