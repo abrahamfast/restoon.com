@@ -31,7 +31,9 @@
 <x-cart/>
 <x-main-header/>
 <!-- wrapper -->
-@yield('wrapper')
+<div class="wrapper">
+    @yield('wrapper')
+</div>
 <!-- footer -->
     <footer class="footer">
         <div class="footer-first-row">
