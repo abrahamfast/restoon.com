@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Attachment;
+use App\Models\ProductCategories;
 
 class Product extends Model
 {
@@ -20,7 +21,7 @@ class Product extends Model
 
     public function category()
     {
-        return $this->hasOne(ProductCategories::class);
+        return ProductCategories::find($this->category_id);
     }
 
     public function attachment()

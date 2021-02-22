@@ -5,7 +5,7 @@
 @stop
 
 @section('wrapper')
-		<x-breadcrumb :slug="$product->getCategory()" />
+		<x-breadcrumb :slug="$product->category()->name" />
 
         <div class="all-product-grid">
             <div class="container">
