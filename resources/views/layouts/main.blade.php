@@ -47,6 +47,7 @@
     <script src="/vendor/semantic/semantic.min.js"></script>
     <script src="/js/jquery.countdown.min.js"></script>
     <script src="/js/custom.js"></script>
+    @stack('js')
     <script src="/js/offset_overlay.js"></script>
     <script src="/js/night-mode.js"></script>
 </body>

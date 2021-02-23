@@ -16,3 +16,7 @@
     	</div>
     @endif
 </div>
+
+@push('js')
+<script src="/js/product.thumbnail.slider.js"></script>
+@endpush
