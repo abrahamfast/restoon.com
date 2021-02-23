@@ -32,23 +32,17 @@
         </div>
         <p class="pp-descp">{{ $product->description }}</p>
         <div class="product-group-dt">
-            @if($product->discount)
-                                        <div class="product-price">{{ $product->discount_price }} <span>{{ $product->cost_price }}</span></div>
-                                    @else
-                                        <div class="product-price">{{ $product->cost_price }}</div>
-                                    @endif
-
             <ul>
                 @if($product->discount)
                     <li>
-                        <div class="main-price color-discount">Discount Price<span>{{ $product->discount_price }}</span></div>
+                        <div class="main-price color-discount">{{ __('global.Discount Price') }}<span>{{ $product->discount_price }}</span></div>
                     </li>
                     <li>
-                        <div class="main-price mrp-price">MRP Price<span>{{ $product->cost_price }}</span></div>
+                        <div class="main-price mrp-price">{{ __('global.MRP Price') }}<span>{{ $product->cost_price }}</span></div>
                     </li>
                 @else
                     <li>
-                        <div class="main-price color-discount">قیمت: <span>$15</span></div>
+                        <div class="main-price color-discount">قیمت: <span>{{ $product->cost_price }}</span></div>
                     </li>
                 @endif
             </ul>

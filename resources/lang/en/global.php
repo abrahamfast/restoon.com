@@ -3,8 +3,11 @@
 return [
 	"Home" => "صفحه اصلی",
 	"contact" => "تماس با ما",
+	"Top Featured Products" => "پیشنهاد ویژه",
 	"Featured Products" => "پیشنهاد ویژه",
 	"New Products" => "محصولات جدید",
+	"for you" => "برای شما",
+	"See All" => "تمایش همه",
 
 	"Top Cities" => "مناطق تحت پوشش",
 	"tehran" => "تهران",
@@ -22,6 +25,9 @@ return [
 	"Privacy Policy" => "سیاست حفظ حریم خصوصی",
 	"Term & Conditions" => "شرایط و ضوابط",
 	"Refund & Return Policy" => "بازپرداخت و سیاست بازگشت",
+
+	"Discount Price" => "قیمت تخفیف خورده",
+	"MRP Price" => "قیمت",
 
 
 	"Lowest Price Guaranteed" => "تضمین کمترین قیمت",
