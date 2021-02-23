@@ -33,7 +33,9 @@ return [
 	"Lowest Price Guaranteed" => "تضمین کمترین قیمت",
 	"Get difference refunded if you find it cheaper anywhere else" => "در صورتی که این قیمت را در هرجای دیگر ارزان تر دریافت کنید ، بازپرداخت می شود.",
 	"Easy Returns & Refunds" => "بازگشت آسان و بازپرداخت",
-	"Return products at doorstep and get refund in seconds" => "محصولات را در آستان برگردانید و در عرض چند ثانیه بازپرداخت کنید."
+	"Return products at doorstep and get refund in seconds" => "محصولات را در آستان برگردانید و در عرض چند ثانیه بازپرداخت کنید.",
+
+	"Product Details" => "جزییات محصول"
 
 
 

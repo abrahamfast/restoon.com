@@ -5,7 +5,7 @@
 @stop
 
 @section('wrapper')
-		<x-breadcrumb :slug="$product->category()->translate" />
+		<x-breadcrumb :slug="$product->category()->translate" :link="$product->category()->slug" :lable="$product->name"/>
 
         <div class="all-product-grid">
             <div class="container">
