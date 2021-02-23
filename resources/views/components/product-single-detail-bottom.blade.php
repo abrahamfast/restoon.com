@@ -1,4 +1,4 @@
-<div class="col-lg-8 col-md-12">
+<div class="col-lg-12 col-md-12">
     <div class="pdpt-bg">
         <div class="pdpt-title">
             <h4>Product Details</h4>

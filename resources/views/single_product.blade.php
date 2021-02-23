@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="row">
-                	<x-product-single-more-like-this/>
+                	{{-- <x-product-single-more-like-this/> --}}
                 	<x-product-single-detail-bottom :product="$product"/>
                 </div>
             </div>
