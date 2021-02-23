@@ -2,7 +2,7 @@
     <div class="product-dt-right">
         <h2>{{ $product->name }}</h2>
         <div class="no-stock">
-            <p class="pd-no">کد محصولا: <span>{{ $product->partNumber }}</span></p>
+            <p class="pd-no">کد محصولا: <span>{{ $product->part_number }}</span></p>
             @if($product->status == 'Available')
                 <p class="stock-qty">موجود<span>(در انبار)</span></p>
             @else
@@ -75,8 +75,8 @@
                     <div class="pdp-group-dt">
                         <div class="pdp-icon"><i class="uil uil-usd-circle"></i></div>
                         <div class="pdp-text-dt">
-                            <span>Lowest Price Guaranteed</span>
-                            <p>Get difference refunded if you find it cheaper anywhere else.</p>
+                            <span>{{ __('global.Lowest Price Guaranteed') }}</span>
+                            <p>{{ __('global.Get difference refunded if you find it cheaper anywhere else') }}</p>
                         </div>
                     </div>
                 </li>
@@ -84,8 +84,8 @@
                     <div class="pdp-group-dt">
                         <div class="pdp-icon"><i class="uil uil-cloud-redo"></i></div>
                         <div class="pdp-text-dt">
-                            <span>Easy Returns & Refunds</span>
-                            <p>Return products at doorstep and get refund in seconds.</p>
+                            <span>{{ __('global.Easy Returns & Refunds') }}</span>
+                            <p>{{ __('global.Return products at doorstep and get refund in seconds') }}</p>
                         </div>
                     </div>
                 </li>

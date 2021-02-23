@@ -4,7 +4,7 @@
             <h4>Product Details</h4>
         </div>
         <div class="pdpt-body scrollstyle_4">
-            <div claspdct-dtss="-1">
+            <div class="pdct-dts-1">
                 {!! $product->detail !!}
             </div>
         </div>

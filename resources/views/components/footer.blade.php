@@ -32,7 +32,7 @@
                             @if($categories)
                             	<ul>
                             		@foreach($categories as $category)
-                            			<li><a href="/category/{{ $category->slug }}">{{ $category->name}}</a></li>
+                            			<li><a href="/category/{{ $category->slug }}">{{ $category->translate}}</a></li>
                             		@endforeach
                             	</ul>
                             @endif
@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="second-row-item">
-                            <h4>Top Cities</h4>
+                            <h4>{{ __('global.Top Cities') }}</h4>
                             <ul>
                                 <li><a href="/">{{ __('global.tehran') }}</a></li>
                             </ul>
@@ -62,10 +62,10 @@
                             <h4>Download App</h4>
                             <ul>
                                 <li>
-                                    <a href="#"><img class="download-btn" src="images/download-1.svg" alt=""></a>
+                                    <a href="#"><img class="download-btn" src="/images/download-1.svg" alt=""></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img class="download-btn" src="images/download-2.svg" alt=""></a>
+                                    <a href="#"><img class="download-btn" src="/images/download-2.svg" alt=""></a>
                                 </li>
                             </ul>
                         </div>
@@ -74,19 +74,19 @@
                             <div class="footer-payments">
                                 <ul id="paypal-gateway" class="financial-institutes">
                                     <li class="financial-institutes__logo">
-                                        <img alt="Visa" title="Visa" src="images/footer-icons/pyicon-6.svg">
+                                        <img alt="Visa" title="Visa" src="/images/footer-icons/pyicon-6.svg">
                                     </li>
                                     <li class="financial-institutes__logo">
-                                        <img alt="Visa" title="Visa" src="images/footer-icons/pyicon-1.svg">
+                                        <img alt="Visa" title="Visa" src="/images/footer-icons/pyicon-1.svg">
                                     </li>
                                     <li class="financial-institutes__logo">
-                                        <img alt="MasterCard" title="MasterCard" src="images/footer-icons/pyicon-2.svg">
+                                        <img alt="MasterCard" title="MasterCard" src="/images/footer-icons/pyicon-2.svg">
                                     </li>
                                     <li class="financial-institutes__logo">
-                                        <img alt="American Express" title="American Express" src="images/footer-icons/pyicon-3.svg">
+                                        <img alt="American Express" title="American Express" src="/images/footer-icons/pyicon-3.svg">
                                     </li>
                                     <li class="financial-institutes__logo">
-                                        <img alt="Discover" title="Discover" src="images/footer-icons/pyicon-4.svg">
+                                        <img alt="Discover" title="Discover" src="/images/footer-icons/pyicon-4.svg">
                                     </li>
                                 </ul>
                             </div>
@@ -108,15 +108,15 @@
                     <div class="col-md-12">
                         <div class="footer-bottom-links">
                             <ul>
-                                <li><a href="about_us.html">About</a></li>
-                                <li><a href="contact_us.html">Contact</a></li>
-                                <li><a href="privacy_policy.html">Privacy Policy</a></li>
-                                <li><a href="term_and_conditions.html">Term & Conditions</a></li>
-                                <li><a href="refund_and_return_policy.html">Refund & Return Policy</a></li>
+                            	<li><a href="/about">{{ __('global.About US') }}</a></li>
+                                <li><a href="/contact">{{ __('global.Contact Us') }}</a></li>
+                                <li><a href="/privacy">{{ __('global.Privacy Policy') }}</a></li>
+                                <li><a href="/term">{{ __('global.Term & Conditions') }}</a></li>
+                                <li><a href="/refund">{{ __('global.Refund & Return Policy') }}</a></li>
                             </ul>
                         </div>
                         <div class="copyright-text">
-                            <i class="uil uil-copyright"></i>Copyright 2020 <b>Gambolthemes</b> . All rights reserved
+                            <i class="uil uil-copyright"></i>Copyright 2020 <b>RESTOON</b> . All rights reserved
                         </div>
                     </div>
                 </div>
