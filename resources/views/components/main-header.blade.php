@@ -47,8 +47,8 @@
                     <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu" id="navbarSupportedContent">
                         <ul class="navbar-nav main_nav align-self-stretch">
                             <li class="nav-item"><a href="/" class="nav-link active" title="Home">{{ __('global.Home') }}</a></li>
-                            <li class="nav-item"><a href="/product/newest" class="nav-link new_item" title="New Products">{{ __('global.New Products') }}</a></li>
-                            <li class="nav-item"><a href="/product/top" class="nav-link" title="Featured Products">{{ __('global.Featured Products') }}</a></li>
+                            <li class="nav-item"><a href="/newest" class="nav-link new_item" title="New Products">{{ __('global.New Products') }}</a></li>
+                            <li class="nav-item"><a href="/special" class="nav-link" title="Featured Products">{{ __('global.Featured Products') }}</a></li>
                             <li class="nav-item"><a href="/contact" class="nav-link" title="Contact">{{ __('global.contact') }}</a></li>
                         </ul>
                     </div>

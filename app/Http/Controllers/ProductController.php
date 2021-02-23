@@ -31,7 +31,17 @@ class ProductController extends Controller
 
         return view('product', [
             'products' => $products,
-            'slug' => __('New Products')
+            'slug' => __('global.New Products')
+        ]);
+    }
+
+    public function special()
+    {
+        $products = Product::all();
+
+        return view('product', [
+            'products' => $products,
+            'slug' => __('global.Featured Products')
         ]);
     }
 
