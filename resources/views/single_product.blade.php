@@ -5,7 +5,7 @@
 @stop
 
 @section('wrapper')
-		<x-breadcrumb :slug="$product->category()->name" />
+		<x-breadcrumb :slug="$product->category()->translate" />
 
         <div class="all-product-grid">
             <div class="container">
@@ -23,7 +23,8 @@
                 	<x-product-single-more-like-this/>
                 	<x-product-single-detail-bottom :product="$product"/>
                 </div>
-                <x-products-featured-slider/>
             </div>
         </div>
+        
+        <x-products-featured-slider/>
 @stop
