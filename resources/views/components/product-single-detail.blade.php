@@ -1,9 +1,14 @@
 <div class="col-lg-8 col-md-8">
     <div class="product-dt-right">
-        <h2>Grape Fruit Turkey</h2>
+        <h2>{{ $product->name }}</h2>
         <div class="no-stock">
-            <p class="pd-no">Product No.<span>12345</span></p>
-            <p class="stock-qty">Available<span>(Instock)</span></p>
+            <p class="pd-no">کد محصولا: <span>{{ $product->partNumber }}</span></p>
+            @if($product->status == 'Available')
+                <p class="stock-qty">موجود<span>(در انبار)</span></p>
+            @else
+                <p class="stock-qty">ناموجود</p>
+                <p>ناموجود</p>
+            @endif
         </div>
         <div class="product-radio">
             <ul class="product-now">
@@ -25,16 +30,27 @@
                 </li>
             </ul>
         </div>
-        <p class="pp-descp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate, purus at tempor blandit, nulla felis dictum eros, sed volutpat odio sapien id lectus. Cras mollis massa ac congue posuere. Fusce viverra
-            mauris vel magna pretium aliquet. Nunc tincidunt, velit id tempus tristique, velit dolor hendrerit nibh, at scelerisque neque mauris sed ex.</p>
+        <p class="pp-descp">{{ $product->description }}</p>
         <div class="product-group-dt">
+            @if($product->discount)
+                                        <div class="product-price">{{ $product->discount_price }} <span>{{ $product->cost_price }}</span></div>
+                                    @else
+                                        <div class="product-price">{{ $product->cost_price }}</div>
+                                    @endif
+
             <ul>
-                <li>
-                    <div class="main-price color-discount">Discount Price<span>$15</span></div>
-                </li>
-                <li>
-                    <div class="main-price mrp-price">MRP Price<span>$18</span></div>
-                </li>
+                @if($product->discount)
+                    <li>
+                        <div class="main-price color-discount">Discount Price<span>{{ $product->discount_price }}</span></div>
+                    </li>
+                    <li>
+                        <div class="main-price mrp-price">MRP Price<span>{{ $product->cost_price }}</span></div>
+                    </li>
+                @else
+                    <li>
+                        <div class="main-price color-discount">قیمت: <span>$15</span></div>
+                    </li>
+                @endif
             </ul>
             <ul class="gty-wish-share">
                 <li>
