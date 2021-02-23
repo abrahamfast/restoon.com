@@ -2,11 +2,11 @@
     <div class="top-header-group">
         <div class="top-header">
             <div class="res_main_logo">
-                <a href="#"><img src="/images/dark-logo-1.svg" alt=""></a>
+                <a href="#"><img src="/images/dark-logo-1.png" alt=""></a>
             </div>
             <div class="main_logo" id="logo">
-                <a href="#"><img src="/images/logo.svg" alt=""></a>
-                <a href="#"><img class="logo-inverse" src="images/dark-logo.svg" alt=""></a>
+                <a href="#"><img src="/images/logo.png" alt=""></a>
+                <a href="#"><img class="logo-inverse" src="images/dark-logo.png" alt=""></a>
             </div>
             <x-select-location/>
             <div class="search120">
@@ -26,7 +26,7 @@
                         <a href="/offer" class="offer-link"><i class="uil uil-gift"></i>تخفیفات</a>
                     </li>
                     <li>
-                        <a href=/faq" class="offer-link"><i class="uil uil-question-circle"></i>راهنما</a>
+                        <a href="/faq" class="offer-link"><i class="uil uil-question-circle"></i>راهنما</a>
                     </li>
                     <li>
                         <x-wishlist-button-counter />
