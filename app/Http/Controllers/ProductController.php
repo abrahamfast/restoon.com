@@ -25,6 +25,16 @@ class ProductController extends Controller
         ]);
     }
 
+    public function newest()
+    {
+        $products = Product::all();
+
+        return view('product', [
+            'products' => $products,
+            'slug' => __('New Products')
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
