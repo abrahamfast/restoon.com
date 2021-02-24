@@ -1,0 +1,7 @@
+
+@font-face {
+    font-family:"Aviny";
+    src:url("aviny.woff2") format("woff2"),url("aviny.woff") format("woff"),url("aviny.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        
