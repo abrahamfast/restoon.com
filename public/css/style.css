@@ -2034,7 +2034,8 @@ img.download-btn {
     border-radius: 0;
     font-size: 14px;
     font-weight: 500;
-    color: #8f91ac
+    color: #8f91ac;
+    direction: rtl;
 }
 .gambo-Breadcrumb .breadcrumb .breadcrumb-item a {
     color: #8f91ac!important
@@ -2063,10 +2064,20 @@ img.download-btn {
     text-align: left;
     padding-top: 3px
 }
+.product-right-title {
+    float: right
+}
+.product-right-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2f4c;
+    text-align: right;
+    padding-top: 3px
+}
 .filter-btn {
     font-size: 14px;
     font-weight: 500;
-    float: right;
+    float: left;
     display: block;
     height: 40px;
     width: 110px;
@@ -2090,7 +2101,7 @@ img.download-btn {
     background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
 }
 .product-sort {
-    float: right;
+    float: left;
     margin-right: 10px;
     margin-top: 1px
 }

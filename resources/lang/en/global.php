@@ -36,7 +36,17 @@ return [
 	"Easy Returns & Refunds" => "بازگشت آسان و بازپرداخت",
 	"Return products at doorstep and get refund in seconds" => "محصولات را در آستان برگردانید و در عرض چند ثانیه بازپرداخت کنید.",
 
-	"Product Details" => "جزییات محصول"
+	"Product Details" => "جزییات محصول",
+
+	// filter option
+	"Popularity" => "محبوبیت",
+	"Price - Low to High" => "قیمت - کم تا زیاد",
+	"Price - High to Low" => "قیمت - بالا به پایین",
+	"Alphabetical" => "حروف الفبا",
+	"Saving - High to Low" => "محبوبیت",
+	"Popularity" => "محبوبیت",
+	"Off - High to Low" => "٪ تخفیف - زیاد به کم",
+	"Filters" => "فیلترها"
 
 
 
