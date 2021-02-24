@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import('/fonts/style.css')
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap') html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -7,6 +6,78 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+}
+@font-face {
+    font-family: "Iran Yekan Light";
+    src: url("/fonts/yekan/light/iran-yekan-light.eot");
+    src: url("/fonts/yekan/light/iran-yekan-light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/yekan/light/iran-yekan-light.woff") format("woff"),
+    url("/fonts/yekan/light/iran-yekan-light.woff2") format("woff2"),
+    url("/fonts/yekan/light/iran-yekan-light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Iran Yekan";
+    src: url("/fonts/yekan/normal/iran-yekan-normal.eot");
+    src: url("/fonts/yekan/normal/iran-yekan-normal.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/yekan/normal/iran-yekan-normal.woff") format("woff"),
+    url("/fonts/yekan/normal/iran-yekan-normal.woff2") format("woff2"),
+    url("/fonts/yekan/normal/iran-yekan-normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Iran Yekan Bold";
+    src: url("/fonts/yekan/bold/iran-yekan-bold.eot");
+    src: url("/fonts/yekan/bold/iran-yekan-bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/yekan/bold/iran-yekan-bold.woff") format("woff"),
+    url("/fonts/yekan/bold/iran-yekan-bold.woff2") format("woff2"),
+    url("/fonts/yekan/bold/iran-yekan-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Shabnam Light";
+    src: url("/fonts/shabnam/Shabnam-Light.eot");
+    src: url("/fonts/shabnam/Shabnam-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/shabnam/Shabnam-Light.woff") format("woff"),
+    url("/fonts/shabnam/Shabnam-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Shabnam";
+    src: url("/fonts/shabnam/Shabnam.eot");
+    src: url("/fonts/shabnam/Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/shabnam/Shabnam.woff") format("woff"),
+    url("/fonts/shabnam/Shabnam.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Shabnam Bold";
+    src: url("/fonts/shabnam/Shabnam-Bold.eot");
+    src: url("/fonts/shabnam/Shabnam-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/shabnam/Shabnam-Bold.woff") format("woff"),
+    url("/fonts/shabnam/Shabnam-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Tanha";
+    src: url("/fonts/tanha/Tanha.eot");
+    src: url("/fonts/tanha/Tanha.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/tanha/Tanha.woff") format("woff"),
+    url("/fonts/tanha/Tanha.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block
