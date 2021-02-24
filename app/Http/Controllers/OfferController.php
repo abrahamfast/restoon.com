@@ -12,7 +12,7 @@ class OfferController extends Controller
     	$offer = Offer::where('id', $id)->first();
 
     	return view('product', [
-    		'offer' => $offer->product()->get(),
+    		'products' => $offer->product()->get(),
     		'slug' => $offer->name
     	]);
     }
