@@ -3,11 +3,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-title-tt">
-                            <div class="main-title-left">
+                        	<a href="#" class="see-more-btn">{{ __('global.See All') }}</a>
+                            <div class="main-title-right">
                                 <span>{{ __('global.for you') }}</span>
                                 <h2>{{ __('global.Top Featured Products') }}</h2>
                             </div>
-                            <a href="#" class="see-more-btn">{{ __('global.See All') }}</a>
                         </div>
                     </div>
                     <div class="col-md-12">

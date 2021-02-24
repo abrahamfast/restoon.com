@@ -145,37 +145,37 @@ a {
 }
 h1 {
     font-size: 2em;
-    font-family: roboto, sans-serif!important;
+    font-family: "Iran Yekan Bold", roboto, sans-serif!important;
     line-height: 1.25
 }
 h2 {
     font-size: 1.625em;
-    font-family: roboto, sans-serif!important;
+    font-family: "Iran Yekan Bold", roboto, sans-serif!important;
     line-height: 1.15384615
 }
 h3 {
     font-size: 1.375em;
-    font-family: roboto, sans-serif!important;
+    font-family: "Iran Yekan Bold", roboto, sans-serif!important;
     line-height: 1.13636364
 }
 h4 {
     font-size: 1.125em;
-    font-family: roboto, sans-serif!important;
+    font-family: "Iran Yekan Bold", roboto, sans-serif!important;
     line-height: 1.11111111
 }
 h5 {
     font-size: 1.1em;
-    font-family: roboto, sans-serif!important;
+    font-family: "Iran Yekan Bold", roboto, sans-serif!important;
     line-height: 1.1
 }
 h6 {
     font-size: 1em;
-    font-family: roboto, sans-serif!important;
+    font-family: "Iran Yekan Bold", roboto, sans-serif!important;
     line-height: 1.05
 }
 blockquote {
     font-size: 1.25em;
-    font-family: roboto, sans-serif!important;
+    font-family: "Iran Yekan Bold", roboto, sans-serif!important;
     line-height: 1.25
 }
 @media(min-width:43.75em) {
@@ -1537,6 +1537,24 @@ i.icon1 {
     display: block
 }
 .main-title-left h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2f4c;
+    margin-top: 0;
+    display: block
+}
+.main-title-right {
+    margin-left: auto
+}
+.main-title-right span {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    color: #0edd16;
+    margin-bottom: 10px;
+    display: block
+}
+.main-title-right h2 {
     font-size: 24px;
     font-weight: 600;
     color: #2b2f4c;
