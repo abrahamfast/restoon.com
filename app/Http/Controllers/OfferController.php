@@ -9,10 +9,10 @@ class OfferController extends Controller
 {
     public function show($id)
     {
-    	$offer = Offer::where('id', $id)->get();
+    	$offer = Offer::where('id', $id)->first();
 
     	return view('product', [
-    		'offer' => $offer,
+    		'offer' => $offer->product()->get(),
     		'slug' => $offer->name
     	]);
     }
