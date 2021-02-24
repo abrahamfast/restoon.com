@@ -1018,7 +1018,7 @@
 .night-mode .thnk-ordr {
     color: #fff
 }
-.owl-item .item .offer-item {
+.owl-item .item, .offer-item, .item {
 	box-shadow: none !important;
 }
 .main-title-tt {
