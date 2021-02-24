@@ -24,7 +24,7 @@
 	                    	@default
 	                    		<div class="col-lg-4 col-md-6">
 	                    @endswitch
-		                        <a href="#" class="best-offer-item">
+		                        <a href="/offer/{{ $offer->id }}" class="best-offer-item">
 		                            <img src="/dataloader/{{ $offer->cover_id }}" alt="">
 		                        </a>
 		                    </div>
