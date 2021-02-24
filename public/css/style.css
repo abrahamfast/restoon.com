@@ -1529,6 +1529,7 @@ i.icon1 {
 }
 .main-title-tt {
     margin-bottom: 27px;
+    background: white;
     display: flex;
     align-items: flex-end;
     padding: 10px 30px 10px 30px;
