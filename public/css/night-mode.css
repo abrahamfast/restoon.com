@@ -1025,7 +1025,10 @@
 	background: black !important;
 	box-shadow: none !important;
 }
-
+.main-gambo-model {
+    background-image: -webkit-linear-gradient(left, #383e38d4, rgb(16 15 19 / 81%));
+    background-image: linear-gradient(to right, #383e38d4, rgb(16 15 19 / 81%));
+}
 .footer {
 	box-shadow: none !important;
 }
