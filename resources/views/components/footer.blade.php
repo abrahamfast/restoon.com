@@ -4,8 +4,8 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <ul class="call-email-alt">
-                            <li><a href="#" class="callemail"><i class="uil uil-dialpad-alt"></i>1800-000-000</a></li>
-                            <li><a href="#" class="callemail"><i class="uil uil-envelope-alt"></i><span class="__cf_email__" data-cfemail="b6dfd8d0d9f6d1d7dbd4d9c5c3c6d3c4dbd7c4ddd3c298d5d9db">[email&#160;protected]</span></a></li>
+                            <li><a href="tel:02122222222" class="callemail"><i class="uil uil-dialpad-alt"></i>02122222222</a></li>
+                            <li><a href="mail:pelkveer@gmail.com" class="callemail"><i class="uil uil-envelope-alt"></i><span class="__cf_email__" data-cfemail="b6dfd8d0d9f6d1d7dbd4d9c5c3c6d3c4dbd7c4ddd3c298d5d9db">[info&#160;restoon.ir]</span></a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="second-row-item-app">
-                            <h4>Download App</h4>
+                            <h4>{{ __('global.Download App') }}</h4>
                             <ul>
                                 <li>
                                     <a href="#"><img class="download-btn" src="/images/download-1.svg" alt=""></a>
@@ -70,7 +70,7 @@
                             </ul>
                         </div>
                         <div class="second-row-item-payment">
-                            <h4>Payment Method</h4>
+                            <h4>{{ __('global.Payment Method') }}</h4>
                             <div class="footer-payments">
                                 <ul id="paypal-gateway" class="financial-institutes">
                                     <li class="financial-institutes__logo">
@@ -92,9 +92,9 @@
                             </div>
                         </div>
                         <div class="second-row-item-payment">
-                            <h4>Newsletter</h4>
+                            <h4>{{ __('global.Newsletter') }}</h4>
                             <div class="newsletter-input">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control input-md" required="">
+                                <input id="email" name="email" type="text" placeholder="{{ __('global.Email Address') }}" class="form-control input-md" required="">
                                 <button class="newsletter-btn hover-btn" type="submit"><i class="uil uil-telegram-alt"></i></button>
                             </div>
                         </div>

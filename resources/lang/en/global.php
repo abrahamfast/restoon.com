@@ -37,6 +37,10 @@ return [
 	"Return products at doorstep and get refund in seconds" => "محصولات را در آستان برگردانید و در عرض چند ثانیه بازپرداخت کنید.",
 
 	"Product Details" => "جزییات محصول",
+	"Download App" => "دانلود اپ",
+	"Payment Method" => "روش‌های پرداخت",
+	"Newsletter" => "اطلاع از بار جدید",
+	"Email Address" => "شماره همراه خود را وارد کنید",
 
 	// filter option
 	"Popularity" => "محبوبیت",
