@@ -700,6 +700,9 @@ i.icon1 {
     display: flex;
     align-items: center
 }
+.navbar {
+    direction: rtl !important;
+}
 .navbar-light .main_nav .nav-link {
     color: #2b2f4c!important
 }
@@ -1445,18 +1448,22 @@ i.icon1 {
 .offers-banner .owl-stage-outer {
     overflow: visible!important
 }
+.owl-stage-outer {
+    padding-bottom: 11px;
+}
 .offer-item {
     background: #fff;
     padding: 5px;
-    border-radius: 5px;
-    position: relative
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 1px 14px 0 #e9e9e9;
 }
 .offer-item-img {
     position: relative;
     width: 100%
 }
 .offer-item-img img {
-    border-radius: 5px;
+    border-radius: 12px;
     width: 100%
 }
 .gambo-overlay {
@@ -1523,7 +1530,10 @@ i.icon1 {
 .main-title-tt {
     margin-bottom: 27px;
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    padding: 10px 30px 10px 30px;
+    border-radius: 12px;
+    box-shadow: 0 1px 14px 0 #e9e9e9;
 }
 .main-title-left {
     margin-right: auto
@@ -1562,7 +1572,7 @@ i.icon1 {
     display: block
 }
 .see-more-btn {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     font-size: 14px;
     font-weight: 500;
     color: #2b2f4c;
@@ -5452,6 +5462,9 @@ textarea {
     text-align: left;
     margin-bottom: 10px;
     color: #2b2f4c
+}
+.owl-item .item {
+    box-shadow: 0 1px 14px 0 #e9e9e9;
 }
 .item-prdct {
     font-size: 14px;

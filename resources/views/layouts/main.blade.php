@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=9">
-    <meta name="description" content="Gambolthemes">
-    <meta name="author" content="Gambolthemes">
-    <title>{{ $title?? ''}}</title>
+    <meta name="description" content="restoon stage">
+    <meta name="author" content="pelkio">
+    <title>{{ $title?? 'restoon stage development'}}</title>
 
     <link rel="icon" type="image/png" href="images/fav.png">
 

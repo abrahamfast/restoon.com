@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-title-tt">
-                            <div class="main-title-left">
+                            <div class="main-title-right">
                                 <span>تخفیف</span>
                                 <h2>بهترین پیشنهاد</h2>
                             </div>

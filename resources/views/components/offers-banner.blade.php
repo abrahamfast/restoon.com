@@ -17,7 +17,7 @@
 		                                            {{-- <div class="top-text-1">Buy More & Save More</div> --}}
 		                                            <span>{{ $banner->name }}</span>
 		                                        </div>
-		                                        <a href="/offer/{{ $banner->id }}" class="Offer-shop-btn hover-btn">{{ __('global.Shop Now') }}</a>
+		                                        <a href="/offer/{{ $banner->id }}" class="Offer-shop-btn hover-btn">{{ __('global.See Offer') }}</a>
 		                                    </div>
 		                                </div>
 		                            </div>

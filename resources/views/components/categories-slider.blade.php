@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-title-tt">
-                            <div class="main-title-left">
+                            <div class="main-title-right">
                                 <span>{{ __('global.Shop By') }}</span>
                                 <h2>{{ __('global.Categories') }}</h2>
                             </div>

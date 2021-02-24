@@ -11,10 +11,9 @@ return [
 
 	"Top Cities" => "مناطق تحت پوشش",
 	"tehran" => "تهران",
-
+	"See Offer" => "همین الان سفارش بدید",
 	"Shop Now" => 'همنی الان خرید کنید',
 	"Shop By" => 'محصولات بر اساس',
-	"Shop Now" => 'دسته بندی',
 	"Select Category" => 'انتخاب دسته بندی',
 	"Useful Links" => 'پیوند‌ها',
 	"category" => 'دسته بندی',
