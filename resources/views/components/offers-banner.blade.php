@@ -14,7 +14,7 @@
 		                                    <div class="offer-text-dt">
 		                                        <div class="offer-top-text-banner">
 		                                            <p>{{ $banner->off_banner }}٪ تخفیف</p>
-		                                            <div class="top-text-1">Buy More & Save More</div>
+		                                            {{-- <div class="top-text-1">Buy More & Save More</div> --}}
 		                                            <span>{{ $banner->name }}</span>
 		                                        </div>
 		                                        <a href="#" class="Offer-shop-btn hover-btn">{{ __('global.Shop Now') }}</a>

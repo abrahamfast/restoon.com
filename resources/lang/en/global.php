@@ -7,7 +7,7 @@ return [
 	"Featured Products" => "پیشنهاد ویژه",
 	"New Products" => "محصولات جدید",
 	"for you" => "برای شما",
-	"See All" => "تمایش همه",
+	"See All" => "نمایش همه",
 
 	"Top Cities" => "مناطق تحت پوشش",
 	"tehran" => "تهران",
@@ -18,6 +18,7 @@ return [
 	"Select Category" => 'انتخاب دسته بندی',
 	"Useful Links" => 'پیوند‌ها',
 	"category" => 'دسته بندی',
+	"Categories" => 'دسته بندی',
 	'About US' => 'درباره ما',
 	'Contact Us' => 'تماس با ما',
 	'Faq' => 'سوالات متداول',

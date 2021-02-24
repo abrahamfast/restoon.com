@@ -13,6 +13,11 @@ class Offer extends Model
 
     protected $guarded = [];
 
+    public function product()
+    {
+        return $this->belongsToMany(Product::class);
+    }
+
     protected $casts = [
     	'id' => 'string',
     	'cover_id' => 'string',
