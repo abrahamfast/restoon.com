@@ -7,9 +7,9 @@
 </button>
             </div>
             <div class="category-model-content modal-content">
-                <div class="cate-header">
+{{--                 <div class="cate-header">
                     <h4>{{ __('global.Select Category') }}</h4>
-                </div>
+                </div> --}}
                 <ul class="category-by-cat">
                     @if($categories)
                         @foreach($categories as $category)

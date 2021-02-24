@@ -787,8 +787,8 @@ i.icon1 {
     z-index: 999
 }
 .main-gambo-model {
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
+        background-image: -webkit-linear-gradient(left, #3cf943d4, rgb(76 70 255 / 81%));
+        background-image: linear-gradient(to right, #3cf943d4, rgb(76 70 255 / 81%));
 }
 .category-area-inner .modal-header {
     border-bottom: 0
@@ -803,7 +803,7 @@ i.icon1 {
 .category-model-content {
     background: #fff;
     border: 0!important;
-    border-radius: 0!important
+    border-radius: 30px !important
 }
 .catey__icon {
     display: none
