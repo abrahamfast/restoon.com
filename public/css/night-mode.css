@@ -1018,17 +1018,17 @@
 .night-mode .thnk-ordr {
     color: #fff
 }
-.owl-item .item, .offer-item, .item {
+.night-mode .owl-item .item,.night-mode  .offer-item,.night-mode .item {
 	box-shadow: none !important;
 }
-.main-title-tt {
+.night-mode .main-title-tt {
 	background: black !important;
 	box-shadow: none !important;
 }
-.main-gambo-model {
+.night-mode .main-gambo-model {
     background-image: -webkit-linear-gradient(left, #383e38d4, rgb(16 15 19 / 81%));
     background-image: linear-gradient(to right, #383e38d4, rgb(16 15 19 / 81%));
 }
-.footer {
+.night-mode .footer {
 	box-shadow: none !important;
 }
