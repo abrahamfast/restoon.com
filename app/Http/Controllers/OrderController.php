@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class ProfileController extends Controller
+class OrderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class ProfileController extends Controller
     {
         $user = User::first();
 
-        return view('profile', [
+        return view('order', [
             'user' => $user
         ]);
     }

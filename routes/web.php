@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
@@ -19,6 +20,7 @@ Route::get('contact', [ContactController::class, 'index']);
 
 
 Route::get('app/profile', [ProfileController::class, 'index']);
+Route::get('app/orders', [OrderController::class, 'index']);
 
 Auth::routes();
 
