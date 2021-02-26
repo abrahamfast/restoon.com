@@ -11,7 +11,17 @@
                 </div>
                 <div class="col-lg-9 col-md-8">
                     <div class="dashboard-right">
-                        <x-app.{{$view}}/>
+                        @switch($view)
+                            @case('overview')
+                                <x-app.overview/>
+                                @break
+                            @case('wishlist')
+                                <x-app.wishlist/>
+                                @break
+                           @default
+                            @break
+                        @endswitch
+
                     </div>
                 </div>
             </div>
