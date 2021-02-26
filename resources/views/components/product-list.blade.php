@@ -6,7 +6,7 @@
                                         @if($product->discount)
                                             <span class="offer-badge-1">{{ $product->discount }}% تخفیف</span>
                                         @endif
-                                        <span class="like-icon" title="wishlist"></span>
+                                        <span class="like-icon" title="wishlist" data-product-id="{{ $product->id }}"></span>
                                     </div>
                                 </a>
                                 <div class="product-text-dt">

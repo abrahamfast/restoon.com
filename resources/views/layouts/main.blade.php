@@ -8,6 +8,7 @@
     <meta name="description" content="restoon stage">
     <meta name="author" content="pelkio">
     <title>{{ $title?? 'restoon stage development'}}</title>
+    <meta name="csrf-token" value="{{ csrf_token() }}">
 
     <link rel="icon" type="image/png" href="images/fav.png">
 

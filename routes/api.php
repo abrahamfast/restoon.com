@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('auth:api')->get('/user/wishlist', function (Request $request) {
+	\App\Modles\Wishlist::create([
+		'user_frontend_id' => $request->user()->id,
+		'product_id' => $request->get('product_id')
+	]);
+	
+    return $request->user();
+});
