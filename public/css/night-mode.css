@@ -440,6 +440,7 @@
 .night-mode .gambo-Breadcrumb {
     background: #333;
     border-top: 1px solid #242424
+    box-shadow: none !important;
 }
 .night-mode .gambo-Breadcrumb .breadcrumb .breadcrumb-item a {
     color: #c7c7c7!important
