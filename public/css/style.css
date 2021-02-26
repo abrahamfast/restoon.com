@@ -484,7 +484,7 @@ i.icon1 {
 }
 .icon__1 {
     font-size: 18px;
-    margin-right: 10px
+    margin-left: 10px
 }
 .left_title {
     padding: 20px 17px 10px;
@@ -2131,6 +2131,9 @@ img.download-btn {
     font-weight: 400;
     color: #2b2f4c
 }
+.ui.dropdown .menu>.item {
+    text-align: right !important;
+}
 .ui.dropdown.vchrt-dropdown .menu>.item {
     color: #2b2f4c!important;
     font-weight: 400!important
@@ -3145,7 +3148,7 @@ label.control-label {
     font-size: 14px;
     font-weight: 400;
     color: #2b2f4c;
-    text-align: left;
+    text-align: right;
     align-items: center
 }
 .user-item:last-child {

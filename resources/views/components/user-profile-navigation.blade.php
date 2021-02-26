@@ -19,12 +19,12 @@
                 </span>
             </a>
         </div>
-        <a href="/app/overview" class="item channel_item"><i class="uil uil-apps icon__1"></i>{{ __('global.Dashboard') }}</a>
-        <a href="/app/orders" class="item channel_item"><i class="uil uil-box icon__1"></i>{{ __('global.My Orders') }}</a>
-        <a href="/app/wishlist" class="item channel_item"><i class="uil uil-heart icon__1"></i>{{ __('global.My Wishlist') }}</a>
-        <a href="/app/addresses" class="item channel_item"><i class="uil uil-location-point icon__1"></i>{{ __('global.My Address') }}</a>
-        <a href="/app/offers" class="item channel_item"><i class="uil uil-gift icon__1"></i>{{ __('global.Offers') }}</a>
-        <a href="/app/faq" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>{{ __('global.Faq') }}</a>
-        <a href="/app/logout" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>{{ __('global.Logout') }}</a>
+        <a href="/app/overview" class="item channel_item">{{ __('global.Dashboard') }}<i class="uil uil-apps icon__1"></i></a>
+        <a href="/app/orders" class="item channel_item">{{ __('global.My Orders') }}<i class="uil uil-box icon__1"></i></a>
+        <a href="/app/wishlist" class="item channel_item">{{ __('global.My Wishlist') }}<i class="uil uil-heart icon__1"></i></a>
+        <a href="/app/addresses" class="item channel_item">{{ __('global.My Address') }}<i class="uil uil-location-point icon__1"></i></a>
+        <a href="/app/offers" class="item channel_item">{{ __('global.Offers') }}<i class="uil uil-gift icon__1"></i></a>
+        <a href="/app/faq" class="item channel_item">{{ __('global.Faq') }}<i class="uil uil-info-circle icon__1"></i></a>
+        <a href="/app/logout" class="item channel_item">{{ __('global.Logout') }}<i class="uil uil-lock-alt icon__1"></i></a>
     </div>
 </li>
