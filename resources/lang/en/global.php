@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
 	"Home" => "صفحه اصلی",
@@ -49,7 +49,19 @@ return [
 	"Saving - High to Low" => "محبوبیت",
 	"Popularity" => "محبوبیت",
 	"Off - High to Low" => "٪ تخفیف - زیاد به کم",
-	"Filters" => "فیلترها"
+	"Filters" => "فیلترها",
+
+    // menu
+    "Night mode" => "حالت شب",
+    "panel" => "پنل کاربری",
+    "Dashboard" => "پنل کاربری",
+    "My Orders" => "سفارشات",
+    "My Wishlist" => "علاقه‌مندی‌ها",
+    "My Address" => "آدرس‌های من",
+    "Offers" => "تخفیفات",
+    "Faq" => "سوالات متداول",
+    "Logout" => "خروج",
+
 
 
 

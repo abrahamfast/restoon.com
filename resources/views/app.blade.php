@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-lg-9 col-md-8">
                     <div class="dashboard-right">
-                        <x-app.overview/>
+                        <x-app.{{$view}}/>
                     </div>
                 </div>
             </div>

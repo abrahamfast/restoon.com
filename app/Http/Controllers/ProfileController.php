@@ -16,8 +16,9 @@ class ProfileController extends Controller
     {
         $user = User::first();
 
-        return view('profile', [
-            'user' => $user
+        return view('app', [
+            'user' => $user,
+            'view' => 'overview'
         ]);
     }
 
