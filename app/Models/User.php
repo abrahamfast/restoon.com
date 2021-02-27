@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Wishlist::class, 'user_frontend_id');
     }
+
+    public function account()
+    {
+        return $this->hasOne(Account::class);
+    }
 }
