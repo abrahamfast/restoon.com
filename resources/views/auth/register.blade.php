@@ -34,7 +34,7 @@
                             @enderror
                         </div>
                         <div class="form-group pos_rel">
-                            <input id="phone[number]" value="{{ old('phone') }}" name="phone" type="text" placeholder="{{ __('global.phone') }}" class="form-control lgn_input" required="" value="{{ old('phone') }}">
+                            <input id="phone[number]" value="{{ old('phone') }}" name="phone" type="text" placeholder="{{ __('global.Phone Number') }}" class="form-control lgn_input" required="" value="{{ old('phone') }}">
                             <i class="uil uil-mobile-android-alt lgn_icon"></i>
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">

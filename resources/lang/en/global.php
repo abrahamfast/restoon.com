@@ -76,6 +76,13 @@ return [
     "Enter Code" => "کد ارسال شده را وارد کنید",
     "New Password" => "رمز عبور",
     "password confirm" => "رمز عبور را مجدد وارد کنید",
+    "Sign In" => "پنل کاربری",
+    "Enter Email Number" => "ایمیل کاربری",
+    "Enter Password" => "رمز عبور",
+    "Remember Me" => "به خاطر بسپار",
+    "Sign In Now" => "ورود به پنل کاربری",
+    "Sign Up Now" => "ثبت نام",
+    "Dont have an account" => "آیا اشتراک ندارید؟"
 
 
 
