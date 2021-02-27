@@ -829,7 +829,7 @@ i.icon1 {
 .search__btn {
     font-size: 20px;
     color: #fff!important;
-    padding: 20px 20px 21px;
+    padding: 20px 20px 19px;
     background: #2b2f4c
 }
 .cate-header {
@@ -3012,7 +3012,7 @@ label.control-label {
     color: #0edd16
 }
 .dashboard-group {
-    background: rgba(245, 93, 44, .3);
+    background: rgb(13 221 22 / 83%);
     position: relative;
     padding: 50px 0
 }
