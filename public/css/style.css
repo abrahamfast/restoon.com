@@ -2617,7 +2617,8 @@ label.control-label {
     color: #2b2f4c;
     border: 1px solid #efefef;
     position: relative;
-    padding: 0 1rem
+    padding: 0 1rem;
+    text-align: right;
 }
 .form-control:focus {
     outline: none!important;

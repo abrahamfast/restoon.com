@@ -46,6 +46,8 @@ class User extends Authenticatable
         'id' => 'string'
     ];
 
+    public $incrementing = false;
+
     public function wishlist()
     {
         return $this->hasMany(Wishlist::class, 'user_frontend_id');
