@@ -10,9 +10,9 @@
                             <label for="file"><i class="uil uil-camera-plus"></i></label>
                         </div>
                     </div>
-                    <h4>Johe Doe</h4>
-                    <p>+91999999999<a href="#"><i class="uil uil-edit"></i></a></p>
-                    <div class="earn-points"><img src="images/Dollar.svg" alt="">Points : <span>20</span></div>
+                    <h4>{{ $user->name }}</h4>
+                    <p>{{ $user->phone }}<a href="#"><i class="uil uil-edit"></i></a></p>
+                    <div class="earn-points"><img src="images/Dollar.svg" alt="">{{ __('global.Points') }} : <span>20</span></div>
                 </div>
             </div>
         </div>

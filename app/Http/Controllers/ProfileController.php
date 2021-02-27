@@ -22,10 +22,9 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $user = User::first();
-
+        $user = $request->user();
         return view('app', [
             'user' => $user,
             'view' => 'overview'

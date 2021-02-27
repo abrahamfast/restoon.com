@@ -82,7 +82,10 @@ return [
     "Remember Me" => "به خاطر بسپار",
     "Sign In Now" => "ورود به پنل کاربری",
     "Sign Up Now" => "ثبت نام",
-    "Dont have an account" => "آیا اشتراک ندارید؟"
+    "Dont have an account" => "آیا اشتراک ندارید؟",
+
+    // 
+    "Points" => "اتمیتاز",
 
 
 

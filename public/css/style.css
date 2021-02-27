@@ -1246,8 +1246,8 @@ i.icon1 {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
+    background-image: -webkit-linear-gradient(left, rgb(62 255 70), #4caf50);
+    background-image: linear-gradient(to right, rgb(62 255 70), #4caf50)
 }
 .quantity input::-webkit-outer-spin-button, .quantity input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -2386,8 +2386,8 @@ span.save-icon {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
+    background-image: -webkit-linear-gradient(left, rgb(62 255 70), #4caf50);
+    background-image: linear-gradient(to right, rgb(62 255 70), #4caf50)
 }
 .facebook {
     background: #3b5998;
@@ -3093,8 +3093,8 @@ label.control-label {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
+    background-image: -webkit-linear-gradient(left, rgb(62 255 70), #4caf50);
+    background-image: linear-gradient(to right, rgb(62 255 70), #4caf50)
 }
 .user-dt h4 {
     font-size: 24px;
@@ -3180,8 +3180,8 @@ label.control-label {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: -webkit-linear-gradient(left, rgb(62 255 70), #4caf50);
+    background-image: linear-gradient(to right, rgb(62 255 70), #4caf50);
     pointer-events: none
 }
 .user-item:first-child.active {
@@ -3918,8 +3918,8 @@ table {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: -webkit-linear-gradient(left, rgb(62 255 70), #4caf50);
+    background-image: linear-gradient(to right, rgb(62 255 70), #4caf50);
     border-color: inherit!important;
     border-top: 0!important;
     border-bottom: 0!important;
@@ -4766,8 +4766,8 @@ textarea {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
+    background-image: -webkit-linear-gradient(left, rgb(62 255 70), #4caf50);
+    background-image: linear-gradient(to right, rgb(62 255 70), #4caf50)
 }
 .blog-dt-vw {
     height: 80vh;
