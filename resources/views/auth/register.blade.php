@@ -73,13 +73,8 @@
                             @enderror
                         </div>
                         <div class="form-group pos_rel">
-                            <input id="password-confirm" name="password-confirm" type="password" placeholder="{{ __('global.password confirm') }}" class="form-control lgn_input" required="">
+                            <input id="password-confirm" name="password_confirmation" type="password" placeholder="{{ __('global.password confirm') }}" class="form-control lgn_input" required autocomplete="new-password">
                             <i class="uil uil-padlock lgn_icon"></i>
-                            @error('password-confirm')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
                         </div>
                         <button class="login-btn hover-btn" type="submit">{{ __('global.Sign Up Now') }}</button>
                     </form>
