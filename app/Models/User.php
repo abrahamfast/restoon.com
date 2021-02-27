@@ -43,7 +43,8 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'id' => 'string'
+        'id' => 'string',
+	'account_id' => 'string'
     ];
 
     public $incrementing = false;
@@ -55,6 +56,6 @@ class User extends Authenticatable
 
     public function account()
     {
-        return $this->hasOne(Account::class);
+        return $this->hasOne(Account::class, 'id', 'account_id');
     }
 }
