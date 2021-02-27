@@ -62,6 +62,22 @@ return [
     "Faq" => "سوالات متداول",
     "Logout" => "خروج",
 
+    // forms
+    "Sign Up" => "عضویت",
+    "Full name" => "نام کامل",
+    "Email Address" => "ایمیل",
+    "Phone Number" => "شماره همراه",
+    "Send" => "دریافت کد",
+    "Resend Code" => "ارسال مجدد کد",
+    "Sign Up Now" => "ثبت نام",
+    "I have an account?" => "آیا اشتراک دارید؟ ",
+    "Sign In Now" => "پنل کاربری",
+    "Enter Code" => "کد ارسال شده را وارد کنید",
+    "New Password" => "رمز عبور",
+    "password confirm" => "رمز عبور را مجدد وارد کنید",
+
+
+
 
 
 

@@ -19,7 +19,7 @@
                 </span>
             </a>
         </div>
-        <a href="/app/overview" class="item channel_item">{{ __('global.Dashboard') }}<i class="uil uil-apps icon__1"></i></a>
+        <a href="/app" class="item channel_item">{{ __('global.Dashboard') }}<i class="uil uil-apps icon__1"></i></a>
         <a href="/app/orders" class="item channel_item">{{ __('global.My Orders') }}<i class="uil uil-box icon__1"></i></a>
         <a href="/app/wishlist" class="item channel_item">{{ __('global.My Wishlist') }}<i class="uil uil-heart icon__1"></i></a>
         <a href="/app/addresses" class="item channel_item">{{ __('global.My Address') }}<i class="uil uil-location-point icon__1"></i></a>
