@@ -1,4 +1,4 @@
-n@extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
 <div class="col-lg-5">
