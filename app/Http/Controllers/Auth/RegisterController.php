@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use DB;
 
 class RegisterController extends Controller
 {
@@ -66,7 +67,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-        DB::insert('insert into user_frontend (id, name, email, phone, password) values (?, ?)', [
+        DB::insert('insert into user_frontend (id, name, email, phone, password) values (?, ?, ?, ?, ?)', [
             'id' => uniqid() . substr(md5(rand()), 0, 4),
             'name' => $data['name'],
             'email' => $data['email'],
