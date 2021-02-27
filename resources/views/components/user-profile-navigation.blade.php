@@ -25,6 +25,10 @@
         <a href="/app/addresses" class="item channel_item">{{ __('global.My Address') }}<i class="uil uil-location-point icon__1"></i></a>
         <a href="/app/offers" class="item channel_item">{{ __('global.Offers') }}<i class="uil uil-gift icon__1"></i></a>
         <a href="/app/faq" class="item channel_item">{{ __('global.Faq') }}<i class="uil uil-info-circle icon__1"></i></a>
-        <a href="/app/logout" class="item channel_item">{{ __('global.Logout') }}<i class="uil uil-lock-alt icon__1"></i></a>
+        <a href="{{ route('logout') }}" class="item channel_item"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">{{ __('global.Logout') }}<i class="uil uil-lock-alt icon__1"></i></a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
     </div>
 </li>
