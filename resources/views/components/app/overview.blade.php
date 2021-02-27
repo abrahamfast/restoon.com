@@ -1,10 +1,10 @@
 <div class="row">
     <div class="col-md-12">
         <div class="main-title-tab">
-            <h4><i class="uil uil-apps"></i>{{ __('globla.Overview') }}</h4>
+            <h4><i class="uil uil-apps"></i>{{ __('global.Overview') }}</h4>
         </div>
         <div class="welcome-text">
-            <h2>{{ __('global.hi') }}: {{ $user->name }}</h2>
+            <h2>{{ __('global.Hi') }}: {{ $user->name }}</h2>
         </div>
     </div>
     <div class="col-lg-12 col-md-12">

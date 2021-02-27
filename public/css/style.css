@@ -2505,7 +2505,8 @@ span.save-icon {
     padding: 15px 20px;
     font-size: 16px;
     font-weight: 600;
-    color: #2b2f4c
+    color: #2b2f4c;
+    text-align: right;
 }
 .border_radius:last-child {
     border-bottom-left-radius: 5px;
@@ -3197,7 +3198,7 @@ label.control-label {
     font-size: 18px;
     font-weight: 700;
     color: #2b2f4c;
-    text-align: left;
+    text-align: right;
     margin-bottom: 0;
     margin-top: 0
 }
@@ -3208,7 +3209,7 @@ label.control-label {
     font-size: 24px;
     font-weight: 500;
     color: #2b2f4c;
-    text-align: left;
+    text-align: right;
     margin-bottom: 3px!important;
     margin-top: 30px!important
 }
@@ -3216,9 +3217,9 @@ label.control-label {
     padding: 20px
 }
 .ddsh-body h2 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: right;
     color: #2b2f4c;
     font-weight: 500
 }
