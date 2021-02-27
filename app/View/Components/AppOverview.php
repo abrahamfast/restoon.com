@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class AppOverview extends Component
 {
+    public $user;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user)
     {
-        //
+        $this->user = $user;
     }
 
     /**

@@ -25,6 +25,7 @@ class ProfileController extends Controller
     public function index(Request $request)
     {
         $user = $request->user();
+        
         return view('app', [
             'user' => $user,
             'view' => 'overview'

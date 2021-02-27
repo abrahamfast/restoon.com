@@ -2,7 +2,7 @@
 
 @section('wrapper')
     <x-breadcrumb :slug="'User Profile'"/>
-    <x-app.user />
+    <x-app.user :user="$user" />
     <div class="">
         <div class="container">
             <div class="row">
