@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('wrapper')
 <div class="col-lg-5">
     <div class="sign-form">
         <div class="sign-inner">
