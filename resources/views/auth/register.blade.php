@@ -25,7 +25,7 @@
                             @enderror
                         </div>
                         <div class="form-group pos_rel">
-                            <input id="email[address]" name="email" type="email" placeholder="{{ __('global.Email Address') }}" class="form-control lgn_input @error('email') is-invalid @enderror" value="{{ old('emailAddress') }}"  required="">
+                            <input id="email[address]" name="email" type="email" placeholder="{{ __('global.Email Address') }}" class="form-control lgn_input @error('email') is-invalid @enderror" value="{{ old('email') }}"  required="">
                             <i class="uil uil-envelope lgn_icon"></i>
                              @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -34,15 +34,15 @@
                             @enderror
                         </div>
                         <div class="form-group pos_rel">
-                            <input id="phone[number]" value="{{ old('phoneNumber') }}" name="phoneNumber" type="text" placeholder="{{ __('global.phoneNumber') }}" class="form-control lgn_input" required="" value="{{ old('phoneNumber') }}">
+                            <input id="phone[number]" value="{{ old('phone') }}" name="phone" type="text" placeholder="{{ __('global.phone') }}" class="form-control lgn_input" required="" value="{{ old('phone') }}">
                             <i class="uil uil-mobile-android-alt lgn_icon"></i>
-                            @error('phoneNumber')
+                            @error('phone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
                         </div>
-                        <div class="form-group pos_rel">
+{{--                         <div class="form-group pos_rel">
                             <label class="control-label">{{ __('global.Enter Code') }}</label>
                             <ul class="code-alrt-inputs signup-code-list">
                                 <li>
@@ -62,11 +62,11 @@
                                 </li>
                             </ul>
                             <a href="#" class="resend-link">{{ __('global.Resend Code') }}</a>
-                        </div>
+                        </div> --}}
                         <div class="form-group pos_rel">
                             <input id="password" name="password" type="password" placeholder="{{ __('global.New Password') }}" class="form-control lgn_input" required="">
                             <i class="uil uil-padlock lgn_icon"></i>
-                            @error('password1')
+                            @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -75,7 +75,7 @@
                         <div class="form-group pos_rel">
                             <input id="password-confirm" name="password-confirm" type="password" placeholder="{{ __('global.password confirm') }}" class="form-control lgn_input" required="">
                             <i class="uil uil-padlock lgn_icon"></i>
-                            @error('password1')
+                            @error('password-confirm')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
