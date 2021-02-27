@@ -84,12 +84,20 @@ return [
     "Sign Up Now" => "ثبت نام",
     "Dont have an account" => "آیا اشتراک ندارید؟",
 
-    // 
-    "Points" => "اتمیتاز",
-
-
-
-
-
+    // profile
+    "Points" => "امتیاز",
+    "Overview" => "جزییات کاربری",
+    "Hi" => "سلام",
+    "My Account" => "اطلاع اشتراک",
+    "Edit" => "ویرایش اطلاع کاربری	",
+    "FUll Name" => "نام کارمل",
+    "Phone Number" => "شماره تماس",
+    "Email" => "ایمیل",
+    "Register On" => "تاریخ عضویت",
+    "shipping_address_street" => "آدرس حمل و نقل",
+    "shipping_address_city" => "شهر",
+    "shipping_address_state" => "منطقه",
+    "shipping_address_country" => "کشور",
+    "shipping_address_postal_code" => "کد پستی",
 
 ];

@@ -10,7 +10,7 @@
                     <div class="dashboard-right">
                         @switch($view)
                             @case('overview')
-                                <x-app.overview/>
+                                <x-app.overview :user="$user"/>
                                 @break
                             @case('wishlist')
                                 <x-app.wishlist/>
