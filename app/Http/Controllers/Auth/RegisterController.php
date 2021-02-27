@@ -66,21 +66,12 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-
-        DB::insert('insert into user_frontend (id, name, email, phone, password) values (?, ?, ?, ?, ?)', [
+        User::create([
             'id' => uniqid() . substr(md5(rand()), 0, 4),
             'name' => $data['name'],
             'email' => $data['email'],
             'phone' => $data['phone'],
             'password' => Hash::make($data['password']),
         ]);
-
-        // User::create([
-        //     'id' => uniqid() . substr(md5(rand()), 0, 4),
-        //     'name' => $data['name'],
-        //     'email' => $data['email'],
-        //     'phone' => $data['phone'],
-        //     'password' => Hash::make($data['password']),
-        // ]);
     }
 }
