@@ -2612,7 +2612,7 @@ label.control-label {
 }
 .checout-address-step .form-control {
     font-size: 14px;
-    font-family: roboto, sans-serif;
+    font-family: "Iran Yekan", sans-serif !important;
     font-weight: 500;
     color: #2b2f4c;
     border: 1px solid #efefef;
@@ -5194,6 +5194,7 @@ textarea {
 .login-btn {
     font-size: 14px;
     font-weight: 500;
+    font-family: "Iran Yekan" !important;
     width: 100%;
     height: 40px;
     border: 0;
@@ -5213,8 +5214,8 @@ textarea {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
+    background-image: -webkit-linear-gradient(left,  #3f51b5, #9c27b0);
+    background-image: linear-gradient(to right, #3f51b5, #9c27b0);
 }
 .signup-link p {
     color: #fff;
