@@ -100,4 +100,15 @@ return [
     "shipping_address_country" => "کشور",
     "shipping_address_postal_code" => "کد پستی",
 
+    // Cart
+    "Cart" => "سبد خرید",
+    "My Cart" => "سبد خرید من",
+    "Your cart Super Market price" => "قیمت کالاها",
+    "Delivery Charges" => "هزینه ارسال",
+
+    "Items" => "مورد",
+    "Total" => "مجموع",
+    "Total Saving" => "ذخیره شما",
+    "Proceed to Checkout" => "رزرو کردن"
+
 ];
