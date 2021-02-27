@@ -63,6 +63,7 @@ return [
     "Logout" => "خروج",
 
     // forms
+    "register" => "عضویت",
     "Sign Up" => "عضویت",
     "Full name" => "نام کامل",
     "Email Address" => "ایمیل",

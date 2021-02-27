@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
 @section('wrapper')
 <div class="col-lg-5">
@@ -16,7 +16,7 @@
                             <h6>{{ __('global.register') }}</h6>
                         </div>
                         <div class="form-group pos_rel">
-                            <input id="full[name]" name="fullName"  type="text" placeholder="{{ __('global.Full name') }}" class="form-control lgn_input @error('name') is-invalid @enderror" value="{{ old('name') }}" required="">
+                            <input id="full[name]" name="name"  type="text" placeholder="{{ __('global.Full name') }}" class="form-control lgn_input @error('name') is-invalid @enderror" value="{{ old('name') }}" required="">
                             <i class="uil uil-user-circle lgn_icon"></i>
                             @error('fullName')
                                 <span class="invalid-feedback" role="alert">
@@ -25,7 +25,7 @@
                             @enderror
                         </div>
                         <div class="form-group pos_rel">
-                            <input id="email[address]" name="emailAddress" type="email" placeholder="{{ __('global.Email Address') }}" class="form-control lgn_input @error('name') is-invalid @enderror" value="{{ old('emailAddress') }}"  required="">
+                            <input id="email[address]" name="email" type="email" placeholder="{{ __('global.Email Address') }}" class="form-control lgn_input @error('email') is-invalid @enderror" value="{{ old('emailAddress') }}"  required="">
                             <i class="uil uil-envelope lgn_icon"></i>
                              @error('email')
                                 <span class="invalid-feedback" role="alert">
