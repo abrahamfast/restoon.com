@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\ProductCategories;
 
 class FillterOptions extends Component
 {
