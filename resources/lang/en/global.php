@@ -109,6 +109,8 @@ return [
     "Items" => "مورد",
     "Total" => "مجموع",
     "Total Saving" => "ذخیره شما",
-    "Proceed to Checkout" => "رزرو کردن"
+    "Proceed to Checkout" => "ادامه پردازش",
+    "Add to Cart" => "اضافه به سبد",
+    "Order Now" => "سفارش این محصول"
 
 ];

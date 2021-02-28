@@ -2480,14 +2480,16 @@ span.save-icon {
     font-weight: 500;
     color: #2b2f4c;
     margin-bottom: 10px;
-    display: block
+    display: block;
+    text-align: right;
 }
 .pdp-text-dt p {
     font-size: 14px;
     font-weight: 400;
     color: #3e3f5e;
     margin-bottom: 0;
-    line-height: 26px
+    line-height: 26px;
+    text-align: right;
 }
 .pay__logo {
     display: inline-block;
@@ -2539,6 +2541,7 @@ span.save-icon {
     color: #3e3f5e;
     line-height: 26px;
     text-align: right;
+    direction: rtl;
 }
 .product_attr {
     font-size: 14px;

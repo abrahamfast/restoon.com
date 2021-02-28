@@ -59,8 +59,8 @@
                 <li><span class="like-icon save-icon" title="wishlist"></span></li>
             </ul>
             <ul class="ordr-crt-share">
-                <li><button class="add-cart-btn hover-btn"><i class="uil uil-shopping-cart-alt"></i>Add to Cart</button></li>
-                <li><button class="order-btn hover-btn">Order Now</button></li>
+                <li><button class="add-cart-btn hover-btn"><i class="uil uil-shopping-cart-alt"></i>{{ __('global.Add to Cart') }}</button></li>
+                <li><button class="order-btn hover-btn">{{ __('global.Order Now') }}</button></li>
             </ul>
         </div>
         <div class="pdp-details">
