@@ -111,6 +111,12 @@ return [
     "Total Saving" => "ذخیره شما",
     "Proceed to Checkout" => "ادامه پردازش",
     "Add to Cart" => "اضافه به سبد",
-    "Order Now" => "سفارش این محصول"
+    "Order Now" => "سفارش این محصول",
+    "Categories" => "دسته بندی",
+    "all category" => "همه دسته بندی‌ها",
+    "Price" => "قیمت",
+    "Discount filter" => "بر اساس تخفیف",
+    "Pack Size" => "اندازه بسته",
+    "Filters" => "فیلترها"
 
 ];
