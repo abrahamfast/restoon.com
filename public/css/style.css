@@ -1934,6 +1934,10 @@ span.like-icon {
     text-align: right;
     margin-bottom: 17px
 }
+.second-row-item ul {
+    float: right;
+    text-align: right;
+}
 .second-row-item ul li {
     display: block;
     padding-bottom: 9px
@@ -1967,7 +1971,7 @@ span.like-icon {
     color: #2b2f4c;
     font-size: 18px;
     font-weight: 500;
-    text-align: left;
+    text-align: right;
     margin-bottom: 17px
 }
 .second-row-item-app ul li {
@@ -1993,7 +1997,7 @@ img.download-btn {
     color: #3e3f5e;
     font-size: 13px;
     font-weight: 500;
-    text-align: left;
+    text-align: right;
     line-height: 24px;
     position: relative;
     bottom: 0;
@@ -2033,7 +2037,7 @@ img.download-btn {
     color: #2b2f4c;
     font-size: 18px;
     font-weight: 700;
-    text-align: left;
+    text-align: right;
     margin-bottom: 17px
 }
 .gambo-Breadcrumb {
@@ -2524,14 +2528,14 @@ span.save-icon {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 12px;
-    text-align: left
+    text-align: right;
 }
 .pdct-dt-step p {
     font-size: 14px;
     font-weight: 400;
     color: #3e3f5e;
     line-height: 26px;
-    text-align: left
+    text-align: right;
 }
 .product_attr {
     font-size: 14px;
@@ -3350,7 +3354,7 @@ label.control-label {
 .newsletter-btn {
     background: #0edd16;
     position: absolute;
-    right: 2px;
+    left: 2px;
     top: 3px;
     height: 35px;
     border: 0;
@@ -3361,12 +3365,12 @@ label.control-label {
 }
 .newsletter-input .form-control {
     font-size: 14px;
-    font-family: roboto, sans-serif;
+    font-family: "Iran Yekan", sans-serif;
     font-weight: 500;
     color: #2b2f4c;
     border: 1px solid #efefef;
     position: relative;
-    padding: 0 3rem 0 1rem;
+    padding: 0 1rem 0 3rem;
     height: 40px
 }
 .pdpt-title h6 {
