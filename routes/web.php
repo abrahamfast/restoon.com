@@ -14,8 +14,11 @@ Route::get('product/{id}', [ProductController::class, 'show']);
 Route::get('offer/{id}', [OfferController::class, 'show']);
 Route::get('newest', [ProductController::class, 'newest']);
 Route::get('special', [ProductController::class, 'special']);
-
 Route::get('contact', [ContactController::class, 'index']);
+
+
+Route::get('cart/add/{id}', [CartController::class, 'add']);
+Route::get('cart/reset', [CartController::class, 'add']);
 
 Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app', [ProfileController::class, 'index']);

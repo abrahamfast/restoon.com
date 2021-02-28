@@ -48,6 +48,36 @@ $(document).ready(function() {
         $(this).children('.like-icon').toggleClass('liked');
     });
 });
+
+$(document).ready(function() {
+    $('.addcart').on('click', function(e) {
+        e.preventDefault();
+        console.log(this);
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        var formData = {
+            product_id: $('#like-icon').val()
+        };
+
+        $.ajax({
+            type: 'post',
+            url: '/user/cart',
+            data: formData,
+            success: function(data){
+                console.log(data);
+            }, 
+            error: function(data){
+                console.log(data);
+            }
+        })
+
+        $(this).toggleClass('liked');
+        $(this).children('.like-icon').toggleClass('liked');
+    });
+});
 $(document).ready(function() {
     var fixHeight = function() {
         $(".navbar-nav").css("max-height", document.documentElement.clientHeight - 8000);

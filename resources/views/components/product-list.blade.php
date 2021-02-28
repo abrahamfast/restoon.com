@@ -30,7 +30,7 @@
                                                 <input type="button" value="+" class="plus plus-btn">
                                             </form>
                                         </div>
-                                        <span class="cart-icon"><i class="uil uil-shopping-cart-alt"></i></span>
+                                        <span class="cart-icon"><i class="uil uil-shopping-cart-alt" data-product-id="{{ $product->id }}"></i></span>
                                     </div>
                                 </div>
                             </div>
