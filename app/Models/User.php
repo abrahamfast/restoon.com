@@ -59,8 +59,12 @@ class User extends Authenticatable
         return $this->hasOne(Account::class, 'id', 'account_id');
     }
 
+    /**
+     * this related between quote, user & account tables.
+     * account_id is related key in both tables.
+     */
     public function quote()
     {
-        return $this->hasMany(Quote::class, 'account_id');
+        return $this->hasMany(Quote::class, 'account_id', 'account_id');
     }
 }

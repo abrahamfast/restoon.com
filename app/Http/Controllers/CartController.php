@@ -18,6 +18,39 @@ class CartController extends Controller
 
     public function add(Request $request)
     {
+        $user = $request->user();
+
+        if($user){
+            // get Presented or 
+            // @TODO check just one 
+            // confuse more than 1 quote
+            $quote = $user->quote()->where('status', 'In Review')->first();
+            // get product
+            $product = Product::where('id', $request->get('id'))->first();
+            // Discount from List
+            if($product->price_type == 'Discount fromList'){
+                $discont = ($product->list_price * "0.$product->pricing_factor") - $product->list_price;
+                $amount = $product->list_price - $discont;
+                $amount = $amount * $request->get('quantity');
+            }
+            QuoteItem::create([
+                'quantity' => $request->get('quantity'),
+                'list_price' => $product->list_price,
+                'unit_price' => $product->unit_price,
+                'discont' => $discont,
+                'amount' => $amount,
+                'unit_weight' => '1',
+                'weight' => $request->get('quantity'),
+                'order' => $quote->items()->count() + 1,
+                'list_price_currency' => 'IRR',
+                'unit_price_currency' => 'IRR',
+                'amount_currency' => 'IRR',
+                'quote_id' => $qoute->id,
+                'account_id' => $user->account_id,
+                'product_id' => $product->id,
+            ]);
+
+        }
         ddd($request->all());
         // check exists qoute
         // create or update qoute
