@@ -38,13 +38,10 @@
     </div>
     <div class="sub-header-group">
         <div class="sub-header">
-            <div class="search__icon order-1">
+            <div class="search__icon">
                 <a href="" class="search__btn hover-btn" data-toggle="modal" data-target="#search_model" title="Search"><i class="uil uil-search"></i></a>
             </div>
             <x-cart-button/>
-            <div class="ui dropdown">
-                <a href="#" class="category_drop hover-btn" data-toggle="modal" data-target="#category_model" title="Categories"><i class="uil uil-apps"></i><span class="cate__icon">دسته بندی</span></a>
-            </div>
             <nav class="navbar navbar-expand-lg navbar-light py-3">
                 <div class="container-fluid">
                     <button class="navbar-toggler menu_toggle_btn" type="button" data-target="#navbarSupportedContent"><i class="uil uil-bars"></i></button>
@@ -60,6 +57,9 @@
             </nav>
             <div class="catey__icon">
                 <a href="#" class="cate__btn" data-toggle="modal" data-target="#category_model" title="Categories"><i class="uil uil-apps"></i></a>
+            </div>
+            <div class="ui dropdown">
+                <a href="#" class="category_drop hover-btn" data-toggle="modal" data-target="#category_model" title="Categories"><i class="uil uil-apps"></i><span class="cate__icon">دسته بندی</span></a>
             </div>
 
 
