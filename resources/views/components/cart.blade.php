@@ -15,7 +15,9 @@
                 </div>
             </div>
             <div class="side-cart-items">
-                <x-cart-item />
+                @foreach($quote_items as $quote_itam)
+                    <x-cart-item :item="$quote_itam" />
+                @endforeach
             </div>
         </div>
         <div class="bs-canvas-footer">

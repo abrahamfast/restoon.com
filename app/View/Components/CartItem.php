@@ -3,17 +3,19 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use Auth;
 
 class CartItem extends Component
 {
+    public $quote_item;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($quote_item)
     {
-        //
+        $this->quote_item = $quote_item;
     }
 
     /**

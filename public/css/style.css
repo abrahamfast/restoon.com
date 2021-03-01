@@ -1076,12 +1076,13 @@ i.icon1 {
     display: inline-block;
     margin-bottom: 0;
     margin-left: auto;
+    text-align: right;
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
     background: #0edd16;
-    font-weight: 500
+    font-weight: 500;
 }
 .cart-item {
     display: flex;
@@ -1306,7 +1307,6 @@ i.icon1 {
     font-size: 16px;
     font-weight: 500;
     text-align: right;
-    margin-left: 200px;
 }
 .bs-canvas-body {
     background: #f9f9f9;

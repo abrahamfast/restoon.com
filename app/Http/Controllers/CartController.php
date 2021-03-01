@@ -29,36 +29,34 @@ class CartController extends Controller
             $quote = $user->quote()->where('status', 'In Review')->first();
             // get product
             $product = Product::where('id', $request->get('id'))->first();
-            // Discount from List
-            if($product->price_type == 'Discount fromList'){
-                $discont = ($product->list_price * "0.$product->pricing_factor") - $product->list_price;
-                $amount = $product->list_price - $discont;
-                $amount = $amount * $request->get('quantity');
-            }
             QuoteItem::create([
+                'id' => uniqid() . substr(md5(rand()), 0, 4),
                 'quantity' => $request->get('quantity'),
                 'list_price' => $product->list_price,
                 'unit_price' => $product->unit_price,
-                'discont' => $discont,
-                'amount' => $amount,
+                'discount' => $product->getDiscount(),
+                'amount' => $product->getAmount(),
                 'unit_weight' => '1',
                 'weight' => $request->get('quantity'),
                 'order' => $quote->items()->count() + 1,
                 'list_price_currency' => 'IRR',
                 'unit_price_currency' => 'IRR',
                 'amount_currency' => 'IRR',
-                'quote_id' => $qoute->id,
+                'quote_id' => $quote->id,
                 'account_id' => $user->account_id,
                 'product_id' => $product->id,
             ]);
 
         }
-        ddd($request->all());
+        
+
         // check exists qoute
         // create or update qoute
         // check items exists
         // added items into qoute
         // status qoute to open
+
+        return redirect()->back();
     }
 
     /**

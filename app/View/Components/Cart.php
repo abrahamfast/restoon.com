@@ -6,6 +6,8 @@ use Illuminate\View\Component;
 
 class Cart extends Component
 {
+    public $quote;
+    public $quote_items;
     /**
      * Create a new component instance.
      *
@@ -13,7 +15,9 @@ class Cart extends Component
      */
     public function __construct()
     {
-        //
+        $user = Auth::user();
+        $this->quote = $user->quote()->where('status', 'In Review')->first();
+        $this->quote_items = $this->quote->items()->get();
     }
 
     /**
