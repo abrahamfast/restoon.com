@@ -988,7 +988,7 @@ i.icon1 {
 }
 .main-cart-title {
     font-size: 18px;
-    font-weight: 600
+    font-weight: 600;
 }
 .main-cart-title span {
     color: #f69733;
@@ -1302,8 +1302,8 @@ i.icon1 {
 .main-cart-title {
     font-size: 16px;
     font-weight: 500;
-    float: right;
     text-align: right;
+    margin-left: 200px;
 }
 .bs-canvas-body {
     background: #f9f9f9;

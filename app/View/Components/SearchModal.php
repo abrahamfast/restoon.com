@@ -7,7 +7,7 @@ use App\Models\ProductCategories;
 
 class SearchModal extends Component
 {
-    protected $categories;
+    public $categories;
     /**
      * Create a new component instance.
      *

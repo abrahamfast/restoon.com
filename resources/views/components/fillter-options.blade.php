@@ -83,7 +83,7 @@
             </div>
             <div class="filter-items">
                 <div class="filtr-cate-title">
-                    <h4>{{ __('Pack Size') }}</h4>
+                    <h4>{{ __('global.Pack Size') }}</h4>
                 </div>
                 <div class="price-pack-item-body scrollstyle_4">
                     <div class="brand-list">
