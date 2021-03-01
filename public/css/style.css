@@ -720,7 +720,7 @@ i.icon1 {
     color: #0edd16!important
 }
 .header_cart {
-    margin-left: auto
+    margin-right: auto
 }
 .cart__btn {
     color: #fff!important;
@@ -755,7 +755,7 @@ i.icon1 {
     color: #2b2f4c;
     position: relative;
     font-weight: 500;
-    border-right: 1px solid #efefef
+    border-left: 1px solid #efefef
 }
 .category_drop i {
     margin-right: 10px
@@ -806,7 +806,6 @@ i.icon1 {
 .category-model-content {
     background: #fff;
     border: 0!important;
-    border-radius: 30px !important
 }
 .catey__icon {
     display: none
@@ -905,7 +904,7 @@ i.icon1 {
 }
 .search-header button {
     position: absolute;
-    right: 0;
+    left: 0;
     background: 0 0;
     border: 0;
     padding: 17px;
@@ -929,7 +928,8 @@ i.icon1 {
     margin-bottom: 0;
     -webkit-transition: all .25s;
     transition: all .25s;
-    padding: 15px 20px
+    direction: rtl;
+    padding: 15px 20px;
 }
 .search-by-cat .single-cat .icon {
     background-color: #f9f9f9;
@@ -947,8 +947,9 @@ i.icon1 {
 .search-by-cat .single-cat .text {
     color: #2b2f4c;
     font-weight: 400;
-    padding-left: 20px;
-    font-size: 16px
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: right;
 }
 .search-by-cat .single-cat:hover .text {
     color: #0edd16
@@ -1705,10 +1706,10 @@ span.like-icon {
     width: 100%;
     display: block;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 8px;
     text-align: center;
     padding: 15px;
-    box-shadow: 0 1px 14px 0 #e9e9e9
+    box-shadow: 0 1px 4px 0 #e9e9e9
 }
 .product-img {
     width: 100%;

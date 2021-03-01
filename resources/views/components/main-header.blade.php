@@ -12,7 +12,7 @@
             <div class="search120">
                 <div class="ui search">
                     <div class="ui left icon input swdh10">
-                        <input class="prompt srch10" type="text" placeholder="Search for products..">
+                        <input class="prompt srch10" type="text" placeholder="{{ __('global.Search for products') }}">
                         <i class='uil uil-search-alt icon icon1'></i>
                     </div>
                 </div>
@@ -38,6 +38,10 @@
     </div>
     <div class="sub-header-group">
         <div class="sub-header">
+            <div class="search__icon order-1">
+                <a href="" class="search__btn hover-btn" data-toggle="modal" data-target="#search_model" title="Search"><i class="uil uil-search"></i></a>
+            </div>
+            <x-cart-button/>
             <div class="ui dropdown">
                 <a href="#" class="category_drop hover-btn" data-toggle="modal" data-target="#category_model" title="Categories"><i class="uil uil-apps"></i><span class="cate__icon">دسته بندی</span></a>
             </div>
@@ -58,11 +62,7 @@
                 <a href="#" class="cate__btn" data-toggle="modal" data-target="#category_model" title="Categories"><i class="uil uil-apps"></i></a>
             </div>
 
-            <x-cart-button/>
 
-            <div class="search__icon order-1">
-                <a href="" class="search__btn hover-btn" data-toggle="modal" data-target="#search_model" title="Search"><i class="uil uil-search"></i></a>
-            </div>
         </div>
     </div>
 </header>

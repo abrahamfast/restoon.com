@@ -117,6 +117,7 @@ return [
     "Price" => "قیمت",
     "Discount filter" => "بر اساس تخفیف",
     "Pack Size" => "اندازه بسته",
-    "Filters" => "فیلترها"
+    "Filters" => "فیلترها",
+    "Search for products" => "عنوان مورد  نظر خود را وارد کنید"
 
 ];

@@ -3,9 +3,11 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\ProductCategories;
 
 class SearchModal extends Component
 {
+    protected $categories;
     /**
      * Create a new component instance.
      *
@@ -13,7 +15,7 @@ class SearchModal extends Component
      */
     public function __construct()
     {
-        //
+        $this->categories = ProductCategories::where('deleted', 0)->get();  
     }
 
     /**
