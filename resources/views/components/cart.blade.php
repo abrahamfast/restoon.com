@@ -15,8 +15,8 @@
                 </div>
             </div>
             <div class="side-cart-items">
-                @foreach($quote_items as $quote_itam)
-                    <x-cart-item :item="$quote_itam" />
+                @foreach($quote_items as $quote_item)
+                    <x-cart-item :quote_item="$quote_item" />
                 @endforeach
             </div>
         </div>
