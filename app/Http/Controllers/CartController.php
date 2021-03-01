@@ -16,9 +16,14 @@ class CartController extends Controller
         //
     }
 
-    public function add($id)
+    public function add(Request $request)
     {
-        
+        ddd($request->all());
+        // check exists qoute
+        // create or update qoute
+        // check items exists
+        // added items into qoute
+        // status qoute to open
     }
 
     /**

@@ -23,8 +23,8 @@
                                     @endif
                                     <div class="qty-cart">
                                         <div class="quantity buttons_added">
-                                            <form action="/cart/add">
-                                                <input type="hidden" value="{{ $product->id }}">
+                                            <form action="/cart/add" method="POST">
+                                                <input type="hidden" name="product-id" value="{{ $product->id }}">
                                                 <input type="button" value="-" class="minus minus-btn">
                                                 <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
                                                 <input type="button" value="+" class="plus plus-btn">
