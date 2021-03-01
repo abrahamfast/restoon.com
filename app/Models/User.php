@@ -58,4 +58,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Account::class, 'id', 'account_id');
     }
+
+    public function quote()
+    {
+        return $this->hasMany(Quote::class, 'account_id');
+    }
 }

@@ -4,25 +4,25 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Modles\QouteItem;
+use App\Models\Product;
 
-class Qoute extends Model
+class QuoteItem extends Model
 {
     use HasFactory;
 
-    protected $table = 'qoute';
-
+    protected $table = 'quote_item';
+    
     protected $guarded = [];
 
     protected $casts = [
     	'id' => 'string',
-    	'tax_d' => 'string',
     	'account_id' => 'string',
-    	'shipping_contact_id' => 'string',
+    	'quote_id' => 'string',
+    	'product_id' => 'string',
     ];
 
-    public function items()
+    public function product()
     {
-    	return $this->hasMany(QouteItem::class);
+    	return $this->hasOne(Product::class);
     }
 }

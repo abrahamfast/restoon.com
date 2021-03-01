@@ -53,7 +53,7 @@ $(document).ready(function() {
     $('.addcart').on('click', function(e) {
         e.preventDefault();
         let idn = $(this).attr('data-product-id');
-        $('#' + idn).submit();
+        $(this).parents('.product-text-dt').children('.qty-cart').children('.quantity').children('form').submit()
         // $.ajaxSetup({
         //     headers: {
         //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
