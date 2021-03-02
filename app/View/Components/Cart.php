@@ -18,7 +18,7 @@ class Cart extends Component
     {
         $user = Auth::user();
         if($user){
-            $this->quote = $user->quote()->where('status', 'In Review')->first();
+            $this->quote = $user->quote()->where('status', 'Draft')->first();
             $this->quote_items = $this->quote->items()->get();    
         }
         
