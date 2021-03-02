@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Product;
-use App\Models\QuoteItem;
+use App\Models\{Product, Quote, QuoteItem};
+use App\Traits\QuoteHandler;
 
 class CartController extends Controller
 {
+    use QuoteHandler;
+
+    protected $product;
+    protected $qoute;
     /**
      * Display a listing of the resource.
      *
@@ -28,41 +32,21 @@ class CartController extends Controller
     public function link(Request $request)
     {
         $user = $request->user();
+        $productId = $request->get('product-id');
+        $quantity = $request->get('quantity');
 
         if($user){
-            // get Presented or 
-            // @TODO check just one 
-            // confuse more than 1 quote
-            $quote = $user->quote()->where('status', 'In Review')->first();
-            // get product
-            $product = Product::where('id', $request->get('product-id'))->first();
-            QuoteItem::create([
-                'id' => uniqid() . substr(md5(rand()), 0, 4),
-                'quantity' => $request->get('quantity'),
-                'list_price' => $product->list_price,
-                'unit_price' => $product->unit_price,
-                'discount' => $product->getDiscount(),
-                'amount' => $product->getAmount(),
-                'unit_weight' => '1',
-                'weight' => $request->get('quantity'),
-                'order' => $quote->items()->count() + 1,
-                'list_price_currency' => 'IRR',
-                'unit_price_currency' => 'IRR',
-                'amount_currency' => 'IRR',
-                'quote_id' => $quote->id,
-                'account_id' => $user->account_id,
-                'product_id' => $product->id,
-            ]);
+            $this->existsQuote($user);
+            $this->product($productId);
+            $this->addItem($quantity, $user->account_id);
 
+            return redirect()->back();
         }
-        
 
-        // check exists qoute
-        // create or update qoute
-        // check items exists
-        // added items into qoute
-        // status qoute to open
-
+        $this->newQuote();
+        $this->product($productId);
+        $this->addItem($quantity);
+        session()->put('quoteId', $this->quote->id);
         return redirect()->back();
     }
 
