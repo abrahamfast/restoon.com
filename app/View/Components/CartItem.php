@@ -7,15 +7,15 @@ use Auth;
 
 class CartItem extends Component
 {
-    public $quote_item;
+    public $item;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($quote_item)
+    public function __construct($item)
     {
-        $this->quote_item = $quote_item;
+        $this->item = $item;
     }
 
     /**
