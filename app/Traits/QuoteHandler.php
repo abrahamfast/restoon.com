@@ -11,7 +11,7 @@ trait QuoteHandler
 		$this->quote =  Quote::create($rawQuote);
 	}
 
-	public function existsQuote()
+	public function existsQuote($user)
 	{
 		$this->quote = $user->quote()->where('status', 'Draft')->first();
 		if($this->quote){
@@ -21,7 +21,7 @@ trait QuoteHandler
 
 	public function product($productId)
 	{
-		return $this->product = Product::where('id', $request->get('product-id'))->first();
+		return $this->product = Product::where('id', $productId)->first();
 	}
 
 	public function addItem($quantity, $accountId = null)
