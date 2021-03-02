@@ -12,7 +12,7 @@ class CartButton extends Component
      *
      * @return void
      */
-    public function __construct($cartCount)
+    public function __construct()
     {
         $user = Auth::user();
         $quote = $user->quote()->where('status', 'In Review')->first();
