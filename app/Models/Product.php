@@ -40,16 +40,16 @@ class Product extends Model
     public function getAmount(int $quantity = 1): float
     {
         // @TODO need type Num
-        if($product->price_type == 'Discount fromList'){
+        if($this->price_type == 'Discount fromList'){
             // ext: (2000*0.10)*12=2400
             // (price * discount) * quantity
-          return ($product->list_price - $this->getDiscount()) * $quantity;
+          return ($this->list_price - $this->getDiscount()) * $quantity;
         }
-        return $product->list_price * $quantity;
+        return $this->list_price * $quantity;
     }
 
     public function getDiscount()
     {
-        return ($product->list_price * "0.$product->pricing_factor");
+        return ($this->list_price * "0.{$this->pricing_factor}");
     }
 }

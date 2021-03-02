@@ -28,7 +28,7 @@ class CartController extends Controller
             // confuse more than 1 quote
             $quote = $user->quote()->where('status', 'In Review')->first();
             // get product
-            $product = Product::where('id', $request->get('id'))->first();
+            $product = Product::where('id', $request->get('product-id'))->first();
             QuoteItem::create([
                 'id' => uniqid() . substr(md5(rand()), 0, 4),
                 'quantity' => $request->get('quantity'),

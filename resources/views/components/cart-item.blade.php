@@ -1,6 +1,6 @@
 <div class="cart-item">
     <div class="cart-product-img">
-        <img src="/dataloader/{{ $item->product()->first()->cover_id }}" alt="">
+        <img src="/dataloader/{{ $item->product()->first()->getCover() }}" alt="">
         @if($item->product()->first()->discount)
             <div class="offer-badge">{{ $item->product()->first()->discount}} % تخفیف</div>
         @endif
@@ -16,9 +16,9 @@
             @if($item->product()->first()->discount)
                 <div class="cart-item-price">{{ $item->product()->first()->discountdiscount_price }} <span>{{ $item->product()->first()->discountcost_price }}</span></div>
             @else
-                <div class="cart-item-price">{{ $item->product()->first()->discountcost_price }}</div>
+                <div class="cart-item-price">{{ $item->product()->first()->discount_price}}</div>
             @endif
         </div>
-        <a type="button" class="cart-close-btn btn-block"><i class="uil uil-multiply"></i></button>
+        <a type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></a>
     </div>
 </div>

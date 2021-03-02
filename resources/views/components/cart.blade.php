@@ -31,7 +31,7 @@
             </div>
             <div class="checkout-cart">
                 {{-- <a href="#" class="promo-code">Have a promocode?</a> --}}
-                <a href="#" class="cart-checkout-btn hover-btn">{{ __('global.Proceed to Checkout') }}</a>
+                <a href="#" class="cart-checkout-btn hover-btn btn-block">{{ __('global.Proceed to Checkout') }}</a>
             </div>
         </div>
     </div>
