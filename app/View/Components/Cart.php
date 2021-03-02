@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Modles\Quote;
 use Auth;
 
 class Cart extends Component
