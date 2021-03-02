@@ -8,8 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Wishlist extends Model
 {
     use HasFactory;
+    
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'modified_at'; 
 
     protected $table = 'wishlist';
+
 
     protected $casts = [
     	'id' => 'string',

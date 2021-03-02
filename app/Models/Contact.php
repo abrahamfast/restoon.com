@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     use HasFactory;
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'modified_at'; 
 }

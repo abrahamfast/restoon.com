@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Account extends Model
 {
     use HasFactory;
+	const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'modified_at'; 
+    
     protected $table = 'account';
    	protected $casts = [
     	'id' => 'string',
