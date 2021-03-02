@@ -6,14 +6,17 @@ use Illuminate\View\Component;
 
 class CartButton extends Component
 {
+    public $cartCount;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($cartCount)
     {
-        //
+        $user = Auth::user();
+        $quote = $user->quote()->where('status', 'In Review')->first();
+        $this->cartCount = $quote->items()->count();
     }
 
     /**
