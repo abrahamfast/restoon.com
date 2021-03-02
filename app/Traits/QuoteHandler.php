@@ -1,5 +1,6 @@
 <?php 
 namespace App\Traits;
+use App\Models\{Product, Quote, QuoteItem};
 
 trait QuoteHandler
 {
