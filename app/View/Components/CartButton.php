@@ -24,7 +24,7 @@ class CartButton extends Component
             $quoteId = session()->get('quoteId');
             if($quoteId){
                 $quote = Quote::where('id', $quoteId)->first();
-                $this->cartCount = $this->quote->items()->count();    
+                $this->cartCount = $quote->items()->count();    
             }
         }
     }
