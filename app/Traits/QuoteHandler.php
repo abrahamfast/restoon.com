@@ -11,7 +11,7 @@ trait QuoteHandler
 
 	public function setSessionQuote($quoteId)
 	{
-		session()->put('quoteId', $productId);
+		session()->put('quoteId', $quoteId);
 	}
 
 	public function setQuote()
@@ -23,7 +23,7 @@ trait QuoteHandler
 		$rawQuote = Quote::where('id', "603e34c68f0e7bebc")->first()->toArray();
 		$rawQuote['id'] = $this->uuid();
 		$this->quote =  Quote::create($rawQuote);
-		$this->setSessionQuote($this->quote->id);
+		$this->setSessionQuote($rawQuote['id']);
 	}
 
 
@@ -45,6 +45,7 @@ trait QuoteHandler
 	{
 		QuoteItem::create([
                 'id' => $this->uuid(),
+                'name' => $this->product->name,
                 'quantity' => $quantity,
                 'list_price' => $this->product->list_price,
                 'unit_price' => $this->product->unit_price,

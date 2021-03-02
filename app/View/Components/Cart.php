@@ -25,7 +25,7 @@ class Cart extends Component
             $quoteId = session()->get('quoteId');
             if($quoteId){
                 $this->quote = Quote::where('id', $quoteId)->first();
-                $this->quote_items = $this->quote->items()->count();    
+                $this->quote_items = $this->quote->items()->get();    
             }
         }
     }
