@@ -15,9 +15,11 @@
                 </div>
             </div>
             <div class="side-cart-items">
-                @foreach($quote_items as $item)
-                    <x-cart-item :item="$item" />
-                @endforeach
+                @if($quote_items)
+                    @foreach($quote_items as $item)
+                        <x-cart-item :item="$item" />
+                    @endforeach
+                @endif
             </div>
         </div>
         <div class="bs-canvas-footer">

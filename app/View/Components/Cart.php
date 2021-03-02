@@ -17,8 +17,11 @@ class Cart extends Component
     public function __construct()
     {
         $user = Auth::user();
-        $this->quote = $user->quote()->where('status', 'In Review')->first();
-        $this->quote_items = $this->quote->items()->get();
+        if($user){
+            $this->quote = $user->quote()->where('status', 'In Review')->first();
+            $this->quote_items = $this->quote->items()->get();    
+        }
+        
     }
 
     /**

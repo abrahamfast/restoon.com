@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use Auth;
 
 class CartButton extends Component
 {
@@ -15,8 +16,10 @@ class CartButton extends Component
     public function __construct()
     {
         $user = Auth::user();
-        $quote = $user->quote()->where('status', 'In Review')->first();
-        $this->cartCount = $quote->items()->count();
+        if($user){
+            $quote = $user->quote()->where('status', 'In Review')->first();
+            $this->cartCount = $quote->items()->count();    
+        }
     }
 
     /**
