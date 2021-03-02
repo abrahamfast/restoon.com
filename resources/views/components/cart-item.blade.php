@@ -19,6 +19,6 @@
                 <div class="cart-item-price">{{ $item->product()->first()->discount_price}}</div>
             @endif
         </div>
-        <a type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></a>
+        <a href="/cart/unlink/{{$item->id}}" class="cart-close-btn"><i class="uil uil-multiply"></i></a>
     </div>
 </div>

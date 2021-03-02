@@ -18,7 +18,8 @@ Route::get('special', [ProductController::class, 'special']);
 Route::get('contact', [ContactController::class, 'index']);
 
 
-Route::post('cart/add', [CartController::class, 'add']);
+Route::post('cart/add', [CartController::class, 'link']);
+Route::get('cart/unlink/{id}', [CartController::class, 'unlink']);
 Route::get('cart/reset', [CartController::class, 'reset']);
 
 Route::middleware(["middleware" => "auth"])->group(function(){

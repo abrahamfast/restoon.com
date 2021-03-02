@@ -18,7 +18,14 @@ class CartController extends Controller
         //
     }
 
-    public function add(Request $request)
+    public function unlink($id)
+    {
+        QuoteItem::where('id', $id)->delete();
+
+        return redirect()->back();
+    }
+
+    public function link(Request $request)
     {
         $user = $request->user();
 
