@@ -12,6 +12,7 @@ class CartController extends Controller
 
     protected $product;
     protected $qoute;
+    protected $qouteId;
     /**
      * Display a listing of the resource.
      *
@@ -35,18 +36,20 @@ class CartController extends Controller
         $productId = $request->get('product-id');
         $quantity = $request->get('quantity');
 
-        if($user){
-            $this->existsQuote($user);
-            $this->product($productId);
-            $this->addItem($quantity, $user->account_id);
-
-            return redirect()->back();
+        if($this->getSessionQuote()) {
+            $this->setQuote();
+        } else if ($user) {
+            $this->userQuote($user);
+        } else {
+            $this->newQuote();
         }
 
-        $this->newQuote();
         $this->product($productId);
-        $this->addItem($quantity);
-        session()->put('quoteId', $this->quote->id);
+        $this->addItem(
+            $quantity,
+            $user ? $user->account_id : '' 
+        );
+
         return redirect()->back();
     }
 

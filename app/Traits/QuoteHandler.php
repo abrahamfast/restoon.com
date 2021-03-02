@@ -4,19 +4,36 @@ use App\Models\{Product, Quote, QuoteItem};
 
 trait QuoteHandler
 {
+	public function getSessionQuote()
+	{
+		return $this->quoteId = session()->get('quoteId');
+	}
+
+	public function setSessionQuote($quoteId)
+	{
+		session()->put('quoteId', $productId);
+	}
+
+	public function setQuote()
+	{
+		$this->quote = Quote::where('id', $this->quoteId)->first();
+	}
 	public function newQuote()
 	{
 		$rawQuote = Quote::where('id', "603e34c68f0e7bebc")->first()->toArray();
 		$rawQuote['id'] = $this->uuid();
 		$this->quote =  Quote::create($rawQuote);
+		$this->setSessionQuote($this->quote->id);
 	}
 
-	public function existsQuote($user)
+
+	public function userQuote($user)
 	{
 		$this->quote = $user->quote()->where('status', 'Draft')->first();
-		if($this->quote){
+		if(!$this->quote){
 			$this->quote = $this->newQuote();
 		}
+		$this->setSessionQuote($this->quote->id);
 	}
 
 	public function product($productId)
