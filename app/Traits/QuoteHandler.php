@@ -28,13 +28,13 @@ trait QuoteHandler
 	{
 		QuoteItem::create([
                 'id' => $this->uuid(),
-                'quantity' => $request->get('quantity'),
+                'quantity' => $quantity,
                 'list_price' => $this->product->list_price,
                 'unit_price' => $this->product->unit_price,
                 'discount' => $this->product->getDiscount(),
                 'amount' => $this->product->getAmount(),
                 'unit_weight' => '1',
-                'weight' => $request->get('quantity'),
+                'weight' => $quantity,
                 'order' => $this->quote->items()->count() + 1,
                 'list_price_currency' => 'IRR',
                 'unit_price_currency' => 'IRR',
