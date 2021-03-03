@@ -10,6 +10,10 @@ class Cart extends Component
 {
     public $quote;
     public $quote_items;
+    public $discount_amount;
+    public $amount;
+    public $tax_amount;
+    public $total_amount;
     /**
      * Create a new component instance.
      *
@@ -18,6 +22,7 @@ class Cart extends Component
     public function __construct()
     {
         $user = Auth::user();
+        $total_amount = 0;
         if($user){
             $this->quote = $user->quote()->where('status', 'Draft')->first();
             $this->quote_items = $this->quote->items()->get();
@@ -28,6 +33,12 @@ class Cart extends Component
                 $this->quote_items = $this->quote->items()->get();    
             }
         }
+
+        $this->amount =  $this->quote->amount;
+        $this->discount_amount = $this->quote->discount_amount;
+        $this->tax_amount = $this->quote->tax_amount;
+        $this->shipping_cost = $this->quote->shipping_cost;
+        $this->total_amount = $total_amount;
     }
 
     /**
