@@ -34,11 +34,13 @@ class Cart extends Component
             }
         }
 
-        $this->amount =  $this->quote->amount;
-        $this->discount_amount = $this->quote->discount_amount;
-        $this->tax_amount = $this->quote->tax_amount;
-        $this->shipping_cost = $this->quote->shipping_cost;
-        $this->total_amount = $total_amount;
+        if($this->quote){
+            $this->amount =  $this->quote->amount;
+            $this->discount_amount = $this->quote->discount_amount;
+            $this->tax_amount = $this->quote->tax_amount;
+            $this->shipping_cost = $this->quote->shipping_cost;
+            $this->total_amount = $total_amount;
+        }
     }
 
     /**
