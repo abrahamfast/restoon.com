@@ -53,6 +53,13 @@ class CartController extends Controller
         return redirect()->back();
     }
 
+    public function checkout(Request $request)
+    {
+        return view('checkout', [
+            'slug' => __('checkout')
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

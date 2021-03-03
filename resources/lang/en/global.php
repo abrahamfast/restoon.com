@@ -118,6 +118,22 @@ return [
     "Discount filter" => "بر اساس تخفیف",
     "Pack Size" => "اندازه بسته",
     "Filters" => "فیلترها",
-    "Search for products" => "عنوان مورد  نظر خود را وارد کنید"
+    "Search for products" => "عنوان مورد  نظر خود را وارد کنید",
+    "Phone Number Verification" => "تأیید شماره تلفن",
+    "We need your phone number so we can inform you about any delay or problem" => "ما به شماره تلفن شما نیاز داریم تا بتوانیم هرگونه تأخیر یا مشکلی را به شما اطلاع دهیم.",
+    "4 digits code send your phone" => "کد 4 رقمی به شماره تلفن شما را ارسال می کند",
+    "Edit" => "ویرایش",
+    "Phone Number" => "شماره همراه خود را وارد کنید",
+    "Send Code" => "ارسال کد",
+    "Enter Code" => "کد را وارد کنید",
+    "Resend Code" => "ارسال مجدد کد",
+    "Delivery Address" => "نشانی تحویل",
+    "Home" => "رستوران",
+    "Office" => "دفتر",
+    "Other" => "غیره",
+    "Name" => "نام کامل",
+    "placeholderName" => "نام را کام ل وارد کنید",
+    "Email Address" => "آدرس ایمیل"
+
 
 ];
