@@ -14,6 +14,7 @@ class Cart extends Component
     public $amount;
     public $tax_amount;
     public $total_amount;
+    public $itemsCount;
     /**
      * Create a new component instance.
      *
@@ -26,11 +27,13 @@ class Cart extends Component
         if($user){
             $this->quote = $user->quote()->where('status', 'Draft')->first();
             $this->quote_items = $this->quote->items()->get();
+            $this->itemsCount  = $this->quote_items->count();
         } else {
             $quoteId = session()->get('quoteId');
             if($quoteId){
                 $this->quote = Quote::where('id', $quoteId)->first();
-                $this->quote_items = $this->quote->items()->get();    
+                $this->quote_items = $this->quote->items()->get();
+                $this->itemsCount  = $this->quote_items->count();
             }
         }
 

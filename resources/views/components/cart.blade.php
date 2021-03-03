@@ -1,6 +1,6 @@
     <div class="bs-canvas bs-canvas-left position-fixed bg-cart h-100">
         <div class="bs-canvas-header side-cart-header p-3 ">
-            <div class="d-inline-block  main-cart-title">{{ __('global.My Cart') }} <span>({{$quote_items ?? 0}} {{ __('global.Items') }})</span></div>
+            <div class="d-inline-block  main-cart-title">{{ __('global.My Cart') }} <span>( {{$itemsCount ?? 0 }} {{ __('global.Items') }})</span></div>
             <button type="button" class="bs-canvas-close close" aria-label="Close"><i class="uil uil-multiply"></i></button>
         </div>
         <div class="bs-canvas-body">
