@@ -27,10 +27,7 @@
 	                                        </p>
                                         @endif
                                         @guest()
-                                        <p class="phn145">{{ __('global.4 digits code send your phone')}} <span></span>
-	                                        	<a class="edit-no-btn hover-btn" data-toggle="collapse" href="#edit-number">{{ __('global.Edit') }}</a>
-	                                     </p>
-                                        <div class="collapse" id="edit-number">
+                                        <div class="" id="edit-number">
                                             <div class="row">
                                                 <div class="col-lg-8">
                                                     <div class="checkout-login">

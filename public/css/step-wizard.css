@@ -97,7 +97,7 @@
     transform: translateY(-50%)
 }*/
 .login-phone .form-control {
-    padding-left: 68px;
+    _padding-left: 68px;
     font-size: 14px;
     font-family: rajdhani, sans-serif;
     font-weight: 600;
