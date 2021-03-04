@@ -135,7 +135,7 @@ return [
     "placeholderName" => "نام را کام ل وارد کنید",
     "Email Address" => "آدرس ایمیل",
     "Delivery Time & Date" => "تاریخ ارسال کالا",
-    "Select Date and Time" => "تاربخ و ساعت دریافت کالا را مشخص کنید",
+    "Select Date and Time" => "تاریخ و ساعت دریافت کالا را مشخص کنید",
     "Today" => "امروز",
     "Tomorrow" => "فردا",
     "8_00AM-10_00AM" => "۸:۰۰ تا ۱۰:۰۰",
@@ -159,7 +159,9 @@ return [
     "Replacement Guarantee" => "۱۰۰٪ ضمانت تعویض",
     "Genuine Products" => "۱۰۰٪ محصولات اصلی",
     "Secure Payments" => "پرداخت های امن",
-    "Order Summary" => "خلاصه سفارش"
+    "Order Summary" => "خلاصه سفارش",
+    "Locality" => "محل یا شهر",
+    "Enter City" => "شهر را وارد کنید"
 
 
 

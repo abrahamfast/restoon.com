@@ -27,15 +27,18 @@
 	                                        </p>
                                         @endif
                                         @guest()
+                                        <p class="phn145">{{ __('global.4 digits code send your phone')}} <span></span>
+	                                        	<a class="edit-no-btn hover-btn" data-toggle="collapse" href="#edit-number">{{ __('global.Edit') }}</a>
+	                                     </p>
                                         <div class="collapse" id="edit-number">
                                             <div class="row">
                                                 <div class="col-lg-8">
                                                     <div class="checkout-login">
                                                         <form>
+                                                        	<a class="chck-btn hover-btn" role="button" data-toggle="collapse" href="#otp-verifaction">{{ __('global.Send Code') }}</a>
                                                             <div class="login-phone">
                                                                 <input type="text" class="form-control" placeholder="{{ __('global.Phone Number') }}">
-                                                            </div>
-                                                            <a class="chck-btn hover-btn" role="button" data-toggle="collapse" href="#otp-verifaction">{{ __('global.Send Code') }}</a>
+                                                            </div>                                                            
                                                         </form>
                                                     </div>
                                                 </div>
@@ -138,14 +141,14 @@
                                                                 </div>
                                                                 <div class="col-lg-6 col-md-12">
                                                                     <div class="form-group">
-                                                                        <label class="control-label">Locality*</label>
-                                                                        <input id="Locality" name="locality" type="text" placeholder="Enter City" class="form-control input-md" required="">
+                                                                        <label class="control-label">{{ __('global.Locality') }}*</label>
+                                                                        <input id="Locality" name="locality" type="text" placeholder="{{ __('global.Enter City') }}" class="form-control input-md" required="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-12 col-md-12">
                                                                     <div class="form-group">
                                                                         <div class="address-btns">
-                                                                            <button class="save-btn14 hover-btn"></button>
+                                                                            <button class="save-btn14 hover-btn">{{ __('global.Save') }}</button>
                                                                             <a class="collapsed ml-auto next-btn16 hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseThree"> {{ __('global.Next') }} </a>
                                                                         </div>
                                                                     </div>
@@ -263,7 +266,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="collapsed next-btn16 hover-btn" role="button" data-toggle="collapse" href="#collapseFour"> Proccess to payment </a>
+                                        <a class="collapsed next-btn16 hover-btn" role="button" data-toggle="collapse" href="#collapseFour"> {{ __('global.Proccess to payment') }} </a>
                                     </div>
                                 </div>
                             </div>

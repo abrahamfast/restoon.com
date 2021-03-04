@@ -69,16 +69,16 @@
 .login-phone {
     display: inline-block
 }
-.login-phone:after {
-    content: '+91 - ';
+/*.login-phone:after {
+    content: '09';
     font-size: 14px;
-    left: 36px;
+    right: 36px;
     top: 18px;
     font-family: rajdhani, sans-serif;
     font-weight: 600;
     color: #2b2f4c
-}
-.login-phone:before {
+}*/
+/*.login-phone:before {
     content: "";
     font-style: normal;
     color: #333;
@@ -90,12 +90,12 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
-}
-.login-phone:after, .login-phone:before {
+}*/
+/*.login-phone:after, .login-phone:before {
     position: absolute;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
-}
+}*/
 .login-phone .form-control {
     padding-left: 68px;
     font-size: 14px;
