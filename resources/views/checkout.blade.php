@@ -29,13 +29,20 @@
                                         @guest()
                                         <div class="" id="edit-number">
                                             <div class="row">
-                                                <div class="col-lg-8">
+                                                <div class="col-lg-12">
                                                     <div class="checkout-login">
-                                                        <form>
-                                                        	<a class="chck-btn hover-btn" role="button" data-toggle="collapse" href="#otp-verifaction">{{ __('global.Send Code') }}</a>
+                                                        <form id="form-verification" method="POST" action="/verification/otp">
+                                                            @csrf
+                                                        	<a class="chck-btn hover-btn" role="button" id="otp-verifaction" data-toggle="collapse" href="#otp-verifaction">{{ __('global.Send Code') }}</a>
                                                             <div class="login-phone">
-                                                                <input type="text" class="form-control" placeholder="{{ __('global.Phone Number') }}">
-                                                            </div>                                                            
+                                                                <input type="text" name="phone" class="form-control" placeholder="{{ __('global.Phone Number') }}">
+                                                            </div>
+                                                            <script>
+                                                                $('#otp-verifaction').on('click', function(e){
+                                                                    e.preventDefault()
+                                                                    $('#form-verification').submit()
+                                                                });
+                                                            </script>                                                        
                                                         </form>
                                                     </div>
                                                 </div>
