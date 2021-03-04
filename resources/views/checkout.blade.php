@@ -178,8 +178,14 @@
                                                         <div class="owl-carousel date-slider owl-theme">
                                                             <div class="item">
                                                                 <div class="date-now">
-                                                                    <input type="radio" id="dd1" name="address1" checked="">
-                                                                    <label for="dd1">{{ __('global.Today') }}</label>
+                                                                    <input type="radio" id="dd3" name="address1">
+                                                                    <label for="dd3">شنبه ۲۱ خرداد</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="date-now">
+                                                                    <input type="radio" id="dd3" name="address1">
+                                                                    <label for="dd3">شنبه ۲۰ خرداد</label>
                                                                 </div>
                                                             </div>
                                                             <div class="item">
@@ -190,8 +196,8 @@
                                                             </div>
                                                             <div class="item">
                                                                 <div class="date-now">
-                                                                    <input type="radio" id="dd3" name="address1">
-                                                                    <label for="dd3">شنبه ۲۰ خرداد</label>
+                                                                    <input type="radio" id="dd1" name="address1" checked="">
+                                                                    <label for="dd1">{{ __('global.Today') }}</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -202,31 +208,31 @@
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
-                                                                        <label>{{ __('global.8_00AM-10_00AM ')}}</label>
+                                                                        <label>{{ __('global.8_00AM_10_00AM ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>10.00AM - 12.00PM</label>
+                                                                        <label>{{ __('global.10_00AM_12_00AM ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>12.00PM - 2.00PM</label>
+                                                                        <label>{{ __('global.12_00AM_14_00AM ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>2.00PM - 4.00PM</label>
+                                                                        <label>{{ __('global.14_00AM_16_00AM ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>4.00PM - 6.00PM</label>
+                                                                        <label>{{ __('global.16_00AM_18_00AM ')}}</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
