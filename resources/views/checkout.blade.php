@@ -17,8 +17,8 @@
                                 <div id="collapseOne" class="collapse in show" data-parent="#checkout_wizard">
                                     <div class="checkout-step-body">
                                         <p>{{ __('global.We need your phone number so we can inform you about any delay or problem') }}</p>
-                                        @if(auth()->user)
-	                                        <p class="phn145">{{ __('global.4 digits code send your phone')}} <span>+918437176189</span>
+                                        @if(Auth::user())
+	                                        <p class="phn145">{{ __('global.4 digits code send your phone')}} <span>{{ Auth::user()->phone }}</span>
 	                                        	<a class="edit-no-btn hover-btn" data-toggle="collapse" href="#edit-number">{{ __('global.Edit') }}</a>
 	                                        </p>
                                         @endif
