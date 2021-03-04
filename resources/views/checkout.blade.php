@@ -208,31 +208,31 @@
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
-                                                                        <label>{{ __('global.8_00AM_10_00AM ')}}</label>
+                                                                        <label>{{ __('global.first1 ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>{{ __('global.10_00AM_12_00AM ')}}</label>
+                                                                        <label>{{ __('global.first2 ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>{{ __('global.12_00AM_14_00AM ')}}</label>
+                                                                        <label>{{ __('global.first3 ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>{{ __('global.14_00AM_16_00AM ')}}</label>
+                                                                        <label>{{ __('global.first4 ')}}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <div class="ui radio checkbox chck-rdio">
                                                                         <input type="radio" name="fruit" tabindex="0" class="hidden">
-                                                                        <label>{{ __('global.16_00AM_18_00AM ')}}</label>
+                                                                        <label>{{ __('global.first5 ')}}</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
