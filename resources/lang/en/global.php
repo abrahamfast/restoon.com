@@ -146,7 +146,15 @@ return [
     "Cash on Delivery" => "پرداخت نقدی هنگام تحویل",
     "Cash on Delivery will not be available if your order value exceeds" => "اگر ارزش سفارش شما بیش از یک میلیون تومان باشد ، وجه تحویل در دسترس نخواهد بود.",
     "paymentmethod" => "درگاه پرداخت را انتخاب کنید",
-    "placeorder" => "سفارش دهید"
+    "placeorder" => "سفارش دهید",
+    "Next" => "بعدی",
+    "HouseOfficeNo" => "شماره خانه / دفتر",
+    "address" => "آدرس",
+    "StreetSocietyOfficeName" => "نام خیابان اصلی",
+    "StreetAddress" => "آدرس خیابان",
+    "Pincode" => "کد پستی",
+    "Save" => "ذخیره"
+
 
 
 ];

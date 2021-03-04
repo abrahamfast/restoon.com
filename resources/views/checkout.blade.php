@@ -61,7 +61,7 @@
                                                                 <input id="code[4]" maxlength="1" name="number" type="text" placeholder="" class="form-control input-md" required="">
                                                             </li>
                                                             <li>
-                                                                <a class="collapsed chck-btn hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseTwo">Next</a>
+                                                                <a class="collapsed chck-btn hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseTwo">{{ __('global.Next') }}</a>
                                                             </li>
                                                         </ul>
                                                         <a href="#" class="resend-link">{{ __('global.Resend Code') }}</a>
@@ -115,25 +115,25 @@
                                                                 <div class="col-lg-6 col-md-12">
                                                                     <div class="form-group">
                                                                         <label class="control-label">{{ __('global.Email Address') }}*</label>
-                                                                        <input id="email1" name="email1" type="text" placeholder="Email Address" class="form-control input-md" required="">
+                                                                        <input id="email1" name="email1" type="text" placeholder="{{ __('global.Email Address') }}" class="form-control input-md" required="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-12 col-md-12">
                                                                     <div class="form-group">
-                                                                        <label class="control-label">Flat / House / Office No.*</label>
-                                                                        <input id="flat" name="flat" type="text" placeholder="Address" class="form-control input-md" required="">
+                                                                        <label class="control-label">{{ __('global.HouseOfficeNo') }}*</label>
+                                                                        <input id="flat" name="flat" type="text" placeholder="{{ __('global.address') }}" class="form-control input-md" required="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-12 col-md-12">
                                                                     <div class="form-group">
-                                                                        <label class="control-label">Street / Society / Office Name*</label>
-                                                                        <input id="street" name="street" type="text" placeholder="Street Address" class="form-control input-md">
+                                                                        <label class="control-label">{{ __('global.StreetSocietyOfficeName') }}*</label>
+                                                                        <input id="street" name="street" type="text" placeholder="{{ __('global.StreetAddress') }}" class="form-control input-md">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-6 col-md-12">
                                                                     <div class="form-group">
-                                                                        <label class="control-label">Pincode*</label>
-                                                                        <input id="pincode" name="pincode" type="text" placeholder="Pincode" class="form-control input-md" required="">
+                                                                        <label class="control-label">{{ __('global.Pincode') }}*</label>
+                                                                        <input id="pincode" name="pincode" type="text" placeholder="{{ __('global.Pincode') }}" class="form-control input-md" required="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-6 col-md-12">
@@ -145,8 +145,8 @@
                                                                 <div class="col-lg-12 col-md-12">
                                                                     <div class="form-group">
                                                                         <div class="address-btns">
-                                                                            <button class="save-btn14 hover-btn">Save</button>
-                                                                            <a class="collapsed ml-auto next-btn16 hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseThree"> Next </a>
+                                                                            <button class="save-btn14 hover-btn"></button>
+                                                                            <a class="collapsed ml-auto next-btn16 hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseThree"> {{ __('global.Next') }} </a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
