@@ -102,7 +102,8 @@
     font-family: rajdhani, sans-serif;
     font-weight: 600;
     color: #2b2f4c;
-    border: 1px solid #efefef
+    border: 1px solid #efefef;
+    width: 300px;
 }
 .checkout-login .btn {
     height: 42px;

@@ -8,6 +8,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\VerificationController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('category/{slug}', [ProductController::class, 'index']);
