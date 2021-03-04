@@ -2562,7 +2562,7 @@ span.save-icon {
     font-weight: 400;
     line-height: 24px;
     color: #3e3f5e;
-    text-align: left
+    text-align: right;
 }
 .phn145 {
     font-size: 14px;
@@ -2583,6 +2583,9 @@ span.save-icon {
     color: #fff;
     background: #0edd16;
     border-radius: 5px
+}
+.code-alrt-inputs {
+    direction: rtl;
 }
 .code-alrt-inputs li {
     display: inline-block;
@@ -2620,10 +2623,10 @@ label.control-label {
 }
 .resend-link {
     margin-top: 10px;
-    display: block;
+    display: #0ddd16;
     font-weight: 500;
     color: #2b2f4c;
-    text-align: left
+    text-align: right;
 }
 .resend-link:hover {
     color: #0edd16

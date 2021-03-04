@@ -13,10 +13,10 @@
                         <div id="checkout_wizard" class="checkout accordion left-chck145">
                             <div class="checkout-step">
                                 <div class="checkout-card" id="headingOne">
-                                    <span class="checkout-step-number">1</span>
                                     <h4 class="checkout-step-title">
                                         <button class="wizard-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> {{ __('global.Phone Number Verification') }}</button>
                                     </h4>
+                                    <span class="checkout-step-number">۱</span>
                                 </div>
                                 <div id="collapseOne" class="collapse in show" data-parent="#checkout_wizard">
                                     <div class="checkout-step-body">
@@ -74,10 +74,10 @@
                             </div>
                             <div class="checkout-step">
                                 <div class="checkout-card" id="headingTwo">
-                                    <span class="checkout-step-number">2</span>
                                     <h4 class="checkout-step-title">
                                         <button class="wizard-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> {{ __('global.Delivery Address') }}</button>
                                     </h4>
+                                    <span class="checkout-step-number">۲</span>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#checkout_wizard">
                                     <div class="checkout-step-body">
@@ -161,10 +161,10 @@
                             </div>
                             <div class="checkout-step">
                                 <div class="checkout-card" id="headingThree">
-                                    <span class="checkout-step-number">3</span>
                                     <h4 class="checkout-step-title">
                                         <button class="wizard-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{ __('global.Delivery Time & Date') }} </button>
                                     </h4>
+                                    <span class="checkout-step-number">۳</span>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#checkout_wizard">
                                     <div class="checkout-step-body">
@@ -269,10 +269,10 @@
                             </div>
                             <div class="checkout-step">
                                 <div class="checkout-card" id="headingFour">
-                                    <span class="checkout-step-number">4</span>
                                     <h4 class="checkout-step-title">
                                         <button class="wizard-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">{{__('global.Payment') }}</button>
                                     </h4>
+                                    <span class="checkout-step-number">۴</span>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#checkout_wizard">
                                     <div class="checkout-step-body">
