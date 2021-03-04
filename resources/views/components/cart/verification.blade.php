@@ -34,6 +34,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="form-group mb-0">
+                        	<form id="check-verification" method="POST" action="/verification/check">
+                        	@csrf
                             <label class="control-label">{{ __('global.Enter Code') }}</label>
                             <ul class="code-alrt-inputs">
                                 <li>
@@ -52,7 +54,8 @@
                                     <a class="collapsed chck-btn hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseTwo">{{ __('global.Next') }}</a>
                                 </li>
                             </ul>
-                            <a href="#" class="resend-link">{{ __('global.Resend Code') }}</a>
+                        </form>
+                            <a href="#" id="send-verification" class="resend-link">{{ __('global.Resend Code') }}</a>
                         </div>
                     </div>
                 </div>
@@ -65,8 +68,11 @@
     <script>
         $('#otp-verifaction').on('click', function(e){
             e.preventDefault()
-            console.log(this);
             $('#form-verification').submit()
+        });
+        $('#send-verifaction').on('click', function(e){
+            e.preventDefault()
+            $('#check-verification').submit()
         });
     </script>
 @endpush

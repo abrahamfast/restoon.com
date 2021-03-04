@@ -9,8 +9,12 @@ class VerificationController extends Controller
     public function send(Request $request)
     {
     	// send otp
-    	ddd($request);
-    	
+    	return redirect()->back();
+    }
+
+    public function check(Request $request)
+    {
+    	// check otp code
     	return redirect()->back();
     }
 }

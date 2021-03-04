@@ -25,6 +25,7 @@ Route::get('cart/reset', [CartController::class, 'reset']);
 Route::get('cart/checkout', [CartController::class, 'checkout']);
 
 Route::post('verification/otp', [VerificationController::class, 'send']);
+Route::post('verification/check', [VerificationController::class, 'check']);
 
 Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app', [ProfileController::class, 'index']);

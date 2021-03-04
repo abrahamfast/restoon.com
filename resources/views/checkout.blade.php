@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-7">
                         <div id="checkout_wizard" class="checkout accordion left-chck145">
-                            <x-cart-verfication />
+                            <x-cart-verification />
                             <x-cart-delivery-addresses />
                             <x-cart-delivery-time />
                             <x-cart-payment-method />
