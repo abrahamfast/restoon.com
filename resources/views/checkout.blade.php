@@ -33,13 +33,14 @@
                                                     <div class="checkout-login">
                                                         <form id="form-verification" method="POST" action="/verification/otp">
                                                             @csrf
-                                                        	<a class="chck-btn hover-btn" role="button" id="otp-verifaction" data-toggle="collapse" href="#otp-verifaction">{{ __('global.Send Code') }}</a>
+                                                        	<a class="chck-btn hover-btn" role="button" id="otp-verifaction"  href="#otp-verifaction">{{ __('global.Send Code') }}</a>
                                                             <div class="login-phone">
                                                                 <input type="text" name="phone" class="form-control" placeholder="{{ __('global.Phone Number') }}">
                                                             </div>
                                                             <script>
                                                                 $('#otp-verifaction').on('click', function(e){
                                                                     e.preventDefault()
+                                                                    console.log(this);
                                                                     $('#form-verification').submit()
                                                                 });
                                                             </script>                                                        
