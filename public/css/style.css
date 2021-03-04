@@ -2667,7 +2667,6 @@ label.control-label {
     background: #0edd16;
     color: #fff;
     border-radius: 5px;
-    font-family: roboto, sans-serif;
     font-weight: 500;
     display: inline-block
 }
@@ -2749,13 +2748,13 @@ label.control-label {
     font-size: 14px;
     font-weight: 500;
     color: #3e3f5e;
-    text-align: left
+    text-align: right;
 }
 .checkout-safety-alerts p:last-child {
     border-bottom: 0
 }
 .checkout-safety-alerts i {
-    margin-right: 5px
+    margin-left: 5px
 }
 .return-departure-dts {
     color: #727272;
@@ -2828,7 +2827,7 @@ label.control-label {
 .radio-label_1 {
     font-size: 14px;
     font-weight: 500;
-    font-family: roboto, sans-serif;
+    _font-family: roboto, sans-serif;
     line-height: 16px;
     color: #2b2f4c;
     cursor: pointer;

@@ -134,7 +134,7 @@ return [
     "Name" => "نام کامل",
     "placeholderName" => "نام را کام ل وارد کنید",
     "Email Address" => "آدرس ایمیل",
-    "Delivery Time & Date" => "تاریخ ارسال ک الا",
+    "Delivery Time & Date" => "تاریخ ارسال کالا",
     "Select Date and Time" => "تاربخ و ساعت دریافت کالا را مشخص کنید",
     "Today" => "امروز",
     "Tomorrow" => "فردا",
@@ -153,7 +153,13 @@ return [
     "StreetSocietyOfficeName" => "نام خیابان اصلی",
     "StreetAddress" => "آدرس خیابان",
     "Pincode" => "کد پستی",
-    "Save" => "ذخیره"
+    "Save" => "ذخیره",
+    "Secure checkout" => "پرداخت امن",
+    "Have a promocode" => "آیا کد تخفیف دارید؟",
+    "Replacement Guarantee" => "۱۰۰٪ ضمانت تعویض",
+    "Genuine Products" => "۱۰۰٪ محصولات اصلی",
+    "Secure Payments" => "پرداخت های امن",
+    "Order Summary" => "خلاصه سفارش"
 
 
 

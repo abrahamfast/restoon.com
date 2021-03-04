@@ -299,7 +299,7 @@
                                                         <div class="row">
                                                             <div class="col-lg-12">
                                                                 <div class="pymnt_title">
-                                                                    <h4>Cash on Delivery</h4>
+                                                                    <h4>{{ __('global.Cash on Delivery') }}</h4>
                                                                     <p>{{ __('global.Cash on Delivery will not be available if your order value exceeds') }}</p>
                                                                 </div>
                                                             </div>
@@ -327,7 +327,7 @@
                     <div class="col-lg-4 col-md-5">
                         <div class="pdpt-bg mt-0">
                             <div class="pdpt-title">
-                                <h4>Order Summary</h4>
+                                <h4>{{ __('global.Order Summary') }}</h4>
                             </div>
                             <div class="right-cart-dt-body">
                                 <div class="cart-item border_radius">
@@ -344,7 +344,7 @@
                             </div>
                             <div class="total-checkout-group">
                                 <div class="cart-total-dil">
-                                    <h4>Gambo Super Market</h4>
+                                    <h4>Super Market</h4>
                                     <span>$15</span>
                                 </div>
                                 <div class="cart-total-dil pt-3">
@@ -361,14 +361,14 @@
                                 <span>$16</span>
                             </div>
                             <div class="payment-secure">
-                                <i class="uil uil-padlock"></i>Secure checkout
+                                <i class="uil uil-padlock"></i>{{ __('global.Secure checkout') }}
                             </div>
                         </div>
-                        <a href="#" class="promo-link45">Have a promocode?</a>
+                        <a href="#" class="promo-link45">{{__('global.Have a promocode')}}</a>
                         <div class="checkout-safety-alerts">
-                            <p><i class="uil uil-sync"></i>100% Replacement Guarantee</p>
-                            <p><i class="uil uil-check-square"></i>100% Genuine Products</p>
-                            <p><i class="uil uil-shield-check"></i>Secure Payments</p>
+                            <p>{{ __('global.Replacement Guarantee') }}<i class="uil uil-sync"></i></p>
+                            <p>{{ __('global.Genuine Products') }}<i class="uil uil-check-square"></i></p>
+                            <p>{{ __('global.Secure Payments') }}<i class="uil uil-shield-check"></i></p>
                         </div>
                     </div>
                 </div>
