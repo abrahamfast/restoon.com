@@ -2718,7 +2718,7 @@ label.control-label {
 .ui.checkbox.chck-rdio label {
     color: #2b2f4c!important;
     font-weight: 400!important;
-    font-family: roboto, sans-serif!important
+    direction: rtl;
 }
 .ui.radio.checkbox.chck-rdio .box:after, .ui.radio.checkbox.chck-rdio label:after {
     background-color: #0edd16!important
