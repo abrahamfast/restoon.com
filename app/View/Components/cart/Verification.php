@@ -23,6 +23,6 @@ class Verification extends Component
      */
     public function render()
     {
-        return view('components.verification');
+        return view('components.cart.verification');
     }
 }
