@@ -37,13 +37,7 @@
                                                             <div class="login-phone">
                                                                 <input type="text" name="phone" class="form-control" placeholder="{{ __('global.Phone Number') }}">
                                                             </div>
-                                                            <script>
-                                                                $('#otp-verifaction').on('click', function(e){
-                                                                    e.preventDefault()
-                                                                    console.log(this);
-                                                                    $('#form-verification').submit()
-                                                                });
-                                                            </script>                                                        
+                                                            
                                                         </form>
                                                     </div>
                                                 </div>
@@ -197,37 +191,7 @@
                                                             <div class="item">
                                                                 <div class="date-now">
                                                                     <input type="radio" id="dd3" name="address1">
-                                                                    <label for="dd3">10 May 2020</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <div class="date-now">
-                                                                    <input type="radio" id="dd4" name="address1">
-                                                                    <label for="dd4">11 May 2020</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <div class="date-now">
-                                                                    <input type="radio" id="dd5" name="address1">
-                                                                    <label for="dd5">12 May 2020</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <div class="date-now">
-                                                                    <input type="radio" id="dd6" name="address1">
-                                                                    <label for="dd6">13 May 2020</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <div class="date-now">
-                                                                    <input type="radio" id="dd7" name="address1">
-                                                                    <label for="dd7">14 May 2020</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <div class="date-now">
-                                                                    <input type="radio" id="dd8" name="address1">
-                                                                    <label for="dd8">15 May 2020</label>
+                                                                    <label for="dd3">شنبه ۲۰ خرداد</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -383,3 +347,13 @@
             </div>
         </div>
 @stop
+
+@push('js')
+    <script>
+        $('#otp-verifaction').on('click', function(e){
+            e.preventDefault()
+            console.log(this);
+            $('#form-verification').submit()
+        });
+    </script>
+@endpush
