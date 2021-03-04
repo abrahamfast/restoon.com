@@ -133,7 +133,20 @@ return [
     "Other" => "غیره",
     "Name" => "نام کامل",
     "placeholderName" => "نام را کام ل وارد کنید",
-    "Email Address" => "آدرس ایمیل"
+    "Email Address" => "آدرس ایمیل",
+    "Delivery Time & Date" => "تاریخ ارسال ک الا",
+    "Select Date and Time" => "تاربخ و ساعت دریافت کالا را مشخص کنید",
+    "Today" => "امروز",
+    "Tomorrow" => "فردا",
+    "8_00AM-10_00AM" => "۸:۰۰ تا ۱۰:۰۰",
+    "Proccess to payment" => "ادامه پرداخت",
+    "Payment" => "پرداخت",
+    "Cash on Delivery" => "پرداخت در محل",
+    "CreditDebit Card" => "پرداخت آنلاین با کارت اعتباری",
+    "Cash on Delivery" => "پرداخت نقدی هنگام تحویل",
+    "Cash on Delivery will not be available if your order value exceeds" => "اگر ارزش سفارش شما بیش از یک میلیون تومان باشد ، وجه تحویل در دسترس نخواهد بود.",
+    "paymentmethod" => "درگاه پرداخت را انتخاب کنید",
+    "placeorder" => "سفارش دهید"
 
 
 ];
