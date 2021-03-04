@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@push('link')
+<link href="/css/step-wizard.css" rel="stylesheet">
+@endpush
+
 @section('wrapper')
 <x-breadcrumb :slug="$slug"/>
  <div class="all-product-grid">

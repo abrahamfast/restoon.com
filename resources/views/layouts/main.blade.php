@@ -18,6 +18,8 @@
     <link href="/css/responsive.css" rel="stylesheet">
     <link href="/css/night-mode.css" rel="stylesheet">
 
+    @stack('link')
+
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="/vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
     <link href="/vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
