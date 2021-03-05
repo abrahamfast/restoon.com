@@ -2,10 +2,13 @@
 
 namespace App\View\Components\cart;
 
+use Carbon\Carbon;
+use Carbon\CarbonInterval;
 use Illuminate\View\Component;
 
 class DeliveryTime extends Component
 {
+    public $dataRanges;
     /**
      * Create a new component instance.
      *
@@ -13,7 +16,10 @@ class DeliveryTime extends Component
      */
     public function __construct()
     {
-        //
+        $period = CarbonInterval::toPeriod(Carbon::now(), '31 days');
+        foreach ($period as $date){
+            $this->dataRanges[] = verta($date);
+        }
     }
 
     /**

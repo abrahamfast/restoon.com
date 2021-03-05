@@ -11,25 +11,6 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <form class="">
-
-                                                        <div class="form-group">
-                                                            <div class="product-radio">
-                                                                <ul class="product-now">
-                                                                    <li>
-                                                                        <input type="radio" id="ad1" name="address1" checked>
-                                                                        <label for="ad1">{{ __('global.Home') }}</label>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="radio" id="ad2" name="address1">
-                                                                        <label for="ad2">{{ __('global.Office') }}</label>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="radio" id="ad3" name="address1">
-                                                                        <label for="ad3">{{ __('global.Other') }}</label>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
                                                         <div class="address-fieldset">
                                                             <div class="row">
                                                                 <div class="col-lg-6 col-md-12">

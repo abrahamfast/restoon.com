@@ -13,27 +13,23 @@
                                                     <label class="control-label">{{ __('global.Select Date and Time') }}*</label>
                                                     <div class="date-slider-group">
                                                         <div class="owl-carousel date-slider owl-theme">
-                                                            <div class="item">
-                                                                <div class="date-now">
-                                                                    <input type="radio" id="dd3" name="address1">
-                                                                    <label for="dd3">شنبه ۲۱ خرداد</label>
+                                                            @foreach($dataRanges as $date)
+                                                                <div class="item">
+                                                                    <div class="date-now">
+                                                                        <input type="radio" id="dd{{$date->formatDate()}}" name="date-delivery">
+                                                                        <label for="dd{{$date->formatDate()}}">{{$date->formatDate()}}</label>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
+                                                            @endforeach
                                                             <div class="item">
                                                                 <div class="date-now">
-                                                                    <input type="radio" id="dd3" name="address1">
-                                                                    <label for="dd3">شنبه ۲۰ خرداد</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <div class="date-now">
-                                                                    <input type="radio" id="dd2" name="address1">
+                                                                    <input type="radio" id="dd2" name="date-delivery">
                                                                     <label for="dd2">{{ __('global.Tomorrow') }}</label>
                                                                 </div>
                                                             </div>
                                                             <div class="item">
                                                                 <div class="date-now">
-                                                                    <input type="radio" id="dd1" name="address1" checked="">
+                                                                    <input type="radio" id="dd1" name="date-delivery" checked="">
                                                                     <label for="dd1">{{ __('global.Today') }}</label>
                                                                 </div>
                                                             </div>
