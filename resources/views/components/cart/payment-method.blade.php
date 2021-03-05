@@ -47,7 +47,7 @@
                                                             {{ __('global.paymentmethod') }}
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="next-btn16 hover-btn">{{ __('global.placeorder') }}</a>
+                                                    <a href="/" class="next-btn16 hover-btn">{{ __('global.placeorder') }}</a>
                                                 </div>
                                             </div>
                                         </div>

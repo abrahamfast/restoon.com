@@ -47,7 +47,7 @@ class CartController extends Controller
         $this->product($productId);
         $this->addItem(
             $quantity,
-            $user ? $user->account_id : '' 
+            $user ? $user->account_id : ''
         );
 
         return redirect()->back();
@@ -58,6 +58,11 @@ class CartController extends Controller
         return view('checkout', [
             'slug' => __('checkout')
         ]);
+    }
+
+    public function success(Request $request)
+    {
+        return view('success');
     }
 
     /**

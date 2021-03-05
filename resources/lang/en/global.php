@@ -165,7 +165,14 @@ return [
     "Secure Payments" => "پرداخت های امن",
     "Order Summary" => "خلاصه سفارش",
     "Locality" => "محل یا شهر",
-    "Enter City" => "شهر را وارد کنید"
+    "Enter City" => "شهر را وارد کنید",
+
+    // Order Successfully Placed
+    "Order Successfully Placed" => "سفارش با موفقیت انجام شد",
+    "Thank you for your order! will received order timing" => "بابت سفارش شما متشکرم! زمان سفارش را دریافت خواهید کرد -",
+    "Your order will be sent to this address"=> "سفارش شما به این آدرس ارسال می شود",
+    "trackorder" => "پیگیری سفارش",
+    ""
 
 
 
