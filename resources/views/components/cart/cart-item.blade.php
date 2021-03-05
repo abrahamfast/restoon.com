@@ -1,6 +1,6 @@
 <div class="cart-item border_radius">
     <div class="cart-product-img">
-        <img src="/dataloader/{{ $product->getName() }}" alt="">
+        <img src="/dataloader/{{ $product->getCover() }}" alt="">
         @if($product->discount)
             <div class="offer-badge">{{ $product->discount}} % تخفیف</div>
         @endif
