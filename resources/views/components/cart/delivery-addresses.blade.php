@@ -26,7 +26,6 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
-                                    <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <label class="control-label">{{ __('global.StreetSocietyOfficeName') }}*</label>
                                             <input id="street" name="shipping_address_street" value="{{ Auth::user()->account->shipping_address_street }}" type="text" placeholder="{{ __('global.StreetAddress') }}" class="form-control input-md">
@@ -41,7 +40,7 @@
                                     <div class="col-lg-6 col-md-12">
                                         <div class="form-group">
                                             <label class="control-label">{{ __('global.Locality') }}*</label>
-                                            <input id="Locality" name="shipping_address_city" value="{{ Auth::user()->account->shipping_address_city }} type="text" placeholder="{{ __('global.Enter City') }}" class="form-control input-md" required="">
+                                            <input id="Locality" name="shipping_address_city" value="{{ Auth::user()->account->shipping_address_city }}" type="text" placeholder="{{ __('global.Enter City') }}" class="form-control input-md" required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
