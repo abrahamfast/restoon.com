@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class Verification extends Component
 {
+    public $verify;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($verify)
     {
-        //
+        $this->verify = $verify;
     }
 
     /**

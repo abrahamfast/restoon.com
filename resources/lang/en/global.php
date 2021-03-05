@@ -121,7 +121,7 @@ return [
     "Search for products" => "عنوان مورد  نظر خود را وارد کنید",
     "Phone Number Verification" => "تأیید شماره تلفن",
     "We need your phone number so we can inform you about any delay or problem" => "ما به شماره تلفن شما نیاز داریم تا بتوانیم هرگونه تأخیر یا مشکلی را به شما اطلاع دهیم.",
-    "4 digits code send your phone" => "کد 4 رقمی به شماره تلفن شما را ارسال می کند",
+    "4 digits code send your phone" => "کد 4 رقمی به شماره تلفن شما ارسال شده است",
     "Edit" => "ویرایش",
     "Phone Number" => "شماره همراه خود را وارد کنید",
     "Send Code" => "ارسال کد",
@@ -172,7 +172,7 @@ return [
     "Thank you for your order! will received order timing" => "بابت سفارش شما متشکرم! زمان سفارش را دریافت خواهید کرد -",
     "Your order will be sent to this address"=> "سفارش شما به این آدرس ارسال می شود",
     "trackorder" => "پیگیری سفارش",
-    ""
+    "Success Your Phone" => "شماره همراه شما تایید شد"
 
 
 

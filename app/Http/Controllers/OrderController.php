@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\{Product, Quote, QuoteItem};
 use App\Traits\QuoteHandler;
+use App\Services\OtpService;
 
 class OrderController extends Controller
 {
@@ -23,14 +24,21 @@ class OrderController extends Controller
         ]);
     }
 
-    public function checkout(Request $request)
+    public function checkout(Request $request, OtpService $otpService)
     {
         $quoteId = $request->get('quoteId');
         $quote = Quote::where('id', $quoteId)->first();
+        $verify = session()->get('verify');
+        if($verify){
+            $otpService->setReceptor($request->user()->phone);
+            $otpService->send();    
+        }
+        
 
         return view('checkout', [
             'slug' => __('checkout'),
-            'quote' => $quote
+            'quote' => $quote,
+            'verify' => $verify
         ]);
     }
 
