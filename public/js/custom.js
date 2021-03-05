@@ -197,7 +197,7 @@ $('.featured-slider').owlCarousel({
 $('.date-slider').owlCarousel({
     loop: false,
     margin: 10,
-    nav: true,
+    nav: false,
     dots: false,
     rtl: true,
     responsive: {
