@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-5">
-                        <x-cart.order-summary :quote="$qoute" />
+                        <x-cart.order-summary :quote="$quote" />
                         <a href="#" class="promo-link45">{{__('global.Have a promocode')}}</a>
                         <div class="checkout-safety-alerts">
                             <p>{{ __('global.Replacement Guarantee') }}<i class="uil uil-sync"></i></p>

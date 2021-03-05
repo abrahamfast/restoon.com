@@ -3,9 +3,9 @@
                                 <h4>{{ __('global.Order Summary') }}</h4>
                             </div>
                             <div class="right-cart-dt-body">
-                                @if($quote_items)
-                                    @foreach($quote_items as $item)
-                                        <x-cart.cart-item :item="$item" />
+                                @if($quote)
+                                    @foreach($quote->items()->get() as $product)
+                                        <x-cart.cart-item :product="$product" />
                                     @endforeach
                                 @endif
                             </div>
