@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\{Product, Quote, QuoteItem};
+use App\Traits\QuoteHandler;
 
 class OrderController extends Controller
 {
@@ -18,6 +20,17 @@ class OrderController extends Controller
 
         return view('order', [
             'user' => $user
+        ]);
+    }
+
+    public function checkout(Request $request)
+    {
+        $quoteId = $request->get('quoteId');
+        $quote = Quote::where('id', $quoteId)->first();
+
+        return view('checkout', [
+            'slug' => __('checkout'),
+            'quote' => $quote
         ]);
     }
 

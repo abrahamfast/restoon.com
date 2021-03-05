@@ -33,7 +33,7 @@
                 <span>{{ $total_amount ?? 0 }}</span>
             </div>
             <div class="checkout-cart">
-                <form action="/cart/checkout" method="post">
+                <form action="/app/checkout" method="post">
                     @csrf
                     <input type="hidden" name="quoteId" value="{{ $quote->id }}" >
                 {{-- <a href="#" class="promo-code">Have a promocode?</a> --}}

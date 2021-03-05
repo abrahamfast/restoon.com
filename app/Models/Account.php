@@ -15,4 +15,9 @@ class Account extends Model
    	protected $casts = [
     	'id' => 'string',
     ];
+
+    public function contact()
+    {
+    	return $this->hasOne(Contact::class, 'account_id');
+    }
 }
