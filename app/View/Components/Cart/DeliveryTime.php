@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\cart;
+namespace App\View\Components\Cart;
 
 use Carbon\Carbon;
 use Carbon\CarbonInterval;
@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 
 class DeliveryTime extends Component
 {
-    public $dataRanges;
+    public $date_ranges;
     /**
      * Create a new component instance.
      *
@@ -18,7 +18,7 @@ class DeliveryTime extends Component
     {
         $period = CarbonInterval::toPeriod(Carbon::now(), '31 days');
         foreach ($period as $date){
-            $this->dataRanges[] = verta($date);
+            $this->date_ranges[] = verta($date);
         }
     }
 

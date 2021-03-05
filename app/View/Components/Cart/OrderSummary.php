@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Cart;
 
 use Illuminate\View\Component;
 
-class Verification extends Component
+class OrderSummary extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class Verification extends Component
      */
     public function render()
     {
-        return view('components.cart.verification');
+        return view('components.cart.order-summary');
     }
 }

@@ -13,7 +13,7 @@
                                                     <label class="control-label">{{ __('global.Select Date and Time') }}*</label>
                                                     <div class="date-slider-group">
                                                         <div class="owl-carousel date-slider owl-theme">
-                                                            @foreach($dataRanges as $date)
+                                                            @foreach($date_ranges as $date)
                                                                 <div class="item">
                                                                     <div class="date-now">
                                                                         <input type="radio" id="dd{{$date->formatDate()}}" name="date-delivery">

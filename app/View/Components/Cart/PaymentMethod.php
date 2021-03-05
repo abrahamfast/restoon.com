@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\cart;
+namespace App\View\Components\Cart;
 
 use Illuminate\View\Component;
 
-class DeliveryAddresses extends Component
+class PaymentMethod extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class DeliveryAddresses extends Component
      */
     public function render()
     {
-        return view('components.cart.delivery-addresses');
+        return view('components.cart.payment-method');
     }
 }
