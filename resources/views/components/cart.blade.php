@@ -33,7 +33,7 @@
             </div>
             <div class="checkout-cart">
                 {{-- <a href="#" class="promo-code">Have a promocode?</a> --}}
-                <a href="/cart/checkout" class="cart-checkout-btn hover-btn btn-block">{{ __('global.Proceed to Checkout') }}</a>
+                <a href="/cart/checkout" @if(!$total_amount) disabled @endif class="cart-checkout-btn hover-btn btn-block">{{ __('global.Proceed to Checkout') }}</a>
             </div>
         </div>
     </div>

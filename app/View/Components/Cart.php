@@ -23,7 +23,7 @@ class Cart extends Component
     public function __construct()
     {
         $user = Auth::user();
-        $total_amount = 0;
+
         if($user){
             $this->quote = $user->quote()->where('status', 'Draft')->first();
             $this->quote_items = $this->quote->items()->get();
@@ -34,6 +34,7 @@ class Cart extends Component
                 $this->quote = Quote::where('id', $quoteId)->first();
                 $this->quote_items = $this->quote->items()->get();
                 $this->itemsCount  = $this->quote_items->count();
+                $this->total_amount = $this->quote->amount;
             }
         }
 
@@ -42,7 +43,7 @@ class Cart extends Component
             $this->discount_amount = $this->quote->discount_amount;
             $this->tax_amount = $this->quote->tax_amount;
             $this->shipping_cost = $this->quote->shipping_cost;
-            $this->total_amount = $total_amount;
+            $this->total_amount = $this->quote->amount;
         }
     }
 
