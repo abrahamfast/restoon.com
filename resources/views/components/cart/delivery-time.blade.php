@@ -17,7 +17,7 @@
                                                                 <div class="item">
                                                                     <div class="date-now">
                                                                         <input type="radio" id="dd{{$date->formatDate()}}" name="date-delivery">
-                                                                        <label for="dd{{$date->formatDate()}}">{{$date->formatDate()}}</label>
+                                                                        <label for="dd{{$date->formatDate()}}">{{$date->format('%B %d، %Y')}}</label>
                                                                     </div>
                                                                 </div>
                                                             @endforeach

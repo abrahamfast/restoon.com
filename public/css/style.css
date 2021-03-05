@@ -2710,7 +2710,8 @@ label.control-label {
     color: #fff;
     border-radius: 3px;
     font-weight: 500;
-    font-size: 12px
+    font-size: 12px;
+    text-align: right;
 }
 .date-slider-group label:hover {
     background: #0edd16

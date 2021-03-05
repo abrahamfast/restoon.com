@@ -38,7 +38,7 @@ $(document).ready(function() {
         	data: formData,
         	success: function(data){
         		console.log(data);
-        	}, 
+        	},
         	error: function(data){
         		console.log(data);
         	}
@@ -69,7 +69,7 @@ $(document).ready(function() {
         //     data: formData,
         //     success: function(data){
         //         console.log(data);
-        //     }, 
+        //     },
         //     error: function(data){
         //         console.log(data);
         //     }
@@ -197,8 +197,9 @@ $('.featured-slider').owlCarousel({
 $('.date-slider').owlCarousel({
     loop: false,
     margin: 10,
-    nav: false,
+    nav: true,
     dots: false,
+    rtl: true,
     responsive: {
         0: {
             items: 3

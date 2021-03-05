@@ -16,7 +16,7 @@ class DeliveryTime extends Component
      */
     public function __construct()
     {
-        $period = CarbonInterval::toPeriod(Carbon::now(), '31 days');
+        $period = CarbonInterval::days()->toPeriod(Carbon::now(), '31 days');
         foreach ($period as $date){
             $this->date_ranges[] = verta($date);
         }
