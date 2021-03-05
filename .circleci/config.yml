@@ -39,7 +39,7 @@ jobs:
       - run:
           name: "Create Environment file and generate app key"
           command: |
-            mv .env.testing .env
+            mv .env.dev .env
             php artisan key:generate
 
       - run:
