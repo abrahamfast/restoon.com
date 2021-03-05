@@ -202,19 +202,19 @@ $('.date-slider').owlCarousel({
     rtl: true,
     responsive: {
         0: {
-            items: 3
+            items: 2
         },
         600: {
-            items: 4
+            items: 3
         },
         1000: {
-            items: 5
+            items: 4
         },
         1200: {
-            items: 6
+            items: 5
         },
         1400: {
-            items: 7
+            items: 5
         }
     }
 })

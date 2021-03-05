@@ -15,14 +15,14 @@
                                                         <div class="owl-carousel date-slider owl-theme">
                                                             <div class="item">
                                                                 <div class="date-now">
-                                                                    <input type="radio" id="dd2" name="date-delivery">
-                                                                    <label for="dd2">{{ __('global.Tomorrow') }}</label>
+                                                                    <input type="radio" id="dd1" name="date-delivery" checked="">
+                                                                    <label for="dd1">{{ __('global.Today') }}</label>
                                                                 </div>
                                                             </div>
                                                             <div class="item">
                                                                 <div class="date-now">
-                                                                    <input type="radio" id="dd1" name="date-delivery" checked="">
-                                                                    <label for="dd1">{{ __('global.Today') }}</label>
+                                                                    <input type="radio" id="dd2" name="date-delivery">
+                                                                    <label for="dd2">{{ __('global.Tomorrow') }}</label>
                                                                 </div>
                                                             </div>
                                                             @foreach($date_ranges as $date)
