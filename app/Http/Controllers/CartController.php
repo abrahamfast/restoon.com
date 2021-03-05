@@ -55,8 +55,12 @@ class CartController extends Controller
 
     public function checkout(Request $request)
     {
+        $quoteId = $request->get('quoteId');
+        $quote = Quote::where('id', $quoteId)->first();
+
         return view('checkout', [
-            'slug' => __('checkout')
+            'slug' => __('checkout'),
+            'quote' => $quote
         ]);
     }
 

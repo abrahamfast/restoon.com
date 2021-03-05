@@ -3,17 +3,11 @@
                                 <h4>{{ __('global.Order Summary') }}</h4>
                             </div>
                             <div class="right-cart-dt-body">
-                                <div class="cart-item border_radius">
-                                    <div class="cart-product-img">
-                                        <img src="images/product/img-11.jpg" alt="">
-                                        <div class="offer-badge">4% OFF</div>
-                                    </div>
-                                    <div class="cart-text">
-                                        <h4>Product Title Here</h4>
-                                        <div class="cart-item-price">$15 <span>$18</span></div>
-                                        <button type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></button>
-                                    </div>
-                                </div>
+                                @if($quote_items)
+                                    @foreach($quote_items as $item)
+                                        <x-cart.cart-item :item="$item" />
+                                    @endforeach
+                                @endif
                             </div>
                             <div class="total-checkout-group">
                                 <div class="cart-total-dil">

@@ -14,7 +14,7 @@
                 <input type="button" value="+" class="plus plus-btn">
             </div>
             @if($item->product()->first()->discount)
-                <div class="cart-item-price">{{ $item->product()->first()->discountdiscount_price }} <span>{{ $item->product()->first()->discountcost_price }}</span></div>
+                <div class="cart-item-price">{{ $item->product()->first()->discount_price }} <span>{{ $item->product()->first()->discount_price }}</span></div>
             @else
                 <div class="cart-item-price">{{ $item->product()->first()->discount_price}}</div>
             @endif

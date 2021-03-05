@@ -32,8 +32,12 @@
                 <span>{{ $total_amount ?? 0 }}</span>
             </div>
             <div class="checkout-cart">
+                <form action="/cart/checkout" method="post">
+                    @csrf
+                    <input type="hidden" name="quoteId" value="{{ $quote->id }}" >
                 {{-- <a href="#" class="promo-code">Have a promocode?</a> --}}
-                <a href="/cart/checkout" @if(!$total_amount) disabled @endif class="cart-checkout-btn hover-btn btn-block">{{ __('global.Proceed to Checkout') }}</a>
+                    <button type="submit"  @if(!$total_amount) disabled="disabled" @endif class="cart-checkout-btn hover-btn btn-block">{{ __('global.Proceed to Checkout') }}</button>
+                </form>
             </div>
         </div>
     </div>
