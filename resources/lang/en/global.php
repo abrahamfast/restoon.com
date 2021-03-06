@@ -172,7 +172,11 @@ return [
     "Thank you for your order! will received order timing" => "بابت سفارش شما متشکرم! زمان سفارش را دریافت خواهید کرد -",
     "Your order will be sent to this address"=> "سفارش شما به این آدرس ارسال می شود",
     "trackorder" => "پیگیری سفارش",
-    "Success Your Phone" => "شماره همراه شما تایید شد"
+    "Success Your Phone" => "شماره همراه شما تایید شد",
+
+    // Alert
+    "success" => "به روزرسانی با موفقیت انجام شد",
+    "danger" => "عملیات با خطا روبرو شد",
 
 
 

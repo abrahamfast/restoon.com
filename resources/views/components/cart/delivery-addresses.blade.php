@@ -10,6 +10,12 @@
             <div class="checout-address-step">
                 <div class="row">
                     <div class="col-lg-12">
+                        <div  class="alert alert-success none" role="alert">
+                            {{ __('global.success') }}
+                        </div>
+                        <div  class="alert alert-danger none" role="alert">
+                            {{ __('global.danger') }}
+                        </div>
                         <form action="/app/addresses/{{ Auth::user()->account->id}}" method="POST">
                             @csrf
                             <div class="address-fieldset">
@@ -83,10 +89,16 @@
                     url: '/app/addresses/{{ Auth::user()->account->id}}',
                     data: formData,
                     success: function(data){
-                        console.log(data);
+                        $('.alert-danger').hide(0);
+                        $('.alert-success').show(0);
+                        setTimeout(function(){
+                            $('.collapsed').eq(1).click()
+                        }, 500);
+                        
                     },
                     error: function(data){
-                        console.log(data);
+                        $('.alert-danger').show(0);
+                        $('.alert-success').hide(0);
                     }
                 })
             });
