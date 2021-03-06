@@ -16,6 +16,10 @@ class Account extends Model
     	'id' => 'string',
     ];
 
+    protected $fillable = [
+        'id'
+    ];
+
     protected $guarded = [];
 
     public function contact()
