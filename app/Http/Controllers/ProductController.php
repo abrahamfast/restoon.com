@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductCategories;
+use App\Traits;
 
 class ProductController extends Controller
 {
+    use ProductFilter;
     /**
      * Display a listing of the resource.
      *
@@ -25,9 +27,11 @@ class ProductController extends Controller
         ]);
     }
 
-    public function newest()
+    public function newest(Request $reqeust)
     {
-        $products = Product::all();
+        $query = Product::where('deleted', 0);
+        $type = $request->get('filter') ?? 0;
+        $products = $this->filter($type, $query)->get();
 
         return view('product', [
             'products' => $products,
@@ -35,9 +39,11 @@ class ProductController extends Controller
         ]);
     }
 
-    public function special()
+    public function special(Request $reqeust)
     {
-        $products = Product::all();
+        $query = Product::where('deleted', 0)->where('list_price', "<>", null);
+        $type = $request->get('filter') ?? 0;
+        $products = $this->filter($type, $query)->get();
 
         return view('product', [
             'products' => $products,

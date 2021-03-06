@@ -4,7 +4,7 @@
     </div>    
     <div class="product-sort">
         <div class="ui selection dropdown vchrt-dropdown">
-            <input name="gender" type="hidden" value="default">
+            <input name="filter" type="hidden" value="default">
             <i class="dropdown icon d-icon"></i>
             <div class="text">{{ __('global.Popularity') }}</div>
             <div class="menu">
@@ -18,3 +18,13 @@
     </div>
     <a href="#" class="filter-btn pull-bs-canvas-right">{{ __('global.Filters') }}</a>
 </div>
+
+@push('js')
+    <script>
+        $(document).ready(function() {
+            $('input[name=filter]').change(function(){
+                window.location = "/special?filter=" + this.value
+            });
+        });
+    </script>
+@endpush
