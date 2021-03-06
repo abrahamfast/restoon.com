@@ -6,7 +6,7 @@
                 @if($product->discount)
                     <span class="offer-badge-1">{{ $product->discount }}% تخفیف</span>
                 @endif
-                <span class="like-icon" title="wishlist"></span>
+                <span class="like-icon" title="wishlist" data-product-id="{{ $product->id }}"></span>
             </div>
         </a>
         <div class="product-text-dt">
@@ -24,13 +24,13 @@
             <div class="qty-cart">
                 <div class="quantity buttons_added">
                     <form action="/cart/add">
-                        <input type="hidden" value="{{ $product->id }}">
+                        <input type="hidden" name="product-id" value="{{ $product->id }}">
                         <input type="button" value="-" class="minus minus-btn">
                         <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
                         <input type="button" value="+" class="plus plus-btn">
                     </form>
                 </div>
-                <span class="cart-icon"><i class="uil uil-shopping-cart-alt"></i></span>
+                <span class="cart-icon"><i class="uil uil-shopping-cart-alt addcart" data-product-id="{{ $product->id }}"></i></span>
             </div>
         </div>
     </div>
