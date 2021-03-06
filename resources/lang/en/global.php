@@ -203,5 +203,6 @@ return [
     "Subject" => "عنوان",
     "Message" => "پیام",
     "Write Message" => "پیام خود را وارد کنید",
+    "Submit Request" => "ثبت درخواست"
 
 ];

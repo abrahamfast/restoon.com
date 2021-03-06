@@ -2612,7 +2612,11 @@ ul.code-alrt-inputs input:focus {
 label.control-label {
     font-size: 13px;
     font-weight: 500;
-    color: #2b2f4c
+    color: #2b2f4c;
+    direction: rtl;
+}
+textarea.form-control{
+    direction: rtl !important;
 }
 .chck-btn {
     height: 33px;
@@ -4805,6 +4809,9 @@ textarea {
     background-position: 40% 0;
     transition: 0s linear;
     transition-property: background-position
+}
+.banner-contact{
+    background: url(../images/contact/img-1.jpg) 40% 0px/cover no-repeat
 }
 .banner-blog {
     background: url(../images/blog/img-1.jpg) 40% 0px/cover no-repeat

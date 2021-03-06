@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('wrapper')
-    <div class="blog-dt-vw banner-blog banner.visible parallax">
+    <div class="blog-dt-vw banner-contact banner.visible parallax">
             <div class="blog-inner">
                 <div class="container">
                     <div class="row">
@@ -33,6 +33,7 @@
                         </div>
                         <div class="contact-form">
                             <form>
+                                @csrf
                                 <div class="form-group mt-1">
                                     <label class="control-label">{{ __('global.Full Name') }}*</label>
                                     <div class="ui search focus">
@@ -59,11 +60,11 @@
                                 </div>
                                 <div class="form-group mt-1">
                                     <div class="field">
-                                        <label class="control-label">{{ __('global.com_message_pump()') }}*</label>
+                                        <label class="control-label">{{ __('global.Message') }}*</label>
                                         <textarea rows="2" class="form-control" id="sendermessage" name="sendermessage" required="" placeholder="{{ __('global.Write Message') }}"></textarea>
                                     </div>
                                 </div>
-                                <button class="next-btn16 hover-btn mt-3" type="submit" data-btntext-sending="Sending...">Submit Request</button>
+                                <button class="next-btn16 hover-btn mt-3" type="submit" data-btntext-sending="Sending...">{{ __('global.Submit Request') }}</button>
                             </form>
                         </div>
                     </div>
