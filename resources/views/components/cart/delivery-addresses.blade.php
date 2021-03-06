@@ -10,7 +10,8 @@
             <div class="checout-address-step">
                 <div class="row">
                     <div class="col-lg-12">
-                        <form class="/app/addresses/{{ Auth::user()->account->id}}" method="POST">
+                        <form action="/app/addresses/{{ Auth::user()->account->id}}" method="POST">
+                            @csrf
                             <div class="address-fieldset">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
