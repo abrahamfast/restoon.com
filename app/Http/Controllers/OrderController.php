@@ -17,9 +17,11 @@ class OrderController extends Controller
      */
     public function index(Request $request)
     {
-        $quotes = $request->user()->quote()->get();
+        $user = $request->user();
+        $quotes = $user->quote()->get();
 
         return view('dashboard_my_orders', [
+            'user' => $user,
             'quotes' => $quotes
         ]);
     }
