@@ -128,7 +128,7 @@ return [
     "Enter Code" => "کد را وارد کنید",
     "Resend Code" => "ارسال مجدد کد",
     "Delivery Address" => "نشانی تحویل",
-    "Home" => "رستوران",
+    "Home" => "صفحه اصلی",
     "Office" => "دفتر",
     "Other" => "غیره",
     "Name" => "نام کامل",
@@ -206,6 +206,7 @@ return [
     "Submit Request" => "ثبت درخواست",
     // about
     "About" => "درباره ما",
+    "about" => "درباره ما",
     "Contact" => "تماس با ما",
     "AboutRestoon" => "درباره رستون",
     "About Restoon" => "رستون",

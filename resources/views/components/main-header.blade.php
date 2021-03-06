@@ -56,6 +56,7 @@
                             <li class="nav-item"><a href="/newest" class="nav-link new_item" title="New Products">{{ __('global.New Products') }}</a></li>
                             <li class="nav-item"><a href="/special" class="nav-link" title="Featured Products">{{ __('global.Featured Products') }}</a></li>
                             <li class="nav-item"><a href="/contact" class="nav-link" title="Contact">{{ __('global.contact') }}</a></li>
+                            <li class="nav-item"><a href="/about" class="nav-link" title="Contact">{{ __('global.about') }}</a></li>
                         </ul>
                     </div>
                 </div>
