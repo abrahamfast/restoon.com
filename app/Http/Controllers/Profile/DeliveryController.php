@@ -71,6 +71,10 @@ class DeliveryController extends Controller
     public function update(Request $request, $id)
     {
         $quote = $request->user()->quote()->where('status', 'Draft')->first();
+	if(!$quote){
+		        $quoteId = session()->get('quoteId');
+			$quote = \App\Models\Quote::where('id', $quoteId)->first();
+	}
         $delivery_time = $request->get('delivery_time');
 	$delivery_date = $request->get('delivery_date') . " " ;
 

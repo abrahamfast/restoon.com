@@ -23,8 +23,9 @@ class Cart extends Component
     public function __construct()
     {
         $user = Auth::user();
+        $quoteId = session()->get('quoteId');
 
-        if($user){
+        if($user && !$quoteId){
             $this->quote = $user->quote()->where('status', 'Draft')->first();
             if($this->quote){
                 $this->quote_items = $this->quote->items()->get();

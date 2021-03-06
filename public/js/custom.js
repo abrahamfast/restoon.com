@@ -132,16 +132,16 @@ $('.offers-banner').owlCarousel({
             items: 1
         },
         600: {
-            items: 2
+            items: 1
         },
         1000: {
             items: 2
         },
         1200: {
-            items: 3
+            items: 2
         },
         1400: {
-            items: 3
+            items: 2
         }
     }
 })
@@ -178,19 +178,19 @@ $('.featured-slider').owlCarousel({
     navText: ["<i class='uil uil-angle-left'></i>", "<i class='uil uil-angle-right'></i>"],
     responsive: {
         0: {
-            items: 1
+            items: 2
         },
         600: {
             items: 2
         },
         1000: {
-            items: 3
-        },
-        1200: {
             items: 4
         },
-        1400: {
+        1200: {
             items: 5
+        },
+        1400: {
+            items: 6
         }
     }
 })

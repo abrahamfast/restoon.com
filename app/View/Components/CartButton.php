@@ -17,7 +17,8 @@ class CartButton extends Component
     public function __construct()
     {
         $user = Auth::user();
-        if($user){
+        $quoteId = session()->get('quoteId');
+        if($user && !$quoteId){
             $quote = $user->quote()->where('status', 'Draft')->first();
             if($quote){
                 $this->cartCount = $quote->items()->count();
