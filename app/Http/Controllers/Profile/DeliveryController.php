@@ -70,15 +70,34 @@ class DeliveryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::where('id', $id)->first();
-        dd($user, session()->get('quoteId'), $user->quote()->where('status', 'Draft')->first());
+        $quote = $reqeust->user()->quote()->where('status', 'Draft')->first();
+        $delivery_time = $request->get('delivery_time');
 
-        $data = [
-        	'shipping_address_street' => $request->get('shipping_address_street'),
-        	'shipping_address_postal_code' => $request->get('shipping_address_postal_code'),
-        	'shipping_address_city' => $request->get('shipping_address_city'),
-        ];
-        return $account->update($data);
+        switch ($delivery_time) {
+        	case '8_00AM_10_00AM':
+        		$delivery_date .= "10:00:00";
+        		break;
+			case '10_00AM_12_00AM':
+        		$delivery_date .= "12:00:00";
+        		break;
+			case '12_00AM_14_00PM':
+        		$delivery_date .= "14:00:00";
+        		break;
+			case '14_00AM_16_00PM':
+        		$delivery_date .= "16:00:00";
+        		break;
+			case '16_00AM_18_00PM':
+        		$delivery_date .= "16:00:00";
+        		break;
+        	
+        	default:
+				$delivery_date .= "10:00:00";
+        		break;
+        }
+
+        return $quote->update([
+        	'delivery_time' => $delivery_date
+        ]);
     }
 
     /**

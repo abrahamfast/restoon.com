@@ -28,7 +28,7 @@
                                 @foreach($date_ranges as $date)
                                     <div class="item">
                                         <div class="date-now">
-                                            <input type="radio" id="dd{{$date->formatDate()}}" name="delivery_time" value="{{$date->formatDate()}}">
+                                            <input type="radio" id="dd{{$date->formatDate()}}" name="delivery_date" value="{{$date->formatDate()}}">
                                             <label for="dd{{$date->formatDate()}}">{{$date->format('%B %d، %Y')}}</label>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@
                         $('.alert-danger').hide(0);
                         $('.alert-success').show(0);
                         setTimeout(function(){
-                            $('.collapsed').eq(1).click()
+                            $('.collapsed').eq(4).click()
                         }, 500);
                         
                     },
