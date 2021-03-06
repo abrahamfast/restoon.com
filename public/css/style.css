@@ -659,7 +659,7 @@ i.icon1 {
     font-weight: 500
 }
 .ui.input>input {
-    font-family: roboto, sans-serif!important
+    font-family: "Iran Yekan", sans-serif!important
 }
 .select_location {
     margin-left: 34px;
@@ -2864,7 +2864,8 @@ label.control-label {
     background: #fff;
     border: 1px solid #efefef!important;
     color: #2b2f4c!important;
-    border-radius: 5px!important
+    border-radius: 8px!important;
+    text-align: right !important; 
 }
 .ui.input>input:focus {
     border: 1px solid #0edd16!important
@@ -5351,7 +5352,7 @@ textarea {
     font-size: 24px;
     font-weight: 700;
     margin-top: 17px!important;
-    text-align: left;
+    text-align: right;
     margin-bottom: 12px;
     color: #2b2f4c
 }
@@ -5359,7 +5360,7 @@ textarea {
     font-size: 14px;
     font-weight: 400;
     margin-top: 0!important;
-    text-align: left;
+    text-align: right;
     margin-bottom: 0;
     color: #3e3f5e;
     line-height: 26px
@@ -5377,7 +5378,7 @@ textarea {
     background: #0edd16;
     font-weight: 400;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 8px;
     line-height: 26px
 }
 .bootstrap-tagsinput {
@@ -5385,7 +5386,7 @@ textarea {
     box-shadow: none!important;
     width: 100%;
     height: auto;
-    text-align: left
+    text-align: right
 }
 .bootstrap-tagsinput input {
     padding: 7px 10px!important;

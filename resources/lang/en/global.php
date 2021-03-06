@@ -194,5 +194,14 @@ return [
     "On the way" => "در راه",
     "Delivered" => "تحویل داده شده",
     "Track Order" => "پیگیری سفارش",
-    "View Bill" => "مشاهده فاکتور"
+    "View Bill" => "مشاهده فاکتور",
+    // contact form
+    "Full Name" => "نام شما",
+    "Your Full" => "نام خود را وارد کنید",
+    "Email Address" => "ایمیل",
+    "Your Email Address" => "ایمیل خود را وارد کنید",
+    "Subject" => "عنوان",
+    "Message" => "پیام",
+    "Write Message" => "پیام خود را وارد کنید",
+
 ];
