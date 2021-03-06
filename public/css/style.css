@@ -1023,7 +1023,7 @@ i.icon1 {
     align-items: center
 }
 .cart-total-dil h4 {
-    margin-bottom: 0;
+    margin-top: 0;
     font-size: 14px;
     font-weight: 400;
     color: #2b2f4c;
@@ -1045,7 +1045,7 @@ i.icon1 {
     padding: 20px 20px 0
 }
 .main-total-cart h2 {
-    margin-bottom: 0;
+    margin-top: 0;
     font-size: 18px;
     font-weight: 600;
     color: #2b2f4c;
@@ -1054,7 +1054,7 @@ i.icon1 {
 .main-total-cart span {
     color: #0edd16;
     font-size: 18px;
-    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     line-height: 24px
 }

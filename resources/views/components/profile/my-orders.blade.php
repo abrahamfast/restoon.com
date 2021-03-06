@@ -42,7 +42,7 @@
         </div>
         <div class="call-bill">
         	 <div class="order-bill-slip">
-                <a href="#" class="bill-btn5 hover-btn">{{ __('View Bill') }}</a>
+                <a href="#" class="bill-btn5 hover-btn">{{ __('global.View Bill') }}</a>
             </div>
             <div class="delivery-man">
                 {{ __('global.Delivery Boy') }} - <a href="tel:02122222222"><i class="uil uil-phone"></i> {{ __('global.Call Us') }}</a>
