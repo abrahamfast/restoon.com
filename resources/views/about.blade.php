@@ -15,7 +15,7 @@
                             </nav>
                         </div>
                         <div class="title129">
-                            <h2>{{ __('global.About Us') }}</h2>
+                            <h2>{{ __('global.AboutRestoon') }}</h2>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="default-title left-text">
+                        <div class="default-title right-text">
                             <h2>{{ __('global.About Restoon') }}</h2>
                             <p>{{ __('global.Customers Deserve Better') }}</p>
                             <img src="/images/line.svg" alt="">

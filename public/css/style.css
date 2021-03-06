@@ -3971,7 +3971,7 @@ table {
     border-top-right-radius: 0!important;
     color: rgba(255, 255, 255, .7)!important;
     font-weight: 500!important;
-    font-family: roboto, sans-serif!important
+    font-family: "Iran yekan", sans-serif!important
 }
 .tab_default .nav-link {
     padding: .5rem 1.5rem!important
@@ -4015,7 +4015,8 @@ table {
     font-weight: 400;
     color: #3e3f5e;
     font-size: 14px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    direction: rtl;
 }
 .dd-content {
     margin-top: 30px;
@@ -4395,13 +4396,17 @@ textarea {
 .left-text {
     text-align: left
 }
+.right-text{
+    text-align: right;
+}
 .about-content p {
     margin-top: 24px!important;
     line-height: 26px;
     font-size: 14px;
     font-weight: 400;
     color: #3e3f5e;
-    text-align: left
+    text-align: right;
+    direction: rtl;
 }
 .about-img {
     width: 100%;
@@ -4428,7 +4433,8 @@ textarea {
     color: #2b2f4c;
     margin-top: 20px;
     margin-bottom: 12px;
-    text-align: center
+    text-align: center;
+    direction: rtl;
 }
 .about-step p {
     font-size: 14px;
@@ -4499,7 +4505,8 @@ textarea {
     line-height: 26px;
     font-size: 16px;
     font-weight: 600;
-    text-align: center
+    text-align: center;
+    direction: rtl;
 }
 .how-order-icon i {
     width: 70px;
