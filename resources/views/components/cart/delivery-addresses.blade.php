@@ -47,7 +47,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <div class="address-btns">
-                                                <button type="submit" class="save-btn14 hover-btn">{{ __('global.Save') }}</button>
+                                                <button id="update-account"  class="save-btn14 hover-btn">{{ __('global.Save') }}</button>
                                                 <a class="collapsed ml-auto next-btn16 hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseThree"> {{ __('global.Next') }} </a>
                                             </div>
                                         </div>
@@ -61,3 +61,36 @@
         </div>
     </div>
 </div>
+
+@push('js')
+<script>
+    $(document).ready(function() {
+            $('#update-account').on('click', function(e){
+                e.preventDefault();
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                var formData = {
+                    shipping_address_street: $('input[name=shipping_address_street]').val(),
+                    shipping_address_postal_code: $('input[name=shipping_address_postal_code]').val(),
+                    shipping_address_city: $('input[name=shipping_address_city]').val(),
+                };
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/app/addresses/{{ Auth::user()->account->id}}',
+                    data: formData,
+                    success: function(data){
+                        console.log(data);
+                    },
+                    error: function(data){
+                        console.log(data);
+                    }
+                })
+            });
+        });
+</script>
+
+@endpush

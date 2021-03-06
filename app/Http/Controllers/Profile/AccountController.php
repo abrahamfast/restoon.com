@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Account;
 
 class AccountController extends Controller
 {
@@ -14,7 +15,7 @@ class AccountController extends Controller
      */
     public function index()
     {
-    	
+
     }
 
     /**
@@ -69,11 +70,13 @@ class AccountController extends Controller
      */
     public function update(Request $request, $id)
     {
-        @ddd($id, $request->all());
         $account = Account::where('id', $id)->first();
-        $account->update($request->all());
-
-        return redirect()->back();
+        $data = [
+        	'shipping_address_street' => $request->get('shipping_address_street'),
+        	'shipping_address_postal_code' => $request->get('shipping_address_postal_code'),
+        	'shipping_address_city' => $request->get('shipping_address_city'),
+        ];
+        return $account->update($data);
     }
 
     /**

@@ -16,6 +16,8 @@ class Account extends Model
     	'id' => 'string',
     ];
 
+    protected $guarded = [];
+
     public function contact()
     {
     	return $this->hasOne(Contact::class, 'account_id');
