@@ -61,6 +61,7 @@ return [
     "Offers" => "تخفیفات",
     "Faq" => "سوالات متداول",
     "Logout" => "خروج",
+    "Login" => "ورود",
 
     // forms
     "register" => "عضویت",

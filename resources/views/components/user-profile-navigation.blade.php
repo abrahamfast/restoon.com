@@ -19,6 +19,7 @@
                 </span>
             </a>
         </div>
+        @auth
         <a href="/app" class="item channel_item">{{ __('global.Dashboard') }}<i class="uil uil-apps icon__1"></i></a>
         <a href="/app/orders" class="item channel_item">{{ __('global.My Orders') }}<i class="uil uil-box icon__1"></i></a>
         <a href="/app/wishlist" class="item channel_item">{{ __('global.My Wishlist') }}<i class="uil uil-heart icon__1"></i></a>
@@ -30,5 +31,10 @@
         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
             @csrf
         </form>
+        @endauth
+        @guest
+            <a href="/login" class="item channel_item">{{ __('global.Login') }}<i class="uil uil-lock icon__1"></i></a>
+        @endguest
+
     </div>
 </li>
