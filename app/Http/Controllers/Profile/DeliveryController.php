@@ -70,8 +70,9 @@ class DeliveryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $quote = $reqeust->user()->quote()->where('status', 'Draft')->first();
+        $quote = $request->user()->quote()->where('status', 'Draft')->first();
         $delivery_time = $request->get('delivery_time');
+	$delivery_date = $request->get('delivery_date') . " " ;
 
         switch ($delivery_time) {
         	case '8_00AM_10_00AM':
@@ -94,7 +95,6 @@ class DeliveryController extends Controller
 				$delivery_date .= "10:00:00";
         		break;
         }
-
         return $quote->update([
         	'delivery_time' => $delivery_date
         ]);
