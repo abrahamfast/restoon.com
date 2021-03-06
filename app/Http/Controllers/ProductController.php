@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductCategories;
-use App\Traits;
+use App\Traits\ProductFilter;
 
 class ProductController extends Controller
 {
@@ -27,7 +27,7 @@ class ProductController extends Controller
         ]);
     }
 
-    public function newest(Request $reqeust)
+    public function newest(Request $request)
     {
         $query = Product::where('deleted', 0);
         $type = $request->get('filter') ?? 0;
@@ -35,11 +35,12 @@ class ProductController extends Controller
 
         return view('product', [
             'products' => $products,
-            'slug' => __('global.New Products')
+            'slug' => __('global.New Products'),
+            'filter' => $type
         ]);
     }
 
-    public function special(Request $reqeust)
+    public function special(Request $request)
     {
         $query = Product::where('deleted', 0)->where('list_price', "<>", null);
         $type = $request->get('filter') ?? 0;
@@ -47,7 +48,8 @@ class ProductController extends Controller
 
         return view('product', [
             'products' => $products,
-            'slug' => __('global.Featured Products')
+            'slug' => __('global.Featured Products'),
+            'filter' => $type
         ]);
     }
 

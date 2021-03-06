@@ -23,7 +23,8 @@
     <script>
         $(document).ready(function() {
             $('input[name=filter]').change(function(){
-                window.location = "/special?filter=" + this.value
+                let route = window.location.origin + window.location.pathname + "/?filter=" + this.value;
+                window.location = route;
             });
         });
     </script>
