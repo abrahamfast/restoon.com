@@ -22,9 +22,11 @@
                     <li>
                         <a href="tel:02122222222" class="offer-link"><i class="uil uil-phone-alt"></i>۰۲۱۳۳۳۳۳۹۳</a>
                     </li>
+                    @guest
                     <li>
                         <a href="/register" class="offer-link"><i class="uil uil-user-circle"></i>عضویت</a>
                     </li>
+                    @endguest
                     <li>
                         <a href="/offer" class="offer-link"><i class="uil uil-gift"></i>تخفیفات</a>
                     </li>

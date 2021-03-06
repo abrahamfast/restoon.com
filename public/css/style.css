@@ -388,7 +388,7 @@ i.icon1 {
     font-weight: 500;
     border: 0!important;
     text-align: right;
-    font-size: "Iran Yekan";
+    font-family: "Iran Yekan" !important;
 }
 .ui.search .prompt {
     border-radius: .3rem!important;
