@@ -71,7 +71,7 @@ class DeliveryController extends Controller
     public function update(Request $request, $id)
     {
         $user = User::where('id', $id)->first();
-        dd($user, $user->quote, $user->quote()->where('status', 'Draft')->first());
+        dd($user, session()->get('quoteId'), $user->quote()->where('status', 'Draft')->first());
 
         $data = [
         	'shipping_address_street' => $request->get('shipping_address_street'),

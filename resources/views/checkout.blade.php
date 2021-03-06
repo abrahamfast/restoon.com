@@ -11,6 +11,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-7">
                         <div id="checkout_wizard" class="checkout accordion left-chck145">
+                            <div  class="alert alert-success" role="alert" style="display: none;">
+                                {{ __('global.success') }}
+                            </div>
+                            <div  class="alert alert-danger" role="alert" style="display: none;">
+                                {{ __('global.danger') }}
+                            </div>
                             <x-cart.verification :verify="$verify"/>
                             <x-cart.delivery-addresses />
                             <x-cart.delivery-time />

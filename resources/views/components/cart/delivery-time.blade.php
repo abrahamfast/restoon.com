@@ -9,14 +9,6 @@
         <div class="checkout-step-body">
             <div class="row">
                 <div class="col-md-12">
-
-                    <div  class="alert alert-success" role="alert" style="display: none;">
-                        {{ __('global.success') }}
-                    </div>
-                    <div  class="alert alert-danger" role="alert" style="display: none;">
-                        {{ __('global.danger') }}
-                    </div>
-
                     <div class="form-group">
                         <label class="control-label">{{ __('global.Select Date and Time') }}*</label>
                         <div class="date-slider-group">
