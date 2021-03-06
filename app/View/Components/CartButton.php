@@ -19,7 +19,10 @@ class CartButton extends Component
         $user = Auth::user();
         if($user){
             $quote = $user->quote()->where('status', 'Draft')->first();
-            $this->cartCount = $quote->items()->count();    
+            if($user){
+                $this->cartCount = $quote->items()->count();
+            }
+            
         } else {
             $quoteId = session()->get('quoteId');
             if($quoteId){
