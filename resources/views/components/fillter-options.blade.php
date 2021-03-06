@@ -12,13 +12,13 @@
                     <div class="cart-radio">
                         <ul class="cte-select">
                             <li>
-                                <input type="radio" id="c1" name="category" checked="">
+                                <input type="radio" id="c1" name="category" checked="" value="all">
                                 <label for="c1">{{ __('global.all category') }}</label>
                             </li>
                             @if($categories)
                                 @foreach($categories as $category)
                                     <li>
-                                        <input type="radio" id="{{$category->id}}" name="category">
+                                        <input type="radio" id="{{$category->id}}" name="category" value="{{$category->id}}">
                                         <label for="{{$category->id}}">{{$category->translate}}</label>
                                     </li>
                                 @endforeach
@@ -31,28 +31,30 @@
                 <div class="filtr-cate-title">
                     <h4>{{ __('global.Price') }}</h4>
                 </div>
-                <div class="price-pack-item-body scrollstyle_4">
-                    <div class="brand-list">
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="price_1">
-                            <label class="custom-control-label" for="price_1">کمتر از ۲۰ هزار  تومان <span class="webproduct"></span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="price_2">
-                            <label class="custom-control-label" for="price_2">بین ۲۰ هزار تومان تا ۵۰ هزار تومان<span class="webproduct"></span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="price_3">
-                            <label class="custom-control-label" for="price_3">۱۰۰ هزار تومان تا ۵۰۰ هزار تومان <span class="webproduct"></span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="price_4">
-                            <label class="custom-control-label" for="price_4">۱ می لیون تا ۲ میلیون<span class="webproduct"></span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="price_7">
-                            <label class="custom-control-label" for="price_7">بیش از ۲ میلیون تومان <span class="webproduct"></span></label>
-                        </div>
+                <div class="filter-item-body scrollstyle_4">
+                    <div class="cart-radio">
+                        <ul class="cte-select">
+                            <li>
+                                <input type="radio" id="c1" name="price" checked="" value="up20">
+                                <label for="price">کمتر از ۲۰ هزار  تومان </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c2" name="price" checked="" value="up30">
+                                <label for="price">بین ۲۰ هزار تومان تا ۵۰ هزار تومان </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c3" name="price" checked="" value="up40">
+                                <label for="price">۱۰۰ هزار تومان تا ۵۰۰ هزار تومان </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c4" name="price" checked="" value="up50">
+                                <label for="price">۱ می لیون تا ۲ میلیون </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c5" name="price" checked="" value="up60">
+                                <label for="price">بیش از ۲ میلیون تومان</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
