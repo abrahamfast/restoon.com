@@ -9,6 +9,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\VerificationController;
+use App\Http\Controllers\Profile\AccountController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('category/{slug}', [ProductController::class, 'index']);
@@ -35,6 +36,8 @@ Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app/addresses', [ProfileController::class, 'index']);
 	Route::get('app/offers', [ProfileController::class, 'index']);
 	Route::post('app/checkout', [OrderController::class, 'checkout']);
+
+	Route::post('app/addresses', [AccountController::class, 'update']);
 });
 
 
