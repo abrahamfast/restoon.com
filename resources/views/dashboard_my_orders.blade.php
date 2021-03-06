@@ -11,7 +11,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="main-title-tab">
-                                        <h4><i class="uil uil-box"></i>My Orders</h4>
+                                        <h4><i class="uil uil-box"></i>{{ __('global.MyOrders') }}</h4>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">

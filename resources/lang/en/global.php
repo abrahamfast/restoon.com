@@ -179,6 +179,7 @@ return [
     "danger" => "عملیات با خطا روبرو شد",
 
     // track order
+    "MyOrders" => "سفارشات من",
     "items" => "مورد",
     "Delivery Timing" => "زمان تحویل",
     "Delivered" => "تحویل داده شده",
