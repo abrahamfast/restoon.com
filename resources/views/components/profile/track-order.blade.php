@@ -1,5 +1,5 @@
         <div class="track-order">
-            <h4>Track Order</h4>
+            <h4>{{ __('global.Track Order') }}</h4>
             <div class="bs-wizard" style="border-bottom:0;">
                 <div class="bs-wizard-step complete">
                     <div class="text-center bs-wizard-stepnum">{{ __('global.Placed') }}</div>

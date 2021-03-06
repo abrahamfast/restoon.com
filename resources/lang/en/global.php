@@ -191,5 +191,6 @@ return [
     "Placed" => "بررسی",
     "Packed" => "بسته بندی",
     "On the way" => "در راه",
-    "Delivered" => "تحویل داده شده"
+    "Delivered" => "تحویل داده شده",
+    "Track Order" => "پیگیری سفارش",
 ];

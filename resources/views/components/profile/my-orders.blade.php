@@ -33,13 +33,12 @@
                 <span>{{ $quote->amount }}</span>
             </div>
         </div>
-        <x-profile.track-order />
+        <x-profile.track-order/>
         <div class="alert-offer">
             <img src="/images/ribbon.svg" alt=""> 
                         همراه با تخفیف‌های ویژه به مناسبت چهارده سالگی     
                         ۱۱ تا ۳۰ بهمن
                          (تا پایان اسفند ماه تمدید شد)
-                    
         </div>
         <div class="call-bill">
             <div class="delivery-man">
