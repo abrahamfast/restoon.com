@@ -37,7 +37,7 @@ Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app/offers', [ProfileController::class, 'index']);
 	Route::post('app/checkout', [OrderController::class, 'checkout']);
 
-	Route::post('app/addresses', [AccountController::class, 'update']);
+	Route::post('app/addresses/{id}', [AccountController::class, 'update']);
 });
 
 

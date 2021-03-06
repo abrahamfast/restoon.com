@@ -10,7 +10,7 @@
             <div class="checout-address-step">
                 <div class="row">
                     <div class="col-lg-12">
-                        <form class="app/addresses/{{ Auth::user()->account()->id}}">
+                        <form class="/app/addresses/{{ Auth::user()->account->id}}" method="POST">
                             <div class="address-fieldset">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
@@ -46,7 +46,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <div class="address-btns">
-                                                <button class="save-btn14 hover-btn">{{ __('global.Save') }}</button>
+                                                <button type="submit" class="save-btn14 hover-btn">{{ __('global.Save') }}</button>
                                                 <a class="collapsed ml-auto next-btn16 hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseThree"> {{ __('global.Next') }} </a>
                                             </div>
                                         </div>
