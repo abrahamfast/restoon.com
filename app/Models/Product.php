@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Attachment;
 use App\Models\ProductCategories;
+use App\Helper\StrHelper;
 
 class Product extends Model
 {
@@ -51,5 +52,20 @@ class Product extends Model
     public function getDiscount()
     {
         return ($this->list_price * "0.{$this->pricing_factor}");
+    }
+
+    public function getCostPrice()
+    {
+        return StrHelper::convertFa($this->cost_price);
+    }
+
+    public function getListPrice()
+    {
+        return StrHelper::convertFa($this->list_price);
+    }
+
+    public function getUnitPrice()
+    {
+        return StrHelper::convertFa($this->unit_price);
     }
 }
