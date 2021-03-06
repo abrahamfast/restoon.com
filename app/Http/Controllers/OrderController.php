@@ -17,10 +17,10 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $user = User::first();
-
-        return view('order', [
-            'user' => $user
+        $quotes = $request->user()->quotes;
+        
+        return view('dashboard_my_orders', [
+            'quotes' => $quotes
         ]);
     }
 

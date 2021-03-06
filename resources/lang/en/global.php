@@ -178,6 +178,18 @@ return [
     "success" => "به روزرسانی با موفقیت انجام شد",
     "danger" => "عملیات با خطا روبرو شد",
 
-
-
+    // track order
+    "items" => "مورد",
+    "Delivery Timing" => "زمان تحویل",
+    "Delivered" => "تحویل داده شده",
+    "Delivery Charges" => "هزینه های تحویل",
+    "Total" => "مجموع",
+    "tax rate" => "نرخ مالیات",
+    "Track Order" => "پیگیری سفارش",
+    "Delivery Boy" => "پیگیری بر خط",
+    "Call Us" => "با ما تماس بگیرید",
+    "Placed" => "بررسی",
+    "Packed" => "بسته بندی",
+    "On the way" => "در راه",
+    "Delivered" => "تحویل داده شده"
 ];
