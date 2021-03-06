@@ -12,13 +12,13 @@
                     <div class="cart-radio">
                         <ul class="cte-select">
                             <li>
-                                <input type="radio" id="c1" name="category1">
+                                <input type="radio" id="c1" name="category" checked="">
                                 <label for="c1">{{ __('global.all category') }}</label>
                             </li>
                             @if($categories)
                                 @foreach($categories as $category)
                                     <li>
-                                        <input type="radio" id="{{$category->id}}" name="{{$category->id}}" checked>
+                                        <input type="radio" id="{{$category->id}}" name="category">
                                         <label for="{{$category->id}}">{{$category->translate}}</label>
                                     </li>
                                 @endforeach
@@ -148,3 +148,14 @@
             </div>
         </div>
     </div>
+
+@push('js')
+    <script>
+        $(document).ready(function() {
+            $('input[name=category]').change(function(){
+                let route = window.location.origin + window.location.pathname + "/?filter=true&category=" + this.value;
+                window.location = route;
+            });
+        });
+    </script>
+@endpush
