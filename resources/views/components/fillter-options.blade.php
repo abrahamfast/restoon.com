@@ -39,19 +39,19 @@
                                 <label for="price">کمتر از ۲۰ هزار  تومان </label>
                             </li>
                             <li>
-                                <input type="radio" id="c2" name="price" checked="" value="up30">
+                                <input type="radio" id="c2" name="price" value="up30">
                                 <label for="price">بین ۲۰ هزار تومان تا ۵۰ هزار تومان </label>
                             </li>
                             <li>
-                                <input type="radio" id="c3" name="price" checked="" value="up40">
+                                <input type="radio" id="c3" name="price" value="up40">
                                 <label for="price">۱۰۰ هزار تومان تا ۵۰۰ هزار تومان </label>
                             </li>
                             <li>
-                                <input type="radio" id="c4" name="price" checked="" value="up50">
+                                <input type="radio" id="c4" name="price" value="up50">
                                 <label for="price">۱ می لیون تا ۲ میلیون </label>
                             </li>
                             <li>
-                                <input type="radio" id="c5" name="price" checked="" value="up60">
+                                <input type="radio" id="c5" name="price" value="up60">
                                 <label for="price">بیش از ۲ میلیون تومان</label>
                             </li>
                         </ul>
