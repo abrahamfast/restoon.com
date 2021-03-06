@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\VerificationController;
@@ -19,6 +20,7 @@ Route::get('offer/{id}', [OfferController::class, 'show']);
 Route::get('newest', [ProductController::class, 'newest']);
 Route::get('special', [ProductController::class, 'special']);
 Route::get('contact', [ContactController::class, 'index']);
+Route::get('about', [AboutController::class, 'index']);
 
 
 Route::post('cart/add', [CartController::class, 'link']);

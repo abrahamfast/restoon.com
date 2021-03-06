@@ -203,6 +203,27 @@ return [
     "Subject" => "عنوان",
     "Message" => "پیام",
     "Write Message" => "پیام خود را وارد کنید",
-    "Submit Request" => "ثبت درخواست"
+    "Submit Request" => "ثبت درخواست",
+    // about
+    "About" => "درباره ما",
+    "Contact" => "تماس با ما",
+    "About Us" => "درباره ما",
+    "About Restoon" => "رستون",
+    "Customers Deserve Better" => "مشتریان سزاوار بهترین هستند",
+    "People have joined the restoon team in the past six months" => "افراد در شش ماه گذشته به تیم رستون پیوسته اند",
+    "میزان رشد در پایگاه کاربر ماهانه ما" => "",
+    "Time taken to launch in 8 cities across India" => "زمان لازم برای راه اندازی در ۸ شهر دیگر",
+    "App downloads on iOS and Android" => "استفاده از وب اپلیکیشن",
+    "Teamwork Makes the Dream Work" => "کارتیمی میتواند باعث به حقیقت پیوستن رویا شود",
+    "Our Team" => "تیم ما",
+    "How Do I Order" => "چگونه سفارش دهم",
+    "How Do I order on restoon" => "چگونه می توانم در restoon سفارش بدهم",
+    "Browse restoon.com for products or use the search feature"=>"برای محصولات محصولات restoon.com را مرور کنید یا از ویژگی جستجو استفاده کنید",
+    "Add item to your shopping Basket"=>"مورد را به سبد خرید خود اضافه کنید",
+    "Choose a convenient delivery time from our 5 Slots* a day"=>"زمان تحویل مناسب را از 5 اسلات * ما در روز انتخاب کنید",
+    "Select suitable payment option(Cash, Master, Credit Card, Discover)"=>"گزینه پرداخت مناسب را انتخاب کنید (نقدی  ، کارت اعتباری  )",
+    "Your products will be home-delivered as per your order"=>"محصولات شما طبق سفارش شما از طریق خانه تحویل داده می شوند",
+    "Happy Curstomers"=>"مشتریان خوشحال",
+
 
 ];

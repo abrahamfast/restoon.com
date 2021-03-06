@@ -4813,6 +4813,9 @@ textarea {
 .banner-contact{
     background: url(../images/contact/img-1.jpg) 40% 0px/cover no-repeat
 }
+.banner-about{
+    background: url(../images/contact/img-2.jpg) 40% 0px/cover no-repeat
+}
 .banner-blog {
     background: url(../images/blog/img-1.jpg) 40% 0px/cover no-repeat
 }
