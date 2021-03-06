@@ -12,12 +12,15 @@ class Account extends Model
     const UPDATED_AT = 'modified_at'; 
     
     protected $table = 'account';
-   	protected $casts = [
+   protected $casts = [
     	'id' => 'string',
     ];
 
+    public $incrementing = false;
+
     protected $fillable = [
-        'id'
+	    'id',
+	    'name'
     ];
 
     protected $guarded = [];
