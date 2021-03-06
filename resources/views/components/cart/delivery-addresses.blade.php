@@ -10,10 +10,10 @@
             <div class="checout-address-step">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div  class="alert alert-success none" role="alert">
+                        <div  class="alert alert-success" role="alert" style="display: none;">
                             {{ __('global.success') }}
                         </div>
-                        <div  class="alert alert-danger none" role="alert">
+                        <div  class="alert alert-danger" role="alert" style="display: none;">
                             {{ __('global.danger') }}
                         </div>
                         <form action="/app/addresses/{{ Auth::user()->account->id}}" method="POST">
