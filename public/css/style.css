@@ -1032,7 +1032,7 @@ i.icon1 {
 .cart-total-dil span {
     color: #8f91ac;
     font-size: 16px;
-    margin-left: auto;
+    margin-right: auto;
     font-weight: 400;
     line-height: 24px
 }
@@ -3396,11 +3396,13 @@ label.control-label {
     font-size: 14px;
     font-weight: 400;
     color: #2b2f4c;
-    margin-bottom: 0
+    margin-bottom: 0;
+    text-align: right;
 }
 .order-body10 {}
 .order-dtsll {
-    padding: 20px
+    padding: 20px;
+    direction: rtl;
 }
 .order-dtsll li {
     display: inline-block;
@@ -3416,20 +3418,20 @@ label.control-label {
     width: 50px
 }
 .order-dt47 {
-    margin-left: 15px
+    margin-right: 15px
 }
 .order-dt47 h4 {
     font-size: 16px;
     color: #2b2f4c;
     margin-bottom: 5px;
     line-height: 24px;
-    text-align: left;
+    text-align: right;
     font-weight: 700
 }
 .order-dt47 p {
     font-size: 14px;
     font-weight: 400;
-    text-align: left;
+    text-align: right;
     color: #3e3f5e;
     margin-bottom: 7px
 }
@@ -3441,7 +3443,7 @@ label.control-label {
     margin-bottom: 20px;
     font-weight: 700;
     color: #2b2f4c;
-    text-align: left
+    text-align: right;
 }
 .bs-wizard {
     margin-top: 0;
@@ -3542,7 +3544,8 @@ label.control-label {
     border-top: 1px solid #efefef;
     font-weight: 400;
     color: #3e3f5e;
-    text-align: left;
+    text-align: right;
+    direction: rtl;
     line-height: 24px
 }
 .call-bill {
@@ -3567,7 +3570,7 @@ label.control-label {
     text-decoration: underline!important
 }
 .order-bill-slip {
-    margin-left: auto
+    margin-right: auto
 }
 .bill-btn5 {
     display: block;

@@ -20,17 +20,17 @@
         <div class="total-dt">
             <div class="total-checkout-group">
                 <div class="cart-total-dil">
+                	<span>{{ $quote->tax_rate }}</span>
                     <h4>{{ __('global.tax rate') }}</h4>
-                    <span>{{ $quote->tax_rate }}</span>
                 </div>
                 <div class="cart-total-dil pt-3">
+                	<span>{{ $quote->shipping_cost }}</span>
                     <h4>{{ __('global.Delivery Charges') }}</h4>
-                    <span>{{ $quote->shipping_cost }}</span>
                 </div>
             </div>
             <div class="main-total-cart">
+            	<span>{{ $quote->amount }}</span>
                 <h2>{{ __('global.Total') }}</h2>
-                <span>{{ $quote->amount }}</span>
             </div>
         </div>
         <x-profile.track-order/>
@@ -41,12 +41,13 @@
                          (تا پایان اسفند ماه تمدید شد)
         </div>
         <div class="call-bill">
+        	 <div class="order-bill-slip">
+                <a href="#" class="bill-btn5 hover-btn">{{ __('View Bill') }}</a>
+            </div>
             <div class="delivery-man">
                 {{ __('global.Delivery Boy') }} - <a href="tel:02122222222"><i class="uil uil-phone"></i> {{ __('global.Call Us') }}</a>
             </div>
-            <div class="order-bill-slip">
-                <a href="#" class="bill-btn5 hover-btn">View Bill</a>
-            </div>
+
         </div>
     </div>
 </div>

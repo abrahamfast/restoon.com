@@ -186,11 +186,12 @@ return [
     "Total" => "مجموع",
     "tax rate" => "نرخ مالیات",
     "Track Order" => "پیگیری سفارش",
-    "Delivery Boy" => "پیگیری بر خط",
+    "Delivery Boy" => "پیگیری ",
     "Call Us" => "با ما تماس بگیرید",
     "Placed" => "بررسی",
     "Packed" => "بسته بندی",
     "On the way" => "در راه",
     "Delivered" => "تحویل داده شده",
     "Track Order" => "پیگیری سفارش",
+    "View Bill" => "مشاهده فاکتور"
 ];
