@@ -26,8 +26,10 @@ class Cart extends Component
 
         if($user){
             $this->quote = $user->quote()->where('status', 'Draft')->first();
-            $this->quote_items = $this->quote->items()->get();
-            $this->itemsCount  = $this->quote_items->count();
+            if($this->quote){
+                $this->quote_items = $this->quote->items()->get();
+                $this->itemsCount  = $this->quote_items->count();
+            }
         } else {
             $quoteId = session()->get('quoteId');
             if($quoteId){
