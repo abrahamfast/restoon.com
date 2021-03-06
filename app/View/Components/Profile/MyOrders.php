@@ -7,14 +7,16 @@ use Illuminate\View\Component;
 class MyOrders extends Component
 {
     public $quote;
+    public $account;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($quote)
+    public function __construct($quote, $account)
     {
         $this->quote = $quote;
+        $this->account = $account;
     }
 
     /**

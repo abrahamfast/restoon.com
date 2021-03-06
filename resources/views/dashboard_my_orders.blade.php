@@ -16,8 +16,8 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12">
                                     @if($quotes)
-                                        @foreach($qoutes as $qoute)
-                                            <x-profile.my-orders :quote="$qoute" />
+                                        @foreach($quotes as $qoute)
+                                            <x-profile.my-orders :quote="$qoute" :account="$user->account" />
                                         @endforeach
                                     @endif
                                 </div>
