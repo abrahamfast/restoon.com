@@ -11,7 +11,7 @@ class Contact extends Model
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'modified_at'; 
     
-    protected $table = 'account';
+    protected $table = 'contact';
    	protected $casts = [
     	'id' => 'string',
     ];
