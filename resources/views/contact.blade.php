@@ -8,9 +8,14 @@
                         <div class="col-lg-12 col-md-12">
                             <h1>تماس با فروشگاه آنلاین رستون</h1>
                             <div class="extra-info">
-                                <span class="entry-date">Tuesday, May 19, 2020</span>
+                                <span class="entry-date">
+                                    @php
+                                        $v = verta();
+                                        echo $v->format('%B %d، %Y');
+                                    @endphp
+                                </span>
                                 <div class="single-post-cat">
-                                    <a href="#">Food &amp; Lifestyle</a>
+                                    <a href="/">سفارش آنلاین مواد غذایی از بهترین فروشگاه های اطراف شما</a>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +59,7 @@
                                 </div>
                                 <div class="form-group mt-1">
                                     <div class="field">
-                                        <label class="control-label">{{ __('global.Message') }}*</label>
+                                        <label class="control-label">{{ __('global.com_message_pump()') }}*</label>
                                         <textarea rows="2" class="form-control" id="sendermessage" name="sendermessage" required="" placeholder="{{ __('global.Write Message') }}"></textarea>
                                     </div>
                                 </div>
