@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 use App\Models\Product;
-use App\Helper\ProductFilter;
+use App\Traits\ProductFilter;
 
 class ProductsFeaturedSlider extends Component
 {

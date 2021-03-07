@@ -6,7 +6,7 @@
                         	<a href="#" class="see-more-btn">{{ __('global.See All') }}</a>
                             <div class="main-title-right">
                                 <span>{{ __('global.for you') }}</span>
-                                <h2>{{ __('global.Top Featured Products') }}</h2>
+                                <h2>{{ __($lable) }}</h2>
                             </div>
                         </div>
                     </div>
