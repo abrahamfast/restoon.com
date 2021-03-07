@@ -19,9 +19,9 @@
             </div>
             <div class="header_right">
                 <ul>
-                    <li>
+{{--                     <li>
                         <a href="tel:02122222222" class="offer-link"><i class="uil uil-phone-alt"></i>۰۲۱۳۳۳۳۳۹۳</a>
-                    </li>
+                    </li> --}}
                     @guest
                     <li>
                         <a href="/register" class="offer-link"><i class="uil uil-user-circle"></i>عضویت</a>

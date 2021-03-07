@@ -1,5 +1,5 @@
     <footer class="footer">
-        <div class="footer-first-row">
+{{--         <div class="footer-first-row">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="footer-second-row">
             <div class="container">
                 <div class="row">

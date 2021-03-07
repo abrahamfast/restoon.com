@@ -62,24 +62,30 @@
                 <div class="filtr-cate-title">
                     <h4>{{ __('global.Discount filter') }}</h4>
                 </div>
-                <div class="offer-item-body scrollstyle_4">
-                    <div class="brand-list">
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="offer_1">
-                            <label class="custom-control-label" for="offer_1">2% - 5% <span class="webproduct"></span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="offer_2">
-                            <label class="custom-control-label" for="offer_2">6% - 10% <span class="webproduct"></span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="offer_3">
-                            <label class="custom-control-label" for="offer_3">11% - 15% <span class="webproduct"></span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="offer_4">
-                            <label class="custom-control-label" for="offer_4">16% - 25% <span class="webproduct"></span></label>
-                        </div>
+                                <div class="filter-item-body scrollstyle_4">
+                    <div class="cart-radio">
+                        <ul class="cte-select">
+                            <li>
+                                <input type="radio" id="c1" name="offer" checked="" value="offer_1">
+                                <label for="c1">۲ درصد - ۵ درصد </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c2" name="offer" checked="" value="offer_2">
+                                <label for="c2">۶ درصد - ۱۰ درصد </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c3" name="offer" checked="" value="offer_3">
+                                <label for="c3">۱۱ درصد - ۱۵ درصد </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c4" name="offer" checked="" value="offer_4">
+                                <label for="c4">۱۶ درصد - ۲۵ درصد </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c4" name="offer" checked="" value="offer_5">
+                                <label for="c5">۲۶ درصد - ۵۰ درصد </label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -156,6 +162,14 @@
         $(document).ready(function() {
             $('input[name=category]').change(function(){
                 let route = window.location.origin + window.location.pathname + "/?filter=true&category=" + this.value;
+                window.location = route;
+            });
+            $('input[name=price]').change(function(){
+                let route = window.location.origin + window.location.pathname + "/?filter=true&price=" + this.value;
+                window.location = route;
+            });
+            $('input[name=offer]').change(function(){
+                let route = window.location.origin + window.location.pathname + "/?filter=true&price=" + this.value;
                 window.location = route;
             });
         });
