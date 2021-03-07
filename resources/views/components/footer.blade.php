@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="second-row-item-app">
+{{--                         <div class="second-row-item-app">
                             <h4>{{ __('global.Download App') }}</h4>
                             <ul>
                                 <li>
@@ -68,25 +68,13 @@
                                     <a href="#"><img class="download-btn" src="/images/download-2.svg" alt=""></a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> --}}
                         <div class="second-row-item-payment">
                             <h4>{{ __('global.Payment Method') }}</h4>
                             <div class="footer-payments">
                                 <ul id="paypal-gateway" class="financial-institutes">
-                                    <li class="financial-institutes__logo">
-                                        <img alt="Visa" title="Visa" src="/images/footer-icons/pyicon-6.svg">
-                                    </li>
-                                    <li class="financial-institutes__logo">
-                                        <img alt="Visa" title="Visa" src="/images/footer-icons/pyicon-1.svg">
-                                    </li>
-                                    <li class="financial-institutes__logo">
-                                        <img alt="MasterCard" title="MasterCard" src="/images/footer-icons/pyicon-2.svg">
-                                    </li>
-                                    <li class="financial-institutes__logo">
-                                        <img alt="American Express" title="American Express" src="/images/footer-icons/pyicon-3.svg">
-                                    </li>
-                                    <li class="financial-institutes__logo">
-                                        <img alt="Discover" title="Discover" src="/images/footer-icons/pyicon-4.svg">
+                                    <li class="">
+                                        <img alt="Visa" title="Visa" src="/images/footer-icons/idpay.svg">
                                     </li>
                                 </ul>
                             </div>
