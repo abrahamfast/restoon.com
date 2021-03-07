@@ -227,9 +227,10 @@ return [
     "Your products will be home-delivered as per your order"=>"محصولات شما طبق سفارش شما از طریق خانه تحویل داده می شوند",
     "Happy Curstomers"=>"مشتریان خوشحال",
 
-    "Cheap auction" => "حراج ارزان",
-    "best sellers" => "پرفروشترین‌ها",
-    "newest" => "جدیدترین‌ها",
+    "Cheap auction" => "منتخب محصولات تخفیف و حراج",
+    "best sellers" => "پیشنهاد شگفت‌انگیز",
+    "newest" => "محصولات پربازدید اخیر",
+    "you see it" => "منتخب جدیدترین کالاها"
 
 
 ];

@@ -26,5 +26,5 @@
             </div>
         </div>
         
-        <x-products-featured-slider/>
+        <x-products-featured-slider :lable="'global.you see it'" :type="'session'"/>
 @stop
