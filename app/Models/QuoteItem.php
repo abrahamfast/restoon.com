@@ -17,6 +17,8 @@ class QuoteItem extends Model
     
     protected $guarded = [];
 
+    public $incrementing = false;
+
     protected $casts = [
     	'id' => 'string',
     	'account_id' => 'string',
