@@ -3,6 +3,23 @@ namespace App\Traits;
 
 trait ProductFilter
 {
+	public function whereType($type, $query)
+	{
+		switch ($type) {
+			case 'best':
+				return $query->orderBy('cost_price', 'desc');
+				break;
+			case 'cheap':
+				return $query->orderBy('cost_price', 'desc');
+				break;
+			case 'newest':
+				return $query->orderBy('cost_price', 'desc');
+				break;
+			default:
+				return $query->orderBy('cost_price', 'desc');
+				break;
+		}
+	}
 	public function filter($type, $query)
 	{
 		switch ($type) {

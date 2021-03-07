@@ -4,18 +4,27 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 use App\Models\Product;
+use App\Helper\ProductFilter;
 
 class ProductsFeaturedSlider extends Component
 {
+    use ProductFilter;
     public $products;
+    public $lable;
+    public $filter;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($lable, $filter = null)
     {
-        $this->products = Product::all();
+        $query = Product::where('deleted', 0);
+        if($filter){
+            $query = $this->whereType($filter, $query);
+        }
+        $this->products = $query->get();
+        $this->lable = __($lable);
     }
 
     /**
