@@ -41,5 +41,14 @@
                 </form>
             </div>
         </div>
+        @else
+            <div class="col-lg-12 col-md-12">
+                <div class="how-order-steps">
+                    <div class="how-order-icon">
+                        <i class="uil uil-shopping-basket"></i>
+                    </div>
+                    <h4>{{ __('global.Add item to your shopping Basket') }}</h4>
+                </div>
+            </div>
         @endif
     </div>

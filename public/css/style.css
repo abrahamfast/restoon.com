@@ -2557,7 +2557,8 @@ span.save-icon {
     font-weight: 400;
     color: #3e3f5e;
     line-height: 26px;
-    text-align: left
+    text-align: right;
+    direction: rtl;
 }
 .checkout-step-body p {
     font-size: 14px;
