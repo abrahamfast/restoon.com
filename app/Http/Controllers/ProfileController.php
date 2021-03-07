@@ -28,7 +28,8 @@ class ProfileController extends Controller
         
         return view('app', [
             'user' => $user,
-            'view' => 'overview'
+            'view' => 'overview',
+            'slug' => 'global.Dashboard'
         ]);
     }
 

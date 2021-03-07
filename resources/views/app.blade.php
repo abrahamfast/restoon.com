@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('wrapper')
-    <x-breadcrumb :slug="'User Profile'"/>
+    <x-breadcrumb :slug="$slug ?? 'global.overview'"/>
     <x-app.user :user="$user" />
     <div class="">
         <div class="container">

@@ -22,7 +22,8 @@ class OrderController extends Controller
 
         return view('dashboard_my_orders', [
             'user' => $user,
-            'quotes' => $quotes
+            'quotes' => $quotes,
+            'slug' => 'global.My Orders'
         ]);
     }
 
