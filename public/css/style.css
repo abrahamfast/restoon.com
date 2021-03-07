@@ -5350,7 +5350,7 @@ textarea {
     margin-right: 10px
 }
 .panel-title>a:before {
-    float: right!important;
+    float: left!important;
     font-family: roboto, sans-serif;
     content: "\f058";
     padding-right: 0;
@@ -5360,7 +5360,7 @@ textarea {
     font-weight: 900
 }
 .panel-title>a.collapsed:before {
-    float: right!important;
+    float: left!important;
     content: "\f058";
     font-family: "font awesome 5 free";
     font-weight: 400

@@ -12,6 +12,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\Profile\AccountController;
 use App\Http\Controllers\Profile\DeliveryController;
+use App\Http\Controllers\FaqController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/faq', [FaqController::class, 'index']);

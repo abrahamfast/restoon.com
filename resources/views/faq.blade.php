@@ -25,12 +25,12 @@
 	                                </div>
 	                                <div id="collapse{{$faq->id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$faq->id}}" data-parent="#accordion{{$faq->id}}" style="">
 	                                    <div class="panel-body">
-	                                        {{$faq->body}}
+	                                        {!! $faq->body !!}
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        @endif
+	                        @endforeach
                         @endif
                     </div>
                 </div>
