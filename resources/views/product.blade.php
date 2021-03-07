@@ -13,7 +13,7 @@
 				<x-filter-top :lable="$slug"/>
 			</div>
 		</div>
-	    <div class="wrapper" style="padding-top: 10px">
+	    <div class="wrapper" style="padding-top: 10px !important">
 			<div class="product-list-view">
 			    <div class="row">
 			    	@if($products)

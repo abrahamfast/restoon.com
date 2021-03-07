@@ -229,7 +229,7 @@ $('.life-slider').owlCarousel({
     navText: ["<i class='uil uil-angle-left'></i>", "<i class='uil uil-angle-right'></i>"],
     responsive: {
         0: {
-            items: 1
+            items: 2
         },
         600: {
             items: 2
@@ -256,7 +256,7 @@ $('.testimonial-slider').owlCarousel({
     navText: ["<i class='uil uil-angle-left'></i>", "<i class='uil uil-angle-right'></i>"],
     responsive: {
         0: {
-            items: 1
+            items: 2
         },
         600: {
             items: 2
@@ -279,7 +279,7 @@ $('.team-slider').owlCarousel({
     dots: false,
     responsive: {
         0: {
-            items: 1
+            items: 2
         },
         600: {
             items: 2
