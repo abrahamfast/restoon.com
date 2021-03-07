@@ -5,7 +5,7 @@
                         <div class="main-title-tt">
                             <div class="main-title-right">
                                 <span>تخفیف</span>
-                                <h2>بهترین پیشنهاد</h2>
+                                <h2>پیشنهاد شگفت‌انگیز</h2>
                             </div>
                         </div>
                     </div>
