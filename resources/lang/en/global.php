@@ -227,7 +227,7 @@ return [
     "Your products will be home-delivered as per your order"=>"محصولات شما طبق سفارش شما از طریق خانه تحویل داده می شوند",
     "Happy Curstomers"=>"مشتریان خوشحال",
 
-    "Cheap auction" => "حراجی",
+    "Cheap auction" => "حراجی ها",
     "best sellers" => "محصلات جدید",
     //  پیشنهاد شگفت انگیز
     "newest" => "پرفوروشترین ها",
