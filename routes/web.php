@@ -19,6 +19,7 @@ Route::get('/faq', [FaqController::class, 'index']);
 Route::get('category/{slug}', [ProductController::class, 'index']);
 Route::get('product/{id}', [ProductController::class, 'show']);
 Route::get('offer/{id}', [OfferController::class, 'show']);
+Route::get('offer', [OfferController::class, 'index']);
 Route::get('newest', [ProductController::class, 'newest']);
 Route::get('special', [ProductController::class, 'special']);
 Route::get('contact', [ContactController::class, 'index']);
