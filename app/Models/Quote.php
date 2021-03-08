@@ -16,6 +16,8 @@ class Quote extends Model
 
     protected $guarded = [];
 
+    public $incrementing = false;
+
     protected $casts = [
     	'id' => 'string',
     	'tax_d' => 'string',
