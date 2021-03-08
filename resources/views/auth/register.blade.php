@@ -5,8 +5,8 @@
     <div class="sign-form">
         <div class="sign-inner">
             <div class="sign-logo" id="logo">
-                <a href="index.html"><img src="/images/logo.png" alt=""></a>
-                <a href="index.html"><img class="logo-inverse" src="/images/dark-logo.png" alt=""></a>
+                <a href="/"><img src="/images/logo.png" alt=""></a>
+                <a href="/"><img class="logo-inverse" src="/images/dark-logo.png" alt=""></a>
             </div>
             <div class="form-dt">
                 <div class="form-inpts checout-address-step">
