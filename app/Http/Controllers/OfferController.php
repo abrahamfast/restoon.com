@@ -16,4 +16,14 @@ class OfferController extends Controller
     		'slug' => $offer->name
     	]);
     }
+
+    public function index()
+    {
+    	$offers = Offer::where('layout', 'discount')->where('deleted', 0)->get();
+
+    	return view('offer', [
+    		'offers' => $offers,
+    		'slug' => 'global.Offers Head'
+    	]);
+    }
 }

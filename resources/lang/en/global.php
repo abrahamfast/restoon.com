@@ -239,5 +239,6 @@ return [
     //  حراجی
     // پرفوروشترین ها
     "Frequently Asked Questions"=> "پرسش و پاسخهای متداول",
+    "Offers Head" => "تخفیف‌های ویژه رستون"
 
 ];
