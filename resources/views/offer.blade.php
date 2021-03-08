@@ -29,5 +29,6 @@
                     </div>
                 </div>
             </div>
+            <x-best-offers/>
 
 @stop

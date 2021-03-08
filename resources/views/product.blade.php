@@ -25,5 +25,6 @@
 			</div>
 	    </div>
 	</div>
+	<x-header-offer/>
 </div>
 @stop
