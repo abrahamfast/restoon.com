@@ -3,26 +3,27 @@ namespace App\Traits;
 
 trait QuoteCalculator
 {
-	public function performs($quote = null)
+	public function performs()
 	{
-		$quote ?? $this->quote;
-		$items = $quote->items;
+		$items = $this->quote->items;
 		// need this
-		$tax_amount;
-		$discount_amount;
-		$amount;
+		$tax_amount = 0;
+		$discount_amount = 0;
+		$amount = 0;
+        $weight = 0;
 
 		foreach ($items as $item) {
 			$amount = $item->amount + $amount;
-			$weight = $this->quantity + $weight;
-			$discount_amount = $this->unit_price + $discount_amount;
+			$weight = $item->quantity + $weight;
+			$discount_amount = $item->unit_price + $discount_amount;
 			// @TODO tax_amount
-			$total = $item->unit_price * $quantity;
+			$total = $item->unit_price * $item->quantity;
 		}
 
 		$this->quote->tax_amount = $amount;
 		$this->quote->discount_amount = $discount_amount;
 		$this->quote->amount = $amount;
+        $this->quote->weight = $weight;
 		$this->quote->save();
 	}
 

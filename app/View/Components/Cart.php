@@ -28,14 +28,14 @@ class Cart extends Component
         if($user && !$quoteId){
             $this->quote = $user->quote()->where('status', 'Draft')->first();
             if($this->quote){
-                $this->quote_items = $this->quote->items()->get();
+                $this->quote_items = $this->quote->items()->where('deleted', 0)->get();
                 $this->itemsCount  = $this->quote_items->count();
             }
         } else {
             $quoteId = session()->get('quoteId');
             if($quoteId){
                 $this->quote = Quote::where('id', $quoteId)->first();
-                $this->quote_items = $this->quote->items()->get();
+                $this->quote_items = $this->quote->items()->where('deleted', 0)->get();
                 $this->itemsCount  = $this->quote_items->count();
                 $this->total_amount = $this->quote->amount;
             }
