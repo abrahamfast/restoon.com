@@ -49,7 +49,7 @@ trait QuoteHandler
                 'quantity' => $quantity,
                 'list_price' => $this->product->list_price,
                 'unit_price' => $this->product->unit_price,
-                'discount' => $this->product->getDiscount(),
+                'discount' => $this->product->pricing_factor,
                 'amount' => $this->product->getAmount(),
                 'unit_weight' => '1',
                 'weight' => $quantity,

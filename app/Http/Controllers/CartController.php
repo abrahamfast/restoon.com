@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\{Product, Quote, QuoteItem};
 use App\Traits\QuoteHandler;
+use App\Traits\QuoteCalculator;
 
 class CartController extends Controller
 {
-    use QuoteHandler;
+    use QuoteHandler, QuoteCalculator;
 
     protected $product;
     protected $qoute;
@@ -49,6 +50,8 @@ class CartController extends Controller
             $quantity,
             $user ? $user->account_id : ''
         );
+
+        $this->performs();
 
         return redirect()->back();
     }
