@@ -21,7 +21,7 @@
 
         </div>
         <div class="qty-group">
-                <div class="cart-item-price">{{ $item->amount }}</div>
+                <div class="cart-item-price">{{ notowo($item->amount, 'fa') }} {{ __('global.rial') }}</div>
         </div>
         <a href="/cart/unlink/{{$item->id}}" class="cart-close-btn"><i class="uil uil-multiply"></i></a>
     </div>

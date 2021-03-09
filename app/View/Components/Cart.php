@@ -42,8 +42,8 @@ class Cart extends Component
         }
 
         if($this->quote){
-            $this->amount =  $this->quote->amount;
-            $this->discount_amount = $this->quote->discount_amount;
+            $this->amount =  $this->quote->grand_total_amount;
+            $this->discount_amount = $this->quote->grand_total_amount;
             $this->tax_amount = $this->quote->tax_amount;
             $this->shipping_cost = $this->quote->shipping_cost;
             $this->total_amount = $this->quote->amount;
