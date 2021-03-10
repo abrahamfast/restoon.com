@@ -32,7 +32,7 @@
                         <input type="button" value="+" class="plus plus-btn">
                     </form>
                 </div>
-                <p>{{ $product->weight }}, {{ __('global.' . $product->unit_weight }}</p>
+                <p>{{ $product->weight }}, {{ __('global.' . $product->unit_weight) }}</p>
                 <span class="cart-icon"><i class="uil uil-shopping-cart-alt addcart" data-product-id="{{ $product->id }}"></i></span>
             </div>
         </div>
