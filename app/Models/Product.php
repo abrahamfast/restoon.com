@@ -85,6 +85,6 @@ class Product extends Model
 
     public function getListPrice()
     {
-        $this->convertToToman($this->list_price);
+        return $this->convertToToman($this->list_price);
     }
 }
