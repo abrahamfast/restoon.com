@@ -162,10 +162,10 @@ $('.cate-slider').owlCarousel({
             items: 4
         },
         1200: {
-            items: 6
+            items: 5
         },
         1400: {
-            items: 6
+            items: 5
         }
     }
 })
@@ -187,10 +187,10 @@ $('.featured-slider').owlCarousel({
             items: 4
         },
         1200: {
-            items: 5
+            items: 4
         },
         1400: {
-            items: 6
+            items: 4
         }
     }
 })

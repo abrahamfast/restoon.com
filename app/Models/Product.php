@@ -64,21 +64,21 @@ class Product extends Model
         $value = $this->convertToToman($this->list_price);
 
         if($this->discount_price){
-            $value = $this->convertToToman($this->discount_price);
+            $value = $this->convertToToman($this->unit_price);
         }
 
-        return number_format($value);
+        return $value;
     }
 
     public function convertToToman($price)
     {
-        return round($price / 10);
+        return number_format(round($price / 10));
     }
 
     public function getDiscountPrice()
     {
         return notowo(
-            $this->convertToToman($this->discount_price),
+            str_replace(",", "",$this->convertToToman($this->unit_price)),
             'fa'
          );
     }
@@ -86,7 +86,7 @@ class Product extends Model
     public function getListPrice()
     {
         return notowo(
-            $this->convertToToman($this->list_price),
+            str_replace(",", "", $this->convertToToman($this->list_price)),
             'fa'
          );
     }
