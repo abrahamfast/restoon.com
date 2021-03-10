@@ -244,6 +244,8 @@ return [
     "toman" => ":price تومان",
     "new quote" => "فاکتور جدید",
 
-    "Kg" => ":num کیلو‌گرمی"
+    "Kg" => ":num کیلو‌گرمی",
+    "grams" => ":num گرمی",
+    "piece" => ":num بسته"
 
 ];

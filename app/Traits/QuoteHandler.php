@@ -52,7 +52,7 @@ trait QuoteHandler
                 'unit_price' => $this->product->unit_price,
                 'discount' => $this->product->pricing_factor,
                 'amount' => $this->product->getAmount(),
-                'unit_weight' => '1',
+                'unit_weight' => $this->product->unit_weight,
                 'weight' => $quantity,
                 'order' => $this->quote->items()->count() + 1,
                 'list_price_currency' => 'IRR',
