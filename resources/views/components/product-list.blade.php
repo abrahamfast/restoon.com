@@ -17,20 +17,16 @@
             @endif
             <h4>{{ $product->name }}</h4>
             <div class="product-price">
-                {{ 
-                    __('global.toman', [
-                    "price" => number_format(round($product->discount_price / 10)) ?? number_format(round($product->list_price / 10))
-                    ])
-                }}
+                {{ __('global.toman', [ "price" => $product->getPriceObtained() ]) }}
             </div>
             @if($product->pricing_type == 'Discount from List')
                 <div class="product-price">
-                      {{ __('global.toman', ["price" => notowo(round($product->discount_price / 10), 'fa')]) }} 
-                    <span>{{ __('global.toman', ["price" => notowo(round($product->list_price / 10), 'fa')]) }}</span>
+                      {{ __('global.toman', ["price" => $product->getDiscountPrice()]) }} 
+                    <span>{{ __('global.toman', ["price" => $product->getListPrice(), 'fa')]) }}</span>
                 </div>
             @else
                 <div class="product-price">
-                    {{ __('global.toman', ["price" => notowo(round($product->list_price / 10), 'fa')]) }}
+                    {{ __('global.toman', ["price" => notowo($product->getListPrice(), 'fa')]) }}
                 </div>
             @endif
             <div class="qty-cart">

@@ -54,18 +54,40 @@ class Product extends Model
         return $this->list_price * "0.{$this->pricing_factor}";
     }
 
-    public function getCostPrice()
+    public function translateFa($number)
     {
-        return StrHelper::convertFa($this->cost_price);
+        return StrHelper::convertFa($number);
+    }
+
+    public function getPriceObtained()  
+    {
+        $value = $this->convertToToman($this->list_price);
+
+        if($this->discount_price){
+            $value = $this->convertToToman($this->discount_price);
+        }
+
+        return number_format($value);
+    }
+
+    public function convertToToman($price)
+    {
+        return round($price / 10);
+    }
+
+    public function getDiscountPrice()
+    {
+        return notowo(
+            $this->convertToToman($this->discount_price / 10),
+            'fa'
+         );
     }
 
     public function getListPrice()
     {
-        return StrHelper::convertFa($this->list_price);
-    }
-
-    public function getUnitPrice()
-    {
-        return StrHelper::convertFa($this->unit_price);
+        return notowo(
+            $this->convertToToman($this->list_price / 10),
+            'fa'
+         );
     }
 }
