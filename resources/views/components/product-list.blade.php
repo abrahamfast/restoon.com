@@ -21,12 +21,12 @@
             </div>
             @if($product->pricing_type == 'Discount from List')
                 <div class="product-price">
-                      {{ __('global.toman', ["price" => $product->getDiscountPrice()]) }} 
-                    <span>{{ __('global.toman', ["price" => $product->getListPrice(), 'fa')]) }}</span>
+                      {{ __('global.toman', ["price" => $product->getDiscountPrice() ]) }} 
+                    <span>{{ __('global.toman', ["price" => $product->getListPrice() ]) }}</span>
                 </div>
             @else
                 <div class="product-price">
-                    {{ __('global.toman', ["price" => notowo($product->getListPrice(), 'fa')]) }}
+                    {{ __('global.toman', ["price" => notowo($product->getListPrice()]) }}
                 </div>
             @endif
             <div class="qty-cart">
