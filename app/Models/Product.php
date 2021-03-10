@@ -78,7 +78,7 @@ class Product extends Model
     public function getDiscountPrice()
     {
         return notowo(
-            $this->convertToToman($this->discount_price / 10),
+            $this->convertToToman($this->discount_price),
             'fa'
          );
     }
@@ -86,7 +86,7 @@ class Product extends Model
     public function getListPrice()
     {
         return notowo(
-            $this->convertToToman($this->list_price / 10),
+            $this->convertToToman($this->list_price),
             'fa'
          );
     }
