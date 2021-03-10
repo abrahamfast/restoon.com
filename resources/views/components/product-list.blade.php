@@ -26,7 +26,7 @@
             @if($product->pricing_type == 'Discount from List')
                 <div class="product-price">
                       {{ __('global.toman', ["price" => notowo(round($product->discount_price / 10), 'fa')]) }} 
-                    <span>{{ {{ __('global.toman', ["price" => notowo(round($product->list_price / 10), 'fa')]) }}</span>
+                    <span>{{ __('global.toman', ["price" => notowo(round($product->list_price / 10), 'fa')]) }}</span>
                 </div>
             @else
                 <div class="product-price">
