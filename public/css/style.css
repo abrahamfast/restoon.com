@@ -1033,7 +1033,7 @@ i.icon1 {
 }
 .cart-total-dil span {
     color: #8f91ac;
-    font-size: 16px;
+    font-size: 14px;
     margin-right: auto;
     font-weight: 400;
     line-height: 24px
@@ -1055,7 +1055,7 @@ i.icon1 {
 }
 .main-total-cart span {
     color: #0edd16;
-    font-size: 18px;
+    font-size: 14px;
     margin-right: auto;
     font-weight: 700;
     line-height: 24px
@@ -1762,7 +1762,7 @@ span.like-icon {
     color: #2b2f4c
 }
 .product-price {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 24px;
     color: #0edd16;

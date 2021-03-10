@@ -51,7 +51,7 @@ class Product extends Model
 
     public function getDiscount()
     {
-        return ($this->list_price * "0.{$this->pricing_factor}");
+        return $this->list_price * "0.{$this->pricing_factor}";
     }
 
     public function getCostPrice()

@@ -16,10 +16,11 @@
                 <p>ناموجود</p>
             @endif
             <h4>{{ $product->name }}</h4>
+            <div class="product-price">{{ $product->discount_price ?? $product->list_price  }}</div>
             @if($product->discount)
-                <div class="product-price">{{ $product->discount_price }} <span>{{ $product->cost_price }}</span></div>
+                <div class="product-price">{{ notowo($product->discount_price, 'fa') }} <span>{{ notowo($product->list_price, 'fa') }}</span></div>
             @else
-                <div class="product-price">{{ $product->cost_price }}</div>
+                <div class="product-price">{{ notowo($product->list_price, 'fa') }}</div>
             @endif
             <div class="qty-cart">
                 <div class="quantity buttons_added">
@@ -31,6 +32,7 @@
                         <input type="button" value="+" class="plus plus-btn">
                     </form>
                 </div>
+                <p>{{ $product->weight }}, {{ __('global.' . $product->unit_weight }}</p>
                 <span class="cart-icon"><i class="uil uil-shopping-cart-alt addcart" data-product-id="{{ $product->id }}"></i></span>
             </div>
         </div>

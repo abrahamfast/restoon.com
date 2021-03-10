@@ -22,6 +22,7 @@ trait QuoteHandler
 	{
 		$rawQuote = Quote::where('id', "603e34c68f0e7bebc")->first()->toArray();
 		$rawQuote['id'] = $this->uuid();
+		$rawQuote['name'] = __('global.new quote') . date("Y-m-d");
 		$this->quote =  Quote::create($rawQuote);
 		$this->setSessionQuote($rawQuote['id']);
 	}
