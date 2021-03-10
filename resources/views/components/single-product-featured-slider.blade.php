@@ -17,8 +17,8 @@
             @endif
             <h4>{{ $product->name }}</h4>
             <div class="product-price">{{ $product->discount_price ?? $product->list_price  }}</div>
-            @if($product->discount)
-                <div class="product-price">{{ notowo($product->discount_price, 'fa') }} <span>{{ notowo($product->list_price, 'fa') }}</span></div>
+            @if($product->pricing_type == 'Discount from List')
+                <div class="product-price">{{ notowo($product->pricingFactor, 'fa') }} <span>{{ notowo($product->list_price, 'fa') }}</span></div>
             @else
                 <div class="product-price">{{ notowo($product->list_price, 'fa') }}</div>
             @endif
