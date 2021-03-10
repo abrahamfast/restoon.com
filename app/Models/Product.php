@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Attachment;
 use App\Models\ProductCategories;
 use App\Helper\StrHelper;
+use App\Trais\ItemAccessor;
 
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory, ItemAccessor;
 
     protected $table = 'product';
 
@@ -41,12 +42,14 @@ class Product extends Model
     public function getAmount(int $quantity = 1): float
     {
         // @TODO need type Num
+        // @TODO remove in ver v1.0.1
         if($this->price_type == 'Discount fromList'){
             // ext: (2000*0.10)*12=2400
             // (price * discount) * quantity
           return ($this->list_price - $this->getDiscount()) * $quantity;
         }
-        return $this->list_price * $quantity;
+
+        return $this->unit_price * $quantity;
     }
 
     public function getDiscount()
@@ -67,24 +70,18 @@ class Product extends Model
             $value = $this->convertToToman($this->unit_price);
         }
 
-        return notowo(
-            str_replace(",", "",  $value),
-            'fa'
-         );
+        return $this->giveToUnderstand($value);
     }
 
-    public function convertToToman($price)
-    {
-        return number_format(round($price / 10));
-    }
+
 
     public function getDiscountPrice()
     {
-        return $this->convertToToman($this->unit_price);
+        return $this->takeCurrency($this->unit_price);
     }
 
     public function getListPrice()
     {
-        return $this->convertToToman($this->list_price);
+        return $this->takeCurrency($this->list_price);
     }
 }

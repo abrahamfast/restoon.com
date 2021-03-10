@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Product;
+use App\Trais\ItemAccessor;
 
 class QuoteItem extends Model
 {
-    use HasFactory;
+    use HasFactory, ItemAccessor;
 
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'modified_at'; 
@@ -30,4 +31,5 @@ class QuoteItem extends Model
     {
     	return $this->hasOne(Product::class, 'id', 'product_id');
     }
+
 }

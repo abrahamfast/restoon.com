@@ -4,6 +4,7 @@
 /public/dataloader
 /storage/*.key
 /vendor
+.phpintel/
 .env
 .env.backup
 .phpunit.result.cache

@@ -1,5 +1,7 @@
 <?php 
+
 namespace App\Traits;
+
 use App\Models\{Product, Quote, QuoteItem};
 
 trait QuoteHandler
@@ -51,7 +53,7 @@ trait QuoteHandler
                 'list_price' => $this->product->list_price,
                 'unit_price' => $this->product->unit_price,
                 'discount' => $this->product->pricing_factor,
-                'amount' => $this->product->getAmount(),
+                'amount' => $this->product->getAmount($quantity),
                 'unit_weight' => $this->product->unit_weight,
                 'weight' => $quantity,
                 'order' => $this->quote->items()->count() + 1,
