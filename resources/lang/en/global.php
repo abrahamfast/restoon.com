@@ -241,9 +241,9 @@ return [
     "Frequently Asked Questions"=> "پرسش و پاسخهای متداول",
     "Offers Head" => "تخفیف‌های ویژه رستون",
     "rial" => "ریال",
-    "toman" => "تومان",
+    "toman" => ":price تومان",
     "new quote" => "فاکتور جدید",
 
-    "Kg" => "کیلو‌گرم"
+    "Kg" => ":num کیلو‌گرمی"
 
 ];

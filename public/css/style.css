@@ -1754,7 +1754,7 @@ span.like-icon {
 }
 .product-text-dt h4 {
     margin-top: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px!important;
     line-height: 24px;
@@ -1766,13 +1766,15 @@ span.like-icon {
     font-weight: 600;
     line-height: 24px;
     color: #0edd16;
-    text-align: center
+    text-align: center;
+    direction: rtl;
 }
 .product-price span {
     color: #c7c7c7;
     text-decoration: line-through;
     margin-left: 10px;
-    font-weight: 600
+    font-weight: 600;
+    direction: rtl;
 }
 .qty-cart {
     display: flex;

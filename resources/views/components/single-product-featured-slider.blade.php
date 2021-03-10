@@ -16,11 +16,22 @@
                 <p>ناموجود</p>
             @endif
             <h4>{{ $product->name }}</h4>
-            <div class="product-price">{{ $product->discount_price ?? $product->list_price  }}</div>
-            @if($product->pricing_type == 'Discount from List')
-                <div class="product-price">{{ notowo($product->pricingFactor, 'fa') }} <span>{{ notowo($product->list_price, 'fa') }}</span></div>
+            <div class="product-price">
+                {{ 
+                    __('global.toman', [
+                    "price" => number_format(round($product->discount_price / 10)) ?? number_format(round($product->list_price / 10))
+                    ])
+                }}
+            </div>
+            @if($product->pricing_type == 'Discount from List') 
+                <div class="product-price">
+                    {{ __('global.toman', ["price" => notowo(number_format(round($product->discount_price / 10)), 'fa')]) }} 
+                    <span>{{ {{ __('global.toman', ["price" => notowo(number_format(round($product->list_price / 10)), 'fa')]) }}</span>
+                </div>
             @else
-                <div class="product-price">{{ notowo($product->list_price, 'fa') }}</div>
+                 <div class="product-price">
+                    {{ __('global.toman', ["price" => notowo(number_format(round($product->list_price / 10)), 'fa')]) }}
+                </div>
             @endif
             <div class="qty-cart">
                 <div class="quantity buttons_added">
@@ -32,7 +43,7 @@
                         <input type="button" value="+" class="plus plus-btn">
                     </form>
                 </div>
-                <p>{{ $product->weight }}, {{ __('global.' . $product->unit_weight) }}</p>
+                <p>{{ __('global.' . $product->unit_weight, ['num' => $product->weight]) }}</p>
                 <span class="cart-icon"><i class="uil uil-shopping-cart-alt addcart" data-product-id="{{ $product->id }}"></i></span>
             </div>
         </div>
