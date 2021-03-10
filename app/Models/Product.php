@@ -67,7 +67,10 @@ class Product extends Model
             $value = $this->convertToToman($this->unit_price);
         }
 
-        return $value;
+        return notowo(
+            str_replace(",", "",  $value),
+            'fa'
+         );
     }
 
     public function convertToToman($price)
@@ -77,17 +80,11 @@ class Product extends Model
 
     public function getDiscountPrice()
     {
-        return notowo(
-            str_replace(",", "",$this->convertToToman($this->unit_price)),
-            'fa'
-         );
+        return $this->convertToToman($this->unit_price);
     }
 
     public function getListPrice()
     {
-        return notowo(
-            str_replace(",", "", $this->convertToToman($this->list_price)),
-            'fa'
-         );
+        $this->convertToToman($this->list_price);
     }
 }

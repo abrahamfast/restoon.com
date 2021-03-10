@@ -1748,7 +1748,8 @@ span.like-icon {
     font-weight: 500;
     color: #8f91ac;
     margin-bottom: 0;
-    line-height: 24px
+    line-height: 24px;
+    direction: rtl;
 }
 .product-text-dt p span {
     margin-left: 5px
