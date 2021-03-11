@@ -12,7 +12,7 @@ class EntityTeam extends Model
 
     protected $table = 'entity_team';
     protected $guarded = [];
-    protected $timestamps = fales;
+    public $timestamps = false;
 
     public $incrementing = false;
 

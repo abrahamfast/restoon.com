@@ -33,6 +33,11 @@ class Quote extends Model
 
     public function team()
     {
-        return $this->hasMany(EntityTeam::class, 'entity_id', 'id');
+        return $this->hasMany(EntityTeam::class, 'entity_id', 'id')->where('entity_type', 'quote')->where('deleted', 0);
+    }
+
+    public function FunctionName($value='')
+    {
+        # code...
     }
 }
