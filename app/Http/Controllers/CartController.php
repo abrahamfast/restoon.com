@@ -57,8 +57,10 @@ class CartController extends Controller
     }
 
 
-    public function success(Request $request)
+    public function final($id)
     {
+        $quote = Quote::where('id', $id)->first();
+        @ddd($quote);
         return view('success');
     }
 

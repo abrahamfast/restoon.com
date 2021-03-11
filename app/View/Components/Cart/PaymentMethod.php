@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class PaymentMethod extends Component
 {
+    public $quote;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($quote)
     {
-        //
+        $this->quote = $quote;
     }
 
     /**

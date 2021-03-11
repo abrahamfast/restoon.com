@@ -20,7 +20,7 @@
                             <x-cart.verification :verify="$verify"/>
                             <x-cart.delivery-addresses />
                             <x-cart.delivery-time />
-                            <x-cart.payment-method />
+                            <x-cart.payment-method :quote="$quote" />
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-5">
