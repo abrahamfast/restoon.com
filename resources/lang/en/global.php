@@ -169,7 +169,7 @@ return [
     "Enter City" => "شهر را وارد کنید",
 
     // Order Successfully Placed
-    "Order Successfully Placed" => "سفارش با موفقیت انجام شد",
+    "Order Successfully Placed" => "سفارش با موفقیت ثبت شد",
     "Thank you for your order! will received order timing" => "بابت سفارش شما متشکرم! زمان سفارش را دریافت خواهید کرد -",
     "Your order will be sent to this address"=> "سفارش شما به این آدرس ارسال می شود",
     "trackorder" => "پیگیری سفارش",

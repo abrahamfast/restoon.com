@@ -13,7 +13,7 @@
                  <div class="order-placed-dt">
                      <i class="uil uil-check-circle icon-circle"></i>
                      <h2>{{ __('global.Order Successfully Placed') }}</h2>
-                     <p>{{ __('global.Thank you for your order! will received order timing -') }} <span>(شنبه , 3.00PM - 5.00PM)</span></p>
+                     <p>{{ __('global.Thank you for your order! will received order timing') }} <span>(شنبه , 3.00PM - 5.00PM)</span></p>
                      <div class="delivery-address-bg">
                          <div class="title585">
                              <div class="pln-icon"><i class="uil uil-telegram-alt"></i></div>
@@ -21,7 +21,7 @@
                          </div>
                          <ul class="address-placed-dt1">
                              <li>
-                                 <p><i class="uil uil-map-marker-alt"></i>{{ __('global.Address') }} :<span>{{ $user->account->getFullAddress() }}</span></p>
+                                 <p><i class="uil uil-map-marker-alt"></i>{{ __('global.shipping_address_street') }} :<span>{{ $user->account()->first()->getFullAddress() }}</span></p>
                              </li>
                              <li>
                                  <p><i class="uil uil-phone-alt"></i>{{ __('global.Phone Number')}} :<span>{{ $user->phone }}</span></p>
@@ -31,8 +31,8 @@
                              </li>
                          </ul>
                          <div class="stay-invoice">
+                            <a href="#" class="invc-link hover-btn">{{ __('global.trackorder') }}</a>
                              <div class="st-hm">{{ __('global.Stay Home') }}<i class="uil uil-smile"></i></div>
-                             <a href="#" class="invc-link hover-btn">{{ __('global.trackorder') }}</a>
                          </div>
                          <div class="placed-bottom-dt">
                              پرداخت 16 هزار تومان هنگام تحویل کالا با سفارش شما انجام می شود.

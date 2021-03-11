@@ -2960,7 +2960,7 @@ textarea.form-control{
     border-bottom: 1px solid #efefef
 }
 .pln-icon {
-    float: left;
+    float: right;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -2968,12 +2968,13 @@ textarea.form-control{
     margin-right: 10px
 }
 .title585 h4 {
-    float: left;
+    float: right;
     margin-top: 0;
     font-weight: 500;
     font-size: 16px;
     color: #2b2f4c;
-    line-height: 50px
+    line-height: 50px;
+    ont-family: "Iran Yekan Light" !important;
 }
 .pln-icon i {
     font-size: 20px;
@@ -2996,8 +2997,9 @@ textarea.form-control{
 .address-placed-dt1 p {
     font-size: 14px;
     font-weight: 500;
-    text-align: left;
-    color: #2b2f4c
+    direction: rtl;
+    text-align: right;
+    color: #2b2f4c;
 }
 .address-placed-dt1 p span {
     margin-left: 10px;
@@ -3014,7 +3016,7 @@ textarea.form-control{
     border-bottom: 1px solid #efefef
 }
 .invc-link {
-    margin-left: auto;
+    margin-right: auto;
     font-size: 14px;
     font-weight: 500;
     color: #fff;
@@ -3033,13 +3035,14 @@ textarea.form-control{
 .placed-bottom-dt {
     padding: 20px;
     float: left;
+    direction: rtl;
     font-size: 14px;
     font-weight: 400;
     color: #3e3f5e;
     margin-bottom: 0;
     text-align: center;
     line-height: 24px;
-    width: 100%
+    width: 100%;
 }
 .placed-bottom-dt span {
     font-weight: 600;
