@@ -21,20 +21,17 @@
                          </div>
                          <ul class="address-placed-dt1">
                              <li>
-                                 <p><i class="uil uil-map-marker-alt"></i>Address :<span>#000, St 8, Sks Nagar, Near Pakhowal Road, Ldh, 141001</span></p>
+                                 <p><i class="uil uil-map-marker-alt"></i>{{ __('global.Address') }} :<span>{{ $user->account->getFullAddress() }}</span></p>
                              </li>
                              <li>
-                                 <p><i class="uil uil-phone-alt"></i>Phone Number :<span>+919999999999</span></p>
+                                 <p><i class="uil uil-phone-alt"></i>{{ __('global.Phone Number')}} :<span>{{ $user->phone }}</span></p>
                              </li>
                              <li>
-                                 <p><i class="uil uil-envelope"></i>Email Address :<span><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="cca6a3a4a2a8a3a98ca9b4ada1bca0a9e2afa3a1">[email&#160;protected]</a></span></p>
-                             </li>
-                             <li>
-                                 <p><i class="uil uil-card-atm"></i>Payment Method :<span>Cash on Delivery</span></p>
+                                 <p><i class="uil uil-card-atm"></i>{{ __('global.Payment Method')}} :<span>{{ __('global.' . $quote->payment_method) }}</span></p>
                              </li>
                          </ul>
                          <div class="stay-invoice">
-                             <div class="st-hm">Stay Home<i class="uil uil-smile"></i></div>
+                             <div class="st-hm">{{ __('global.Stay Home') }}<i class="uil uil-smile"></i></div>
                              <a href="#" class="invc-link hover-btn">{{ __('global.trackorder') }}</a>
                          </div>
                          <div class="placed-bottom-dt">

@@ -246,6 +246,11 @@ return [
 
     "Kg" => ":num کیلو‌گرمی",
     "grams" => ":num گرمی",
-    "piece" => ":num بسته"
+    "piece" => ":num بسته",
+
+    "Order Placed" => "سفارش ثبت شد",
+    "Phone Number" => "شماره تماس",
+    "Address Order" => "آدرس دریافت کننده",
+    "Stay Home" => "در خانه بمان"
 
 ];

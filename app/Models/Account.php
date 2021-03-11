@@ -29,4 +29,9 @@ class Account extends Model
     {
     	return $this->hasOne(Contact::class, 'account_id');
     }
+
+    public function getFullAddress()
+    {
+        return $this->shipping_address_country .", ". $this->shipping_address_city .", " . $this->shipping_address_street;
+    }
 }

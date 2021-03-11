@@ -57,11 +57,17 @@ class CartController extends Controller
     }
 
 
-    public function final($id)
+    public function final($id, Request $request)
     {
         $quote = Quote::where('id', $id)->first();
-        @ddd($quote->with('team'), $quote->assginSalesTeam());
-        return view('success');
+        $quote->assginSalesTeam();
+        $user = $request->user();
+
+        return view('success', [
+            'slug' => __('Order Placed'),
+            'quote' => $quote,
+            'user' => $user
+        ]);
     }
 
     /**

@@ -42,7 +42,8 @@ class Quote extends Model
         return $this->team()->create([
             'entity_id' => $this->id,
             'team_id' => '6031eed8965a745e3',
-            'entity_type' => 'quote'
+            'entity_type' => 'quote',
+            'deleted' => 0
         ]);
     }
 }
