@@ -1,4 +1,4 @@
-@extends('layout.layout-clear')
+@extends('layouts.layout-clear')
 
 @section('wrapper')
 
@@ -7,10 +7,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="bill-detail">
-                    	<x-profile-bill.items :items="$quote->items()" />
-                    	<x-profile-bill.delivery-address :user="$user" />
-                    	<x-profile-bill.payment :quote="$quote" />
-                    	<x-profile-bill.delivery-details :quote="$quote" />
+                    	<x-profile.bill.items :items="$quote->items()" />
+                    	<x-profile.bill.delivery-address :user="$user" />
+                    	<x-profile.bill.payment :quote="$quote" />
+                    	<x-profile.bill.delivery-details :quote="$quote" />
                         <div class="bill-dt-step">
                             <div class="bill-bottom">
                                 <div class="thnk-ordr">{{ __('global.bill:ThanksforOrdering') }}</div>

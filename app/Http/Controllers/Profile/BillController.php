@@ -8,11 +8,11 @@ use App\Models\Quote;
 
 class BillController extends Controller
 {
-    public function index($id, Request $reqeust)
+    public function index($id, Request $request)
     {
     	$quote = Quote::where('id', $id)->first();
 
-    	return view('bill', [
+    	return view('profile.bill', [
     		'quote' => $quote,
     		'user' => $request->user()
     	]);

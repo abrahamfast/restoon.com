@@ -21,7 +21,7 @@
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="/vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
     <link href="/vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/vendor/semantic/semantic.min.css">
 </head>
 <body>
@@ -49,7 +49,7 @@
         </div>
     </header>
 
-    @yeild('wrapper')
+    @yield('wrapper')
 
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
