@@ -1,9 +1,9 @@
 <div class="bill-dt-step">
     <div class="bill-title">
-        <h4>{{ __('global.bill:Items') }}</h4>
+        <h4>{{ __('global.bill-Items') }}</h4>
     </div>
     <div class="bill-descp">
-        <div class="itm-ttl">{{ __('global.bill:itemsCount', ['count' => $items->count()]) }}</div>
+        <div class="itm-ttl">{{ __('global.bill-itemsCount', ['count' => $items->count()]) }}</div>
         @foreach($items->get() as $item)
         	<span class="item-prdct">{{ $item->name }} : {{ $item->quantity }}</span>
         @endforeach
