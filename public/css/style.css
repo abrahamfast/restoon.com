@@ -2925,6 +2925,9 @@ textarea.form-control{
     float: left;
     width: 100%
 }
+.order-placed-dt span {
+    direction: rtl;
+}
 .order-placed-dt .icon-circle {
     font-size: 56px;
     color: #0edd16

@@ -251,6 +251,7 @@ return [
     "Order Placed" => "سفارش ثبت شد",
     "Phone Number" => "شماره تماس",
     "Address Order" => "آدرس دریافت کننده",
-    "Stay Home" => "در خانه بمان"
+    "Stay Home" => "در خانه بمان",
+    "quote number" => "کد خرید"
 
 ];

@@ -14,6 +14,8 @@
                      <i class="uil uil-check-circle icon-circle"></i>
                      <h2>{{ __('global.Order Successfully Placed') }}</h2>
                      <p>{{ __('global.Thank you for your order! will received order timing') }} <span>(شنبه , 3.00PM - 5.00PM)</span></p>
+                     <span>{{ $quote->number_a}}</span>
+                     <span>{{ __('global.quote number') }} </span> 
                      <div class="delivery-address-bg">
                          <div class="title585">
                              <div class="pln-icon"><i class="uil uil-telegram-alt"></i></div>
