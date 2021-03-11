@@ -252,6 +252,24 @@ return [
     "Phone Number" => "شماره تماس",
     "Address Order" => "آدرس دریافت کننده",
     "Stay Home" => "در خانه بمان",
-    "quote number" => "کد خرید"
+    "quote number" => "کد خرید",
+    "quote Print" => "مشاهده فاکتور",
+
+    // bill
+    "bill:Items" => "موارد",
+    "bill:itemsCount" => ":count تعداد",
+    "bill:DeliveryAddress" => "آدرس تحویل گیرنده",
+    "bill:Home" => "دفتر رستوران",
+    "bill:Payment" => "پرداخت",
+    "bill:Subtotal" => "جمع کل",
+    "bill:DeliveryCharges" => "هزینه های تحویل",
+    "bill:Total" => "جمع پرداخت شده",
+    "bill:DeliveryDetails" => "جزئیات تحویل",
+    "bill:OrderID" => "شماره سفارش - <span class=\"descp-bll-dt\"> :OrderID </span>",
+    "bill:Items" => "اقلام - <span class=\"descp-bll-dt\"> :Items </span>",
+    "bill:Timing" => "زمان بندی - <span class=\"descp-bll-dt\"> :Timing </span>",
+    "bill:PaymentOption" => "گزینه پرداخت",
+    "bill:ThanksforOrdering" => "با تشکر برای سفارش",
+    "bill:Print" => "چاپ کنید"
 
 ];

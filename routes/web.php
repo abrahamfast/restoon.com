@@ -1,18 +1,13 @@
 <?php
-
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\IndexController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\OfferController;
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\VerificationController;
-use App\Http\Controllers\Profile\AccountController;
-use App\Http\Controllers\Profile\DeliveryController;
-use App\Http\Controllers\FaqController;
+use App\Http\Controllers\{
+	OrderController, ProfileController, IndexController, ProductController,
+	ContactController, AboutController, OfferController, CartController,
+	VerificationController, FaqController
+};
+use App\Http\Controllers\Profile\{
+	AccountController, DeliveryController, BillController
+};
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/faq', [FaqController::class, 'index']);
@@ -42,6 +37,7 @@ Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app/addresses', [ProfileController::class, 'index']);
 	Route::get('app/offers', [ProfileController::class, 'index']);
 	Route::post('app/checkout', [OrderController::class, 'checkout']);
+	Route::post('app/bill/{id}', [BillController::class, 'index']);
 
 	Route::post('app/addresses/{id}', [AccountController::class, 'update']);
 	Route::post('app/delivery/{id}', [DeliveryController::class, 'update']);
