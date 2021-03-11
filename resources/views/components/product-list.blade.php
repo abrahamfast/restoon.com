@@ -16,9 +16,6 @@
                 <p>ناموجود</p>
             @endif
             <h4>{{ $product->name }}</h4>
-            <div class="product-price">
-                {{ __('global.toman', [ "price" => $product->getPriceObtained() ]) }}
-            </div>
             @if($product->pricing_type == 'Discount from List')
                 <div class="product-price">
                       {{ __('global.toman', ["price" => $product->getDiscountPrice() ]) }} 
