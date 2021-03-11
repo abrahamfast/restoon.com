@@ -1,6 +1,6 @@
 <div class="bill-dt-step">
     <div class="bill-title">
-        <h4>{{ _('global.bill-DeliveryDetails') }}</h4>
+        <h4>{{ __('global.bill-DeliveryDetails') }}</h4>
     </div>
     <div class="bill-descp">
         <p class="bill-dt-sl">{{ __('global.bill-OrderID', ['OrderID' => $quote->number_a]) }}</p>

@@ -5572,7 +5572,9 @@ textarea {
     font-weight: 400;
     color: #2b2f4c;
     margin-bottom: 0;
-    line-height: 26px
+    direction: rtl;
+    text-align: right;
+    line-height: 26px;
 }
 .descp-bll-dt {
     color: #8f91ac
@@ -5595,7 +5597,7 @@ textarea {
     line-height: 26px
 }
 .print-btn {
-    margin-left: auto;
+    margin-right: auto;
     padding: 9px 20px;
     border: 1px solid #0edd16;
     background: #0edd16;

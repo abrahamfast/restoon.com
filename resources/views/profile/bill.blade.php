@@ -13,8 +13,8 @@
                     	<x-profile.bill.delivery-details :quote="$quote" />
                         <div class="bill-dt-step">
                             <div class="bill-bottom">
+                            	<a class="print-btn hover-btn" href="javascript:window.print();">{{ __('global.bill-Print') }}</a>
                                 <div class="thnk-ordr">{{ __('global.bill-ThanksforOrdering') }}</div>
-                                <a class="print-btn hover-btn" href="javascript:window.print();">{{ __('global.bill-Print') }}</a>
                             </div>
                         </div>
                     </div>
