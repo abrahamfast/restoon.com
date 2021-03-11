@@ -192,7 +192,7 @@ return [
     "Call Us" => "با ما تماس بگیرید",
     "Placed" => "بررسی",
     "Packed" => "بسته بندی",
-    "On the way" => "در راه",
+    "On the way" => "ارسال شد",
     "Delivered" => "تحویل داده شده",
     "Track Order" => "پیگیری سفارش",
     "View Bill" => "مشاهده فاکتور",

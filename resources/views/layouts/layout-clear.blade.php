@@ -40,7 +40,7 @@
                                 <a href="index.html"><img class="logo-inverse" src="/images/dark-logo.png" alt=""></a>
                             </div>
                             <div class="header_right">
-                                <a href="#" class="report-btn hover-btn"></a>
+                                <a href="/app/orders" class="report-btn hover-btn">{{ __('global.trackorder') }}</a>
                             </div>
                         </div>
                     </div>
