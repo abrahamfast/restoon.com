@@ -253,7 +253,7 @@ return [
     "Address Order" => "آدرس دریافت کننده",
     "Stay Home" => "در خانه بمان",
     "quote number" => "کد خرید",
-    "quote Print" => "مشاهده فاکتور",
+    "quote Print" => "مشاهده صورتی حساب",
 
     // bill
     "bill:Items" => "موارد",

@@ -37,7 +37,7 @@ Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app/addresses', [ProfileController::class, 'index']);
 	Route::get('app/offers', [ProfileController::class, 'index']);
 	Route::post('app/checkout', [OrderController::class, 'checkout']);
-	Route::post('app/bill/{id}', [BillController::class, 'index']);
+	Route::get('app/bill/{id}', [BillController::class, 'index']);
 
 	Route::post('app/addresses/{id}', [AccountController::class, 'update']);
 	Route::post('app/delivery/{id}', [DeliveryController::class, 'update']);

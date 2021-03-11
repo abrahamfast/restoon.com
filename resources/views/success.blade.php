@@ -33,10 +33,8 @@
                              </li>
                          </ul>
                          <div class="stay-invoice">
-                            <a href="/app/orders" class="invc-link hover-btn btn-block">{{ __('global.trackorder') }}</a>
-                        </div>
-                         <div class="stay-invoice">
                             <a href="/app/bill/{{$quote->id}}" class="invc-link hover-btn">{{ __('global.quote Print') }}</a>
+                            <a href="/app/orders" class="invc-link hover-btn">{{ __('global.trackorder') }}</a>
                              <div class="st-hm">{{ __('global.Stay Home') }}<i class="uil uil-smile"></i></div>
                          </div>
                          <div class="placed-bottom-dt">
