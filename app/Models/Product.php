@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Attachment;
 use App\Models\ProductCategories;
 use App\Helper\StrHelper;
-use App\Trais\ItemAccessor;
+use App\Traits\ItemAccessor;
 
 class Product extends Model
 {
@@ -64,10 +64,10 @@ class Product extends Model
 
     public function getPriceObtained()  
     {
-        $value = $this->convertToToman($this->list_price);
+        $value = $this->takeCurrency($this->list_price);
 
         if($this->discount_price){
-            $value = $this->convertToToman($this->unit_price);
+            $value = $this->takeCurrency($this->unit_price);
         }
 
         return $this->giveToUnderstand($value);

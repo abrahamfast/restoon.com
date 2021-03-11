@@ -1,6 +1,6 @@
 <?php 
 
-namespace App\Trais;
+namespace App\Traits;
 
 trait ItemAccessor
 {

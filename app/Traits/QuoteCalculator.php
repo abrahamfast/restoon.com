@@ -24,7 +24,9 @@ trait QuoteCalculator
 
 		$this->quote->tax_amount = $amount;
 		$this->quote->discount_amount = $discount_amount;
+		$this->quote->pre_discounted_amount = $discount_amount;
 		$this->quote->amount = $total;
+		$this->quote->grand_total_amount = $total;
         $this->quote->weight = $weight;
 		$this->quote->save();
 	}

@@ -7,24 +7,22 @@
     </div>
     <div class="cart-text">
         <h4>{{ $item->name }}</h4>
+		<div class="qty-group">
+             <div class="cart-item-price">{{ $item->quantity }} X {{ __('global.' . $item->product->unit_weight, ['num' => $item->product->weight]) }}</div>
+        </div>
         <div class="qty-group">
-            <div class="quantity buttons_added">
-                <input type="number" step="1" name="quantity" value="{{ $item->quantity }}" class="input-text qty text">
-            </div>
             @if($item->discount)
                 <div class="cart-item-price">
-                    {{ $item->unit_price }} 
                      {{ __('global.toman', ["price" => $item->takeCurrencyAttr('unit_price') ]) }}
-                    <span>{{ $item->list_price }}</span>
                     <span>{{ __('global.toman', ["price" => $item->takeCurrencyAttr('list_price') ]) }}</span>
                 </div>
             @else
-                <div class="cart-item-price">{{ $item->understandAttr('list_price') }}</div>
+                <div class="cart-item-price">{{ __('global.toman', ["price" => $item->takeCurrencyAttr('list_price')]) }}</div>
             @endif
 
         </div>
         <div class="qty-group">
-                <div class="cart-item-price">{{ $item->understandAttr('amount') }} {{ __('global.rial') }}</div>
+                <div class="cart-item-price">مجموع: {{ __('global.toman', ['price' => $item->giveToUnderstand($item->takeCurrency($item->amount)) ]) }}</div>
         </div>
         <a href="/cart/unlink/{{$item->id}}" class="cart-close-btn"><i class="uil uil-multiply"></i></a>
     </div>

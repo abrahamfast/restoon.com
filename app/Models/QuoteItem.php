@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Product;
-use App\Trais\ItemAccessor;
+use App\Traits\ItemAccessor;
 
 class QuoteItem extends Model
 {
