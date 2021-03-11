@@ -2945,6 +2945,7 @@ textarea.form-control{
     color: #3e3f5e;
     margin-bottom: 0;
     text-align: center;
+    direction: rtl;
     line-height: 24px
 }
 .delivery-address-bg {
@@ -3005,7 +3006,7 @@ textarea.form-control{
     color: #2b2f4c;
 }
 .address-placed-dt1 p span {
-    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 400;
     color: #3e3f5e
 }
