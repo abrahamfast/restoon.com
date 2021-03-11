@@ -256,7 +256,7 @@ return [
     "quote Print" => "مشاهده صورتی حساب",
 
     // bill
-    "bill-Items" => "موارد",
+    "bill-ItemsHead" => "موارد",
     "bill-itemsCount" => ":count تعداد",
     "bill-DeliveryAddress" => "آدرس تحویل گیرنده",
     "bill-Home" => "دفتر رستوران",
@@ -265,9 +265,9 @@ return [
     "bill-DeliveryCharges" => "هزینه های تحویل",
     "bill-Total" => "جمع پرداخت شده",
     "bill-DeliveryDetails" => "جزئیات تحویل",
-    "bill-OrderID" => "شماره سفارش - <span class=\"descp-bll-dt\"> :OrderID </span>",
-    "bill-Items" => "اقلام - <span class=\"descp-bll-dt\"> :Items </span>",
-    "bill-Timing" => "زمان بندی - <span class=\"descp-bll-dt\"> :Timing </span>",
+    "bill-OrderID" => "شماره سفارش -  :OrderID",
+    "bill-Items" => "اقلام -  :Items",
+    "bill-Timing" => "زمان بندی -  :Timing",
     "bill-PaymentOption" => "گزینه پرداخت",
     "bill-ThanksforOrdering" => "با تشکر برای سفارش",
     "bill-Print" => "چاپ کنید"

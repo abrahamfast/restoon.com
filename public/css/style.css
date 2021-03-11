@@ -1022,14 +1022,16 @@ i.icon1 {
 .cart-total-dil {
     display: flex;
     width: 100%;
-    align-items: center
+    align-items: center;
+    direction: rtl;
 }
 .cart-total-dil h4 {
     margin-top: 0;
     font-size: 14px;
     font-weight: 400;
     color: #2b2f4c;
-    line-height: 24px
+    direction: rtl;
+    line-height: 24px;
 }
 .cart-total-dil span {
     color: #8f91ac;
@@ -5523,13 +5525,16 @@ textarea {
     margin-bottom: 20px!important;
     font-size: 18px;
     font-weight: 700;
-    color: #2b2f4c
+    color: #2b2f4c;
+    direction: rtl;
+    text-rendering: right;
 }
 .itm-ttl {
     display: block;
     font-weight: 500;
     font-size: 16px;
-    text-align: left;
+    text-align: right;
+    direction: rtl;
     margin-bottom: 10px;
     color: #2b2f4c
 }
@@ -5596,7 +5601,7 @@ textarea {
     background: #0edd16;
     color: #fff;
     border-radius: 5px;
-    font-family: roboto, sans-serif;
+    font-family: "Iran Yekan Light", roboto, sans-serif;
     font-weight: 500;
     display: inline-block
 }
