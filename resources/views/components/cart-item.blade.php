@@ -22,7 +22,7 @@
 
         </div>
         <div class="qty-group">
-                <div class="cart-item-price">مجموع: {{ __('global.toman', ['price' => $item->giveToUnderstand($item->takeCurrency($item->amount)) ]) }}</div>
+                <div class="cart-item-price">مجموع: {{ __('global.toman', ['price' => $item->takeCurrency($item->amount) ]) }}</div>
         </div>
         <a href="/cart/unlink/{{$item->id}}" class="cart-close-btn"><i class="uil uil-multiply"></i></a>
     </div>

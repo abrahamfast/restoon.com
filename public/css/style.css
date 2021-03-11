@@ -1272,12 +1272,13 @@ i.icon1 {
     color: #0edd16;
     text-align: right;
     display: inline-flex;
-    margin-left: auto
+    margin-left: auto;
+    direction: rtl;
 }
 .cart-item-price span {
     color: #c7c7c7;
     text-decoration: line-through;
-    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 600
 }
 .wishlist-item {
