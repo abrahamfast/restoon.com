@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Modles\QouteItem;
+use App\Models\EntityTeam;
 
 class Quote extends Model
 {
@@ -28,5 +29,10 @@ class Quote extends Model
     public function items()
     {
     	return $this->hasMany(QuoteItem::class);
+    }
+
+    public function team()
+    {
+        return $this->hasMany(EntityTeam::class, 'entity_id', 'id');
     }
 }
