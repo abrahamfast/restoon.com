@@ -36,8 +36,13 @@ class Quote extends Model
         return $this->hasMany(EntityTeam::class, 'entity_id', 'id')->where('entity_type', 'quote')->where('deleted', 0);
     }
 
-    public function FunctionName($value='')
+    public function assginSalesTeam()
     {
-        # code...
+        // @TODO check duplicate
+        return $this->team()->create([
+            'entity_id' => $this->id,
+            'team_id' => '6031eed8965a745e3',
+            'entity_type' => 'quote'
+        ]);
     }
 }

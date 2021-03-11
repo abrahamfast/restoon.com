@@ -60,7 +60,7 @@ class CartController extends Controller
     public function final($id)
     {
         $quote = Quote::where('id', $id)->first();
-        @ddd($quote);
+        @ddd($quote->with('team'), $quote->assginSalesTeam());
         return view('success');
     }
 
