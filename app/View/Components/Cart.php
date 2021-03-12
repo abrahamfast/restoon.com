@@ -26,18 +26,24 @@ class Cart extends Component
         $quoteId = session()->get('quoteId');
 
         if($user && !$quoteId){
-            $this->quote = $user->quote()->where('status', 'Draft')->first();
-            if($this->quote){
+            $quote = $user->quote()->where('status', 'Draft')->first();
+            $haveTeam = $quote->team()->count();
+            if($quote && !$haveTeam){
+                $this->quote = $quote;
                 $this->quote_items = $this->quote->items()->where('deleted', 0)->get();
                 $this->itemsCount  = $this->quote_items->count();
             }
         } else {
             $quoteId = session()->get('quoteId');
             if($quoteId){
-                $this->quote = Quote::where('id', $quoteId)->first();
-                $this->quote_items = $this->quote->items()->where('deleted', 0)->get();
-                $this->itemsCount  = $this->quote_items->count();
-                $this->total_amount = $this->quote->amount;
+                $quote = Quote::where('id', $quoteId)->first();
+                $haveTeam = $quote->team()->count();
+                if($quote && !$haveTeam){
+                    $this->quote = $quote;
+                    $this->quote_items = $this->quote->items()->where('deleted', 0)->get();
+                    $this->itemsCount  = $this->quote_items->count();
+                    $this->total_amount = $this->quote->amount;
+                }
             }
         }
 
