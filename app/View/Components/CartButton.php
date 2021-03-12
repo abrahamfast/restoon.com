@@ -27,7 +27,7 @@ class CartButton extends Component
         } else {
             $quoteId = session()->get('quoteId');
             if($quoteId){
-                $quote = Quote::where('id', $quoteId)->first();
+                $quote = Quote::where('id', $quoteId)->where('status', 'Draft')->first();
                 $this->cartCount = $quote->items()->where('deleted', 0)->count();    
             }
         }

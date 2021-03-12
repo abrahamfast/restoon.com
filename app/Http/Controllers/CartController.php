@@ -63,6 +63,8 @@ class CartController extends Controller
         $quote->assginSalesTeam();
         $user = $request->user();
 
+        session()->forget('quoteId');
+        
         return view('success', [
             'slug' => __('Order Placed'),
             'quote' => $quote,
