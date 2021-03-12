@@ -16,7 +16,7 @@
 	    <div class="wrapper" style="padding-top: 10px !important">
 			<div class="product-list-view">
 			    <div class="row">
-			    	@if($products)
+			    	@if($products->count())
 			    		@foreach($products as $product)
 			    			<x-product-list  :product="$product" />
 			    		@endforeach
