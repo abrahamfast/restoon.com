@@ -20,6 +20,13 @@
 			    		@foreach($products as $product)
 			    			<x-product-list  :product="$product" />
 			    		@endforeach
+			    	@else
+			    		<div class="col-lg-12 col-md-12">
+	                        <div class="default-title mt-4">
+	                            <h2>{{ __('global.Not Founded') }}</h2>
+	                            <img src="/images/line.svg" alt="">
+	                        </div>
+                    	</div>
 			    	@endif
 			    </div>
 			</div>

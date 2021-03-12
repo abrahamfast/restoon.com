@@ -14,7 +14,7 @@ class SearchController extends Controller
 
         return view('product', [
             'products' => $products,
-            'slug' => __('globl.search')
+            'slug' => __('global.search')
         ]);
     }
 }

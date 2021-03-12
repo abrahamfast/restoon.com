@@ -273,5 +273,6 @@ return [
     "bill-Print" => "چاپ کنید",
 
     "search" => "نتیجه جستجو",
+    "Not Founded" => "موردی یافت نشد",
 
 ];
