@@ -25,11 +25,11 @@
         </div>
         <div class="bs-canvas-footer">
             <div class="cart-total-dil saving-total ">
-                <span>{{ notowo($discount_amount, 'fa') ?? 0 }} {{ __('global.rial') }}</span>
+                <span>{{ notowo($discount_amount, 'fa') ?? 0 }} {{ __('global.toman') }}</span>
                 <h4>{{ __('global.Total Saving') }}</h4>
             </div>
             <div class="main-total-cart">
-                <span>{{ notowo($amount, 'fa') ?? 0 }} {{ __('global.rial') }}</span>
+                <span>{{ notowo($amount, 'fa') ?? 0 }} {{ __('global.toman') }}</span>
                 <h2>{{ __('global.Total') }}</h2>
             </div>
             <div class="checkout-cart">
