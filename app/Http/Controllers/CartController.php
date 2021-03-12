@@ -60,7 +60,7 @@ class CartController extends Controller
     public function final($id, Request $request)
     {
         $quote = Quote::where('id', $id)->first();
-      //  $quote->assginSalesTeam();
+        $quote->assginSalesTeam();
         $user = $request->user();
 
         return view('success', [

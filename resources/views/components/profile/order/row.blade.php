@@ -3,7 +3,7 @@
         <h6>{{ __('global.Delivery Timing') }} {{ $quote->delivery_time }}</h6>
     </div>
     <div class="order-body10">
-    	<x-profile.profile.order.detail :account="$account" />
+    	<x-profile.order.detail :account="$account" :quote="$quote" />
     	<x-profile.order.check-out :quote="$quote" />
         <x-profile.order.track :quote="$quote"/>
 

@@ -14,7 +14,8 @@
             <a class="bs-wizard-dot" href="#">
             </a>
         </div>
-        <div class="bs-wizard-step @if($quote->team()->isTransportation()) complete @else  active @endif">
+        <div class="bs-wizard-step @if($quote->isTransportation()) complete @else  active @endif">
+
             <div class="text-center bs-wizard-stepnum">
                 {{ __('global.On the way') }}
             </div>
@@ -25,7 +26,7 @@
             <a class="bs-wizard-dot" href="#">
             </a>
         </div>
-        <div class="bs-wizard-step @if($quote->team()->isStock()) complete @else  active @endif">
+        <div class="bs-wizard-step @if($quote->isStock()) complete @else  active @endif">
             <div class="text-center bs-wizard-stepnum">
                 {{ __('global.Packed') }}
             </div>
@@ -36,7 +37,7 @@
             <a class="bs-wizard-dot" href="#">
             </a>
         </div>
-        <div class="bs-wizard-step @if($quote->team()->isSales()) complete @else active  @endif">
+        <div class="bs-wizard-step @if($quote->isSales()) complete @else active  @endif">
             <div class="text-center bs-wizard-stepnum">
                 {{ __('global.Placed') }}
             </div>

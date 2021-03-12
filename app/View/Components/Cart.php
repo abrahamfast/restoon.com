@@ -27,6 +27,7 @@ class Cart extends Component
 
         if($user && !$quoteId){
             $quote = $user->quote()->where('status', 'Draft')->first();
+            if(!$quote) return false;
             $haveTeam = $quote->team()->count();
             if($quote && !$haveTeam){
                 $this->quote = $quote;
@@ -37,6 +38,7 @@ class Cart extends Component
             $quoteId = session()->get('quoteId');
             if($quoteId){
                 $quote = Quote::where('id', $quoteId)->first();
+                if(!$quote) return false;
                 $haveTeam = $quote->team()->count();
                 if($quote && !$haveTeam){
                     $this->quote = $quote;

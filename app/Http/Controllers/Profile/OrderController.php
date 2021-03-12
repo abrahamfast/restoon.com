@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Profile;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\{Product, Quote, QuoteItem};
 use App\Traits\QuoteHandler;
 use App\Services\OtpService;
