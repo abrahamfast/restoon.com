@@ -61,10 +61,14 @@ class CartController extends Controller
     {
         $quote = Quote::where('id', $id)->first();
         $quote->assginSalesTeam();
+        $quote->status = 'In Review';
+        $quote->save();
+        // @TODO here need reload model
+        $quote = Quote::where('id', $id)->first();
         $user = $request->user();
 
         session()->forget('quoteId');
-        
+
         return view('success', [
             'slug' => __('Order Placed'),
             'quote' => $quote,
