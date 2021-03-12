@@ -8,9 +8,9 @@
                 </div>
                 <div class="category-model-content modal-content">
                     <div class="search-header">
-                        <form action="/search" method="get">
-                            <input type="search" name="what" placeholder="{{ __('global.Search for products') }}">
-                            <button type="submit"><i class="uil uil-search"></i></button>
+                        <form>
+                            <input type="search" name="what-search" placeholder="{{ __('global.Search for products') }}">
+                            <button id="search"><i class="uil uil-search"></i></button>
                         </form>
                     </div>
                     <div class="search-by-cat">
@@ -31,3 +31,16 @@
             </div>
         </div>
     </div>
+
+@push('js')
+<script>
+    $(document).ready(function() {
+        let search = $('#search');
+        let what = $('input[name=what-search]');
+        search.on('click', function(e){
+            e.preventDefault();
+            window.location = window.location.origin + "/search/" + what
+        })
+    });
+</script>
+@endpush
