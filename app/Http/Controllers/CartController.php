@@ -59,13 +59,18 @@ class CartController extends Controller
 
     public function final($id, Request $request)
     {
+        $user = $request->user();
         $quote = Quote::where('id', $id)->first();
         $quote->assginSalesTeam();
         $quote->status = 'In Review';
+        // @TODO remove relase ver
+        if(!$quote->account_id){
+            $quote->account_id = $user->account()->first()->id;    
+        }
+        
         $quote->save();
         // @TODO here need reload model
         $quote = Quote::where('id', $id)->first();
-        $user = $request->user();
 
         session()->forget('quoteId');
 
