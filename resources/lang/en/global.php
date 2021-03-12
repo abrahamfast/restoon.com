@@ -270,6 +270,8 @@ return [
     "bill-Timing" => "زمان بندی -  :Timing",
     "bill-PaymentOption" => "گزینه پرداخت",
     "bill-ThanksforOrdering" => "با تشکر برای سفارش",
-    "bill-Print" => "چاپ کنید"
+    "bill-Print" => "چاپ کنید",
+
+    "search" => "نتیجه جستجو",
 
 ];

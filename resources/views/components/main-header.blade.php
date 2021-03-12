@@ -12,7 +12,7 @@
             <div class="search120">
                 <div class="ui search">
                     <div class="ui left icon input swdh10">
-                        <input class="prompt srch10" type="text" placeholder="{{ __('global.Search for products') }}">
+                        <input class="prompt srch10" name="what" type="text" placeholder="{{ __('global.Search for products') }}" id="searcher">
                         <i class='uil uil-search-alt icon icon1'></i>
                     </div>
                 </div>
@@ -72,3 +72,14 @@
         </div>
     </div>
 </header>
+
+@push('js')
+<script>
+    $(document).ready(function() {
+        $('#searcher').on('change', function(e){
+            e.preventDefault();
+            window.location = window.location.href + "search/" + $('input[name=searcher]').val()
+        })
+    });
+</script>
+@endpush

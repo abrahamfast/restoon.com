@@ -3,7 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
 	ProfileController, IndexController, ProductController,
 	ContactController, AboutController, OfferController, CartController,
-	VerificationController, FaqController
+	VerificationController, FaqController, SearchController
 };
 use App\Http\Controllers\Profile\{
 	AccountController, DeliveryController, BillController, OrderController
@@ -19,6 +19,8 @@ Route::get('newest', [ProductController::class, 'newest']);
 Route::get('special', [ProductController::class, 'special']);
 Route::get('contact', [ContactController::class, 'index']);
 Route::get('about', [AboutController::class, 'index']);
+
+Route::get('search/{what}', [SearchController::class, 'index']);
 
 
 Route::post('cart/add', [CartController::class, 'link']);
