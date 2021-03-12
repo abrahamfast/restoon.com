@@ -8,8 +8,8 @@
                 </div>
                 <div class="category-model-content modal-content">
                     <div class="search-header">
-                        <form action="#">
-                            <input type="search" placeholder="{{ __('global.Search for products') }}">
+                        <form action="/search" method="get">
+                            <input type="search" name="what" placeholder="{{ __('global.Search for products') }}">
                             <button type="submit"><i class="uil uil-search"></i></button>
                         </form>
                     </div>
