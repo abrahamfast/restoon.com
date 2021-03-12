@@ -1,12 +1,12 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
-	OrderController, ProfileController, IndexController, ProductController,
+	ProfileController, IndexController, ProductController,
 	ContactController, AboutController, OfferController, CartController,
 	VerificationController, FaqController
 };
 use App\Http\Controllers\Profile\{
-	AccountController, DeliveryController, BillController
+	AccountController, DeliveryController, BillController, OrderController
 };
 
 Route::get('/', [IndexController::class, 'index']);

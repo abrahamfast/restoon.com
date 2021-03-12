@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Profile;
 
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -18,12 +18,11 @@ class OrderController extends Controller
     public function index(Request $request)
     {
         $user = $request->user();
-        $quotes = $user->quote()->get();
 
-        return view('dashboard_my_orders', [
+        return view('app', [
             'user' => $user,
-            'quotes' => $quotes,
-            'slug' => 'global.My Orders'
+            'view' => 'orders',
+            'slug' => 'global.Dashboard'
         ]);
     }
 

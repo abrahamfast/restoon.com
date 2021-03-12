@@ -36,6 +36,21 @@ class Quote extends Model
         return $this->hasMany(EntityTeam::class, 'entity_id', 'id')->where('entity_type', 'quote')->where('deleted', 0);
     }
 
+    public function isSales()
+    {
+        return $this->team()->where('team_id', '6031eed8965a745e3')->first();
+    }
+
+    public function isStock()
+    {
+        return $this->team()->where('team_id', '6031eed0be8a64f6a')->first();
+    }
+
+    public function isTransportation()
+    {
+        return $this->team()->where('team_id', '6031eeff04c0bce3d')->first();
+    }
+
     public function assginSalesTeam()
     {
         // @TODO check duplicate

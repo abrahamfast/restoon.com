@@ -15,9 +15,6 @@
                             @case('wishlist')
                                 <x-app.wishlist/>
                                 @break
-                            @case('orders')
-                                <x-profile.order.index :user="$user"/>
-                                @break
                            @default
                             @break
                         @endswitch
