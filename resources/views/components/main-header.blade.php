@@ -76,9 +76,10 @@
 @push('js')
 <script>
     $(document).ready(function() {
-        $('#searcher').on('change', function(e){
+        let search = $('input[name=what]');
+        search.on('change', function(e){
             e.preventDefault();
-            window.location = window.location.origin + "search/" + $('input[name=what]').val()
+            window.location = window.location.origin + "/search/" + search.val()
         })
     });
 </script>
