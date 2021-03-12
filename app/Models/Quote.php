@@ -51,6 +51,11 @@ class Quote extends Model
         return $this->team()->where('team_id', '6031eeff04c0bce3d')->first();
     }
 
+    public function isDelivered()
+    {
+        return $this->delivered;
+    }
+
     public function assginSalesTeam()
     {
         // @TODO check duplicate
