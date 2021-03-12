@@ -7,16 +7,16 @@ trait ProductFilter
 	{
 		switch ($type) {
 			case 'best':
-				return $query->orderBy('cost_price', 'desc');
+				return $query->orderBy('unit_price', 'desc');
 				break;
 			case 'cheap':
-				return $query->orderBy('cost_price', 'desc');
+				return $query->orderBy('unit_price', 'desc');
 				break;
 			case 'newest':
-				return $query->orderBy('cost_price', 'desc');
+				return $query->orderBy('unit_price', 'desc');
 				break;
 			default:
-				return $query->orderBy('cost_price', 'desc');
+				return $query->orderBy('unit_price', 'desc');
 				break;
 		}
 	}
@@ -24,19 +24,19 @@ trait ProductFilter
 	{
 		switch ($type) {
 			case 0:
-				return $query->orderBy('cost_price', 'desc');
+				return $query->orderBy('unit_price', 'desc');
 				break;
 			case 1:
-				return $query->orderBy('cost_price', 'asc');
+				return $query->orderBy('unit_price', 'asc');
 				break;
 			case 2:
-				return $query->orderBy('cost_price', 'asc');
+				return $query->orderBy('unit_price', 'asc');
 				break;
 			case 3:
 				return $query->orderBy('name', 'asc');
 				break;
 			case 4:
-				return $query->orderBy('list_price', 'asc');
+				return $query->orderBy('unit_price', 'asc');
 				break;
 			
 			default:

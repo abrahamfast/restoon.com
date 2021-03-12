@@ -39,7 +39,7 @@
         let what = $('input[name=what-search]');
         search.on('click', function(e){
             e.preventDefault();
-            window.location = window.location.origin + "/search/" + what
+            window.location = window.location.origin + "/search/" + what.val()
         })
     });
 </script>
