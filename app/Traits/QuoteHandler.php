@@ -20,11 +20,15 @@ trait QuoteHandler
 	{
 		$this->quote = Quote::where('id', $this->quoteId)->first();
 	}
-	public function newQuote()
+	public function newQuote($user = null)
 	{
 		$rawQuote = Quote::where('id', "603e34c68f0e7bebc")->first()->toArray();
 		$rawQuote['id'] = $this->uuid();
 		$rawQuote['name'] = __('global.new quote') . date("Y-m-d");
+		if($user){
+			$rawQuote['account_id'] = $user->account()->first()->id;	
+		}
+		
 		$this->quote =  Quote::create($rawQuote);
 		$this->setSessionQuote($rawQuote['id']);
 	}
@@ -32,9 +36,9 @@ trait QuoteHandler
 
 	public function userQuote($user)
 	{
-		$this->quote = $user->quote()->where('status', 'Draft')->first();
+		$this->quote = $user->quote()->where('status', 'Draft')->where('deleted', 0)->first();
 		if(!$this->quote){
-			$this->quote = $this->newQuote();
+			$this->quote = $this->newQuote($user->id);
 		}
 		$this->setSessionQuote($this->quote->id);
 	}
