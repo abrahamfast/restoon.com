@@ -62,95 +62,48 @@
                 <div class="filtr-cate-title">
                     <h4>{{ __('global.Discount filter') }}</h4>
                 </div>
-                                <div class="filter-item-body scrollstyle_4">
+                <div class="filter-item-body scrollstyle_4">
                     <div class="cart-radio">
                         <ul class="cte-select">
                             <li>
-                                <input type="radio" id="c1" name="offer" checked="" value="offer_1">
-                                <label for="c1">۲ درصد - ۵ درصد </label>
+                                <input type="radio" id="d1" name="offer" checked="" value="offer_1">
+                                <label for="d1">۲ درصد - ۵ درصد </label>
                             </li>
                             <li>
-                                <input type="radio" id="c2" name="offer" checked="" value="offer_2">
-                                <label for="c2">۶ درصد - ۱۰ درصد </label>
+                                <input type="radio" id="d2" name="offer" checked="" value="offer_2">
+                                <label for="d2">۶ درصد - ۱۰ درصد </label>
                             </li>
                             <li>
-                                <input type="radio" id="c3" name="offer" checked="" value="offer_3">
-                                <label for="c3">۱۱ درصد - ۱۵ درصد </label>
+                                <input type="radio" id="d3" name="offer" checked="" value="offer_3">
+                                <label for="d3">۱۱ درصد - ۱۵ درصد </label>
                             </li>
                             <li>
-                                <input type="radio" id="c4" name="offer" checked="" value="offer_4">
-                                <label for="c4">۱۶ درصد - ۲۵ درصد </label>
+                                <input type="radio" id="d4" name="offer" checked="" value="offer_4">
+                                <label for="d4">۱۶ درصد - ۲۵ درصد </label>
                             </li>
                             <li>
-                                <input type="radio" id="c4" name="offer" checked="" value="offer_5">
-                                <label for="c5">۲۶ درصد - ۵۰ درصد </label>
+                                <input type="radio" id="d4" name="offer" checked="" value="offer_5">
+                                <label for="d5">۲۶ درصد - ۵۰ درصد </label>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div class="filter-items">
                 <div class="filtr-cate-title">
-                    <h4>{{ __('global.Pack Size') }}</h4>
+                    <h4>{{ __('global.Discount filter') }}</h4>
                 </div>
-                <div class="price-pack-item-body scrollstyle_4">
-                    <div class="brand-list">
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_1">
-                            <label class="custom-control-label" for="pack_1">۱ عدد</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_2">
-                            <label class="custom-control-label" for="pack_2">یک عدد ۴۰۰ الی ۶۰۰ گرم</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_3">
-                            <label class="custom-control-label" for="pack_3">یک عدد ۶۰۰ الی ۸۰۰ گرم</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_4">
-                            <label class="custom-control-label" for="pack_4">دسته  ۳ تایی</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_5">
-                            <label class="custom-control-label" for="pack_5">دسته  ۴ تایی</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_6">
-                            <label class="custom-control-label" for="pack_6">دسته  ۵ تایی</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_7">
-                            <label class="custom-control-label" for="pack_7">۲ عدد</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_8">
-                            <label class="custom-control-label" for="pack_8">۱۰۰ گرم</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_9">
-                            <label class="custom-control-label" for="pack_9">۲۰۰ گرم</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_10">
-                            <label class="custom-control-label" for="pack_10">۲۵۰ گرم</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_11">
-                            <label class="custom-control-label" for="pack_11">۵۰۰ گرم</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_12">
-                            <label class="custom-control-label" for="pack_12">یک گیلو</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_13">
-                            <label class="custom-control-label" for="pack_13">دو گیلو</label>
-                        </div>
-                        <div class="custom-control custom-checkbox pb2">
-                            <input type="checkbox" class="custom-control-input" id="pack_14">
-                            <label class="custom-control-label" for="pack_14">۱ تن</label>
-                        </div>
+                <div class="filter-item-body scrollstyle_4">
+                    <div class="cart-radio">
+                        <ul class="cte-select">
+                            @foreach($brands as $brand)
+                            <li>
+                                <input type="radio" id="{{ $brand->id }}" name="brand" checked="" value="{{ $brand->id }}">
+                                <label for="{{ $brand->id }}">۲ درصد - ۵ درصد </label>
+                            </li>
+                            @endforeach
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -161,15 +114,19 @@
     <script>
         $(document).ready(function() {
             $('input[name=category]').change(function(){
-                let route = window.location.origin + window.location.pathname + "/?filter=true&category=" + this.value;
+                let route = window.location.origin + window.location.pathname + "/?options=category," + this.value;
                 window.location = route;
             });
             $('input[name=price]').change(function(){
-                let route = window.location.origin + window.location.pathname + "/?filter=true&price=" + this.value;
+                let route = window.location.origin + window.location.pathname + "/?options=price," + this.value;
                 window.location = route;
             });
             $('input[name=offer]').change(function(){
-                let route = window.location.origin + window.location.pathname + "/?filter=true&price=" + this.value;
+                let route = window.location.origin + window.location.pathname + "/?options=offer," + this.value;
+                window.location = route;
+            });
+            $('input[name=brand]').change(function(){
+                let route = window.location.origin + window.location.pathname + "/?options=brand=" + this.value;
                 window.location = route;
             });
         });

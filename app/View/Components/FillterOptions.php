@@ -3,11 +3,12 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
-use App\Models\ProductCategories;
+use App\Models\{ProductCategories, Brand};
 
 class FillterOptions extends Component
 {
     public $categories;
+    public $brands;
     /**
      * Create a new component instance.
      *
@@ -16,6 +17,7 @@ class FillterOptions extends Component
     public function __construct()
     {
         $this->categories = ProductCategories::where('deleted', 0)->get();
+        $this->brands = Brand::where('deleted', 0)->get();
     }
 
     /**
