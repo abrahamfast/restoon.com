@@ -28,7 +28,6 @@ trait QuoteHandler
 		if($user){
 			$rawQuote['account_id'] = $user->account()->first()->id;	
 		}
-		
 		$this->quote =  Quote::create($rawQuote);
 		$this->setSessionQuote($rawQuote['id']);
 	}
@@ -38,7 +37,7 @@ trait QuoteHandler
 	{
 		$this->quote = $user->quote()->where('status', 'Draft')->where('deleted', 0)->first();
 		if(!$this->quote){
-			$this->quote = $this->newQuote($user->id);
+			$this->quote = $this->newQuote($user);
 		}
 		$this->setSessionQuote($this->quote->id);
 	}
