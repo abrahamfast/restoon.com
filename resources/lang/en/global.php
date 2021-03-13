@@ -278,5 +278,6 @@ return [
 
     "VerifyOtpAndNext" => "کد تایید",
     "Brand Name filter" => "بر اساس نام برند",
+    "Term and Conditions" => "شرایط و ضوابط"
 
 ];
