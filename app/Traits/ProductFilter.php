@@ -23,20 +23,21 @@ trait ProductFilter
 	public function filter($type, $query)
 	{
 		switch ($type) {
-			case 0:
-				return $query->orderBy('unit_price', 'desc');
-				break;
 			case 1:
+				// Low to High
 				return $query->orderBy('unit_price', 'asc');
 				break;
 			case 2:
-				return $query->orderBy('unit_price', 'asc');
+				// High to Low
+				return $query->orderBy('unit_price', 'desc');
 				break;
 			case 3:
+				// Alphabetical
 				return $query->orderBy('name', 'asc');
 				break;
-			case 4:
-				return $query->orderBy('unit_price', 'asc');
+			case 6:
+				// Off - High to Low
+				return $query->orderBy('pricing_factor', 'desc');
 				break;
 			
 			default:
