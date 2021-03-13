@@ -10,19 +10,19 @@
                 @switch($type)
                     @case(1)
                         {{ __('global.Price - Low to High') }}
-                        @breack
+                        @break
                     @case(2)
                         {{ __('global.Price - High to Low') }}
-                        @breack
+                        @break
                     @case(3)
                         {{ __('global.Alphabetical') }}
-                        @breack
+                        @break
                     @case(6)
                         {{ __('global.Off - High to Low') }}
-                        @breack
+                        @break
                     @default
                         {{ __('global.Alphabetical') }}
-                        @breack
+                        @break
                 @endswitch
             </div>
             <div class="menu">
