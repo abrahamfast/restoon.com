@@ -7,14 +7,16 @@ use Illuminate\View\Component;
 class FilterTop extends Component
 {
     public $lable;
+    public $type;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($lable)
+    public function __construct($lable, $type)
     {
         $this->lable = $lable;
+        $this->type = $type;
     }
 
     /**

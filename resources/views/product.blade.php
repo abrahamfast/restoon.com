@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-				<x-filter-top :lable="$slug"/>
+				<x-filter-top :lable="$slug" :type="$filter"/>
 			</div>
 		</div>
 	    <div class="wrapper" style="padding-top: 10px !important">
