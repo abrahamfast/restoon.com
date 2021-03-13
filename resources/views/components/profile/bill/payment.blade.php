@@ -14,8 +14,8 @@
             </div>
         </div>
         <div class="main-total-cart pl-0 pr-0 pb-0 border-bottom-0">
-            <h2>{{ __('global.Total') }}</h2>
             <span>{{ $quote->grand_total_amount }}</span>
+            <h2>{{ __('global.Total') }}</h2>
         </div>
     </div>
 </div>
