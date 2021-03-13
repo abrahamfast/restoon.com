@@ -29,69 +29,6 @@
             </div>
             <div class="filter-items">
                 <div class="filtr-cate-title">
-                    <h4>{{ __('global.Price') }}</h4>
-                </div>
-                <div class="filter-item-body scrollstyle_4">
-                    <div class="cart-radio">
-                        <ul class="cte-select">
-                            <li>
-                                <input type="radio" id="c1" name="price" checked="" value="up20">
-                                <label for="c1">کمتر از ۲۰ هزار  تومان </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="c2" name="price" value="up30">
-                                <label for="c2">بین ۲۰ هزار تومان تا ۵۰ هزار تومان </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="c3" name="price" value="up40">
-                                <label for="c3">۱۰۰ هزار تومان تا ۵۰۰ هزار تومان </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="c4" name="price" value="up50">
-                                <label for="c4">۱ می لیون تا ۲ میلیون </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="c5" name="price" value="up60">
-                                <label for="c5">بیش از ۲ میلیون تومان</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="filter-items">
-                <div class="filtr-cate-title">
-                    <h4>{{ __('global.Discount filter') }}</h4>
-                </div>
-                <div class="filter-item-body scrollstyle_4">
-                    <div class="cart-radio">
-                        <ul class="cte-select">
-                            <li>
-                                <input type="radio" id="d1" name="offer" checked="" value="offer_1">
-                                <label for="d1">۲ درصد - ۵ درصد </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="d2" name="offer" checked="" value="offer_2">
-                                <label for="d2">۶ درصد - ۱۰ درصد </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="d3" name="offer" checked="" value="offer_3">
-                                <label for="d3">۱۱ درصد - ۱۵ درصد </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="d4" name="offer" checked="" value="offer_4">
-                                <label for="d4">۱۶ درصد - ۲۵ درصد </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="d4" name="offer" checked="" value="offer_5">
-                                <label for="d5">۲۶ درصد - ۵۰ درصد </label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="filter-items">
-                <div class="filtr-cate-title">
                     <h4>{{ __('global.Discount filter') }}</h4>
                 </div>
                 <div class="filter-item-body scrollstyle_4">
@@ -100,7 +37,7 @@
                             @foreach($brands as $brand)
                             <li>
                                 <input type="radio" id="{{ $brand->id }}" name="brand" checked="" value="{{ $brand->id }}">
-                                <label for="{{ $brand->id }}">۲ درصد - ۵ درصد </label>
+                                <label for="{{ $brand->id }}">{{ $brand->name }}</label>
                             </li>
                             @endforeach
                         </ul>

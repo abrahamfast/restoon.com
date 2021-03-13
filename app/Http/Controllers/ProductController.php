@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductCategories;
-use App\Traits\ProductFilter;
+use App\Traits\{ProductFilter, FillterOptions};
 
 class ProductController extends Controller
 {
-    use ProductFilter;
+    use ProductFilter, FillterOptions;
+
+    protected array $options = [];
     /**
      * Display a listing of the resource.
      *
@@ -33,8 +35,15 @@ class ProductController extends Controller
 
     public function newest(Request $request)
     {
-        $query = Product::where('deleted', 0);
+        $query = Product::where('dseleted', 0);
         $type = $request->get('filter') ?? 3;
+        // option filters
+        $option = $request->get('options') ?? null;
+        // @TODO here has dev mode
+        $this->makeOptionQuery($option);
+        $query = $this->optionQuery($query);
+
+        //
         $products = $this->filter($type, $query)->get();
 
         return view('product', [

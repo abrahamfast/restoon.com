@@ -1398,6 +1398,7 @@ i.icon1 {
     background: #f9f9f9;
     color: #2b2f4c;
     border-radius: 0;
+    direction: rtl;
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 0
