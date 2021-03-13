@@ -276,6 +276,7 @@ return [
     "search" => "نتیجه جستجو",
     "Not Founded" => "موردی یافت نشد",
 
-    "VerifyOtpAndNext" => "کد تایید"
+    "VerifyOtpAndNext" => "کد تایید",
+    "Brand Name filter" => "بر اساس نام برند",
 
 ];

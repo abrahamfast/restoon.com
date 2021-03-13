@@ -23,6 +23,14 @@ class ProductController extends Controller
         $category = ProductCategories::where('slug', $slug)->first();
         $query = Product::where('category_id', $category->id);
         $type = $request->get('filter') ?? 3;
+		// option filters
+        $option = $request->get('options') ?? null;
+        // @TODO here has dev mode
+        $this->makeOptionQuery($option);
+        $query = $this->optionQuery($query);
+
+
+
         $products = $this->filter($type, $query)->get();
         
 
@@ -35,7 +43,7 @@ class ProductController extends Controller
 
     public function newest(Request $request)
     {
-        $query = Product::where('dseleted', 0);
+        $query = Product::where('deleted', 0);
         $type = $request->get('filter') ?? 3;
         // option filters
         $option = $request->get('options') ?? null;
@@ -57,6 +65,13 @@ class ProductController extends Controller
     {
         $query = Product::where('deleted', 0)->where('list_price', "<>", null);
         $type = $request->get('filter') ?? 3;
+
+		// option filters
+        $option = $request->get('options') ?? null;
+        // @TODO here has dev mode
+        $this->makeOptionQuery($option);
+        $query = $this->optionQuery($query);
+
         $products = $this->filter($type, $query)->get();
 
         return view('product', [

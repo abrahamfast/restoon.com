@@ -12,13 +12,13 @@
                     <div class="cart-radio">
                         <ul class="cte-select">
                             <li>
-                                <input type="radio" id="c1" name="category" checked="" value="all">
+                                <input type="radio" id="c1" name="category_id" checked="" value="all">
                                 <label for="c1">{{ __('global.all category') }}</label>
                             </li>
                             @if($categories)
                                 @foreach($categories as $category)
                                     <li>
-                                        <input type="radio" id="{{$category->id}}" name="category" value="{{$category->id}}">
+                                        <input type="radio" id="{{$category->id}}" name="category_id" value="{{$category->id}}">
                                         <label for="{{$category->id}}">{{$category->translate}}</label>
                                     </li>
                                 @endforeach
@@ -29,14 +29,14 @@
             </div>
             <div class="filter-items">
                 <div class="filtr-cate-title">
-                    <h4>{{ __('global.Discount filter') }}</h4>
+                    <h4>{{ __('global.Brand Name filter') }}</h4>
                 </div>
                 <div class="filter-item-body scrollstyle_4">
                     <div class="cart-radio">
                         <ul class="cte-select">
                             @foreach($brands as $brand)
                             <li>
-                                <input type="radio" id="{{ $brand->id }}" name="brand" checked="" value="{{ $brand->id }}">
+                                <input type="radio" id="{{ $brand->id }}" name="brand_id" checked="" value="{{ $brand->id }}">
                                 <label for="{{ $brand->id }}">{{ $brand->name }}</label>
                             </li>
                             @endforeach
@@ -50,8 +50,8 @@
 @push('js')
     <script>
         $(document).ready(function() {
-            $('input[name=category]').change(function(){
-                let route = window.location.origin + window.location.pathname + "/?options=category," + this.value;
+            $('input[name=category_id]').change(function(){
+                let route = window.location.origin + window.location.pathname + "/?options=category_id," + this.value;
                 window.location = route;
             });
             $('input[name=price]').change(function(){
@@ -62,8 +62,8 @@
                 let route = window.location.origin + window.location.pathname + "/?options=offer," + this.value;
                 window.location = route;
             });
-            $('input[name=brand]').change(function(){
-                let route = window.location.origin + window.location.pathname + "/?options=brand=" + this.value;
+            $('input[name=brand_id]').change(function(){
+                let route = window.location.origin + window.location.pathname + "/?options=brand_id," + this.value;
                 window.location = route;
             });
         });
