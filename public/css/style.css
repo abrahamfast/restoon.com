@@ -1213,6 +1213,7 @@ i.icon1 {
     white-space: nowrap;
     vertical-align: top;
     margin-left: 5px;
+    direction: ltr;
 }
 .quantity.buttons_added input {
     display: inline-block;
@@ -1787,7 +1788,7 @@ span.like-icon {
     margin-top: 17px
 }
 .cart-icon {
-    margin-right: auto;
+    margin-left: auto;
     font-size: 20px;
     color: #c7c7c7;
     cursor: pointer
@@ -5612,4 +5613,8 @@ textarea {
 }
 .close {
     float: left !important;
+}
+
+.row {
+    direction: rtl !important;
 }

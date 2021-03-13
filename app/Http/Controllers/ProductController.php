@@ -15,22 +15,26 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($slug)
+    public function index($slug, Request $request)
     {
         // get categories by slug
         $category = ProductCategories::where('slug', $slug)->first();
-        $products = Product::where('category_id', $category->id)->get();
+        $query = Product::where('category_id', $category->id);
+        $type = $request->get('filter') ?? 3;
+        $products = $this->filter($type, $query)->get();
+        
 
         return view('product', [
             'products' => $products,
-            'slug' => $category->translate
+            'slug' => $category->translate,
+            'filter' => $type
         ]);
     }
 
     public function newest(Request $request)
     {
         $query = Product::where('deleted', 0);
-        $type = $request->get('filter') ?? 0;
+        $type = $request->get('filter') ?? 3;
         $products = $this->filter($type, $query)->get();
 
         return view('product', [
@@ -43,7 +47,7 @@ class ProductController extends Controller
     public function special(Request $request)
     {
         $query = Product::where('deleted', 0)->where('list_price', "<>", null);
-        $type = $request->get('filter') ?? 0;
+        $type = $request->get('filter') ?? 3;
         $products = $this->filter($type, $query)->get();
 
         return view('product', [
