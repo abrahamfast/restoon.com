@@ -33,7 +33,7 @@ class OrderController extends Controller
         $quote = Quote::where('id', $quoteId)->first();
         $verify = session()->get('verify');
         
-        if($verify){
+        if(!$verify){
             $otpService->setReceptor($request->user()->phone);
             $otpService->send();    
         }
