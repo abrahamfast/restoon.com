@@ -6,7 +6,7 @@
             </div>
             <div class="main_logo" id="logo">
                 <a href="#"><img src="/images/logo.png" alt=""></a>
-                <a href="#"><img class="logo-inverse" src="images/dark-logo.png" alt=""></a>
+                <a href="#"><img class="logo-inverse" src="/images/dark-logo.png" alt=""></a>
             </div>
             <x-select-location/>
             <div class="search120">
@@ -52,11 +52,11 @@
                     <button class="navbar-toggler menu_toggle_btn" type="button" data-target="#navbarSupportedContent"><i class="uil uil-bars"></i></button>
                     <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu" id="navbarSupportedContent">
                         <ul class="navbar-nav main_nav align-self-stretch">
-                            <li class="nav-item"><a href="/" class="nav-link active" title="Home">{{ __('global.Home') }}</a></li>
-                            <li class="nav-item"><a href="/newest" class="nav-link new_item" title="New Products">{{ __('global.New Products') }}</a></li>
-                            <li class="nav-item"><a href="/special" class="nav-link" title="Featured Products">{{ __('global.Featured Products') }}</a></li>
-                            <li class="nav-item"><a href="/contact" class="nav-link" title="Contact">{{ __('global.contact') }}</a></li>
-                            <li class="nav-item"><a href="/about" class="nav-link" title="Contact">{{ __('global.about') }}</a></li>
+                            <li class="nav-item"><a href="/" class="nav-link @if(Route::currentRouteName() == 'index') active @endif" title="Home">{{ __('global.Home') }}</a></li>
+                            <li class="nav-item"><a href="/newest" class="nav-link @if(Route::currentRouteName() == 'newest') active @endif new_item" title="New Products">{{ __('global.New Products') }}</a></li>
+                            <li class="nav-item"><a href="/special" class="nav-link @if(Route::currentRouteName() == 'special') active @endif" title="Featured Products">{{ __('global.Featured Products') }}</a></li>
+                            <li class="nav-item"><a href="/contact" class="nav-link @if(Route::currentRouteName() == 'contact') active @endif" title="Contact">{{ __('global.contact') }}</a></li>
+                            <li class="nav-item"><a href="/about" class="nav-link @if(Route::currentRouteName() == 'about') active @endif" title="Contact">{{ __('global.about') }}</a></li>
                         </ul>
                     </div>
                 </div>

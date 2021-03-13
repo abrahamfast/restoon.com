@@ -9,16 +9,16 @@ use App\Http\Controllers\Profile\{
 	AccountController, DeliveryController, BillController, OrderController
 };
 
-Route::get('/', [IndexController::class, 'index']);
-Route::get('/faq', [FaqController::class, 'index']);
+Route::get('/', [IndexController::class, 'index'])->name('index');
+Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 Route::get('category/{slug}', [ProductController::class, 'index']);
 Route::get('product/{id}', [ProductController::class, 'show']);
 Route::get('offer/{id}', [OfferController::class, 'show']);
-Route::get('offer', [OfferController::class, 'index']);
-Route::get('newest', [ProductController::class, 'newest']);
-Route::get('special', [ProductController::class, 'special']);
-Route::get('contact', [ContactController::class, 'index']);
-Route::get('about', [AboutController::class, 'index']);
+Route::get('offer', [OfferController::class, 'index'])->name('offer');
+Route::get('newest', [ProductController::class, 'newest'])->name('newest');
+Route::get('special', [ProductController::class, 'special'])->name('special');
+Route::get('contact', [ContactController::class, 'index'])->name('contact');
+Route::get('about', [AboutController::class, 'index'])->name('about');
 
 Route::get('search/{what}', [SearchController::class, 'index']);
 
