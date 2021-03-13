@@ -188,7 +188,7 @@ return [
     "Total" => "مجموع",
     "tax rate" => "نرخ مالیات",
     "Track Order" => "پیگیری سفارش",
-    "Delivery Boy" => "پیگیری ",
+    "Delivery Boy" => "پیگیری این سفارش",
     "Call Us" => "با ما تماس بگیرید",
     "Placed" => "بررسی",
     "Packed" => "بسته بندی",
