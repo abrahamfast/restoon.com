@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\OtpService;
 
 class VerificationController extends Controller
 {
@@ -12,9 +13,15 @@ class VerificationController extends Controller
     	return redirect()->back();
     }
 
-    public function check(Request $request)
+    public function check(Request $request, OtpService $otpService)
     {
-    	// check otp code
-    	return redirect()->back();
+        $verify = $otpService->verifyOtp($request->user()->phone, str_replace("null", "", $request->get('code')));
+        if($verify){
+            session()->put('verify', true);
+            return response('success', 200);
+        }
+
+        return response('invalid code', 500);
     }
 }
+

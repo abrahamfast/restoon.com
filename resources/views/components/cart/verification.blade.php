@@ -78,20 +78,22 @@
         $(document).ready(function() {
             $('#verification').on('click', function(e){
                 e.preventDefault();
+
                 $.ajaxSetup({
                     headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('value')
                     }
                 });
-                let code;
-                $('input[name=number]').each(function(item){
-                    code = code + item.val();
+                let code = null;
+                $('input[name=number]').each(function(m, item){
+                    code = code + $(item).val();
                 });
                 var formData = {
                     code: code
                 };
                 $.ajax({
-                    type: 'post',
+                    type: 'POST',
+                    method: 'POST',
                     url: '/verification/check',
                     data: formData,
                     success: function(data){
