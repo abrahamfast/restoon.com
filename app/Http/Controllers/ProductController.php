@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductCategories;
-use App\Traits\{ProductFilter, FillterOptions};
+use App\Traits\{ProductFilter, FilterOptions};
 
 class ProductController extends Controller
 {
-    use ProductFilter, FillterOptions;
+    use ProductFilter, FilterOptions;
 
     protected array $options = [];
     /**
