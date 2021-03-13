@@ -40,7 +40,7 @@ class OtpService
      *
      * @return array
      */
-    public function send(): array
+    public function send() 
     {
         try {
             $token = $this->code->setCacheKey($this->getReceptor())->generate();
