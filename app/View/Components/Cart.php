@@ -26,7 +26,8 @@ class Cart extends Component
         $quoteId = session()->get('quoteId');
 
         if($user && !$quoteId){
-            $quote = $user->quote()->where('status', 'Draft')->first();
+            $quote = $user->quote()->where('id', $quoteId)->where('status', 'Draft')->first();
+            ddd($quote, 33, $user->id);
             if(!$quote) return false;
             $haveTeam = $quote->team()->count();
             if($quote && !$haveTeam){
@@ -48,7 +49,6 @@ class Cart extends Component
                 }
             }
         }
-
         if($this->quote){
             $this->amount =  $this->quote->grand_total_amount;
             $this->discount_amount = $this->quote->grand_total_amount;

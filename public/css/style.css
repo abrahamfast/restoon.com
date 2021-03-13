@@ -1186,7 +1186,7 @@ i.icon1 {
 .qty-group {
     display: flex;
     align-items: center;
-    margin-top: 10px
+    _margin-top: 10px
 }
 .quantity {
     display: inline-block
@@ -1268,10 +1268,10 @@ i.icon1 {
     outline: none
 }
 .cart-item-price {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 24px;
-    color: #0edd16;
+    color: #3e3f5e;
     text-align: right;
     display: inline-flex;
     margin-left: auto;

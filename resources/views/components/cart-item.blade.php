@@ -8,7 +8,7 @@
     <div class="cart-text">
         <h4>{{ $item->name }}</h4>
 		<div class="qty-group">
-             <div class="cart-item-price">{{ $item->quantity }} X {{ __('global.' . $item->product->unit_weight, ['num' => $item->product->weight]) }}</div>
+             <div class="cart-item-price">{{ $item->quantity }} تا {{ __('global.' . $item->product->unit_weight, ['num' => $item->product->weight]) }}</div>
         </div>
         <div class="qty-group">
             @if($item->discount)

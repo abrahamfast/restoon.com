@@ -7,12 +7,12 @@
         <div class="bs-canvas-body">
             <div class="cart-top-total">
                 <div class="cart-total-dil">
-                    <span>{{ $amount ?? 0 }}</span>
                     <h4>{{ __('global.Your cart Super Market price') }}</h4>
+                    <span>{{ $amount ?? 0 }}</span>
                 </div>
                 <div class="cart-total-dil pt-2">
-                    <span>{{ $shipping_cost ?? 0 }}</span>
                     <h4>{{ __('global.Delivery Charges') }}</h4>
+                    <span>{{ $shipping_cost ?? 0 }}</span>
                 </div>
             </div>
             <div class="side-cart-items">
@@ -25,11 +25,11 @@
         </div>
         <div class="bs-canvas-footer">
             <div class="cart-total-dil saving-total ">
-                <span>{{ notowo($discount_amount, 'fa') ?? 0 }} {{ __('global.toman') }}</span>
                 <h4>{{ __('global.Total Saving') }}</h4>
+<span>{{ __('global.toman', ["price" => $item->takeCurrency($discount_amount) ]) }}</span>
             </div>
             <div class="main-total-cart">
-                <span>{{ notowo($amount, 'fa') ?? 0 }} {{ __('global.toman') }}</span>
+<span>{{ __('global.toman', ["price" => $item->takeCurrency($amount) ]) }}</span>
                 <h2>{{ __('global.Total') }}</h2>
             </div>
             <div class="checkout-cart">
