@@ -153,7 +153,7 @@ $('.cate-slider').owlCarousel({
     navText: ["<i class='uil uil-angle-left'></i>", "<i class='uil uil-angle-right'></i>"],
     responsive: {
         0: {
-            items: 2
+            items: 1
         },
         600: {
             items: 2
@@ -178,7 +178,7 @@ $('.featured-slider').owlCarousel({
     navText: ["<i class='uil uil-angle-left'></i>", "<i class='uil uil-angle-right'></i>"],
     responsive: {
         0: {
-            items: 2
+            items: 1
         },
         600: {
             items: 2

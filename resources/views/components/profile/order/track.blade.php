@@ -3,7 +3,7 @@
         {{ __('global.Track Order') }}
     </h4>
     <div class="bs-wizard" style="border-bottom:0;">
-        <div class="bs-wizard-step disabled">
+        <div class="bs-wizard-step @if($quote->isDelivered()) complete @else disabled @endif">
             <div class="text-center bs-wizard-stepnum">
                 {{ __('global.Delivered') }}
             </div>
@@ -14,7 +14,7 @@
             <a class="bs-wizard-dot" href="#">
             </a>
         </div>
-        <div class="bs-wizard-step @if($quote->isTransportation()) complete @else  active @endif">
+        <div class="bs-wizard-step @if($quote->isTransportation() || $quote->isDelivered() || $quote->isDelivered()) complete @elseif($quote->isTransportation()) active @else disabled @endif">
 
             <div class="text-center bs-wizard-stepnum">
                 {{ __('global.On the way') }}
@@ -26,7 +26,7 @@
             <a class="bs-wizard-dot" href="#">
             </a>
         </div>
-        <div class="bs-wizard-step @if($quote->isStock() && $quote->isTransportation()) complete @elseif($quote->isStock())  active @endif">
+        <div class="bs-wizard-step @if($quote->isStock() || $quote->isTransportation() || $quote->isDelivered()) complete @elseif($quote->isStock())  active @else disabled @endif">
             <div class="text-center bs-wizard-stepnum">
                 {{ __('global.Packed') }}
             </div>
@@ -37,7 +37,7 @@
             <a class="bs-wizard-dot" href="#">
             </a>
         </div>
-        <div class="bs-wizard-step @if($quote->isSales() && $quote->isStock()) complete @elseif($quote->isSales()) active @else  active @endif">
+        <div class="bs-wizard-step @if($quote->isSales() || $quote->isStock() || $quote->isTransportation()  ||$quote->isDelivered()) complete @elseif($quote->isSales()) active @else  active @endif">
             <div class="text-center bs-wizard-stepnum">
                 {{ __('global.Placed') }}
             </div>
