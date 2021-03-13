@@ -1,4 +1,4 @@
-<div class="checkout-step">
+<div class="checkout-step" style="display: none;">
     <div class="checkout-card" id="headingTwo">
         <h4 class="checkout-step-title">
             <button class="wizard-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> {{ __('global.Delivery Address') }}</button>

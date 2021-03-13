@@ -1,5 +1,5 @@
 
-                            <div class="checkout-step">
+                            <div class="checkout-step" style="display: none;">
                                 <div class="checkout-card" id="headingFour">
                                     <h4 class="checkout-step-title">
                                         <button class="wizard-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">{{__('global.Payment') }}</button>

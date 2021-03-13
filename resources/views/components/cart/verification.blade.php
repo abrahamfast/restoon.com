@@ -59,7 +59,7 @@
                                         <input id="code[4]" maxlength="1" name="number" type="text" placeholder="" class="form-control input-md" required="">
                                     </li>
                                     <li>
-                                        <a class="collapsed chck-btn hover-btn" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseTwo">{{ __('global.Next') }}</a>
+                                        <a class="collapsed chck-btn hover-btn" id="verification" role="button" data-toggle="collapse" data-parent="#checkout_wizard" href="#collapseTwo">{{ __('global.VerifyOtpAndNext') }}</a>
                                     </li>
                                 </ul>
                             </form>
@@ -76,38 +76,33 @@
 @push('js')
     <script>
         $(document).ready(function() {
-            $('#otp-verifaction').on('click', function(e){
+            $('#verification').on('click', function(e){
                 e.preventDefault();
-                // $.ajaxSetup({
-                //     headers: {
-                //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                //     }
-                // });
-                // var formData = {
-                //     product_id: $('#like-icon').val()
-                // };
-
-                // $.ajax({
-                //     type: 'post',
-                //     url: '/user/cart',
-                //     data: formData,
-                //     success: function(data){
-                //         console.log(data);
-                //     },
-                //     error: function(data){
-                //         console.log(data);
-                //     }
-                // })
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                let code;
+                $('input[name=number]').each(function(item){
+                    code = code + item.val();
+                });
+                var formData = {
+                    code: code
+                };
+                $.ajax({
+                    type: 'post',
+                    url: '/verification/check',
+                    data: formData,
+                    success: function(data){
+                        console.log(data);
+                        $('.checkout-step').show()
+                    },
+                    error: function(data){
+                        console.log(data);
+                    }
+                })
             });
-        });
-
-        $('#otp-verifaction').on('click', function(e){
-            e.preventDefault()
-            $('#form-verification').submit()
-        });
-        $('#send-verifaction').on('click', function(e){
-            e.preventDefault()
-            $('#check-verification').submit()
         });
     </script>
 @endpush

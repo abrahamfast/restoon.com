@@ -275,4 +275,6 @@ return [
     "search" => "نتیجه جستجو",
     "Not Founded" => "موردی یافت نشد",
 
+    "VerifyOtpAndNext" => "کد تایید"
+
 ];
