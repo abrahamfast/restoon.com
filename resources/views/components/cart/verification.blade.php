@@ -1,4 +1,4 @@
-                <div class="alert alert-danger otp-error" data-if="otp-success" role="alert" style="none">
+                <div class="alert alert-danger otp-error" data-if="otp-success" role="alert" style="display: none">
                     {{ __('global.your code is incorect') }}
                 </div>
 
@@ -37,7 +37,7 @@
             </div>
             @endguest
 
-            @if($verify)
+            @if($verify && false)
                 <div class="alert alert-success" role="alert">
                     {{ __('global.Success Your Phone') }}
                 </div>

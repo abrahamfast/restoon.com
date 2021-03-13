@@ -28,8 +28,8 @@
                                 @foreach($date_ranges as $key => $date)
                                     <div class="item">
                                         <div class="date-now">
-                                            <input type="radio" id="dd{{$date->formatDate()}}" name="delivery_date" value="{{$date->formatDate()}}">
-                                            <label for="dd{{$date->formatDate()}}">{{$date_ranges_fa[$key]->format('%B %d، %Y')}}</label>
+                                            <input type="radio" id="dd{{$date->toDateString()}}" name="delivery_date" value="{{$date->toDateString()}}">
+                                            <label for="dd{{$date->toDateString()}}">{{$date_ranges_fa[$key]->format('%B %d، %Y')}}</label>
                                         </div>
                                     </div>
                                 @endforeach
