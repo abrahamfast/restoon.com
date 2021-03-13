@@ -1,3 +1,7 @@
+                <div class="alert alert-danger otp-error" data-if="otp-success" role="alert" style="none">
+                    {{ __('global.your code is incorect') }}
+                </div>
+
 <div class="checkout-step">
     <div class="checkout-card" id="headingOne">
         <h4 class="checkout-step-title">
@@ -99,9 +103,10 @@
                     success: function(data){
                         console.log(data);
                         $('.checkout-step').show()
+                        $('.otp-error').hide()
                     },
                     error: function(data){
-                        console.log(data);
+                        $('.otp-error').show()
                     }
                 })
             });

@@ -9,6 +9,7 @@ use Illuminate\View\Component;
 class DeliveryTime extends Component
 {
     public $date_ranges;
+    public $date_ranges_fa;
     /**
      * Create a new component instance.
      *
@@ -18,7 +19,8 @@ class DeliveryTime extends Component
     {
         $period = CarbonInterval::days()->toPeriod(Carbon::now(), '31 days');
         foreach ($period as $date){
-            $this->date_ranges[] = verta($date);
+            $this->date_ranges_fa[] = verta($date);
+            $this->date_ranges[] = $date;
         }
     }
 
