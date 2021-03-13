@@ -4293,21 +4293,23 @@ table {
 .job-main-dt h2 {
     color: #2b2f4c;
     font-size: 24px;
-    text-align: left;
+    direction: rtl;
+    text-align: right;
     margin-top: 18px!important;
     margin-bottom: 12px
 }
 .job-main-dt span {
     font-size: 16px;
     font-weight: 400;
-    text-align: left;
+    text-align: right;
+    direction: rtl;
     line-height: 24px;
     color: #3e3f5e
 }
 .job-des-dt142 h4 {
     color: #2b2f4c;
     font-size: 16px;
-    text-align: left;
+    text-align: right;
     margin-bottom: 12px;
     margin-top: 21px!important
 }
@@ -4315,7 +4317,8 @@ table {
     color: #3e3f5e;
     font-size: 14px;
     font-weight: 400;
-    text-align: left;
+    direction: rtl;
+    text-align: right;
     margin-bottom: 0;
     line-height: 26px
 }

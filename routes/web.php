@@ -19,7 +19,8 @@ Route::get('newest', [ProductController::class, 'newest'])->name('newest');
 Route::get('special', [ProductController::class, 'special'])->name('special');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::get('about', [AboutController::class, 'index'])->name('about');
-Route::view('term', 'term')->name('term');
+Route::view('term', 'pages.term')->name('term');
+Route::view('privacy', 'pages.privacy')->name('term');
 
 Route::get('search/{what}', [SearchController::class, 'index']);
 

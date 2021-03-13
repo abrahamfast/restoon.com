@@ -27,10 +27,8 @@
                             <p>سیاست قیمت‌‏گذاری در رستون مبتنی بر اصول مشتری مداری و احترام به حقوق مصرف کننده است. قیمت‏‌های ارائه شده برای کالاها در رستون قیمت‏‌های خرده فروشی است که غالباً توسط تولید‏کننده و یا تامین‏‌کننده آن محصول به صورت مصوب تعیین شده است و سایر کالاها بر اساس مدل و مشخصات و همچنین کالاهای مشابه در بازار تعیین قیمت می‌‏شوند.</p>
                         </div>
                         <div class="job-des-dt142 policy-des-dt">
-                            <h4>License & Site access</h4>
-                            <p>Donec maximus lorem vitae risus molestie sollicitudin. Ut sem lorem, consequat et tortor sit amet, viverra porttitor erat. Suspendisse aliquet arcu vel auctor maximus. Nunc in euismod purus. Aliquam non varius quam. Sed eros
-                                magna, tempus ullamcorper auctor vitae, pretium eu elit. Integer sagittis eu purus eget venenatis. Ut rhoncus tempor velit vitae consequat. Quisque consequat, enim eu cursus eleifend, velit mi viverra arcu, sed elementum
-                                dolor odio eget neque.</p>
+                            <h4>مجوز و دسترسی به سایت</h4>
+                            <p>مجوز و دسترسی به سایت</p>
                         </div>
                         <div class="job-des-dt142 policy-des-dt">
                             <h4>نمایندگی</h4>
