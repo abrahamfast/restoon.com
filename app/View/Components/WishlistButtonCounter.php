@@ -6,6 +6,7 @@ use Illuminate\View\Component;
 
 class WishlistButtonCounter extends Component
 {
+    public $count = 0;
     /**
      * Create a new component instance.
      *
@@ -13,7 +14,11 @@ class WishlistButtonCounter extends Component
      */
     public function __construct()
     {
-        //
+        $user = Auth::user();
+        if($user) {
+            $this->count = Auth::user()->wishlist()->count();     
+        }
+        
     }
 
     /**

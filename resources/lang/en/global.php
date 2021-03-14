@@ -280,6 +280,7 @@ return [
     "Brand Name filter" => "بر اساس نام برند",
     "Term and Conditions" => "شرایط و ضوابط",
     "privacy" => "حریم خصوصی",
-    "Largest Online Grocery" => "به بزرگترین سوپرمارکت آنلاین مواد غذایی تهران بپیوندید"
+    "Largest Online Grocery" => "به بزرگترین سوپرمارکت آنلاین مواد غذایی تهران بپیوندید",
+    "Shopping Wishlist" => "لیست علاقه مندی های خرید",
 
 ];

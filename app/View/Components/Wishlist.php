@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class Wishlist extends Component
 {
+    protected $wishlist;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($wishlist)
     {
-        //
+        $this->wishlist = $wishlist;
     }
 
     /**

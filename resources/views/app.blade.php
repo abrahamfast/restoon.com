@@ -13,7 +13,7 @@
                                 <x-app.overview :user="$user"/>
                                 @break
                             @case('wishlist')
-                                <x-app.wishlist/>
+                                <x-app.wishlist :wishlist="$wishlist"/>
                                 @break
                             @case('orders')
                                 <x-profile.order.index :user="$user"/>

@@ -21,9 +21,11 @@ class WishlistController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $wishlist = $request->user()->wishlist();
         return view('app', [
+            'wishlist' =>  $wishlist,
             'view' => 'wishlist'
         ]);
     }

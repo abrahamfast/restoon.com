@@ -6,7 +6,8 @@ use App\Http\Controllers\{
 	VerificationController, FaqController, SearchController
 };
 use App\Http\Controllers\Profile\{
-	AccountController, DeliveryController, BillController, OrderController
+	AccountController, DeliveryController, BillController, OrderController,
+	WishlistController
 };
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
@@ -38,7 +39,7 @@ Route::post('verification/check', [VerificationController::class, 'check']);
 
 Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app', [ProfileController::class, 'index']);
-	Route::get('app/wishlist', [ProfileController::class, 'index']);
+	Route::get('app/wishlist', [WishlistController::class, 'index']);
 	Route::get('app/orders', [OrderController::class, 'index']);
 	Route::get('app/addresses', [ProfileController::class, 'index']);
 	Route::get('app/offers', [ProfileController::class, 'index']);
