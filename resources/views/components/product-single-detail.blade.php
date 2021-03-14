@@ -14,7 +14,9 @@
             <ul class="product-now">
                 <li>
                     <input type="radio" id="p1" name="product1">
-                    <label for="p1">{{}}</label>
+                    <label for="p1">
+                        {{ __('global.' . $product->unit_weight, ['num' => $product->weight]) }}
+                    </label>
                 </li>
             </ul>
         </div>
