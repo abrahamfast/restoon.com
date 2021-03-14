@@ -20,4 +20,9 @@ class Wishlist extends Model
     	'product_id' => 'string',
     	'user_frontend_id' => 'string'
     ];
+
+    public function product()
+    {
+    	return $this->hasMany(Product::class, 'id', 'product_id');
+    }
 }
