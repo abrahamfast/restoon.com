@@ -14,35 +14,34 @@
             <ul class="product-now">
                 <li>
                     <input type="radio" id="p1" name="product1">
-                    <label for="p1">500g</label>
-                </li>
-                <li>
-                    <input type="radio" id="p2" name="product1">
-                    <label for="p2">1kg</label>
-                </li>
-                <li>
-                    <input type="radio" id="p3" name="product1">
-                    <label for="p3">2kg</label>
-                </li>
-                <li>
-                    <input type="radio" id="p4" name="product1">
-                    <label for="p4">3kg</label>
+                    <label for="p1">{{}}</label>
                 </li>
             </ul>
         </div>
         <p class="pp-descp">{{ $product->description }}</p>
         <div class="product-group-dt">
             <ul>
-                @if($product->discount)
+                @if($product->pricing_type == 'Discount from List')
                     <li>
-                        <div class="main-price color-discount">{{ __('global.Discount Price') }}<span>{{ $product->discount_price }}</span></div>
+                        <div class="main-price color-discount">
+                            {{ __('global.Discount Price') }}
+                            <span>
+                                {{ __('global.toman', ["price" => $product->getDiscountPrice() ]) }} 
+                            </span>
+                        </div>
                     </li>
-                    <li>
-                        <div class="main-price mrp-price">{{ __('global.MRP Price') }}<span>{{ $product->cost_price }}</span></div>
+                     <li>
+                        <div class="main-price color-discount">
+                            {{ __('global.MRP Price') }}
+                            <span>{{ __('global.toman', ["price" => $product->getListPrice() ]) }}</span>
+                        </div>
                     </li>
-                @else
+                    @else
                     <li>
-                        <div class="main-price color-discount">قیمت: <span>{{ $product->cost_price }}</span></div>
+                        <div class="main-price mrp-price">
+                            {{ __('global.MRP Price') }}
+                            <span>{{ __('global.toman', ["price" => $product->getListPrice() ]) }}</span>
+                        </div>
                     </li>
                 @endif
             </ul>
@@ -50,17 +49,28 @@
                 <li>
                     <div class="qty-product">
                         <div class="quantity buttons_added">
-                            <input type="button" value="-" class="minus minus-btn">
-                            <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
-                            <input type="button" value="+" class="plus plus-btn">
+                            <form action="/cart/add" method="POST">
+                                @csrf
+                                <input type="hidden" name="product-id" value="{{ $product->id }}">
+                                <input type="button" value="-" class="minus minus-btn">
+                                <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
+                                <input type="button" value="+" class="plus plus-btn">
+                            </form>
                         </div>
                     </div>
                 </li>
-                <li><span class="like-icon save-icon" title="wishlist"></span></li>
+
+                <li>
+                    <span class="like-icon" title="wishlist" data-product-id="{{ $product->id }}"></span>
+                </li>
             </ul>
             <ul class="ordr-crt-share">
-                <li><button class="add-cart-btn hover-btn"><i class="uil uil-shopping-cart-alt"></i>{{ __('global.Add to Cart') }}</button></li>
-                <li><button class="order-btn hover-btn">{{ __('global.Order Now') }}</button></li>
+                <li>
+                    <button class="add-cart-btn hover-btn addcart" data-product-id="{{ $product->id }}">
+                        <i class="uil uil-shopping-cart-alt"></i>{{ __('global.Add to Cart') }}
+                    </button>
+                </li>
+                {{-- <li><button class="order-btn hover-btn">{{ __('global.Order Now') }}</button></li> --}}
             </ul>
         </div>
         <div class="pdp-details">
