@@ -2291,13 +2291,15 @@ img.download-btn {
     height: 36px;
     position: relative;
     text-align: center;
+    width: 150px;
+    direction: rtl;
     display: inline-block
 }
 .product-now label, .product-now input {
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    _left: 0;
     right: 0;
     bottom: 0
 }
