@@ -37,7 +37,8 @@ trait QuoteHandler
 	{
 		$this->quote = $user->quote()->where('status', 'Draft')->where('deleted', 0)->first();
 		if(!$this->quote){
-			$this->quote = $this->newQuote($user);
+			$this->newQuote($user);
+            return true;
 		}
 		$this->setSessionQuote($this->quote->id);
 	}
