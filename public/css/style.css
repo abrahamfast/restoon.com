@@ -3059,7 +3059,8 @@ textarea.form-control{
     color: #0edd16
 }
 .dashboard-group {
-    background: rgb(13 221 22 / 83%);
+    _background: rgb(13 221 22 / 83%);
+    background: #3333330a;
     position: relative;
     padding: 50px 0
 }
