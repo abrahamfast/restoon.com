@@ -10,7 +10,7 @@
                             <nav>
                                 <div class="nav nav-tabs tab_default  justify-content-center">
                                     <a class="nav-item nav-link active" href="/about">{{ __('global.About') }}</a>
-                                    <a class="nav-item nav-link active" href="/careers">{{ __('global.careers') }}</a>
+                                    <a class="nav-item nav-link" href="/careers">{{ __('global.Careers') }}</a>
                                     <a class="nav-item nav-link" href="/contact">{{ __('global.Contact') }}</a>
                                 </div>
                             </nav>
