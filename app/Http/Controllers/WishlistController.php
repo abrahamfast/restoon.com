@@ -23,8 +23,10 @@ class WishlistController extends Controller
      */
     public function index(Request $request)
     {
-        $wishlist = $request->user()->wishlist();
+        $user = $request->user();
+        $wishlist = $user->wishlist();
         return view('app', [
+            'user' => $user,
             'wishlist' =>  $wishlist,
             'view' => 'wishlist'
         ]);

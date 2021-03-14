@@ -3,11 +3,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
 	ProfileController, IndexController, ProductController,
 	ContactController, AboutController, OfferController, CartController,
-	VerificationController, FaqController, SearchController
+    VerificationController, FaqController, SearchController,
+    WishlistController
 };
 use App\Http\Controllers\Profile\{
-	AccountController, DeliveryController, BillController, OrderController,
-	WishlistController
+	AccountController, DeliveryController, BillController, OrderController
 };
 
 Route::get('/', [IndexController::class, 'index'])->name('index');

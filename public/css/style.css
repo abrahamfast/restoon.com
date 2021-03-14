@@ -1129,13 +1129,13 @@ i.icon1 {
     font-weight: 700;
     line-height: 24px;
     color: #2b2f4c;
-    text-align: left;
+    text-align: right;
     margin-bottom: 10px
 }
 .cart-close-btn {
     position: absolute;
     top: 2px;
-    right: 0;
+    left: 0;
     background: 0 0;
     border: 0;
     font-size: 18px;
@@ -5617,8 +5617,4 @@ textarea {
 }
 .close {
     float: left !important;
-}
-
-.row {
-    direction: rtl !important;
 }

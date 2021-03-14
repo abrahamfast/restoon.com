@@ -15,7 +15,7 @@
 		</div>
 	    <div class="wrapper" style="padding-top: 10px !important">
 			<div class="product-list-view">
-			    <div class="row">
+			    <div class="row" style="direction: rtl !important;">
 			    	@if($products->count())
 			    		@foreach($products as $product)
 			    			<x-product-list  :product="$product" />

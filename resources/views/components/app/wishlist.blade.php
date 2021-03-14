@@ -14,7 +14,7 @@
                                                 @endphp
                                                     <div class="cart-item">
                                                         <div class="cart-product-img">
-                                                            <img src="/dataloader/{{ $product->cover_id }}" alt="">
+                                                            <img src="/dataloader/{{ $product->getCover() }}" alt="">
                                                                     @if($product->price_factor)
                                                                         <div class="offer-badge">{{ $item->discount}} % تخفیف</div>
                                                                     @endif
