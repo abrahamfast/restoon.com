@@ -2881,7 +2881,7 @@ textarea.form-control{
     border: 1px solid #efefef!important;
     color: #2b2f4c!important;
     border-radius: 8px!important;
-    text-align: right !important; 
+    text-align: right !important;
 }
 .ui.input>input:focus {
     border: 1px solid #0edd16!important
@@ -5223,7 +5223,7 @@ textarea {
     text-align: center
 }
 .sign-logo img {
-    width: 150px
+    width: 400px
 }
 .form-dt {
     margin-top: 50px;
