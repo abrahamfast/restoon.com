@@ -5621,3 +5621,14 @@ textarea {
 .close {
     float: left !important;
 }
+
+.notfound {
+    padding: 23px;
+    background: white;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Shabnam", "Iran Yekan", serif;
+    color: black;
+    border-right: 4px solid #f06969;
+    border-radius: 8px;
+}
