@@ -28,6 +28,7 @@ class CartController extends Controller
     {
         QuoteItem::where('id', $id)->delete();
         // recalculated open quote
+        $this->getSessionQuote();
         $this->setQuote();
         $this->performs();
 

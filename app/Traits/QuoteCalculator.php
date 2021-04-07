@@ -13,10 +13,12 @@ trait QuoteCalculator
         $weight = 0;
 
 		foreach ($items as $item) {
-			$amount = $item->unit_price + $amount;
+			$amount = $item->amount + $amount;
+
 			$discount_amount = ($item->list_price - $item->unit_price) + $discount_amount;
 			$weight = $item->weight + $weight;
 		}
+        
 
 
 		$this->quote->discount_amount = $discount_amount;
