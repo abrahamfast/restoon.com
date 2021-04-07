@@ -9,73 +9,73 @@
 }
 @font-face {
     font-family: "Iran Yekan Light";
-    src: url("/fonts/yekan/light/iran-yekan-light.eot");
-    src: url("/fonts/yekan/light/iran-yekan-light.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/yekan/light/iran-yekan-light.woff") format("woff"),
-    url("/fonts/yekan/light/iran-yekan-light.woff2") format("woff2"),
-    url("/fonts/yekan/light/iran-yekan-light.ttf") format("truetype");
+    src: url("../fonts/yekan/light/iran-yekan-light.eot");
+    src: url("../fonts/yekan/light/iran-yekan-light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/yekan/light/iran-yekan-light.woff") format("woff"),
+    url("../fonts/yekan/light/iran-yekan-light.woff2") format("woff2"),
+    url("../fonts/yekan/light/iran-yekan-light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: "Iran Yekan";
-    src: url("/fonts/yekan/normal/iran-yekan-normal.eot");
-    src: url("/fonts/yekan/normal/iran-yekan-normal.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/yekan/normal/iran-yekan-normal.woff") format("woff"),
-    url("/fonts/yekan/normal/iran-yekan-normal.woff2") format("woff2"),
-    url("/fonts/yekan/normal/iran-yekan-normal.ttf") format("truetype");
+    src: url("../fonts/yekan/normal/iran-yekan-normal.eot");
+    src: url("../fonts/yekan/normal/iran-yekan-normal.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/yekan/normal/iran-yekan-normal.woff") format("woff"),
+    url("../fonts/yekan/normal/iran-yekan-normal.woff2") format("woff2"),
+    url("../fonts/yekan/normal/iran-yekan-normal.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: "Iran Yekan Bold";
-    src: url("/fonts/yekan/bold/iran-yekan-bold.eot");
-    src: url("/fonts/yekan/bold/iran-yekan-bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/yekan/bold/iran-yekan-bold.woff") format("woff"),
-    url("/fonts/yekan/bold/iran-yekan-bold.woff2") format("woff2"),
-    url("/fonts/yekan/bold/iran-yekan-bold.ttf") format("truetype");
+    src: url("../fonts/yekan/bold/iran-yekan-bold.eot");
+    src: url("../fonts/yekan/bold/iran-yekan-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/yekan/bold/iran-yekan-bold.woff") format("woff"),
+    url("../fonts/yekan/bold/iran-yekan-bold.woff2") format("woff2"),
+    url("../fonts/yekan/bold/iran-yekan-bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal
 }
 
 @font-face {
     font-family: "Shabnam Light";
-    src: url("/fonts/shabnam/Shabnam-Light.eot");
-    src: url("/fonts/shabnam/Shabnam-Light.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/shabnam/Shabnam-Light.woff") format("woff"),
-    url("/fonts/shabnam/Shabnam-Light.woff2") format("woff2");
+    src: url("../fonts/shabnam/Shabnam-Light.eot");
+    src: url("../fonts/shabnam/Shabnam-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/shabnam/Shabnam-Light.woff") format("woff"),
+    url("../fonts/shabnam/Shabnam-Light.woff2") format("woff2");
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: "Shabnam";
-    src: url("/fonts/shabnam/Shabnam.eot");
-    src: url("/fonts/shabnam/Shabnam.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/shabnam/Shabnam.woff") format("woff"),
-    url("/fonts/shabnam/Shabnam.woff2") format("woff2");
+    src: url("../fonts/shabnam/Shabnam.eot");
+    src: url("../fonts/shabnam/Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/shabnam/Shabnam.woff") format("woff"),
+    url("../fonts/shabnam/Shabnam.woff2") format("woff2");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: "Shabnam Bold";
-    src: url("/fonts/shabnam/Shabnam-Bold.eot");
-    src: url("/fonts/shabnam/Shabnam-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/shabnam/Shabnam-Bold.woff") format("woff"),
-    url("/fonts/shabnam/Shabnam-Bold.woff2") format("woff2");
+    src: url("../fonts/shabnam/Shabnam-Bold.eot");
+    src: url("../fonts/shabnam/Shabnam-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/shabnam/Shabnam-Bold.woff") format("woff"),
+    url("../fonts/shabnam/Shabnam-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal
 }
 
 @font-face {
     font-family: "Tanha";
-    src: url("/fonts/tanha/Tanha.eot");
-    src: url("/fonts/tanha/Tanha.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/tanha/Tanha.woff") format("woff"),
-    url("/fonts/tanha/Tanha.woff2") format("woff2");
+    src: url("../fonts/tanha/Tanha.eot");
+    src: url("../fonts/tanha/Tanha.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tanha/Tanha.woff") format("woff"),
+    url("../fonts/tanha/Tanha.woff2") format("woff2");
     font-weight: bold;
     font-style: normal
 }
@@ -5554,7 +5554,7 @@ textarea {
     font-size: 14px;
     font-weight: 400;
     color: #3e3f5e;
-    text-align: left;
+    text-align: right;
     line-height: 24px;
     margin-right: 10px
 }
