@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace App\Traits;
 
 trait QuoteCalculator
@@ -13,21 +13,16 @@ trait QuoteCalculator
         $weight = 0;
 
 		foreach ($items as $item) {
-			// final price
-			$amount = floor($item->unit_price) + $amount;
-			// total all items
-			$weight = $item->quantity + $weight;
+			$amount = $item->unit_price + $amount;
 			$discount_amount = ($item->list_price - $item->unit_price) + $discount_amount;
-			// @TODO tax_amount
-			$total = $item->unit_price * $item->quantity;
+			$weight = $item->weight + $weight;
 		}
 
 
-		$this->quote->tax_amount = $amount;
 		$this->quote->discount_amount = $discount_amount;
 		$this->quote->pre_discounted_amount = $discount_amount;
-		$this->quote->amount = $total;
-		$this->quote->grand_total_amount = $total;
+		$this->quote->amount = $amount;
+		$this->quote->grand_total_amount = $amount;
         $this->quote->weight = $weight;
 		$this->quote->save();
 	}

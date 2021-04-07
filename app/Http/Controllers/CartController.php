@@ -27,6 +27,9 @@ class CartController extends Controller
     public function unlink($id)
     {
         QuoteItem::where('id', $id)->delete();
+        // recalculated open quote
+        $this->setQuote();
+        $this->performs();
 
         return redirect()->back();
     }
@@ -65,9 +68,9 @@ class CartController extends Controller
         $quote->status = 'In Review';
         // @TODO remove relase ver
         if(!$quote->account_id){
-            $quote->account_id = $user->account()->first()->id;    
+            $quote->account_id = $user->account()->first()->id;
         }
-        
+
         $quote->save();
         // @TODO here need reload model
         $quote = Quote::where('id', $id)->first();
