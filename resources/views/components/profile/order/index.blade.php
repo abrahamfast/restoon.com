@@ -9,6 +9,8 @@
             @foreach($user->quote()->get() as $quote)
                 <x-profile.order.row :quote="$quote" :account="$user->account" />
             @endforeach
+        @else
+            <x-ui.notfound />
         @endif
     </div>
 </div>
