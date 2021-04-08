@@ -4832,7 +4832,7 @@ textarea {
     background-image: linear-gradient(to right, rgb(62 255 70), #4caf50)
 }
 .blog-dt-vw {
-    height: 80vh;
+    height: 50vh;
     display: table;
     text-align: center;
     width: 100%;
@@ -5396,13 +5396,15 @@ textarea {
     margin-top: 17px!important;
     text-align: right;
     margin-bottom: 12px;
-    color: #2b2f4c
+    color: #2b2f4c;
+    direction: rtl;
 }
 .contact-title p {
     font-size: 14px;
     font-weight: 400;
     margin-top: 0!important;
     text-align: right;
+    direction: rtl;
     margin-bottom: 0;
     color: #3e3f5e;
     line-height: 26px

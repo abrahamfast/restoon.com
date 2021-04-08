@@ -32,7 +32,7 @@
                             <p>اگر در مورد خدمات ما سوالی دارید یا مشکلی برای گزارش دارید ، لطفاً درخواستی را ارسال کنید و ما در اسرع وقت به شما پاسخ خواهیم داد.</p>
                         </div>
                         @if(session('flush'))
-                            <x-ui.alert :status="'success'" :message="session('flush')" />
+                            <x-ui.alert :status="'success'" :message="session('flush')"></x-ui.alert>
                         @endif
                         @if ($errors->any())
                             <div class="alert alert-danger">
