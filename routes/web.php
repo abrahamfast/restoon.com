@@ -19,6 +19,7 @@ Route::get('offer', [OfferController::class, 'index'])->name('offer');
 Route::get('newest', [ProductController::class, 'newest'])->name('newest');
 Route::get('special', [ProductController::class, 'special'])->name('special');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
+Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::view('term', 'pages.term')->name('term');
 Route::view('privacy', 'pages.privacy')->name('privacy');

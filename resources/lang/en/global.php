@@ -283,4 +283,6 @@ return [
     "Largest Online Grocery" => "به بزرگترین سوپرمارکت آنلاین مواد غذایی تهران بپیوندید",
     "Shopping Wishlist" => "لیست علاقه مندی های خرید",
 
+    "success your request" => "درخواست شما با موفقیت ثبت شد",
+
 ];
