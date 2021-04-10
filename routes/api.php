@@ -26,3 +26,9 @@ Route::middleware('auth:api')->post('/user/wishlist', function (Request $request
 
     return $request->user();
 });
+
+Route::middleware('auth:api')->post('/user/wishlist/{id}', function ($id) {
+    return \App\Modles\Wishlist::where([
+        'product_id' => $id
+    ])->delete();
+});
