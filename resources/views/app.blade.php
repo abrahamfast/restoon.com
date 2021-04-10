@@ -10,13 +10,16 @@
                     <div class="dashboard-right">
                         @switch($view)
                             @case('overview')
-                                <x-app.overview :user="$user"/>
+                                <x-app.overview :user="$user"></x-app.overview>
                                 @break
                             @case('wishlist')
-                                <x-app.wishlist :wishlist="$wishlist"/>
+                                <x-app.wishlist :wishlist="$wishlist"></x-app.wishlist>
                                 @break
                             @case('orders')
-                                <x-profile.order.index :user="$user"/>
+                                <x-profile.order.index :user="$user"></x-profile.order.index>
+                                @break
+                            @case('addresses')
+                                <x-profile.addresses.index :user="$user"></x-profile.addresses.index>
                                 @break
                            @default
                             @break

@@ -9,8 +9,8 @@ class Account extends Model
 {
     use HasFactory;
 	const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'modified_at'; 
-    
+    const UPDATED_AT = 'modified_at';
+
     protected $table = 'account';
    protected $casts = [
     	'id' => 'string',
@@ -33,5 +33,13 @@ class Account extends Model
     public function getFullAddress()
     {
         return $this->shipping_address_country .", ". $this->shipping_address_city .", " . $this->shipping_address_street;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isNotHaveAddress(): bool
+    {
+        return $this->shipping_address_street == '' ? false : true;
     }
 }

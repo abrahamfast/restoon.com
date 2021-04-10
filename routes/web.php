@@ -6,9 +6,7 @@ use App\Http\Controllers\{
     VerificationController, FaqController, SearchController,
     WishlistController
 };
-use App\Http\Controllers\Profile\{
-	AccountController, DeliveryController, BillController, OrderController
-};
+use App\Http\Controllers\Profile\{AccountController, Addresses, DeliveryController, BillController, OrderController};
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::get('/faq', [FaqController::class, 'index'])->name('faq');
@@ -42,7 +40,8 @@ Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app', [ProfileController::class, 'index']);
 	Route::get('app/wishlist', [WishlistController::class, 'index']);
 	Route::get('app/orders', [OrderController::class, 'index']);
-	Route::get('app/addresses', [ProfileController::class, 'index']);
+	Route::get('app/addresses', [ProfileController::class, 'index'])->name('addresses');
+    Route::post('app/addresses', [Addresses::class, 'store'])->name('addresses.store');
 	Route::get('app/offers', [ProfileController::class, 'index']);
 	Route::post('app/checkout', [OrderController::class, 'checkout']);
 	Route::get('app/bill/{id}', [BillController::class, 'index']);
