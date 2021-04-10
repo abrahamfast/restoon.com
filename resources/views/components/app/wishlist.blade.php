@@ -41,7 +41,7 @@
     </div>
 </div>
 
-@push('script')
+@push('js')
     <script>
         let btn = $('[data-action=unlink');
         btn.on('click', function(e){
