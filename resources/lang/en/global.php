@@ -288,6 +288,7 @@ return [
     "Address label" => 'آدرس دریافت کننده',
     "Address Enter" => "آدرس خود را وارد کنید",
     "office" => 'رستوران',
-    "new Address" => "ثبت آدرس"
+    "new Address" => "ثبت آدرس",
+    "address for recive" => "آدرس دریافت کننده"
 
 ];

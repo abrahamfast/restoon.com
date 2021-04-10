@@ -42,6 +42,8 @@ Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app/orders', [OrderController::class, 'index']);
 	Route::get('app/addresses', [Addresses::class, 'index'])->name('addresses');
     Route::post('app/addresses', [Addresses::class, 'store'])->name('addresses.store');
+    Route::get('app/addresses/{id}/edit', [Addresses::class, 'edit'])->name('addresses.edit');
+    Route::put('app/addresses/update', [Addresses::class, 'update'])->name('addresses.update');
 	Route::get('app/offers', [ProfileController::class, 'index']);
 	Route::post('app/checkout', [OrderController::class, 'checkout']);
 	Route::get('app/bill/{id}', [BillController::class, 'index']);

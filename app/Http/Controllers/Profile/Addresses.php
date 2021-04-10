@@ -33,6 +33,16 @@ class Addresses extends Controller
 
     }
 
+    public function edit($id)
+    {
+        ddd($id);
+    }
+
+    public function update(Request $request)
+    {
+        ddd($request->all());
+    }
+
     protected function rules(): array
     {
         return [

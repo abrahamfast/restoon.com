@@ -21,10 +21,14 @@
                             <i class="uil uil-home-alt"></i>
                         </div>
                         <div class="address-dt-all">
-                            <h4>{{ __('global.Home') }}</h4>
+                            <h4>{{ __('global.address for recive') }}</h4>
                             <p>{{ $user->account()->first()->getFullAddress() }}</p>
                             <ul class="action-btns">
-                                <li><a href="#" class="action-btn"><i class="uil uil-edit"></i></a></li>
+                                <li>
+                                    <a href="{{ route('addresses.edit', ['id' => $user->account->id]) }}" class="action-btn">
+                                        <i class="uil uil-edit"></i>
+                                    </a>
+                                </li>
 {{--                                <li><a href="#" class="action-btn"><i class="uil uil-trash-alt"></i></a></li>--}}
                             </ul>
                         </div>
@@ -41,7 +45,7 @@
             <div class="checout-address-step">
                 <div class="row">
                     <div class="col-lg-12">
-                        <form class="/">
+                        <form action="{{ route('addresses.store') }}" method="POST">
                             @csrf
                             <input type="hidden" name="account_id" value="{{ $user->account->id }}">
                             <div class="form-group">
