@@ -10,12 +10,12 @@
                 <h4>{{ __('global.My Address') }}</h4>
             </div>
             <div class="address-body">
-                @if($user->account()->first()->haveAddress())
+                @if($user->account()->first()->isNotHaveAddress())
                     <a href="#" class="add-address hover-btn" data-toggle="modal" data-target="#address_model">
                         {{ __('global.new Address') }}
                     </a>
                 @endif
-                @if($user->account()->first()->haveAddress())
+                @if($user->account()->first()->isNotHaveAddress())
                     <div class="address-item">
                         <div class="address-icon1">
                             <i class="uil uil-home-alt"></i>
