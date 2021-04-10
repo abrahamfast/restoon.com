@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="main-title-tab">
-            <h4><i class="uil uil-location-point"></i>My Address</h4>
+            <h4>{{ __('global.My Address') }} <i class="uil uil-location-point"></i></h4>
         </div>
     </div>
     <div class="col-lg-12 col-md-12">

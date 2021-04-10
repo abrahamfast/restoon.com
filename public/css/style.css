@@ -3876,7 +3876,7 @@ table {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-right: 20px;
     color: #fff;
     background: #0edd16;
     border-radius: 5px;
@@ -3890,12 +3890,15 @@ table {
 .address-item:last-child {
     border-bottom: 0
 }
+.address-body {
+    direction: rtl;
+}
 .address-item {
     display: flex;
     align-items: self-start
 }
 .address-icon1 {
-    margin-right: 10px;
+    margin-left: 10px;
     background: #0edd16;
     color: #fff;
     padding: 5px;
@@ -3908,7 +3911,8 @@ table {
     color: #2b2f4c;
     font-size: 16px;
     font-weight: 500;
-    text-align: left;
+    text-align: right;
+    direction: rtl;
     margin-top: 0;
     margin-bottom: 8px
 }
@@ -3917,6 +3921,8 @@ table {
     font-weight: 400;
     color: #3e3f5e;
     margin-bottom: 0;
+    direction: rtl;
+    text-align: center;
     line-height: 24px
 }
 .action-btns {
