@@ -20,7 +20,7 @@
                         </div>
                         <div class="address-dt-all">
                             <h4>{{ __('global.Home') }}</h4>
-                            <p>{{ $user->account()->getFullAddress() }}</p>
+                            <p>{{ $user->account()->first()->getFullAddress() }}</p>
                             <ul class="action-btns">
                                 <li><a href="#" class="action-btn"><i class="uil uil-edit"></i></a></li>
 {{--                                <li><a href="#" class="action-btn"><i class="uil uil-trash-alt"></i></a></li>--}}
@@ -34,7 +34,7 @@
 </div>
 
 @section('modal')
-    <x-ui.modal>
+    <x-ui.modal :id="'address_model'" :header="__('global.create')">
         <div class="add-address-form">
             <div class="checout-address-step">
                 <div class="row">
@@ -58,7 +58,7 @@
                             <div class="address-fieldset">
                                 <div class="row">
                                     <x-ui.form.input
-                                        :label="__('global.Office No)"
+                                        :label="__('global.Office No')"
                                         :placeholder="__('global.Address')"
                                         :class="'input-md'"
                                         :name="'shippingAddressStreet'"
