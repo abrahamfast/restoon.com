@@ -1,8 +1,8 @@
-<div class="{{ $rowClass  }}">
+<div class="{{ $row  }}">
     <div class="form-group">
         <label class="control-label" for="{{ $id }}">{{ $label }}</label>
         <input id="{{ $id }}" name="{{ $name }}" type="text"
-               placeholder="{{ $placholder }}"
+               placeholder="{{ $placeholder }}"
                class="form-control {{ $class }}"
                required="{{ $required }}"
         >

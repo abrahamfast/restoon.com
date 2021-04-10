@@ -30,7 +30,6 @@ class ProfileController extends Controller
             'user' => $user,
             'view' => 'overview',
             'slug' => __('global.Dashboard')
-            'slug' => 'global.Dashboard'
         ]);
     }
 

@@ -10,10 +10,10 @@
                 <h4>{{ __('global.My Address') }}</h4>
             </div>
             <div class="address-body">
-                @if($user->account()->isNotHaveAddress())
+                @if($user->account()->first()->isNotHaveAddress())
                     <a href="#" class="add-address hover-btn" data-toggle="modal" data-target="#address_model"></a>
                 @endif
-                @if($user->account()->isNotHaveAddress())
+                @if($user->account()->first()->isNotHaveAddress())
                     <div class="address-item">
                         <div class="address-icon1">
                             <i class="uil uil-home-alt"></i>
@@ -47,8 +47,8 @@
                                     <ul class="product-now">
                                         <li>
                                             <x-ui.form.radio
-                                                :id="office"
-                                                :name="main"
+                                                :id="'office'"
+                                                :name="'main'"
                                                 :label="__('office')"
                                             />
                                         </li>
@@ -60,9 +60,10 @@
                                     <x-ui.form.input
                                         :label="__('global.Office No)"
                                         :placeholder="__('global.Address')"
-                                        :class="'form-control input-md'"
-                                        :name="shippingAddressStreet"
-                                        :id="shippingAddressStreet"
+                                        :class="'input-md'"
+                                        :name="'shippingAddressStreet'"
+                                        :id="'shippingAddressStreet'"
+                                        :required="'required'"
                                     />
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group mb-0">

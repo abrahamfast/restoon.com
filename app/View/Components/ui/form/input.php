@@ -12,7 +12,7 @@ class input extends Component
     public $id;
     public $name;
     public $required;
-    public $rowClass;
+    public $row;
 
     /**
      * Create a new component instance.
@@ -20,22 +20,22 @@ class input extends Component
      * @param $label
      * @param $id
      * @param $placeholder
-     * @param $class
-     * @param $required
-     * @param $rowClass
+     * @param string $class
+     * @param string $required
+     * @param string $row
      */
     public function __construct(
         $label, $id, $placeholder,
-        $class  = 'form-control', $required  = 'required',
-        $rowClass = 'col-lg-12 col-md-12'
+        $class  = 'form-control ', $required  = 'required',
+        $row = 'col-lg-12 col-md-12'
     )
     {
         $this->label = $label;
         $this->id = $id;
         $this->placeholder = $placeholder;
-        $this->class = $class;
+        $this->class .= $class;
         $this->required = $required;
-        $this->rowClass = $rowClass;
+        $this->row = $row;
     }
 
     /**

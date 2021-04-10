@@ -6,14 +6,16 @@ use Illuminate\View\Component;
 
 class Index extends Component
 {
+    public $user;
+
     /**
      * Create a new component instance.
      *
-     * @return void
+     * @param $user
      */
-    public function __construct()
+    public function __construct($user)
     {
-        //
+        $this->user = $user;
     }
 
     /**

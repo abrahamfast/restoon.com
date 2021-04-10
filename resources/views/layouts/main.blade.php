@@ -29,6 +29,8 @@
 
 <body>
 
+@yield('modal')
+
 <x-categories-modal/>
 <x-search-modal/>
 <x-cart/>

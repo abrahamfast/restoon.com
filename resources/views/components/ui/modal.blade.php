@@ -8,7 +8,7 @@
             </div>
             <div class="category-model-content modal-content">
                 <div class="cate-header">
-                    <h4>{{ $head }}</h4>
+                    <h4>{{ $header }}</h4>
                 </div>
                 {{ $slot }}
             </div>
