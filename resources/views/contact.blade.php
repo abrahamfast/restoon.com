@@ -11,7 +11,7 @@
                                 <span class="entry-date">
                                     @php
                                         $v = verta();
-                                        echo $v->format('%B %d، %Y');
+                                        echo $v->format('%r %B %d، %Y');
                                     @endphp
                                 </span>
                                 <div class="single-post-cat">
