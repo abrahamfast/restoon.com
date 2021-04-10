@@ -40,7 +40,7 @@ Route::middleware(["middleware" => "auth"])->group(function(){
 	Route::get('app', [ProfileController::class, 'index']);
 	Route::get('app/wishlist', [WishlistController::class, 'index']);
 	Route::get('app/orders', [OrderController::class, 'index']);
-	Route::get('app/addresses', [ProfileController::class, 'index'])->name('addresses');
+	Route::get('app/addresses', [Addresses::class, 'index'])->name('addresses');
     Route::post('app/addresses', [Addresses::class, 'store'])->name('addresses.store');
 	Route::get('app/offers', [ProfileController::class, 'index']);
 	Route::post('app/checkout', [OrderController::class, 'checkout']);

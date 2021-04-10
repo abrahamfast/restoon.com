@@ -8,6 +8,17 @@ use Illuminate\Http\Request;
 
 class Addresses extends Controller
 {
+
+    public function index(Request $request)
+    {
+        $user = $request->user();
+
+        return view('app', [
+            'user' => $user,
+            'view' => 'addresses',
+            'slug' => __('global.address')
+        ]);
+    }
     public function store(Request $request)
     {
         $request->validate($this->rules());
