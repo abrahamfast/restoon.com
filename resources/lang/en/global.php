@@ -287,6 +287,7 @@ return [
     "create address" => 'ثبت آدرس',
     "Address label" => 'آدرس دریافت کننده',
     "Address Enter" => "آدرس خود را وارد کنید",
-    "office" => 'رستوران'
+    "office" => 'رستوران',
+    "new Address" => "ثبت آدرس"
 
 ];

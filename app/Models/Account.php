@@ -40,6 +40,6 @@ class Account extends Model
      */
     public function isNotHaveAddress(): bool
     {
-        return $this->shipping_address_street == '' ? false : true;
+        return $this->shipping_address_street != '' ? false : true;
     }
 }
