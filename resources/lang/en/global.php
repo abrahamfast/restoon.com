@@ -284,5 +284,9 @@ return [
     "Shopping Wishlist" => "لیست علاقه مندی های خرید",
 
     "success your request" => "درخواست شما با موفقیت ثبت شد",
+    "create address" => 'ثبت آدرس',
+    "Address label" => 'آدرس دریافت کننده',
+    "Address Enter" => "آدرس خود را وارد کنید",
+    "office" => 'رستوران'
 
 ];

@@ -34,7 +34,7 @@
 </div>
 
 @section('modal')
-    <x-ui.modal :id="'address_model'" :header="__('global.create')">
+    <x-ui.modal :id="'address_model'" :header="__('global.create address')">
         <div class="add-address-form">
             <div class="checout-address-step">
                 <div class="row">
@@ -58,8 +58,8 @@
                             <div class="address-fieldset">
                                 <div class="row">
                                     <x-ui.form.input
-                                        :label="__('global.Office No')"
-                                        :placeholder="__('global.Address')"
+                                        :label="__('global.Address label')"
+                                        :placeholder="__('global.Address Enter')"
                                         :class="'input-md'"
                                         :name="'shippingAddressStreet'"
                                         :id="'shippingAddressStreet'"
