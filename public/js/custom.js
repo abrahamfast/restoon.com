@@ -40,7 +40,9 @@ $(document).ready(function() {
         		console.log(data);
         	},
         	error: function(data){
-        		console.log(data);
+        	    if(data.status === 401){
+                    window.location = window.location.origin + "/login"
+                }
         	}
         })
 
