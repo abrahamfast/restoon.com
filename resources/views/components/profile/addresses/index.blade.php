@@ -15,7 +15,7 @@
                         {{ __('global.new Address') }}
                     </a>
                 @endif
-                @if($user->account()->first()->isNotHaveAddress())
+                @if(!$user->account()->first()->isNotHaveAddress())
                     <div class="address-item">
                         <div class="address-icon1">
                             <i class="uil uil-home-alt"></i>
