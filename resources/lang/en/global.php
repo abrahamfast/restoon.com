@@ -170,7 +170,7 @@ return [
 
     // Order Successfully Placed
     "Order Successfully Placed" => "سفارش با موفقیت ثبت شد",
-    "Thank you for your order! will received order timing" => "بابت سفارش شما متشکرم! زمان سفارش را دریافت خواهید کرد -",
+    "Thank you for your order! will received order timing" => "از سفارش شما متشکریم! در بازه زمانی زیر کالای خود را تحویل خواهید گرفت",
     "Your order will be sent to this address"=> "سفارش شما به این آدرس ارسال می شود",
     "trackorder" => "پیگیری سفارش",
     "Success Your Phone" => "شماره همراه شما تایید شد",
@@ -185,7 +185,7 @@ return [
     "items" => "مورد",
     "Delivery Timing" => "زمان تحویل",
     "Delivered" => "تحویل داده شده",
-    "Delivery Charges" => "هزینه های تحویل",
+    "Delivery Charges" => "هزینه تحویل",
     "Total" => "مجموع",
     "tax rate" => "نرخ مالیات",
     "Track Order" => "پیگیری سفارش",
@@ -252,7 +252,7 @@ return [
     "Order Placed" => "سفارش ثبت شد",
     "Phone Number" => "شماره تماس",
     "Address Order" => "آدرس دریافت کننده",
-    "Stay Home" => "در خانه بمان",
+    "Stay Home" => "",
     "quote number" => "کد خرید",
     "quote Print" => "مشاهده صورتی حساب",
 
