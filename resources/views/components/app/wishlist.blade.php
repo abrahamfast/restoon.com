@@ -43,10 +43,12 @@
 
 @push('js')
     <script>
-        let btn = $('[data-action=unlink');
+        let btn = $('[data-action=unlink]');
         btn.on('click', function(e){
             e.preventDefault();
-            console.log($(this))
+            let productId = $(this).attr('data-product');
+            console.log(productId);
+            window.location = window.location.origin + "/search/" + what.val()
         });
 
     </script>
