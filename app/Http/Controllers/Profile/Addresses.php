@@ -33,9 +33,16 @@ class Addresses extends Controller
 
     }
 
-    public function edit($id)
+    public function edit($id, Request $request)
     {
-        ddd($id);
+        $user = $request->user();
+
+        return view('app', [
+            'user' => $user,
+            'view' => 'addresses',
+            'type' => 'edit',
+            'slug' => __('global.address')
+        ]);
     }
 
     public function update(Request $request)
