@@ -53,12 +53,14 @@ class ProductListCrawller extends Command
 
         foreach ($links as $link) {
             $crawler = $this->client->request('GET', $link);
-            $data['cover'] = $crawler->filter('a.venobox img')->first()->attr('src');
+            $data['cover'] = $crawler->filter('a.venobox img')->eq(1)->attr('src');
             $data['name'] = $crawler->filter('div.col-lg-8 h1')->first()->text();
-            $data['price'] = $crawler->filter('bdi')->first()->text();
-            $data['weight'] = $crawler->filter('.woocommerce-product-details__short-description strong')->first()->text();
+            $price = $crawler->filter('bdi')->first();
+            $data['price'] = $price->count() ? str_replace([' ','تومان'], '', $price->text()) : 0;
+            $weight = $crawler->filter('.woocommerce-product-details__short-description strong')->first();
+            $data['weight'] = $weight->count() ? $weight : 0;
             $data['description'] = $crawler->filter('#tab-description')->first()->text();
-            dd($data);
+            dump($data);
         }
 
         // @TODO add new product
