@@ -167,6 +167,7 @@ return [
          */
         App\Providers\OtpServiceProvider::class,
         Hekmatinasser\Notowo\NotowoServiceProvider::class,
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -228,6 +229,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Notowo' => Hekmatinasser\Notowo\Notowo::class,
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
     ],
 
