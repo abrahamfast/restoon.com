@@ -1467,11 +1467,11 @@ i.icon1 {
     padding-bottom: 11px;
 }
 .offer-item {
-    background: #fff;
+    _background: #fff;
     padding: 5px;
     border-radius: 20px;
     position: relative;
-    box-shadow: 0 1px 14px 0 #e9e9e9;
+    _box-shadow: 0 1px 14px 0 #e9e9e9;
 }
 .offer-item-img {
     position: relative;
@@ -1494,19 +1494,20 @@ i.icon1 {
 .offer-top-text-banner {
     position: absolute;
     top: 20px;
-    left: 5px;
+    right: 5px;
     background: rgba(255, 255, 255, .9);
     padding: 15px 15px 11px;
-    width: 220px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px
+    width: 160px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px
 }
 .offer-top-text-banner p {
     font-size: 12px;
     font-weight: 600;
     color: #0edd16;
     margin-bottom: 3px;
-    text-align: left;
+    text-align: right;
+    direction: rtl;
     text-transform: uppercase
 }
 .top-text-1 {
@@ -1527,7 +1528,7 @@ i.icon1 {
 .Offer-shop-btn {
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     display: inline-block;
     padding: 10px 30px;
     background: #0edd16;

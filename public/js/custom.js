@@ -123,9 +123,9 @@ $(".product_countdown-timer").each(function() {
 });
 $('.offers-banner').owlCarousel({
     loop: true,
-    margin: 30,
-    nav: false,
-    dots: false,
+    margin: 10,
+    nav: true,
+    dots: true,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
@@ -137,7 +137,7 @@ $('.offers-banner').owlCarousel({
             items: 1
         },
         1000: {
-            items: 2
+            items: 1 
         },
         1200: {
             items: 1
