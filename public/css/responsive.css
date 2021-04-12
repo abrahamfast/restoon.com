@@ -15,6 +15,11 @@
         margin-left: 5px!important;
         width: 30px!important
     }
+    .nav-item {
+        background: #36dd162b;
+        margin-bottom: 2px !important;
+        border-radius: 100px;
+    }
     .menu.dropdown_loc {
         z-index: 9999!important
     }
@@ -100,13 +105,13 @@
         left: 0;
         margin: auto;
         width: 100%;
-        transform: translateX(-100%);
+        transform: translateY(100%);
         transition: all ease .25s;
         overflow: auto;
         scroll-behavior: auto
     }
     .open {
-        transform: translateX(0);
+        transform: translateY(0);
         z-index: 11
     }
     .mt1-5 {
