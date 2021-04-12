@@ -14,10 +14,14 @@ class Attachment extends Model
 
     protected $table = 'attachment';
 
+    protected $guarded = [];
+
     protected $casts = [
     	'id' => 'string',
     	'parent_id' => 'string',
     ];
+
+    public $timestamps = false;
 
     public $incrementing = false;
 

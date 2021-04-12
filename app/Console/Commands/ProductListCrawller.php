@@ -66,18 +66,17 @@ class ProductListCrawller extends Command
         $links = $links->each(function($node){
             return $node->attr('href');
         });
-        $data['category_id'] = $categoryId;
+        $this->category_id = $categoryId;
         foreach ($links as $link) {
 
-            $entity = $this->fetchData($link);
+            $data = $this->fetchData($link);
+            $entity = $this->initRow($data);
 
             $product = $this->create($entity);
             $coverId = $this->storeCover($data['cover'], $product->id);
 
-            $product->cover_id = $coverId;
-            $product->save();
 
-            dd($data, $this->scrapperServices, $product);
+            dump($product->id);
 
 
         }
@@ -107,7 +106,7 @@ class ProductListCrawller extends Command
             'parent_type' => 'Product',
         ];
 
-        $file = $this->filePath . $productId;
+        $file = $this->filePath . $data['id'];
 
         $fp = fopen ( $file , 'w+');
         //Here is the file we are downloading, replace spaces with %20
@@ -141,10 +140,11 @@ class ProductListCrawller extends Command
         $price = $crawler->filter('bdi')->first();
         $data['price'] = $price->count() ? str_replace([',', ' ','تومان'], '', $price->text()) . "0" : 0;
         $weight = $crawler->filter('.woocommerce-product-details__short-description strong')->first();
-        $data['weight'] = $weight->count() ? $weight : 0;
+        $data['weight'] = $weight->count() ? $weight->text() : 0;
         $data['description'] = $crawler->filter('#tab-description')->first()->text();
 
-        return $this->initRow($data);
+        return $data;
+
     }
 
     protected function create($entity)
@@ -167,7 +167,7 @@ class ProductListCrawller extends Command
             'list_price' => $data['price'],
             'cost_price' => $data['price'],
             'unit_price' => $data['price'],
-            'category_id' => $data['category_id'],
+            'category_id' => $this->category_id,
             'description' => $data['description'],
             'cost_price_currency' => 'IRR',
             'list_price_currency' => 'IRR',
