@@ -135,7 +135,7 @@
     color: #fff!important
 }
 .night-mode .vbm_btn:hover {
-    background: #cc2622;
+    background: #21ba45;
     color: #fff!important
 }
 .night-mode .option_links:hover, .night-mode .option_links:focus {
@@ -341,7 +341,7 @@
     color: #c7c7c7
 }
 .night-mode .quantity.buttons_added .minus, .night-mode .quantity.buttons_added .plus {
-    background-color: #f55d2c
+    background-color: #21ba45
 }
 .night-mode .footer {
     background: #333
@@ -432,7 +432,7 @@
     color: #c7c7c7
 }
 .night-mode .scl-btn {
-    background: #f55d2c
+    background: #21ba45
 }
 .night-mode .how-order-steps {
     background: #333
@@ -488,7 +488,7 @@
     border: 1px solid #333!important
 }
 .night-mode .ui.input>input:focus {
-    border: 1px solid #f55d2c!important
+    border: 1px solid #21ba45!important
 }
 .night-mode .form-control {
     color: #fff!important;
@@ -497,7 +497,7 @@
     border: 1px solid #333!important
 }
 .night-mode .form-control:focus {
-    border: 1px solid #f55d2c!important
+    border: 1px solid #21ba45!important
 }
 .night-mode .ui.input>input {
     color: #fff!important
@@ -543,10 +543,10 @@
     color: #fff
 }
 .night-mode .ui.selection.active.dropdown.form-dropdown {
-    border-color: #f55d2c!important
+    border-color: #21ba45!important
 }
 .night-mode .ui.selection.active.dropdown.form-dropdown .menu {
-    border-color: #f55d2c!important
+    border-color: #21ba45!important
 }
 .night-mode .ui.active.search.dropdown input.search:focus+.text {
     color: rgba(255, 255, 255, .87)!important
@@ -698,7 +698,7 @@
 }
 .night-mode .order-title span:hover {
     color: #fff;
-    background: #f55d2c
+    background: #21ba45
 }
 .night-mode [data-inverted][data-position~=top][data-tooltip]:before {
     background: #fff!important
@@ -711,10 +711,10 @@
     color: #fff
 }
 .night-mode .bs-wizard>.bs-wizard-step>.progress>.progress-bar {
-    background: #f55d2c!important
+    background: #21ba45!important
 }
 .night-mode .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
-    background: #f55d2c
+    background: #21ba45
 }
 .night-mode .bs-wizard>.bs-wizard-step>.bs-wizard-dot:after {
     content: ' ';
@@ -793,7 +793,7 @@
     color: #fff
 }
 .night-mode .cart-close-btn:hover {
-    color: #f55d2c
+    color: #21ba45
 }
 .night-mode .more-link14 {
     border-top: 1px solid #242424
@@ -938,7 +938,7 @@
     color: #fff
 }
 .night-mode .cte-select label:hover {
-    background: #f55d2c;
+    background: #21ba45;
     color: #fff
 }
 .night-mode .webproduct {
