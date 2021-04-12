@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Helper\StrHelper;
+use App\Models\Attachment;
 use App\Models\Product;
 use App\Services\ScrapperServices;
 use Illuminate\Console\Command;
@@ -22,20 +24,30 @@ class ProductListCrawller extends Command
      * @var string
      */
     protected $description = 'crawler new product from list';
+
     /**
      * @var Client
      */
     private $client;
 
     /**
+     * @var ScrapperServices
+     */
+    private $scrapperServices;
+
+    private $filePath;
+
+    /**
      * Create a new command instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(ScrapperServices $scrapperServices)
     {
         parent::__construct();
         $this->client = new Client();
+        $this->scrapperServices = $scrapperServices;
+        $this->filePath = env('FILE_STORE_PATH');
     }
 
     /**
@@ -44,7 +56,7 @@ class ProductListCrawller extends Command
      * @param ScrapperServices $scrapperServices
      * @return int
      */
-    public function handle(ScrapperServices $scrapperServices)
+    public function handle()
     {
         // https://sabziman.com || https://bokala.ir
         $url = $this->argument('url');
@@ -56,19 +68,18 @@ class ProductListCrawller extends Command
         });
         $data['category_id'] = $categoryId;
         foreach ($links as $link) {
-            $crawler = $this->client->request('GET', $link);
-            $data['cover'] = $crawler->filter('a.venobox img')->eq(1)->attr('src');
-            $data['name'] = $crawler->filter('div.col-lg-8 h1')->first()->text();
-            $price = $crawler->filter('bdi')->first();
-            $data['price'] = $price->count() ? str_replace([',', ' ','تومان'], '', $price->text()) . "0" : 0;
-            $weight = $crawler->filter('.woocommerce-product-details__short-description strong')->first();
-            $data['weight'] = $weight->count() ? $weight : 0;
-            $data['description'] = $crawler->filter('#tab-description')->first()->text();
-            $scrapperServices->setModel(new Product);
-            $entity = $this->initRow($data);
-            $scrapperServices->setEntity($entity);
-            $product = $scrapperServices->save();
-            dd($data, $scrapperServices, $product);
+
+            $entity = $this->fetchData($link);
+
+            $product = $this->create($entity);
+            $coverId = $this->storeCover($data['cover'], $product->id);
+
+            $product->cover_id = $coverId;
+            $product->save();
+
+            dd($data, $this->scrapperServices, $product);
+
+
         }
 
         // @TODO add new product
@@ -77,15 +88,80 @@ class ProductListCrawller extends Command
         return 0;
     }
 
+    private function storeCover($cover, $productId)
+    {
+
+
+        $data = [
+            'id' => StrHelper::uuId(),
+            'name' => basename($cover),
+            'deleted' => 0,
+            'type' => 'image/jpeg',
+            'size' => '',
+            'field' => 'cover',
+            'role' => 'Attachment',
+            'storage' => '',
+            'storage_file_path' => '',
+            'global' => 0,
+            'parent_id' => $productId,
+            'parent_type' => 'Product',
+        ];
+
+        $file = $this->filePath . $productId;
+
+        $fp = fopen ( $file , 'w+');
+        //Here is the file we are downloading, replace spaces with %20
+        $ch = curl_init($cover);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 50);
+        // write curl response to file
+        curl_setopt($ch, CURLOPT_FILE, $fp);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        // get curl response
+        curl_exec($ch);
+        curl_close($ch);
+        fclose($fp);
+
+        $data['size'] = filesize($file);
+
+        return Attachment::create($data);
+    }
+
+
+    /**
+     *
+     * @param string $link
+     * @return array
+     */
+    private function fetchData(string $link): array
+    {
+        $crawler = $this->client->request('GET', $link);
+
+        $data['cover'] = $crawler->filter('a.venobox img')->eq(1)->attr('src');
+        $data['name'] = $crawler->filter('div.col-lg-8 h1')->first()->text();
+        $price = $crawler->filter('bdi')->first();
+        $data['price'] = $price->count() ? str_replace([',', ' ','تومان'], '', $price->text()) . "0" : 0;
+        $weight = $crawler->filter('.woocommerce-product-details__short-description strong')->first();
+        $data['weight'] = $weight->count() ? $weight : 0;
+        $data['description'] = $crawler->filter('#tab-description')->first()->text();
+
+        return $this->initRow($data);
+    }
+
+    protected function create($entity)
+    {
+        $this->scrapperServices->setModel(new Product);
+        $this->scrapperServices->setEntity($entity);
+        return $this->scrapperServices->save();
+    }
+
     public function initRow($data): array
     {
         return [
-            'id' => uniqid() . substr(md5(rand()), 0, 4),
+            'id' => StrHelper::uuId(),
             'name' => $data['name'],
             'deleted' => 0,
             'status' => 'Available',
             'part_number' => 'sku-' . rand(12345, 9999),
-            'cost_price' => null,
             'pricing_type' => 'Same as List',
             'pricing_factor' => 0.0,
             'list_price' => $data['price'],

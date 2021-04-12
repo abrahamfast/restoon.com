@@ -9,10 +9,16 @@ class Attachment extends Model
 {
     use HasFactory;
 
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'modified_at';
+
     protected $table = 'attachment';
 
     protected $casts = [
     	'id' => 'string',
     	'parent_id' => 'string',
     ];
+
+    public $incrementing = false;
+
 }
