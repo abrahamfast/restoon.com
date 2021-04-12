@@ -1668,14 +1668,14 @@ i.icon1 {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07)
 }
 span.like-icon {
-    color: #f69733;
+    color: #0edd16;
     font-size: 18px;
     position: absolute;
     z-index: 101;
-    _right: 0;
-    _top: 0;
+    right: 0;
+    top: 0;
     cursor: pointer;
-    background-color: rgba(246, 151, 51, .2);
+    background-color: #0edd161f;
     display: block;
     height: 35px;
     width: 35px;
