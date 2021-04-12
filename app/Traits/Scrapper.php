@@ -21,7 +21,7 @@ trait Scrapper
 
     protected function bokala($crawler)
     {
-        $links = $crawler->filter('.before_content_product_catalog a');
+        $links = $crawler->filter('.before_content_product_catalog a.woocommerce-LoopProduct-link');
 
         return $links->each(function($node){
             return $node->attr('href');
@@ -40,8 +40,8 @@ trait Scrapper
         $data['cover'] = $crawler->filter('.woocommerce-product-gallery__image img')->first()->attr('src');
         $data['name'] = $crawler->filter('.product_title h1')->first()->text();
         $price = $crawler->filter('.nk_main_add_to_cart_box .price .woocommerce-Price-amount  bdi')->first();
-        $price = $price->count() ? str_replace([',', '&nbsp;','تومان'], '', $price->text()) . "0" : 0;
-        $data['price'] = StrHelper::convertEn($price);
+        $price = $price->count() ? str_replace([',', '&nbsp;','تومان', ' ',' ' ], '', $price->text()) : 0;
+        $data['price'] = StrHelper::convertEn($price) . 0;
         $data['weight'] = 0;
         $data['description'] = '';
 
