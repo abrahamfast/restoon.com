@@ -21,18 +21,10 @@ class ScrapperServices
     public function save()
     {
         return $this->getModel()->create(
-            $this->getModel()
+            $this->getEntity()
         );
     }
-    /**
-     * @param string $category
-     * @return ScrapperServices
-     */
-    public function setCategory(string $category): ScrapperServices
-    {
-        $this->category = $category;
-        return $this;
-    }
+
 
     /**
      * @param string $cover
@@ -45,9 +37,9 @@ class ScrapperServices
     }
 
     /**
-     * @return array
+     * @return Model
      */
-    public function getModel(): array
+    public function getModel(): Model
     {
         return $this->model;
     }
@@ -62,6 +54,14 @@ class ScrapperServices
 
     public function setEntity($data)
     {
+        $this->entity = $data;
+    }
 
+    /**
+     * @return array
+     */
+    public function getEntity(): array
+    {
+        return $this->entity;
     }
 }

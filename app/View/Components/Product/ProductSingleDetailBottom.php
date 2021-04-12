@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Product;
 
 use Illuminate\View\Component;
 
-class ProductSingleDetail extends Component
+class ProductSingleDetailBottom extends Component
 {
     public $product;
     /**
@@ -24,6 +24,6 @@ class ProductSingleDetail extends Component
      */
     public function render()
     {
-        return view('components.product-single-detail');
+        return view('components.product-single-detail-bottom');
     }
 }

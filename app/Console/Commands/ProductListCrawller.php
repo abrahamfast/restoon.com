@@ -67,8 +67,8 @@ class ProductListCrawller extends Command
             $scrapperServices->setModel(new Product);
             $entity = $this->initRow($data);
             $scrapperServices->setEntity($entity);
-            $scrapperServices->save();
-            dump($data);
+//            $scrapperServices->save();
+            dd($data, $scrapperServices);
         }
 
         // @TODO add new product

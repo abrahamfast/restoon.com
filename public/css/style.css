@@ -1672,8 +1672,8 @@ span.like-icon {
     font-size: 18px;
     position: absolute;
     z-index: 101;
-    right: 0;
-    top: 0;
+    _right: 0;
+    _top: 0;
     cursor: pointer;
     background-color: rgba(246, 151, 51, .2);
     display: block;
@@ -1789,7 +1789,7 @@ span.like-icon {
     margin-top: 17px
 }
 .cart-icon {
-    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     color: #c7c7c7;
     cursor: pointer

@@ -28,7 +28,7 @@
                         <div class="main-price color-discount">
                             {{ __('global.Discount Price') }}
                             <span>
-                                {{ __('global.toman', ["price" => $product->getDiscountPrice() ]) }} 
+                                {{ __('global.toman', ["price" => $product->getDiscountPrice() ]) }}
                             </span>
                         </div>
                     </li>
@@ -51,7 +51,7 @@
                 <li>
                     <div class="qty-product">
                         <div class="quantity buttons_added">
-                            <form action="/cart/add" method="POST">
+                            <form action="/cart/add" method="POST" id=product-form"">
                                 @csrf
                                 <input type="hidden" name="product-id" value="{{ $product->id }}">
                                 <input type="button" value="-" class="minus minus-btn">
@@ -68,7 +68,7 @@
             </ul>
             <ul class="ordr-crt-share">
                 <li>
-                    <button class="add-cart-btn hover-btn addcart" data-product-id="{{ $product->id }}">
+                    <button class="add-cart-btn hover-btn addcartbtn" data-product-id="{{ $product->id }}">
                         <i class="uil uil-shopping-cart-alt"></i>{{ __('global.Add to Cart') }}
                     </button>
                 </li>
@@ -99,3 +99,12 @@
         </div>
     </div>
 </div>
+
+@push('js')
+    <script>
+    $('.addcartbtn').on('click', function(e){
+        e.preventDefault();
+        $('#product-form').submit()
+    });
+    </script>
+@endpush

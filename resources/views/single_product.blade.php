@@ -13,18 +13,18 @@
                     <div class="col-lg-12">
                         <div class="product-dt-view">
                             <div class="row">
-                            	<x-product-single-slider :covers="$product->attachment()->get()"/>
-                            	<x-product-single-detail :product="$product"/>
+                            	<x-product.product-single-slider :covers="$product->attachment()->get()"/>
+                                <x-product.single-detail :product="$product"/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                 	{{-- <x-product-single-more-like-this/> --}}
-                	<x-product-single-detail-bottom :product="$product"/>
+                	<x-product.product-single-detail-bottom :product="$product"/>
                 </div>
             </div>
         </div>
-        
+
         <x-products-featured-slider :lable="'global.you see it'" :type="'session'"/>
 @stop
