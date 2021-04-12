@@ -24,6 +24,6 @@ class ProductSingleDetail extends Component
      */
     public function render()
     {
-        return view('components.product-single-detail');
+        return view('components.product.product-single-detail');
     }
 }

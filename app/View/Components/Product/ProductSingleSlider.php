@@ -25,6 +25,6 @@ class ProductSingleSlider extends Component
      */
     public function render()
     {
-        return view('components.product-single-slider');
+        return view('components.product.product-single-slider');
     }
 }
