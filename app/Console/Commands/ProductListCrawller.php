@@ -61,7 +61,7 @@ class ProductListCrawller extends Command
             $data['name'] = $crawler->filter('div.col-lg-8 h1')->first()->text();
             $price = $crawler->filter('bdi')->first();
             $data['price'] = $price->count() ? str_replace([' ','تومان'], '', $price->text()) : 0;
-            $weight = $crawler->filter(1'.woocommerce-product-details__short-description strong')->first();
+            $weight = $crawler->filter('.woocommerce-product-details__short-description strong')->first();
             $data['weight'] = $weight->count() ? $weight : 0;
             $data['description'] = $crawler->filter('#tab-description')->first()->text();
             $scrapperServices->setModel(new Product);
