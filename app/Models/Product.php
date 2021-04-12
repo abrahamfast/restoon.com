@@ -12,13 +12,18 @@ use App\Traits\ItemAccessor;
 class Product extends Model
 {
     use HasFactory, ItemAccessor;
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'modified_at'; 
 
     protected $table = 'product';
+
+    public $incrementing = false;
 
     protected $guarded = [];
 
     protected $casts = [
-    	'id' => 'string'
+        'id' => 'string',
+        'category_id' => 'string'
     ];
 
     public function category()

@@ -60,15 +60,15 @@ class ProductListCrawller extends Command
             $data['cover'] = $crawler->filter('a.venobox img')->eq(1)->attr('src');
             $data['name'] = $crawler->filter('div.col-lg-8 h1')->first()->text();
             $price = $crawler->filter('bdi')->first();
-            $data['price'] = $price->count() ? str_replace([' ','تومان'], '', $price->text()) : 0;
+            $data['price'] = $price->count() ? str_replace([',', ' ','تومان'], '', $price->text()) . "0" : 0;
             $weight = $crawler->filter('.woocommerce-product-details__short-description strong')->first();
             $data['weight'] = $weight->count() ? $weight : 0;
             $data['description'] = $crawler->filter('#tab-description')->first()->text();
             $scrapperServices->setModel(new Product);
             $entity = $this->initRow($data);
             $scrapperServices->setEntity($entity);
-//            $scrapperServices->save();
-            dd($data, $scrapperServices);
+            $product = $scrapperServices->save();
+            dd($data, $scrapperServices, $product);
         }
 
         // @TODO add new product
@@ -80,6 +80,8 @@ class ProductListCrawller extends Command
     public function initRow($data): array
     {
         return [
+            'id' => uniqid() . substr(md5(rand()), 0, 4),
+            'name' => $data['name'],
             'deleted' => 0,
             'status' => 'Available',
             'part_number' => 'sku-' . rand(12345, 9999),
@@ -87,8 +89,10 @@ class ProductListCrawller extends Command
             'pricing_type' => 'Same as List',
             'pricing_factor' => 0.0,
             'list_price' => $data['price'],
+            'cost_price' => $data['price'],
             'unit_price' => $data['price'],
             'category_id' => $data['category_id'],
+            'description' => $data['description'],
             'cost_price_currency' => 'IRR',
             'list_price_currency' => 'IRR',
             'unit_price_currency' => 'IRR',
