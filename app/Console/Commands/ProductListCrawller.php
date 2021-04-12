@@ -6,17 +6,19 @@ use App\Helper\StrHelper;
 use App\Models\Attachment;
 use App\Models\Product;
 use App\Services\ScrapperServices;
+use App\Traits\Scrapper;
 use Illuminate\Console\Command;
 use Goutte\Client;
 
 class ProductListCrawller extends Command
 {
+    use Scrapper;
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'crawler:product {url} {categoryId}';
+    protected $signature = 'crawler:product {url} {categoryId} {site}';
 
     /**
      * The console command description.
@@ -58,28 +60,49 @@ class ProductListCrawller extends Command
      */
     public function handle()
     {
-        // https://sabziman.com || https://bokala.ir
         $url = $this->argument('url');
-        $categoryId = $this->argument('categoryId');
+        $site = $this->argument('site');
+        $this->category_id = $this->argument('categoryId');
+
         $crawler = $this->client->request('GET', $url);
-        $links = $crawler->filter('a.img');
-        $links = $links->each(function($node){
-            return $node->attr('href');
-        });
-        $this->category_id = $categoryId;
+
+        $links = $this->{$site}($crawler);
+
+
+        $bar = $this->output->createProgressBar(count($links));
+        $bar->start();
+
+        $rows = [];
+
         foreach ($links as $link) {
 
-            $data = $this->fetchData($link);
+            switch ($site){
+                case('bokala'):
+                    $data = $this->fetchDataFromBokala($link);
+                    break;
+                case('sabziman'):
+                    $data = $this->fetchDataFromSabziman($link);
+                    break;
+                default:
+                    $this->error('site not founded!');
+                    break;
+            }
+
+            $bar->advance();
             $entity = $this->initRow($data);
 
             $product = $this->create($entity);
-            $coverId = $this->storeCover($data['cover'], $product->id);
+            $this->storeCover($data['cover'], $product->id);
 
-
-            dump($product->id);
-
-
+            $rows[] = [$product['id'], $product['name']];
         }
+
+        $bar->finish();
+        $this->info("done.");
+        $this->table(
+            ['id', 'name'],
+            $rows
+        );
 
         // @TODO add new product
         // @TODO assign to product category
@@ -126,26 +149,6 @@ class ProductListCrawller extends Command
     }
 
 
-    /**
-     *
-     * @param string $link
-     * @return array
-     */
-    private function fetchData(string $link): array
-    {
-        $crawler = $this->client->request('GET', $link);
-
-        $data['cover'] = $crawler->filter('a.venobox img')->eq(1)->attr('src');
-        $data['name'] = $crawler->filter('div.col-lg-8 h1')->first()->text();
-        $price = $crawler->filter('bdi')->first();
-        $data['price'] = $price->count() ? str_replace([',', ' ','تومان'], '', $price->text()) . "0" : 0;
-        $weight = $crawler->filter('.woocommerce-product-details__short-description strong')->first();
-        $data['weight'] = $weight->count() ? $weight->text() : 0;
-        $data['description'] = $crawler->filter('#tab-description')->first()->text();
-
-        return $data;
-
-    }
 
     protected function create($entity)
     {
