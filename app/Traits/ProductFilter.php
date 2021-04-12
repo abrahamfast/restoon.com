@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace App\Traits;
 
 trait ProductFilter
@@ -13,7 +13,7 @@ trait ProductFilter
 				return $query->orderBy('unit_price', 'desc');
 				break;
 			case 'newest':
-				return $query->orderBy('unit_price', 'desc');
+				return $query->orderBy('modified_at', 'desc');
 				break;
 			default:
 				return $query->orderBy('unit_price', 'desc');
@@ -39,7 +39,7 @@ trait ProductFilter
 				// Off - High to Low
 				return $query->orderBy('pricing_factor', 'desc');
 				break;
-			
+
 			default:
 				return $query->orderBy('name', 'asc');
 				break;
