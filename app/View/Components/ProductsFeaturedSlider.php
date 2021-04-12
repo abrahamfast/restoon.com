@@ -23,7 +23,7 @@ class ProductsFeaturedSlider extends Component
         if($filter){
             $query = $this->whereType($filter, $query);
         }
-        $this->products = $query->get();
+        $this->products = $query->limit(8)->get();
         $this->lable = __($lable);
     }
 
