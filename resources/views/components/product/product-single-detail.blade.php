@@ -51,7 +51,7 @@
                 <li>
                     <div class="qty-product">
                         <div class="quantity buttons_added">
-                            <form action="/cart/add" method="POST" id=product-form"">
+                            <form action="/cart/add" method="POST" id="product-form">
                                 @csrf
                                 <input type="hidden" name="product-id" value="{{ $product->id }}">
                                 <input type="button" value="-" class="minus minus-btn">

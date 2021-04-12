@@ -14,7 +14,7 @@
                         <div class="product-dt-view">
                             <div class="row">
                             	<x-product.product-single-slider :covers="$product->attachment()->get()"/>
-                                <x-product.single-detail :product="$product"/>
+                                <x-product.product-single-detail :product="$product"/>
                             </div>
                         </div>
                     </div>
