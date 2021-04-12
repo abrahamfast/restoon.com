@@ -149,25 +149,25 @@ $('.offers-banner').owlCarousel({
 })
 $('.cate-slider').owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 5,
     nav: true,
-    dots: false,
+    dots: true,
     navText: ["<i class='uil uil-angle-left'></i>", "<i class='uil uil-angle-right'></i>"],
     responsive: {
         0: {
-            items: 1
+            items: 2 
         },
         600: {
-            items: 2
+            items: 4 
         },
         1000: {
-            items: 4
+            items: 5 
         },
         1200: {
-            items: 5
+            items: 7
         },
         1400: {
-            items: 5
+            items: 8 
         }
     }
 })
