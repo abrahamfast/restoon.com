@@ -168,6 +168,7 @@ return [
         App\Providers\OtpServiceProvider::class,
         Hekmatinasser\Notowo\NotowoServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+        Shetabit\Payment\Provider\PaymentServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Notowo' => Hekmatinasser\Notowo\Notowo::class,
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'Payment' => Shetabit\Payment\Facade\Payment::class,
 
     ],
 
