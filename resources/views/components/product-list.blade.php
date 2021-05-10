@@ -18,7 +18,7 @@
             <h4>{{ $product->name }}</h4>
             @if($product->pricing_type == 'Discount from List')
                 <div class="product-price">
-                      {{ __('global.toman', ["price" => $product->getDiscountPrice() ]) }} 
+                      {{ __('global.toman', ["price" => $product->getDiscountPrice() ]) }}
                     <span>{{ __('global.toman', ["price" => $product->getListPrice() ]) }}</span>
                 </div>
             @else
@@ -27,8 +27,6 @@
                 </div>
             @endif
             <div class="qty-cart">
-                <span class="cart-icon"><i class="uil uil-shopping-cart-alt addcart" data-product-id="{{ $product->id }}"></i></span>
-                <p>{{ __('global.' . $product->unit_weight, ['num' => $product->weight]) }}</p>
                 <div class="quantity buttons_added">
                     <form action="/cart/add" method="POST">
                         @csrf
@@ -38,6 +36,9 @@
                         <input type="button" value="+" class="plus plus-btn">
                     </form>
                 </div>
+                <p>{{ __('global.' . $product->unit_weight, ['num' => $product->weight]) }}</p>
+                <span class="cart-icon"><i class="uil uil-shopping-cart-alt addcart" data-product-id="{{ $product->id }}"></i></span>
+
             </div>
         </div>
     </div>
